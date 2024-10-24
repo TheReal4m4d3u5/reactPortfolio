@@ -8,8 +8,8 @@ const About = () => {
               <div className="col-md-4">
                   <div className="card mb-4">
                       <div className="card-body">
-                          <h5 className="card-title">Project Title 1</h5>
-                          <p className="card-text">Brief description of the project.</p>
+                          <h5 className="card-title">Project Titadsjfajdsflkajds f jle 1</h5>
+                          <p className="card-text">Brief descriptasdfasdfion of the project.</p>
                       </div>
                   </div>
               </div>

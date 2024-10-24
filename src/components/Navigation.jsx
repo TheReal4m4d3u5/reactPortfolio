@@ -1,22 +1,24 @@
 import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import About from '../pages/About';
+import Contact from '../pages/Contact';
 
 
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
-const Navigation = () => {
-  const [activeSection, setActiveSection] = useState('about');
+const Navigation = ({activePage}) => {
+  
+
 
   const renderSection = () => {
 
-    switch (activeSection) {
+    switch (activePage) {
       case 'about':
+        const [activeSection, setActiveSection] = useState(activePage);
         return <About />;
-      case 'projects':
-        return <Projects />;
       case 'contact':
+   
         return <Contact />;
       case 'resume':
         return <Resume />;
@@ -24,7 +26,6 @@ const Navigation = () => {
         return <About />;
     }
   };
-
 
 
   return (

@@ -1,14 +1,8 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-// TODO: Create a `name` variable
-
 const name = "Avery Jacobson";
 
-// TODO: Create a `thoughts` variable
-// This should be a string regarding what you think of React
-
 const thoughts = 'react is awesome';
-
 
 const Footer = ({ setActiveSection }) => {
   return (
