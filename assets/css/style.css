@@ -1,0 +1,104 @@
+/* create custom CSS variables aka custom properties and apply them to the root of the page, making them accessible to all other CSS */
+:root {
+
+    --darkBlue: #092b46;
+    --teal: #4c7273;
+    --offWhite: #d0d6d6;
+    --lightGreen: #86b9b0;
+    --lightGrey: #d0d6d6;
+  }
+
+body {
+    margin: 0px;
+}
+
+/* formating for all img elements */
+img {
+    width: 350px;
+    height: 250px;
+    border: 2px solid var(--darkBlue);
+    border-radius: 8px;
+    padding: 3PX;
+    background-color: var(--darkBlue);
+}
+
+/* formatting for all button elements*/
+button {
+    border: NONE;
+    background-color: var(--teal);  
+}
+
+/* background color to the main page background */
+#main{
+    background: var(--lightGreen);
+}
+
+#bottomSection{
+    margin-bottom: 0px;
+}
+
+
+/* formatting for cards that are buttons and images */
+#card {
+    padding: 20px;    
+}
+
+/* formatting for play, pause, stop buttons */
+#buttonPlay, #buttonStop, #buttonPause, #about {
+    border: 2px solid var(--darkBlue);
+    border-radius: 8px;
+    background-color: var(--lightGrey);
+}
+
+/* formatting for play, pause, stop buttons plus the displayTime */
+#buttonPlay, #buttonStop, #displayTime, #buttonPause{
+    margin: 20px;
+    padding: 20px;
+}
+
+
+/* overwriting bootstrap padding */
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* adding my own formatting along with bootstrap container */
+.myContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--teal);
+    border-style: solid;
+    
+    border: 3px solid var(--darkBlue);
+    border-radius: 8px;
+
+    /* margin: 20px auto; */
+    margin: 20px;
+    margin-top: 0px;
+    
+}
+
+/* centers current song text */
+#currentSong {
+    text-align: center;
+}
+
+/* centers modal header text */
+.modal-title{
+    text-align: center;
+}
+
+#aboutBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    background-color: var(--darkBlue);
+}
