@@ -1,3 +1,5 @@
+import { Navbar, Nav, Container } from 'react-bootstrap';
+
 // TODO: Create a `name` variable
 
 const name = "Avery Jacobson";
@@ -8,21 +10,19 @@ const name = "Avery Jacobson";
 const thoughts = 'react is awesome';
 
 
-function Footer() {
+const Footer = ({ setActiveSection }) => {
   return (
-    <div className="main-container">
-      <div className="container">
-        <div className="p-5 mb-4 bg-light">
-          {/* TODO: Add your name variable */}
-          <h1>Hi! My name is {name}</h1>
-          {/* TODO: Add your number of letters variable */}
-          <h2>My name has {name.length} letters</h2>
-          {/* TODO: Add your thoughts variable */}
-          <h2>I think React {thoughts}</h2>
-        </div>
-      </div>
-    </div>
+    <Navbar bg="dark" variant="dark" expand="lg">
+      {/* className="ms-4" margin start bootstrap using 12 colums to span the width of the page bootstrap is expecting a container then row and then column as a format, ps- padding start*/}
+      <Container fluid className="ps-5">
+        <Navbar.Brand className="col-4" href="#"></Navbar.Brand>
+        <Navbar.Brand id="headerName" className="col-4 ps-15" href="#home"></Navbar.Brand>
+         <div className="col-4 pe-5">
+          <Navbar.Toggle  aria-controls="basic-navbar-nav" />
+        </div> 
+      </Container>
+    </Navbar>
   );
-}
+};
 
 export default Footer;
