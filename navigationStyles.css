@@ -18,3 +18,21 @@
   transition: background-color 0.3s;
 }
 
+.headerLinks .nav-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.headerLinks .nav-link:hover {
+  text-decoration: underline;
+}
+
+.headerLinks .nav-link.active {
+  color: #FFD700; /* Gold or any other highlight color */
+  background-color: rgba(255, 215, 0, 0.2); /* Light background to make it more visible */
+  border-radius: 5px; /* Adds a rounded corner to make it more button-like */
+  padding: 5px 10px;
+}

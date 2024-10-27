@@ -25,7 +25,7 @@ const Header = () => {
             <Nav.Link href="#about" onClick={() => setActiveSection('about')} className={currentPage === 'about' ? 'active' : ''}>
               About Me
             </Nav.Link>
-            <Nav.Link href="#projects" onClick={() => setActiveSection('portfolio')} className={currentPage === 'projects' ? 'active' : ''}>
+            <Nav.Link href="#portfolio" onClick={() => setActiveSection('portfolio')} className={currentPage === 'portfolio' ? 'active' : ''}>
               Portfolio
             </Nav.Link>
             <Nav.Link href="#contact" onClick={() => setActiveSection('contact')} className={currentPage === 'contact' ? 'active' : ''}>
