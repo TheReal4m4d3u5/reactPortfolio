@@ -116,8 +116,3 @@ html, body {
     padding-right: 0;
   }
   
-  /* Optional: style active link */
-  .navbar-dark .nav-link.active {
-    font-weight: bold;
-    color:  !important; /* Highlight color */
-  }

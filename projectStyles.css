@@ -1,0 +1,17 @@
+.project-card img {
+    height: 200px;
+    /* Adjust to control image height */
+    object-fit: cover;
+    width: 500px;
+}
+
+.project-card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    margin-bottom: 20px;
+    justify-content: center;
+}

@@ -1,36 +1,27 @@
-import React, { useState } from 'react';
-import { Container } from 'react-bootstrap';
-import About from '../pages/About';
-import Home from '../pages/Home';
-
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { Card, Button } from 'react-bootstrap';
+import '../.././projectStyles.css';
 
 
-const Navigation = () => {
-  const [activeSection, setActiveSection] = useState('about');
-
-  const renderSection = () => {
-
-    switch (activeSection) {
-      case 'about':
-        return <About />;
-      case 'projects':
-        return <Projects />;
-      case 'contact':
-        return <Contact />;
-      default:
-        return <About />;
-    }
-  };
-
-
-
+const Project = ({ title, description, image, link }) => {
   return (
-    <Container className="my-5">
-      {renderSection()}
-    </Container>
+    <Card className="project-card h-100">
+      <Card.Img variant="top" src={image} alt={`${title} screenshot`} className="project-image" />
+      <Card.Body className="d-flex flex-column">
+        <Card.Title>{title}</Card.Title>
+        <Card.Text>{description}</Card.Text>
+        <Button
+          variant="primary"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-auto"
+        >
+          View Project
+        </Button>
+      </Card.Body>
+    </Card>
   );
-
 };
 
-export default Navigation;
+export default Project;
