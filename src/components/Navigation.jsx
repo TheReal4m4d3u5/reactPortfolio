@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Portfolio from '../pages/Portfolio';
+import Resume from '../pages/Resume';
 
 
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
