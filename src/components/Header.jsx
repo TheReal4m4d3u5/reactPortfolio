@@ -14,33 +14,32 @@ const Header = () => {
 
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="lg" className="w-100">
-        
-              <section className="nameHeader">
-                {name}
-              </section>
+      <Navbar bg="dark" variant="dark" expand="lg" className="header" style={{ width: '100%' }}>
+        <section className="headerName">
+          <div >
+            Avery Jacobson
+          </div>
+        </section>
+        <section className="headerLinks">
+          <div className="github">
+            <Nav.Link href="#about" onClick={() => setActiveSection('about')} className={currentPage === 'about' ? 'active' : ''}>
+              About Me
+            </Nav.Link>
+            <Nav.Link href="#projects" onClick={() => setActiveSection('portfolio')} className={currentPage === 'projects' ? 'active' : ''}>
+              Portfolio
+            </Nav.Link>
+            <Nav.Link href="#contact" onClick={() => setActiveSection('contact')} className={currentPage === 'contact' ? 'active' : ''}>
+              Contact
+            </Nav.Link>
+            <Nav.Link href="#resume" onClick={() => setActiveSection('resume')} className={currentPage === 'resume' ? 'active' : ''}>
+              Resume
+            </Nav.Link>
+          </div>
+        </section>
 
-              <section className="linksHeader">
 
-                <Navbar.Collapse id="basic-navbar-nav" className="">
-                  <Nav className="d-flex gap-3 justify-content-end">
-                    <Nav.Link href="#about" onClick={() => setActiveSection('about')} className={currentPage === 'about' ? 'active' : ''}>
-                      About Me
-                    </Nav.Link>
-                    <Nav.Link href="#projects" onClick={() => setActiveSection('portfolio')} className={currentPage === 'projects' ? 'active' : ''}>
-                      Portfolio
-                    </Nav.Link>
-                    <Nav.Link href="#contact" onClick={() => setActiveSection('contact')} className={currentPage === 'contact' ? 'active' : ''}>
-                      Contact
-                    </Nav.Link>
-                    <Nav.Link href="#resume" onClick={() => setActiveSection('resume')} className={currentPage === 'resume' ? 'active' : ''}>
-                      Resume
-                    </Nav.Link>
-                  </Nav>
-                </Navbar.Collapse>
-              </section>
-   
-        
+
+
       </Navbar>
 
       <Navigation activePage={currentPage} />

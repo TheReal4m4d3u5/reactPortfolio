@@ -3,11 +3,11 @@
   background-image: url('./src/assets/background5.png'); 
   padding: 40px;
   padding-top: 10px;
-  /*max-width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   color: black;
   font-weight: bold; 
-  font-family: Arial, sans-serif; */
+  font-family: Arial, sans-serif;
 }
 
 .resume-page h2 {
@@ -26,20 +26,7 @@
 }
 
 
-.resume-download {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
 
-.resume-download:hover {
-  background-color: #0056b3;
-}
 
 .resume-section {
   margin-top: 30px;
@@ -75,10 +62,11 @@
   text-align: center;
 }
 
-.links {
+.resumeLinks {
   display: flex;
   justify-content: center;
   text-align: center;
   gap: 40px; /* Space between each section */
   margin-top: 0px;
+
 }

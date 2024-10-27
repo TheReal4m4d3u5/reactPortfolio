@@ -4,7 +4,7 @@ import '../../resumeStyles.css';
 const Resume = () => {
   return (
     <div className="resume-page">
-       <div className="links">
+       <div className="resumeLinks">
         <a href="/path/to/your-resume.pdf" download="Avery_Jacobson_Resume.pdf" className="link-button">
           Resume
         </a>
