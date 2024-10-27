@@ -1,30 +1,22 @@
 import React from 'react';
+import profilePhoto from '../assets/myPhoto.jpg'; // Ensure this path matches where your image is stored
 
 const About = () => {
-  return (
-      <section id="projects" className="container mt-5">
-          <h2>My Projects</h2>
-          <div className="row">
-              <div className="col-md-4">
-                  <div className="card mb-4">
-                      <div className="card-body">
-                          <h5 className="card-title">Project Titadsjfajdsflkajds f jle 1</h5>
-                          <p className="card-text">Brief descriptasdfasdfion of the project.</p>
-                      </div>
-                  </div>
-              </div>
-              <div className="col-md-4">
-                  <div className="card mb-4">
-                      <div className="card-body">
-                          <h5 className="card-title">Project Title 2</h5>
-                          <p className="card-text">Brief description of the project.</p>
-                      </div>
-                  </div>
-              </div>
-              {/* Add more projects as needed */}
+    return (
+      <section id="about" className="container mt-5 about-page">
+        <h2>About Me</h2>
+        <div className="row align-items-center">
+          <div className="col-md-4 text-center">
+            <img src={profilePhoto} alt="Profile" className="profile-photo mb-4" />
           </div>
+          <div className="col-md-8">
+            <p>
+              Hi, I'm Avery Jacobson! I have been a senior software engineer as an SDET for 10 years. 
+            </p>
+          </div>
+        </div>
       </section>
-  );
-};
-
-export default About;
+    );
+  };
+  
+  export default About;

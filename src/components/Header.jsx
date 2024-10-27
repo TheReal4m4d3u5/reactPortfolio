@@ -1,86 +1,50 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import '../.././styles.css'; 
-import Navigation from './Navigation.jsx';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import Navigation from './Navigation';
+import '../.././navigationStyles.css';
 
 const name = "Avery Jacobson";
 
-
-// GIVEN a single-page application portfolio for a web developer
-// WHEN I load the portfolio
-// THEN I am presented with a page containing a header, a section for content, and a footer
-// WHEN I view the header
-// THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
-
-
-// WHEN I view the navigation titles
-// THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
-
-
-// WHEN I click on a navigation title
-// THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
-// WHEN I load the portfolio the first time
-// THEN the About Me title and section are selected by default
-
-{/* <ul className="list-group">
-{props.groceries.map((item) => (
-    <li
-        style={
-            {
-                textDecoration: item.purchased ? 'line-through' : 'none'
-            }
-        }
-        key={item.id}
-        className="list-group-item"
-    >
-        {item.name}
-    </li>
-))
-}
-</ul> */}
-
-
 const Header = () => {
-
   const [currentPage, setCurrentPage] = useState("about");
 
-  const setActiveSection = (page) =>{
+  const setActiveSection = (page) => {
     setCurrentPage(page); 
-  }
-  
+  };
+
   return (
     <>
-    <Navbar bg="dark" variant="dark" expand="lg">
-      {/* className="ms-4" margin start bootstrap using 12 colums to span the width of the page bootstrap is expecting a container then row and then column as a format, ps- padding start*/}
-      <Container fluid className="ps-5">
-        <Navbar.Brand id="headerName" className="col-4 ps-15" href="#home">{name}</Navbar.Brand>
-         <div className="col-4 pe-5">
-          <Navbar.Toggle  aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav navbarCollapse"> 
-            <Nav className="ms-auto">
-              <Nav.Link href="#about" onClick={() => setActiveSection('about')}>
+      <Navbar bg="dark" variant="dark" expand="lg" className="w-100" style={{ width: '100%' }}>
+        <Container fluid className="d-flex justify-content-between align-items-center">
+          {/* Left-aligned brand name */}
+          <Navbar.Brand href="#home" style={{ color: 'white', textDecoration: 'none' }}>
+            {name}
+          </Navbar.Brand>
+
+
+          {/* Right-aligned navigation links */}
+          <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+            <Nav className="d-flex gap-3">
+              <Nav.Link href="#about" onClick={() => setActiveSection('about')} className={currentPage === 'about' ? 'active' : ''}>
                 About Me
               </Nav.Link>
-              <Nav.Link href="#projects" onClick={() => setActiveSection('projects')}>
+              <Nav.Link href="#projects" onClick={() => setActiveSection('projects')} className={currentPage === 'projects' ? 'active' : ''}>
                 Portfolio
               </Nav.Link>
-              <Nav.Link href="#contact" onClick={() => setActiveSection('contact')}>
+              <Nav.Link href="#contact" onClick={() => setActiveSection('contact')} className={currentPage === 'contact' ? 'active' : ''}>
                 Contact
               </Nav.Link>
-              <Nav.Link href="#resume" onClick={() => setActiveSection('resume')}>
+              <Nav.Link href="#resume" onClick={() => setActiveSection('resume')} className={currentPage === 'resume' ? 'active' : ''}>
                 Resume
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </div> 
-        
-      </Container>
-    </Navbar>
+        </Container>
+      </Navbar>
 
-    <Navigation activePage={currentPage}/>
+      <Navigation activePage={currentPage} />
     </>
   );
 };
-
 
 export default Header;

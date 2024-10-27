@@ -9,7 +9,7 @@ const name = "Avery Jacobson";
 
 function Portolio() {
   return (
-    <div className="main-container">
+    <div className="portfolio-page">
       <div className="container">
         <div className="p-5 mb-4 bg-light">
           {/* TODO: Add your name variable */}

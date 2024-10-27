@@ -1,0 +1,47 @@
+/* Navbar styling for consistency */
+.navbar-dark .navbar-brand {
+  color: white !important;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-dark .nav-link {
+  color: white;
+  margin-left: 1rem; /* Adds spacing between nav links */
+}
+
+.navbar-dark .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff; /* Underline the active link */
+}
+
+.navbar {
+  width: 100vw;
+
+
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+  text-decoration: none !important;
+}
+
+/* Text-only highlight for the active nav link */
+.navbar-dark .nav-link.active {
+  font-weight: bold; /* Makes active link bold */
+
+}
+
+.about-page p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0px;
+}
