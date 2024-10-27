@@ -1,21 +1,23 @@
+import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-const name = "Avery Jacobson";
 
-const thoughts = 'react is awesome';
 
-const Footer = ({ setActiveSection }) => {
+
+const Footer = () => {
+
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
-      {/* className="ms-4" margin start bootstrap using 12 colums to span the width of the page bootstrap is expecting a container then row and then column as a format, ps- padding start*/}
-      <Container fluid className="ps-5">
-        <Navbar.Brand className="col-4" href="#"></Navbar.Brand>
-        <Navbar.Brand id="headerName" className="col-4 ps-15" href="#home"></Navbar.Brand>
-         <div className="col-4 pe-5">
-          <Navbar.Toggle  aria-controls="basic-navbar-nav" />
-        </div> 
-      </Container>
-    </Navbar>
+    <>
+      <Navbar bg="dark" variant="dark" expand="lg" className="w-100" style={{ width: '100%' }}>
+        <Container fluid className="d-flex justify-content-between align-items-center">
+          {/* Left-aligned brand name */}
+          <Navbar.Brand href="#home" style={{ color: 'white', textDecoration: 'none' }}>
+            This is my footer
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+
+    </>
   );
 };
 
