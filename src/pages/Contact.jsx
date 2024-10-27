@@ -4,8 +4,11 @@ import '../../contactSytles.css';
 
 function Contact() {
   return (
-    <div className="contact-page container mt-5">
-      <h2>Contact Me</h2>
+    <div className="contact-page">
+      <div className="contact-heading">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
+      </div>
       <form>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>
@@ -17,7 +20,7 @@ function Contact() {
         </div>
         <div className="mb-3">
           <label htmlFor="message" className="form-label">Message</label>
-          <textarea className="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+          <textarea className="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
