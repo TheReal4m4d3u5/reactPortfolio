@@ -1,0 +1,20 @@
+.links {
+    display: flex;
+    justify-content: space-evenly; /* Spaces links evenly across the full width */
+    align-items: center; /* Centers items vertically */
+    width: 100%; /* Ensures the container takes up the full width of the footer */
+    padding: 10px;
+    background-color: #000; /* Background color to match the footer */
+  }
+  
+  /* Style each link as a button */
+  .link-button {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  

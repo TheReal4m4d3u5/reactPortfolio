@@ -1,17 +1,7 @@
 import React from 'react';
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-
-
-
-// function App() {
-//   return (
-//     <div id="root">
-//       <Header />
-
-//     </div>
-//   );
-// }
+import '../styles.css';
 
 
 function App() {
