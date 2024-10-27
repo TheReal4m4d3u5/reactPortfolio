@@ -1,9 +1,11 @@
 import React from 'react';
+import '../../contactSytles.css';
+
 
 function Contact() {
   return (
-    <div className="container mt-5">
-      <h2>Contact Us</h2>
+    <div className="contact-page container mt-5">
+      <h2>Contact Me</h2>
       <form>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>
@@ -22,7 +24,5 @@ function Contact() {
     </div>
   );
 }
-
-
 
 export default Contact;
