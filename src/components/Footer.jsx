@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
 
-
-
 const Footer = () => {
 
   return (

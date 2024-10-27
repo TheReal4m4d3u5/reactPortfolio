@@ -1,11 +1,13 @@
 .resume-page {
 
-  background-image: url('./src/assets/background5.png'); /* Update with actual path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh; /* Ensures the background covers the entire viewport */
-  box-sizing: border-box;
+  background-image: url('./src/assets/background5.png'); 
+  padding: 40px;
+  padding-top: 10px;
+  /*max-width: 800px;
+  margin: 0 auto;
+  color: black;
+  font-weight: bold; 
+  font-family: Arial, sans-serif; */
 }
 
 .resume-page h2 {
@@ -14,6 +16,15 @@
   text-align: center;
   margin-bottom: 20px;
 }
+
+
+.skills-section {
+  display: flex;
+  justify-content: space-around; /* Distribute space around the items */
+  gap: 20px; /* Optional spacing between items */
+  margin-top: 20px;
+}
+
 
 .resume-download {
   display: inline-block;
@@ -56,4 +67,18 @@
 
 .resume-section a:hover {
   text-decoration: underline;
+}
+
+.coreSkills{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 40px; /* Space between each section */
+  margin-top: 0px;
 }
