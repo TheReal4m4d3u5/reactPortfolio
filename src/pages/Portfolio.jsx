@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Project from '../components/Project';
-import '../.././portfolioStyles.css';
+import '../styles/portfolioStyles.css';
 import image1 from '../../src/assets/image1.png'; // Correct import path and file extension
 import image2 from '../../src/assets/image2.png'; // Correct import path and file extension
 import image3 from '../../src/assets/image3.png'; // Correct import path and file extension

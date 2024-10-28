@@ -39,3 +39,8 @@
 .headerName {
     padding-left: 20px;
 }
+
+.footer,
+.push {
+  height: 50px;
+}

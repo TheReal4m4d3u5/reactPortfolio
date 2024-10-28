@@ -15,6 +15,13 @@ html, body {
     padding: 2rem;
   }
 
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+
 .about-page {
     padding: 2rem;
   }
@@ -116,3 +123,29 @@ html, body {
     padding-right: 0;
   }
   
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .content {
+    min-height: 100%;
+  }
+  .content-inside {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+  .footer {
+    height: 50px;
+    margin-top: -50px;
+    position: fixed; 
+    bottom:0;
+  }
+
+
+  .wrapper {
+    min-height: 100vw;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }

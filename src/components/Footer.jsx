@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import '../../footerStyles.css';
+import '../styles/footerStyles.css';
 
 const Footer = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="w-100" style={{ width: '100%' }}>
+    <Navbar bg="dark" variant="dark" expand="lg" className="w-100 footer" style={{ width: '100%' }}>
       <section className="links">
         <div className="linkedin">
           <a href="https://www.linkedin.com/in/avery-jacobson-aa36225a/" target="_blank" rel="noopener noreferrer" className="link-button">
