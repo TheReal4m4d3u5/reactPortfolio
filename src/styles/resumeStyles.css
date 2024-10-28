@@ -3,7 +3,7 @@
 
 .resume-page {
 
-  background-image: url('./src/assets/background5.png'); 
+  background-image: url('/src/assets/background5.png'); 
   padding: 40px;
   padding-top: 10px;
   margin: 0 auto;
