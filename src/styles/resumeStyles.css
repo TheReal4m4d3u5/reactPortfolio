@@ -18,6 +18,15 @@
   font-family: Arial, sans-serif;
   margin-left: 0px;
   margin-right: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the image fixed on scroll */
+}
+
+
+.resume-page {
+
 }
 
 .resume-page h2 {
