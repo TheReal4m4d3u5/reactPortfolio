@@ -53,6 +53,13 @@
 }
 
 
+.resumeHeaders{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
 
 .coreSkills{
   display: flex;
