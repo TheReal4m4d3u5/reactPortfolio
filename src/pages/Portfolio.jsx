@@ -49,9 +49,9 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <Container className="portfolio-page text-center mt-5">
+    <Container className="portfolio-page">
       <h2 className="mb-4">My Portfolio</h2>
-      <Row className="g-4">
+      <Row className="portfolioCards">
         {projects.map((project, index) => (
           <Col key={index} sm={12} md={6} lg={4}>
             <Project

@@ -7,8 +7,18 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; /* Ensures it covers the full viewport height */
-  color: white; /* Adjust text color for readability */
-  padding: 40px 0; /* Optional padding for spacing */
-  text-align: center; /* Center text content within each section */
+
+
+  color: white; 
+  text-shadow: 
+  -1px -1px 0 black,  
+  1px -1px 0 black,   
+  -1px 1px 0 black,   
+  1px 1px 0 black;    
+  padding: 0px 0; 
+  text-align: center;
+}
+
+.portfolioCards{
+  color: black;
 }
