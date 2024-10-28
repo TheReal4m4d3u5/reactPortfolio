@@ -20,5 +20,9 @@
 }
 
 .portfolioCards{
+  display: flex;
+
+  flex-direction: column; /* Ensures content is stacked vertically */
+  align-items: center;
   color: black;
 }

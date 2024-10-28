@@ -27,7 +27,12 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   /* Full viewport height */
-  color: white;
+  color: white; 
+  text-shadow: 
+  -1px -1px 0 black,  /* Top-left */
+  1px -1px 0 black,   /* Top-right */
+  -1px 1px 0 black,   /* Bottom-left */
+  1px 1px 0 black;    /* Bottom-right */
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -45,4 +50,15 @@
   padding-left: 50px;
   padding-bottom: 10px;
   padding-bottom: 0px;
+}
+
+.about{
+  padding-top: 30px;
+  padding-left: 30px;
+  color: white; 
+  text-shadow: 
+  -1px -1px 0 black,  /* Top-left */
+  1px -1px 0 black,   /* Top-right */
+  -1px 1px 0 black,   /* Bottom-left */
+  1px 1px 0 black;    /* Bottom-right */
 }
