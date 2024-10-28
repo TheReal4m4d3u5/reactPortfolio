@@ -1,10 +1,11 @@
 import React from 'react';
 import profilePhoto from '../assets/myPhoto.jpg'; // Ensure this path matches where your image is stored
+// import '../../aboutStyles.css';
 
 const About = () => {
     return (
       <section id="about" className="container mt-5 about-page">
-        <h2>About Me</h2>
+ 
         <div className="row align-items-center">
           <div className="col-md-4 text-center">
             <img src={profilePhoto} alt="Profile" className="profile-photo mb-4" />
