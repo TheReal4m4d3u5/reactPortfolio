@@ -24,6 +24,13 @@
   height: 50px;
 }
 
+.toolsHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
 
 .aboutRowText{
   padding-left: 30px;
@@ -49,4 +56,39 @@
   1px -1px 0 black,   /* Top-right */
   -1px 1px 0 black,   /* Bottom-left */
   1px 1px 0 black;    /* Bottom-right */
+}
+
+
+.coreSkills{
+
+  display: flex;
+
+  justify-content: center;
+
+  width: 100%;
+}
+
+.skills{
+  display: flex;
+
+  justify-content: center;
+
+  width: 100%;
+}
+
+.tools-section{
+  padding-left: 200px;
+  padding-right: 150px;
+}
+
+.hobbies-section{
+  padding-bottom: 150px;
+}
+
+.toolsHeader{
+  padding-right: 75px;
+}
+
+.hardware-section{
+  padding-left: 50px;
 }

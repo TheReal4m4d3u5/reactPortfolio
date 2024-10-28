@@ -15,8 +15,8 @@ const Resume = () => {
 
 
       <section className="professional-section">
-        <h3 className='resumeHeaders'>Professional Summary</h3>
 
+        <h3 className='resumeHeaders'>Professional Summary</h3>
         <ul>
           <li>Brief Overview: A short paragraph (2-3 sentences) about who you are professionally.</li>
           <li>Highlight Skills: Mention your core skills and areas of expertise.
@@ -26,41 +26,51 @@ const Resume = () => {
       </section>
 
 
-      <h3 className='coreSkills'>Core Skills</h3>
+      <section className='allSkills'>
 
-      <section className="skills-section">
+        <h3 className='coreSkills'>Core Skills</h3>
 
-        <section className="programming-section">
+
+        <section className='toolsHeader'>
+
           <h3>Programming Languages</h3>
-          <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>C++</li>
-            <li>HTML & CSS</li>
 
-          </ul>
-        </section>
+          <h3> Tools & Technologies</h3>
 
-        <section className="tools-section">
-          <h3>Tools & Technologies</h3>
-          <ul>
-            <li>Mention relevant tools, like Git, Docker, CI/CD pipelines, etc.</li>
-
-          </ul>
-        </section>
-
-        <section className="hardware-section">
           <h3>Hardware</h3>
-          <ul>
-            <li>PC Workstation</li>
-            <li>MacBook Pro</li>
-            <li>Raspberry Pi</li>
-            <li>Arduino</li>
-            {/* Add other hardware here */}
-          </ul>
         </section>
-      </section>
 
+
+        <section className='skills'>
+
+          <section className="programming-section">
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>C++</li>
+              <li>HTML & CSS</li>
+            </ul>
+          </section>
+
+          <section className="tools-section">
+            <ul>
+              <li>Mention relevant tools, like Git, Docker, CI/CD pipelines, etc.</li>
+            </ul>
+          </section>
+
+          <section className="hardware-section">
+
+            <ul>
+              <li>PC Workstation</li>
+              <li>MacBook Pro</li>
+              <li>Raspberry Pi</li>
+              <li>Arduino</li>
+            </ul>
+          </section>
+        </section>
+
+
+      </section>
       <section className="education-section">
         <h3 className='resumeHeaders'>Education</h3>
         <ul>
@@ -91,7 +101,30 @@ const Resume = () => {
       <section className="hobbies-section">
         <h3 className='resumeHeaders'>Interests and Hobbies</h3>
         <ul>
-          <li>Personal Interests: Shows personality and creates a connection beyond your technical skills.</li>
+          <li>Personal Interests: Shoasdfffffffffffff
+            asdffffffffffff
+            asdffffffffffff
+            asdf
+            asdf
+            asdf
+            asdfasdfffffffffff
+            asdf
+            asdfasdf
+            asdf
+            asdf
+            asdf
+            asdfadsf
+            
+            asdf
+            asdf
+            asdfasd
+            fasdf
+            asdf
+            asdf
+            
+            asdf
+            asdf
+            asdfws personality and creates a connection beyond your technical skills.</li>
         </ul>
       </section>
 
