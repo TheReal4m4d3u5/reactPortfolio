@@ -44,3 +44,10 @@
 .push {
   height: 50px;
 }
+
+.footer{
+    height: 50px;
+    margin-top: -50px;
+    position: fixed;
+    bottom: 0;
+}

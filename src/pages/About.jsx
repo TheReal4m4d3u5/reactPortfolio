@@ -5,22 +5,24 @@ import '../styles/aboutStyles.css';
 
 
 const About = () => {
-    return (
-      <section id="about" className="container mt-5 about-page">
- <div class="content">
+  return (
+
+    <section id="about" className="container mt-5 about-page">
+      <img src={profilePhoto} alt="Profile" className="profile-photo mb-4" />
+      <div class="content">
+
         <div className="about">
           <div className="col-md-4 text-center">
-            <img src={profilePhoto} alt="Profile" className="profile-photo mb-4" />
           </div>
           <div className="col-md-8">
             <p>
-              Hi, I'm Avery Jacobson! I have been a senior software engineer as a SDET for 10 years. 
+              Hi, I'm Avery Jacobson! I have been a senior software engineer as a SDET for 10 years.
             </p>
           </div>
         </div>
-        </div>
-      </section>
-    );
-  };
-  
-  export default About;
+      </div>
+    </section>
+  );
+};
+
+export default About;
