@@ -1,62 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 .project-card img {
-    height: 200px;
-    /* Adjust to control image height */
-    object-fit: cover;
-    width: 500px;
+  height: 200px;
+
+  object-fit: cover;
+  width: 500px;
 }
 
 .project-card {
 
-    display: flex;
-    flex-direction: column;
-    color: white; 
-    text-shadow: 
-    -1px -1px 0 black,  /* Top-left */
-    1px -1px 0 black,   /* Top-right */
-    -1px 1px 0 black,   /* Bottom-left */
-    1px 1px 0 black;    /* Bottom-right */
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
 
-    margin-bottom: 20px;
-    justify-content: center;
+    1px -1px 0 black,
+ 
+    -1px 1px 0 black,
+ 
+    1px 1px 0 black;
+
+
+  margin-bottom: 20px;
+  justify-content: center;
 }
 
 .view-project-btn {
-    color: black; /* Text color */
-    background-color: transparent; /* Transparent background */
-    border: none; 
-  }
+  font-family: 'Roboto', sans-serif;
+  color: black;
 
-  .view-project-btn:hover {
-    text-decoration: none; 
-  }
+  border: none;
+}
 
-  .myCard{
-    color: white; 
-    text-shadow: 
-    -1px -1px 0 black,  /* Top-left */
-    1px -1px 0 black,   /* Top-right */
-    -1px 1px 0 black,   /* Bottom-left */
-    1px 1px 0 black;    /* Bottom-right */
-    
-  }
+.view-project-btn:hover {
+  text-decoration: none;
+}
+
+.myCard {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+    /* Top-left */
+    1px -1px 0 black,
+    /* Top-right */
+    -1px 1px 0 black,
+    /* Bottom-left */
+    1px 1px 0 black;
+  /* Bottom-right */
+  padding-bottom: 40px;
+}
 
 
-  .cardBody{
-    padding-top: 20px;
-  }
+.cardBody {
+  padding-top: 20px;
+}
 
-  .custom-btn {
-  
-    color: white; 
-    text-shadow: 
-    -1px -1px 0 black,  /* Top-left */
-    1px -1px 0 black,   /* Top-right */
-    -1px 1px 0 black,   /* Bottom-left */
-    1px 1px 0 black;    /* Bottom-right */
-  }
-  
- 
-  .custom-btn:hover {
-  
-    color: white; 
-  }
+.custom-btn {
+
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+    /* Top-left */
+    1px -1px 0 black,
+    /* Top-right */
+    -1px 1px 0 black,
+    /* Bottom-left */
+    1px 1px 0 black;
+  /* Bottom-right */
+}
+
+
+.custom-btn:hover {
+
+  color: white;
+}

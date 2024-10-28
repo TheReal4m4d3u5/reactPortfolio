@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
 .resume-page {
 
   background-image: url('./src/assets/background5.png'); 
@@ -5,6 +8,7 @@
   padding-top: 10px;
   margin: 0 auto;
   color: white; 
+  font-family: 'Roboto', sans-serif;
   text-shadow: 
   -1px -1px 0 black,  
   1px -1px 0 black,   

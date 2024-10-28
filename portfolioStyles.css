@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 .portfolio-page {
   display: flex;
   flex-direction: column; /* Ensures content is stacked vertically */
@@ -8,7 +10,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-
+  font-family: 'Roboto', sans-serif;
   color: white; 
   text-shadow: 
   -1px -1px 0 black,  
