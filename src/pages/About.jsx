@@ -9,7 +9,7 @@ const About = () => {
 
     <section id="about" className="container mt-5">
 
-      <div class="content">
+      <div className="content">
 
         <div className="about">
           <img src={profilePhoto} alt="Profile" className="profilePhoto mb-4" />

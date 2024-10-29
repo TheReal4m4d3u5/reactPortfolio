@@ -6,8 +6,8 @@ import image1 from '../../src/assets/image1.png'; // Correct import path and fil
 import image2 from '../../src/assets/image2.png'; // Correct import path and file extension
 import image3 from '../../src/assets/image3.png'; // Correct import path and file extension
 import image4 from '../../src/assets/image4.png'; // Correct import path and file extension
-import image5 from '../../src/assets/image4.png'; // Correct import path and file extension
-import image6 from '../../src/assets/image4.png'; // Correct import path and file extension
+import image5 from '../../src/assets/image5.png'; // Correct import path and file extension
+import image6 from '../../src/assets/image6.png'; // Correct import path and file extension
 
 const projects = [
   {
@@ -25,25 +25,26 @@ const projects = [
   {
     title: 'Employee Database',
     description: 'A database management system for employee records.',
-    image: image2,
+    image: image3,
     link: 'https://github.com/TheReal4m4d3u5/EmployeeDB',
   },
   {
     title: 'Vehicle App',
     description: 'An interactive vehicle selection and customization app.',
-    image: image2,
+    image: image4,
     link: 'https://github.com/TheReal4m4d3u5/Create-Vehicle',
   },
   {
-    title: 'Task Manager',
-    image: image2,
-    link: 'https://github.com/TheReal4m4d3u5/TaskManager',
+    title: 'Readme Generator',
+    description: 'A app that generates a readme.md',
+    image: image5,
+    link: 'https://github.com/TheReal4m4d3u5/Readme-Generator',
   },
   {
-    title: 'Recipe Finder',
-    description: 'An app to find and organize recipes by ingredients.',
-    image: image2,
-    link: 'https://github.com/TheReal4m4d3u5/RecipeFinder',
+    title: 'React Profile',
+    description: 'A vite and react application that generates a web profile',
+    image: image6,
+    link: 'https://github.com/TheReal4m4d3u5/reactPortfolio',
   }
 ];
 

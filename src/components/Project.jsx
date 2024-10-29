@@ -15,10 +15,10 @@ const Project = ({ title, description, image, link }) => {
         <a
   role="button"
   tabindex="0"
-  href="https://github.com/TheReal4m4d3u5/soundBoard"
+  href=""
   target="_blank"
   rel="noopener noreferrer"
-  class="mt-auto btn btn-primary custom-btn"
+  className="mt-auto btn btn-primary custom-btn"
 >
   View Project
 </a>
