@@ -4,8 +4,8 @@ import '../styles/footerStyles.css';
 
 const Footer = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="w-100 footer" style={{ width: '100%' }}>
-      <section className="links">
+    <Navbar bg="dark" variant="dark" expand="lg" className="footerBar">
+      <section className="footer-links">
         <div className="linkedin">
           <a href="https://www.linkedin.com/in/avery-jacobson-aa36225a/" target="_blank" rel="noopener noreferrer" className="link-button">
             LinkedIn

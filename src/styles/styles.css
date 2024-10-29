@@ -1,144 +1,51 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 
-  #root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  .main-content {
-    flex: 1;
-    padding: 2rem;
-  }
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-content {
+  padding: 0;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  min-height: 100%;
+}
+
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
 
 
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
 
-
-.about-page {
-    padding: 2rem;
-  }
-  
-  .profile-photo {
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Ensures a circular shape */
-    border-radius: 50%; /* Makes the photo circular */
-    object-fit: cover; /* Keeps the image aspect ratio */
-  }
-  
-  .about-page h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .about-page p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-
-  }
-  .about-page, #about {
-    padding: 0 !important;
-    margin: 0;
-  }
-
-  .nav-link.active {
-    color: #ffffff !important; /* Adjust color as needed */
-    font-weight: bold;
-    border-bottom: 2px solid #ffffff; /* Optional underline for active link */
-  }
-
-  .navbar-dark {
-    background-color: #000000 !important; /* Ensures navbar is black */
-    border-bottom: 2px solid #333; /* Optional border for styling */
-  }
-
-  .about-page, #about {
-    background-image: url('/src/assets/background1.png'); /* Adjust path as needed */
-    background-size: cover; /* Ensures the image covers the container */
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh; /* Ensures it covers the full viewport height */
-    color: white; /* Adjust text color for contrast */
-  }
-
-  .about-page h2, #about h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .main-content {
-    padding: 0;
-  }
-
-  .navbar-dark {
-    background-color: #000000 !important;
-  }
-  
-  .navbar-collapse {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .navbar-dark .navbar-collapse {
-    display: flex !important;
-    align-items: center; /* Vertically centers nav items with brand name */
-  }
-  
-  .navbar-dark .nav-link {
-    margin-left: 1rem; /* Adds spacing between each nav link */
-  }
-
-  .navbar-dark .navbar-brand {
-    color: white !important; /* Ensures the text stays white */
-  }
-
-  .navbar {
-    display: flex;
-  }
-  
-  .navbar-brand, .navbar-nav {
-    align-items: center;
-  }
-  
-  .navbar-collapse {
-    flex-grow: 0;
-  }
-
-  .navbar {
-    width: 100vw; /* Full viewport width */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-  .content {
-    min-height: 100%;
-  }
-  .content-inside {
-    padding: 20px;
-    padding-bottom: 50px;
-  }
-  .footer {
-    height: 50px;
-    margin-top: -50px;
-    position: fixed; 
-    bottom:0;
-  }
-
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
 

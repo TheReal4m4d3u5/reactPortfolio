@@ -3,7 +3,6 @@
 
 #aboutPage {
   padding-top: 2rem;
-
   background-color: #f9f9f9;
   padding-top: 50px;
 }
@@ -21,19 +20,9 @@
   border: 5px solid #fff; 
 }
 
-
-
 .push {
   height: 50px;
 }
-
-.toolsHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
 
 .aboutRowText {
   padding-left: 30px;
@@ -51,8 +40,11 @@
 }
 
 .about {
+  display: flex;
+
   padding-left: 50px;
   padding-top: 50px;
+  padding-bottom: 75px;
   padding-right: 400px;
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
@@ -80,31 +72,9 @@
 }
 
 
-.coreSkills {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.skills {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.tools-section {
-  padding-left: 200px;
-  padding-right: 150px;
-}
-
-.hobbies-section {
-  padding-bottom: 150px;
-}
-
-.toolsHeader {
-  padding-right: 75px;
-}
-
-.hardware-section {
-  padding-left: 50px;
+@media screen and (max-width: 500px) {
+  .about {
+    padding-right: 0px;
+    flex-wrap: wrap;
+  }
 }

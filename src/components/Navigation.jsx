@@ -31,7 +31,7 @@ const Navigation = ({ activePage }) => {
 
 
   return (
-    <Container className="my-5">
+    <Container className>
       {renderSection()}
     </Container>
   );

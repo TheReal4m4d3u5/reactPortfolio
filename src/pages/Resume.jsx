@@ -14,7 +14,6 @@ const Resume = () => {
         </a>
       </div>
 
-
       <section className="professional-section">
 
         <h3 className='resumeHeaders'>Professional Summary</h3>
@@ -91,11 +90,9 @@ const Resume = () => {
 
       <section className="contact-section">
         <h3 className='resumeHeaders'>Contact</h3>
-        <ul>
           <li>Email Address: averyajacobson@gmail.com</li>
           <li>Phone Number: 952-594-9290</li>
           <li>Location: Minneapolis Minnesota or Remote</li>
-        </ul>
       </section>
 
       <section className="hobbies-section">

@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="lg" className="header" style={{ width: '100%' }}>
+      <Navbar bg="dark" variant="dark" expand="lg" className="header" >
 
         <section className="headerName">
           <div >

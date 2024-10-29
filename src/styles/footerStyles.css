@@ -1,15 +1,38 @@
 .github {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
-.footer,
-.push {
+
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
   height: 50px;
+  margin-top: 70px;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 10px;
+  gap: px;
 }
 
 .footer{
-    height: 50px;
-    margin-top: -50px;
-    position: fixed;
-    bottom: 0;
+height: 80px;
+
+}
+
+.footerBar {
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+@media screen and (max-width: 440px) {
+  .footerBar {
+   gap: 0;
+  
+  }
 }
