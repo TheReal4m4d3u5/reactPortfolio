@@ -18,7 +18,7 @@ const Header = () => {
 
         <section className="headerName">
           <div >
-       
+            Avery Jacobson
           </div>
         </section>
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">

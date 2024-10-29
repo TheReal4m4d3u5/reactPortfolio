@@ -1,43 +1,5 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;
-    /* Black background for header */
-    padding: 10px 20px;
-    /* Adds padding to left and right */
-    width: 100%;
-}
-
-.headerName {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.headerLinks {
-    display: flex;
-    gap: 20px;
-    margin-left: auto;
-    padding-right: 30px;
-}
-
-.headerLinks .nav-link {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.headerLinks .nav-link:hover {
-    text-decoration: underline;
-}
-
 .github {
     padding-right: 20px;
-}
-
-.headerName {
-    padding-left: 20px;
 }
 
 .footer,
