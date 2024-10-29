@@ -9,10 +9,13 @@
   justify-content: space-around;
   height: 50px;
   margin-top: 70px;
+  margin-bottom: 0px;
   position: fixed;
   bottom: 0;
   margin-bottom: 10px;
   gap: px;
+  width: 100vw;
+  background-color: black;
 }
 
 .footer{
@@ -24,10 +27,10 @@ height: 80px;
   display: flex;
   justify-content: space-around;
   height: 70px;
-  position: fixed;
   bottom: 0;
   flex-wrap: wrap;
   gap: 50px;
+  background-color: black;
 }
 
 @media screen and (max-width: 440px) {

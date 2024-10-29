@@ -13,7 +13,7 @@ function App() {
         {/* Add main content like About, Portfolio, etc. */}
         
       </div>
-      
+     
       </div>
       <Footer class="footer"/>
     </div>
