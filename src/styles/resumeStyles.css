@@ -8,12 +8,14 @@
   padding-top: 10px;
   margin: 0 auto;
   color: white; 
+  height: 100%;
   font-family: 'Roboto', sans-serif;
   text-shadow: 
   -1px -1px 0 black,  
   1px -1px 0 black,   
   -1px 1px 0 black,   
   1px 1px 0 black;    
+  font-size: 2rem;
   font-weight: bold; 
   font-family: Arial, sans-serif;
   margin-left: 0px;
@@ -83,3 +85,13 @@
   margin-top: 0px;
 
 }
+
+
+.professinalText{
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+}
+
+

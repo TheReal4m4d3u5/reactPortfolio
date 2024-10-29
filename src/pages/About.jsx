@@ -7,7 +7,7 @@ import '../styles/aboutStyles.css';
 const About = () => {
   return (
 
-    <section id="about" className="container mt-5 about-page">
+    <section id="about" className="container mt-5">
 
       <div class="content">
 

@@ -14,8 +14,10 @@
 }
 
 .profile-photo {
-  width: 175px; /* Adjust as needed */
-  height: 175px; /* Adjust as needed */
+  width: 175px;
+  /* Adjust as needed */
+  height: 175px;
+  /* Adjust as needed */
   border-radius: 50%;
   margin-bottom: 1rem;
 }
@@ -24,7 +26,7 @@
   height: 50px;
 }
 
-.toolsHeader{
+.toolsHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,63 +34,77 @@
 }
 
 
-.aboutRowText{
+.aboutRowText {
   padding-left: 30px;
 
   font-size: 50px;
-  color: #000; /* Change color as needed */
+  color: #000;
+  /* Change color as needed */
 }
 
-.aboutRows{
+.aboutRows {
 
   padding-left: 50px;
   padding-bottom: 10px;
   padding-bottom: 0px;
 }
 
-.about{
+.about {
+
   padding-top: 30px;
   padding-left: 30px;
   font-family: 'Roboto', sans-serif;
-  color: white; 
-  text-shadow: 
-  -1px -1px 0 black,  /* Top-left */
-  1px -1px 0 black,   /* Top-right */
-  -1px 1px 0 black,   /* Bottom-left */
-  1px 1px 0 black;    /* Bottom-right */
+  font-size: 3rem;
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+    /* Top-left */
+    1px -1px 0 black,
+    /* Top-right */
+    -1px 1px 0 black,
+    /* Bottom-left */
+    1px 1px 0 black;
+  /* Bottom-right */
+  display: flex;
+  align-items: center;
+
+  background-image: url('/src/assets/background1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  /* Full viewport height */
+  color: white;
+
+  box-sizing: border-box;
 }
 
 
-.coreSkills{
-
+.coreSkills {
   display: flex;
-
   justify-content: center;
-
   width: 100%;
 }
 
-.skills{
+.skills {
   display: flex;
-
   justify-content: center;
-
   width: 100%;
 }
 
-.tools-section{
+.tools-section {
   padding-left: 200px;
   padding-right: 150px;
 }
 
-.hobbies-section{
+.hobbies-section {
   padding-bottom: 150px;
 }
 
-.toolsHeader{
+.toolsHeader {
   padding-right: 75px;
 }
 
-.hardware-section{
+.hardware-section {
   padding-left: 50px;
 }

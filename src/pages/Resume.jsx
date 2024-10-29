@@ -1,11 +1,13 @@
 import React from 'react';
 import '../styles/resumeStyles.css';
+import resume from '../assets/AveryJacobson.pdf'  
 
 const Resume = () => {
   return (
     <div className="resume-page">
       <div className="resumeLinks">
-        <a href="/path/to/your-resume.pdf" download="Avery_Jacobson_Resume.pdf" className="link-button">
+        <a href={resume} download="Avery_Jacobson_Resume.pdf" className="link-button">
+
           Resume
         </a>
         <a href="https://www.linkedin.com/in/avery-jacobson-aa36225a/" target="_blank" rel="noopener noreferrer" className="link-button">
@@ -17,12 +19,10 @@ const Resume = () => {
       <section className="professional-section">
 
         <h3 className='resumeHeaders'>Professional Summary</h3>
-        <ul>
-          <li>Brief Overview: A short paragraph (2-3 sentences) about who you are professionally.</li>
-          <li>Highlight Skills: Mention your core skills and areas of expertise.
-          </li>
-          <li>Career Goals: Briefly describe what you're looking to achieve in your career.</li>
-        </ul>
+        <section className='professinalText'>
+          <p>I have worked as a senior software engineer as a SDET for the last 10 years</p>
+
+        </section>
       </section>
 
 
@@ -54,7 +54,7 @@ const Resume = () => {
 
           <section className="tools-section">
             <ul>
-              <li>Mention relevant tools, like Git, Docker, CI/CD pipelines, etc.</li>
+              <li>Git, CI/CD pipelines</li>
             </ul>
           </section>
 
@@ -74,9 +74,11 @@ const Resume = () => {
       <section className="education-section">
         <h3 className='resumeHeaders'>Education</h3>
         <ul>
-          <li>Formal Education: University degrees or technical school diplomas.</li>
-          <li>Certifications: List relevant certifications like "Certified AWS Developer," "Google Analytics Certified," or courses completed on platforms like Coursera or Udacity.</li>
-          <li>Ongoing Learning: Mention any courses you're currently taking to improve your skills.</li>
+          <li>Associates from IIT Tech in computer science</li>
+          <li>Associates from Normandale Community college in computer science</li>
+          <li>Associates from Normandale Community college in Foundations of Engineering in Electrical Engineering</li>
+          <li>Certifications: SQL certificate from Normandale, Developer Certificate from the University of Minnesota Coursera or Udacity.</li>
+          <li>Ongoing Learning: Taking classes at Metro State in Computer Science.</li>
         </ul>
       </section>
 
@@ -84,47 +86,23 @@ const Resume = () => {
       <section className="professional-section">
         <h3 className='resumeHeaders'>Professoinal Experience</h3>
         <ul>
-          <li>Work History: List previous roles, including job title, company name, and dates of employment.</li>
-          <li>Responsibilities & Achievements: Summarize what you achieved or contributed in each role (focus on measurable outcomes if possible).</li>
+          <li>Worked the last four years as a senior software Engineer for Wells Fargo as a sdet</li>
         </ul>
       </section>
 
       <section className="contact-section">
         <h3 className='resumeHeaders'>Contact</h3>
         <ul>
-          <li>Email Address: An easy way for potential collaborators or employers to reach out.</li>
-          <li>Phone Number: Optional, but many prefer it for direct communication.</li>
-          <li>Location: General area (e.g., "San Francisco Bay Area" or "Remote").</li>
+          <li>Email Address: averyajacobson@gmail.com</li>
+          <li>Phone Number: 952-594-9290</li>
+          <li>Location: Minneapolis Minnesota or Remote</li>
         </ul>
       </section>
 
       <section className="hobbies-section">
         <h3 className='resumeHeaders'>Interests and Hobbies</h3>
         <ul>
-          <li>Personal Interests: Shoasdfffffffffffff
-            asdffffffffffff
-            asdffffffffffff
-            asdf
-            asdf
-            asdf
-            asdfasdfffffffffff
-            asdf
-            asdfasdf
-            asdf
-            asdf
-            asdf
-            asdfadsf
-            
-            asdf
-            asdf
-            asdfasd
-            fasdf
-            asdf
-            asdf
-            
-            asdf
-            asdf
-            asdfws personality and creates a connection beyond your technical skills.</li>
+          <li>I like to play guitar and walk my dog.</li>
         </ul>
       </section>
 

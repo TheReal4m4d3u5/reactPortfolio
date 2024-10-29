@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+
 .portfolio-page {
-  display: flex;
-  flex-direction: column; /* Ensures content is stacked vertically */
-  align-items: center;
-  justify-content: center;
-  background-image: url('/src/assets/background2.png'); /* Adjust path as needed */
+
+  background-image: url('/src/assets/background2.png'); 
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 100vh;
+}
 
+
+.portfolio-Header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
   font-family: 'Roboto', sans-serif;
   color: white; 
   text-shadow: 
@@ -17,14 +23,58 @@
   1px -1px 0 black,   
   -1px 1px 0 black,   
   1px 1px 0 black;    
-  padding: 0px 0; 
-  text-align: center;
+
 }
 
 .portfolioCards{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
-  flex-direction: column; /* Ensures content is stacked vertically */
-  align-items: center;
-  color: black;
+.portfolioCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+
+
+
+.project-card {
+
+  max-width: 300px; 
+  min-width: 350px; 
+  min-height: 250px; 
+
+  color: #fff;
+
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.project-card {
+  flex: 1 1 calc(33.333% - 40px); /* Three cards per row with space for gap */
+  max-width: 300px; /* Ensure cards don't exceed a certain width */
+  min-width: 250px;
+  height: 100%; /* Make sure each card takes up the full height */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.cards{
+  height: 100%;
 }
