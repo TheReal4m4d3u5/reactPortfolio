@@ -1,22 +1,20 @@
 import React from 'react';
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import { Outlet } from 'react-router-dom';
 import './styles/styles.css';
-
 
 function App() {
   return (
-    <div id="root">
+    <>
       <div className="wrapper">
-      <Header />
-      <div className="main-content">
-        {/* Add main content like About, Portfolio, etc. */}
-        
+        <Header />
+   
+          <Outlet />
+  
+        <Footer class="footer" />
       </div>
-     
-      </div>
-      <Footer class="footer"/>
-    </div>
+    </>
   );
 }
 

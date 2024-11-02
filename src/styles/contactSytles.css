@@ -3,9 +3,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+
     /* Full viewport height */
-    color: white;
+
     font-family: 'Roboto', sans-serif;
     padding: 0;
     box-sizing: border-box;
@@ -83,8 +83,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    padding: 20px;
+
+    padding: 100px;
     box-sizing: border-box;
 }
 

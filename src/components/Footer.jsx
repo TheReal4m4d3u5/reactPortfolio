@@ -4,7 +4,7 @@ import '../styles/footerStyles.css';
 
 const Footer = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="footerBar">
+
       <section className="footer-links">
         <div className="linkedin">
           <a href="https://www.linkedin.com/in/avery-jacobson-aa36225a/" target="_blank" rel="noopener noreferrer" className="link-button">
@@ -17,7 +17,7 @@ const Footer = () => {
           </a>
         </div>
       </section>
-    </Navbar>
+
   );
 };
 

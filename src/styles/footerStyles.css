@@ -1,4 +1,12 @@
 .github {
+  display: flex;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.linkedin {
+  display: flex;
+  justify-content: center;
   padding-right: 20px;
 }
 
@@ -7,8 +15,8 @@
 .footer-links {
   display: flex;
   justify-content: space-around;
-  height: 50px;
-  margin-top: 70px;
+  height: 75px;
+
   margin-bottom: 0px;
   position: fixed;
   bottom: 0;

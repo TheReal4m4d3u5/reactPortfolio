@@ -51,6 +51,7 @@ const projects = [
 const Portfolio = () => {
   return (
 
+
     <Container className="portfolio-page">
       <section className="portfolio-Header">
         <h2 className="mb-4">My Portfolio</h2>
@@ -62,19 +63,20 @@ const Portfolio = () => {
         {projects.map((project, index) => (
 
           <Col key={index} sm={12} md={6} lg={4} className='cards'>
-       
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                link={project.link}
-              />
-   
+
+            <Project
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              link={project.link}
+            />
+
           </Col>
 
         ))}
       </Row>
     </Container>
+
   );
 };
 

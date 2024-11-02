@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState } from 'react';
 import '../styles/contactSytles.css';
 
 
@@ -27,7 +27,11 @@ function Contact() {
 
 
   return (
+
+
+
     <div className="contact-page">
+      <section className='contact-page-content'>
       <div className="contact-heading">
         <h2>Contact Me</h2>
         <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
@@ -68,7 +72,9 @@ function Contact() {
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
+      </section>
     </div>
+
   );
 }
 

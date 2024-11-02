@@ -2,7 +2,6 @@
 
 
 .resume-page {
-
   background-image: url('/src/assets/background5.png'); 
   padding: 40px;
   padding-top: 10px;
@@ -26,7 +25,6 @@
   background-attachment: fixed; /* Keeps the image fixed on scroll */
   flex-wrap: wrap;
 }
-
 
 
 .resume-page h2 {

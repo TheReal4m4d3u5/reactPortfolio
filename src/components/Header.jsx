@@ -21,7 +21,7 @@ const Header = () => {
             Avery Jacobson
           </div>
         </section>
-          <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        {/* <Navbar.Collapse >
             <Nav className="headerLinks">
               <Nav.Link href="#about" onClick={() => setActiveSection('about')} className={currentPage === 'about' ? 'active' : ''}>
                 About Me
@@ -36,13 +36,18 @@ const Header = () => {
                 Resume
               </Nav.Link>
             </Nav>
-          </Navbar.Collapse>
+          </Navbar.Collapse> */}
+
+        <section id="basic-navbar-nav"  className="headerName justify-content-end headerLinks">
+          <div >
+            <Navigation className="" activePage={currentPage} />
+          </div>
+        </section>
 
 
-       
       </Navbar>
 
-      <Navigation activePage={currentPage} />
+
     </>
   );
 };

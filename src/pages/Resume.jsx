@@ -1,9 +1,11 @@
 import React from 'react';
 import '../styles/resumeStyles.css';
-import resume from '../assets/AveryJacobson.pdf'  
+import resume from '../assets/AveryJacobson.pdf'
 
 const Resume = () => {
   return (
+
+
     <div className="resume-page">
       <div className="resumeLinks">
         <a href={resume} download="Avery_Jacobson_Resume.pdf" className="link-button">
@@ -22,7 +24,6 @@ const Resume = () => {
 
         </section>
       </section>
-
 
       <section className='allSkills'>
 
@@ -90,9 +91,9 @@ const Resume = () => {
 
       <section className="contact-section">
         <h3 className='resumeHeaders'>Contact</h3>
-          <li>Email Address: averyajacobson@gmail.com</li>
-          <li>Phone Number: 952-594-9290</li>
-          <li>Location: Minneapolis Minnesota or Remote</li>
+        <li>Email Address: averyajacobson@gmail.com</li>
+        <li>Phone Number: 952-594-9290</li>
+        <li>Location: Minneapolis Minnesota or Remote</li>
       </section>
 
       <section className="hobbies-section">
