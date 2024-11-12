@@ -16,36 +16,19 @@ const Header = () => {
     <>
       <Navbar bg="dark" variant="dark" expand="lg" className="header" >
 
-        <section className="headerName">
-          <div >
-            Avery Jacobson
-          </div>
-        </section>
-        {/* <Navbar.Collapse >
-            <Nav className="headerLinks">
-              <Nav.Link href="#about" onClick={() => setActiveSection('about')} className={currentPage === 'about' ? 'active' : ''}>
-                About Me
-              </Nav.Link>
-              <Nav.Link href="#portfolio" onClick={() => setActiveSection('portfolio')} className={currentPage === 'portfolio' ? 'active' : ''}>
-                Portfolio
-              </Nav.Link>
-              <Nav.Link href="#contact" onClick={() => setActiveSection('contact')} className={currentPage === 'contact' ? 'active' : ''}>
-                Contact
-              </Nav.Link>
-              <Nav.Link href="#resume" onClick={() => setActiveSection('resume')} className={currentPage === 'resume' ? 'active' : ''}>
-                Resume
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse> */}
+        <Navbar.Brand href="#home" className="headerName">
+          Avery Jacobson
 
-        <section id="basic-navbar-nav"  className="headerName justify-content-end headerLinks">
-          <div >
+        </Navbar.Brand>
+
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+      
             <Navigation className="" activePage={currentPage} />
-          </div>
-        </section>
+  
+        </Navbar.Collapse>
 
 
-      </Navbar>
+      </Navbar >
 
 
     </>

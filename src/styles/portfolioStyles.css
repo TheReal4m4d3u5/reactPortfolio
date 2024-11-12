@@ -2,12 +2,15 @@
 
 
 .portfolio-page {
+  height: 100%;
+}
 
+.portfolio-Wraper{
   background-image: url('/src/assets/background2.png'); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
+  height: 100%;
 }
 
 
@@ -76,4 +79,10 @@
 
 .cards{
   height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .portfolio-Wraper {
+    height: unset;
+  }
 }

@@ -8,6 +8,8 @@ import image3 from '../../src/assets/image3.png'; // Correct import path and fil
 import image4 from '../../src/assets/image4.png'; // Correct import path and file extension
 import image5 from '../../src/assets/image5.png'; // Correct import path and file extension
 import image6 from '../../src/assets/image6.png'; // Correct import path and file extension
+import image7 from '../../src/assets/movieSearch.png';
+import image8 from '../../src/assets/candidateSearch.png';
 
 const projects = [
   {
@@ -21,6 +23,24 @@ const projects = [
     description: 'A custom-built full-stack weather app.',
     image: image2,
     link: 'https://github.com/TheReal4m4d3u5/WeatherAPP',
+  },
+  {
+    title: 'Movie Search',
+    description: 'Searches a databas for movies and to add them to a watch or seen list.',
+    image: image7,
+    link: 'https://github.com/TheReal4m4d3u5/movieSearch',
+  },
+  {
+    title: 'Candidate Search',
+    description: 'Fetches a querry to githubs API key for potential candidates and alows the user to save them in a potenitial candidate search',
+    image: image8,
+    link: 'https://github.com/TheReal4m4d3u5/candidateSearch',
+  },
+  {
+    title: 'Bucket Checklist',
+    description: 'Alows user to create a checklist ranking them by priority and alows the user to check them off when completed',
+    image: image3,
+    link: 'https://github.com/TheReal4m4d3u5/bucketList',
   },
   {
     title: 'Employee Database',
@@ -46,36 +66,39 @@ const projects = [
     image: image6,
     link: 'https://github.com/TheReal4m4d3u5/reactPortfolio',
   }
+
 ];
 
 const Portfolio = () => {
   return (
 
 
-    <Container className="portfolio-page">
-      <section className="portfolio-Header">
-        <h2 className="mb-4">My Portfolio</h2>
+    <div className="portfolio-page">
+
+      <section className="portfolio-Wraper">
+        <section className="portfolio-Header">
+          <h2 className="mb-4">My Portfolio</h2>
+        </section>
+
+
+        <Row className="portfolioCards">
+          {projects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                link={project.link}
+              />
+
+            </Col>
+
+          ))}
+        </Row>
       </section>
-
-
-
-      <Row className="portfolioCards">
-        {projects.map((project, index) => (
-
-          <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
-            <Project
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              link={project.link}
-            />
-
-          </Col>
-
-        ))}
-      </Row>
-    </Container>
+    </div>
 
   );
 };

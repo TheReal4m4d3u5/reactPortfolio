@@ -182,6 +182,7 @@
   .resume-page {
    gap: 0;
    padding: 15px;
+   height: unset;
   }
 }
 
@@ -190,9 +191,3 @@
     font-size: 1.1rem;
   }
 }
-
-
-
-
-
-
