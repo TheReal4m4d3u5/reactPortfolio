@@ -5,51 +5,44 @@
   height: 100%;
 }
 
-.portfolio-Wraper{
+.portfolio-Wraper {
   background: linear-gradient(to bottom,
-      #ffffff,
-      /* White */
-      #ffe5e5,
-      /* Very light red */
-      #ffcccc,
-      /* Light red */
-      #ffb2b2,
-      /* Soft pinkish red */
-      #ff9999,
-      /* Pinkish red */
-      #ff7f7f,
-      /* Muted red */
-      #ff6666,
-      /* Slightly deeper red */
-      #ff4c4c,
-      /* Medium red */
-      #ff3333,
-      /* Darker red */
-      #ff0000
-      /* Deep red */
-    );
-  background-repeat: no-repeat;
+      #ffd7eb, /* Very soft pink */
+      #ffc4e3, /* Light pastel pink */
+      #ffb1db, /* Soft pink */
+      #ff9fd3, /* Soft pink with a hint of lavender */
+      #ff8ccc, /* Pinkish lavender */
+      #e887c7, /* Slightly deeper pink-lavender */
+      #d17fc3, /* Muted lavender with pink */
+      #b775c2, /* Light purple-pink */
+      #a069be, /* Soft purple with pink tones */
+      #7a61d2, /* Muted blue-purple */
+      #5760d0 /* Darker purple with a hint more blue */
+  );
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100%;
+  background-attachment: fixed;
+  /* Keeps the image fixed on scroll */
+  flex-wrap: wrap;
 }
-
 
 .portfolio-Header {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  color: white; 
-  text-shadow: 
-  -1px -1px 0 black,  
-  1px -1px 0 black,   
-  -1px 1px 0 black,   
-  1px 1px 0 black;    
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 
 }
 
-.portfolioCards{
+.portfolioCards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -78,7 +71,7 @@
     1px 1px 0 black;
   /* Bottom-right */
 
-  text-shadow: 2px 2px 8px white; 
+  text-shadow: 2px 2px 8px white;
 }
 
 
@@ -90,9 +83,11 @@
   flex-direction: column;
 
 
-  flex: 1 1 calc(33.333% - 40px); /* Three cards per row with space for gap */
+  flex: 1 1 calc(33.333% - 40px);
+  /* Three cards per row with space for gap */
   min-width: 900px;
-  height: auto; /* Make sure each card takes up the full height */
+  height: auto;
+  /* Make sure each card takes up the full height */
   margin: 60px;
   gap: 20px;
   display: flex;
@@ -100,13 +95,13 @@
   min-height: 1400px;
 }
 
-.project-card img{
+.project-card img {
   min-height: 500px;
 }
 
 
 
-.cards{
+.cards {
   height: 100%;
 }
 
