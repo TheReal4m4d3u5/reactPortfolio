@@ -13,8 +13,8 @@
 }
 
 .profilePhoto {
-  width: 350px; /* Set a fixed width and height for the circle */
-  height: 350px;
+  width: 1250px; /* Set a fixed width and height for the circle */
+  height: 1250px;
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image fills the circle without distortion */
   border: 5px solid #fff; 
@@ -41,7 +41,11 @@
 }
 
 #about{
-  height: calc(100% - 175px);
+  height: 100%;
+  background-image: url('/src/assets/background1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .about {
@@ -50,7 +54,7 @@
   padding-left: 50px;
   padding-top: 50px; 
   /* padding-bottom: 75px; */
-  padding-right: 400px;
+  padding-right: 1200px;
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
   color: white;
@@ -65,10 +69,7 @@
   /* Bottom-right */
 
 
-  background-image: url('/src/assets/background1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
 
   /* Full viewport height */
   color: white;
@@ -77,8 +78,13 @@
 }
 
 .aboutText{
-  padding-top: 60px;
-  padding-left: 50px;
+  padding-top: 100px;
+  padding-left: 200px;
+  font-size: 18rem;
+  color: black;
+ 
+  text-shadow: 2px 2px 8px white; 
+
 }
 
 

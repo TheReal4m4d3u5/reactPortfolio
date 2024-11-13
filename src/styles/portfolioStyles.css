@@ -6,7 +6,28 @@
 }
 
 .portfolio-Wraper{
-  background-image: url('/src/assets/background2.png'); 
+  background: linear-gradient(to bottom,
+      #ffffff,
+      /* White */
+      #ffe5e5,
+      /* Very light red */
+      #ffcccc,
+      /* Light red */
+      #ffb2b2,
+      /* Soft pinkish red */
+      #ff9999,
+      /* Pinkish red */
+      #ff7f7f,
+      /* Muted red */
+      #ff6666,
+      /* Slightly deeper red */
+      #ff4c4c,
+      /* Medium red */
+      #ff3333,
+      /* Darker red */
+      #ff0000
+      /* Deep red */
+    );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -44,35 +65,43 @@
 }
 
 
+.custom-btn {
 
+  color: black;
+  text-shadow:
+    -1px -1px 0 black,
+    /* Top-left */
+    1px -1px 0 black,
+    /* Top-right */
+    -1px 1px 0 black,
+    /* Bottom-left */
+    1px 1px 0 black;
+  /* Bottom-right */
 
-
-.project-card {
-
-  max-width: 300px; 
-  min-width: 350px; 
-  min-height: 250px; 
-
-  color: #fff;
-
-  border-radius: 8px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  text-shadow: 2px 2px 8px white; 
 }
 
 
 .project-card {
-  flex: 1 1 calc(33.333% - 40px); /* Three cards per row with space for gap */
-  max-width: 300px; /* Ensure cards don't exceed a certain width */
-  min-width: 250px;
-  height: 100%; /* Make sure each card takes up the full height */
-  color: #fff;
-  padding: 20px;
+  color: black;
+  border-radius: 8px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
+
+  flex: 1 1 calc(33.333% - 40px); /* Three cards per row with space for gap */
+  min-width: 900px;
+  height: auto; /* Make sure each card takes up the full height */
+  margin: 60px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 1400px;
+}
+
+.project-card img{
+  min-height: 500px;
 }
 
 

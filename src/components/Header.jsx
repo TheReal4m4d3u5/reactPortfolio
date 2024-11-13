@@ -16,7 +16,7 @@ const Header = () => {
     <>
       <Navbar bg="dark" variant="dark" expand="lg" className="header" >
 
-        <Navbar.Brand href="#home" className="headerName">
+        <Navbar.Brand href="#home" className="headerName" >
           Avery Jacobson
 
         </Navbar.Brand>

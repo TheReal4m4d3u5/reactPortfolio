@@ -40,7 +40,7 @@
 
 .myCard {
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: black;
   text-shadow:
     -1px -1px 0 black,
     /* Top-left */
@@ -52,6 +52,8 @@
   /* Bottom-right */
   padding-bottom: 70px;
   padding-top: 20px;
+  font-size: 4rem;
+  text-shadow: 2px 2px 8px white; 
 }
 
 
@@ -59,19 +61,7 @@
   padding-top: 20px;
 }
 
-.custom-btn {
 
-  color: white;
-  text-shadow:
-    -1px -1px 0 black,
-    /* Top-left */
-    1px -1px 0 black,
-    /* Top-right */
-    -1px 1px 0 black,
-    /* Bottom-left */
-    1px 1px 0 black;
-  /* Bottom-right */
-}
 
 
 .custom-btn:hover {

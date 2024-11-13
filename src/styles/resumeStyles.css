@@ -2,34 +2,72 @@
 
 
 .resume-page {
-  background-image: url('/src/assets/background5.png'); 
-  padding: 40px;
-  padding-top: 10px;
+
   margin: 0 auto;
-  color: white; 
+  color: white;
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  text-shadow: 
-  -1px -1px 0 black,  
-  1px -1px 0 black,   
-  -1px 1px 0 black,   
-  1px 1px 0 black;    
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
   font-size: 2rem;
-  font-weight: bold; 
+  font-weight: bold;
   font-family: Arial, sans-serif;
+  color: #333;
   margin-left: 0px;
   margin-right: 0px;
+
+  /* background-image: url('/src/assets/background5.png');  */
+
+  background: linear-gradient(to bottom,
+      #ffffff,
+      /* White */
+      #ffe5e5,
+      /* Very light red */
+      #ffcccc,
+      /* Light red */
+      #ffb2b2,
+      /* Soft pinkish red */
+      #ff9999,
+      /* Pinkish red */
+      #ff7f7f,
+      /* Muted red */
+      #ff6666,
+      /* Slightly deeper red */
+      #ff4c4c,
+      /* Medium red */
+      #ff3333,
+      /* Darker red */
+      #ff0000
+      /* Deep red */
+    );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Keeps the image fixed on scroll */
+  height: 100%;
+  background-attachment: fixed;
+  /* Keeps the image fixed on scroll */
   flex-wrap: wrap;
+}
+
+.mainResumeContent {
+  color: #333;
+  height: 100vh;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 3rem;
+  line-height: 1.6;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
 }
 
 
 .resume-page h2 {
   margin: 0;
-  font-size: 2rem;
+
   text-align: center;
   margin-bottom: 20px;
   flex-wrap: wrap;
@@ -38,8 +76,8 @@
 
 .skills-section {
   display: flex;
-  justify-content: space-around; 
-  gap: 20px; 
+  justify-content: space-around;
+  gap: 20px;
   margin-top: 20px;
   flex-wrap: wrap;
 }
@@ -63,14 +101,14 @@
   margin-bottom: 5px;
 }
 
-.resumeHeaders{
+.resumeHeaders {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
 }
 
-.coreSkills{
+.coreSkills {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -78,50 +116,101 @@
 
 .resumeLinks {
   display: flex;
+  color: #333;
   justify-content: center;
   text-align: center;
   gap: 500px;
   margin-top: 0px;
-  font-size: 5rem;  
+  font-size: 5rem;
   flex-wrap: wrap;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+
 }
 
-.professinalText{
+.professinalText {
   justify-content: center;
   text-align: center;
   justify-content: center;
   text-align: center;
 }
 
-.link-button{
-  color: #fff; /* Text color */
-  font-size: 12rem; /* Increase font size for larger text */
-  padding: 15px 30px; /* Add more padding to enlarge button area */
+.professional-section {
+  border-radius: 8px;
 }
 
+.education-ection {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+}
 
 .link-button {
-  color: #ffffff;
+  font-size: 12rem;
+  /* Increase font size for larger text */
+  padding: 15px 30px;
+  /* Add more padding to enlarge button area */
+  color: #333;
   font-size: 2.8rem;
   font-weight: bold;
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s;
+  font-size: 6rem;
 }
 
-.toolsHeader{
+.footer-link-button {
+  color: white;
+  text-decoration: none;
+}
+
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  /* Aligns items to the left, center, and right */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.skill-item {
+  flex: 1;
+}
+
+.skill-item:nth-child(2) {
+  text-align: center;
+  /* Center the second item */
+}
+
+.skill-item:first-child {
+  text-align: left;
+  /* Left-align the first item */
+}
+
+.skill-item:last-child {
+  text-align: right;
+  /* Right-align the last item */
+}
+
+.toolsHeader {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.skills {
   flex-wrap: wrap;
 }
 
-.skills{
-  flex-wrap: wrap;
-}
+/* .programmingHeader{
+  justify-content: left;
+} */
 
-.contact-section{
+.contact-section {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 
@@ -134,10 +223,6 @@
   padding-bottom: 150px;
 }
 
-.toolsHeader {
-  padding-right: 75px;
-}
-
 .coreSkills {
   display: flex;
   justify-content: center;
@@ -145,12 +230,7 @@
 }
 
 
-.toolsHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
-}
 
 
 .skills {
@@ -163,8 +243,8 @@
 
 @media screen and (max-width: 998px) {
   .resumeLinks {
-   gap: 0;
-  
+    gap: 0;
+
   }
 }
 
@@ -172,22 +252,28 @@
 
 @media screen and (max-width: 700px) {
   .resumeLinks {
-   gap: 0;
-  
+    gap: 0;
+
   }
 }
 
 
 @media screen and (max-width: 700px) {
   .resume-page {
-   gap: 0;
-   padding: 15px;
-   height: unset;
+    gap: 0;
+    height: unset;
   }
 }
 
 @media screen and (max-width: 700px) {
   .contact-section {
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mainResumeContent {
+    height: unset;
+    padding-bottom: 100px;
   }
 }

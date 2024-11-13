@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import '../styles/contactSytles.css';
-
+import emailjs from 'emailjs-com';
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    from_name: '',  // Updated key to match the input name attribute
+    from_email: '', // Updated key to match the input name attribute
+    message: '',
+  });
 
   const [errors, setErrors] = useState({
     name: '',
@@ -24,57 +29,67 @@ function Contact() {
     }
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_kg0h8nr', 'template_xwxts6q', e.target, 'oJYn056XuORmYfCO8')
+      .then((result) => {
+        alert("Message Sent Successfully!");
+        setFormData({ name: '', email: '', message: '' }); // Clear form after submission
+      }, (error) => {
+        alert("An error occurred, please try again.");
+      });
+  };
 
   return (
-
-
-
     <div className="contact-page">
-      <section className='contact-page-content'>
-      <div className="contact-heading">
-        <h2>Contact Me</h2>
-        <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
-      </div>
-      <form>
-        <div className="mb-3">
-          <label htmlFor="name" className="form-label">Name</label>
+      <section className="contact-page-content">
+        <div className="contact-heading">
+          <h2>Contact Me</h2>
+          <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
+        </div>
+
+        <form className='contactForm' onSubmit={sendEmail}>
           <input
             type="text"
-            className="form-control"
-            id="name"
+            name="from_name"
             placeholder="Enter your name"
-            onBlur={(e) => handleBlur('name', e.target.value)}
+            value={formData.name}
+            onChange={handleChange}
+            onBlur={() => handleBlur('name', formData.name)}
+            required
           />
           {errors.name && <p className="error-message">{errors.name}</p>}
-        </div>
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">Email address</label>
+
           <input
             type="email"
-            className="form-control"
-            id="email"
-            placeholder="name@example.com"
-            onBlur={(e) => handleBlur('email', e.target.value)}
+            name="from_email"
+            placeholder="Enter your email"
+            value={formData.email}
+            onChange={handleChange}
+            onBlur={() => handleBlur('email', formData.email)}
+            required
           />
           {errors.email && <p className="error-message">{errors.email}</p>}
-        </div>
-        <div className="mb-3">
-          <label htmlFor="message" className="form-label">Message</label>
+
           <textarea
-            className="form-control"
-            id="message"
-            rows="4"
+            name="message"
             placeholder="Enter your message"
-            onBlur={(e) => handleBlur('message', e.target.value)}
-          ></textarea>
+            value={formData.message}
+            onChange={handleChange}
+            onBlur={() => handleBlur('message', formData.message)}
+            required
+          />
           {errors.message && <p className="error-message">{errors.message}</p>}
-        </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
-      </form>
+
+          <button type="submit">Send</button>
+        </form>
       </section>
     </div>
-
   );
 }
 

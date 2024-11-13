@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   padding-right: 20px;
+  text-align: center;
 }
 
 .linkedin {
@@ -15,17 +16,22 @@
 .footer-links {
   display: flex;
   justify-content: space-around;
-  height: 75px;
-
+  height: 175px;
   margin-bottom: 0px;
   position: fixed;
   bottom: 0;
   margin-bottom: 10px;
   gap: px;
-  width: 100vw;
+  width: 100%;
   background-color: black;
   margin-bottom: 0px;
+  text-align: center;
+  align-items: center;
+  font-size: 6rem;
+
 }
+
+
 
 .footer{
 height: 80px;

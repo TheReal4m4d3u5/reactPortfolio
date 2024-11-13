@@ -8,6 +8,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+import ErrorBoundary from './components/ErrorBoundary';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/Contact',
-        element: <Contact />,
+        element: (
+          <ErrorBoundary>
+            <Contact />
+          </ErrorBoundary>
+        ),
       },
       {
         path: '/Portfolio',
