@@ -16,25 +16,29 @@ const projects = [
     title: 'Sound Board',
     description: 'A soundboard created using HTML, CSS, JavaScript, and Bootstrap.',
     image: image1,
-    link: 'https://github.com/TheReal4m4d3u5/soundBoard',
+    gitLink: 'https://github.com/TheReal4m4d3u5/soundBoard',
+    deployed: 'https://beautiful-dusk-78e4ee.netlify.app/',
   },
   {
     title: 'Weather App',
     description: 'A custom-built full-stack weather app.',
     image: image2,
-    link: 'https://github.com/TheReal4m4d3u5/WeatherAPP',
+    gitLink: 'https://github.com/TheReal4m4d3u5/WeatherAPP',
+    deployed: 'https://weatherapp-ew0q.onrender.com',
   },
   {
     title: 'Movie Search',
     description: 'Searches a databas for movies and to add them to a watch or seen list.',
     image: image7,
-    link: 'https://github.com/TheReal4m4d3u5/movieSearch',
+    gitLink: 'https://github.com/TheReal4m4d3u5/movieSearch',
+    deployed: 'https://meek-cassata-691e1b.netlify.app/',
   },
   {
     title: 'Candidate Search',
     description: 'Fetches a querry to githubs API key for potential candidates and alows the user to save them in a potenitial candidate search',
     image: image8,
-    link: 'https://github.com/TheReal4m4d3u5/candidateSearch',
+    gitLink: 'https://github.com/TheReal4m4d3u5/candidateSearch',
+    deployed: 'https://funny-biscochitos-9e1673.netlify.app/',
   },
   {
     title: 'Bucket Checklist',
@@ -46,7 +50,8 @@ const projects = [
     title: 'Employee Database',
     description: 'A database management system for employee records.',
     image: image3,
-    link: 'https://github.com/TheReal4m4d3u5/EmployeeDB',
+    gitLink: 'https://github.com/TheReal4m4d3u5/EmployeeDB',
+    deployed: 'https://funny-biscochitos-9e1673.netlify.app/',
   },
   {
     title: 'Vehicle App',
@@ -90,7 +95,8 @@ const Portfolio = () => {
                 title={project.title}
                 description={project.description}
                 image={project.image}
-                link={project.link}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
               />
 
             </Col>

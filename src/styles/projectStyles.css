@@ -41,19 +41,12 @@
 .myCard {
   font-family: 'Roboto', sans-serif;
   color: black;
-  text-shadow:
-    -1px -1px 0 black,
-    /* Top-left */
-    1px -1px 0 black,
-    /* Top-right */
-    -1px 1px 0 black,
-    /* Bottom-left */
-    1px 1px 0 black;
-  /* Bottom-right */
+
+  text-shadow: 2px 2px 8px white; 
   padding-bottom: 70px;
   padding-top: 20px;
   font-size: 1.25rem;
-  text-shadow: 2px 2px 8px white; 
+
   width: 250px;
 }
 
@@ -70,13 +63,32 @@
   color: white;
 }
 
-/* Each card styling */
+.project-card img {
+  min-height: 200px;
+  min-width: 250px;
+}
+
+
 .project-card {
+  color: black;
+  border-radius: 8px;
+
+  flex: 1 1 calc(33.333% - 40px);
+
+  min-width: 100px;
+  height: auto;
+
+  margin: 30px; 
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 250px; 
+  max-width: 300px; 
   max-height: 250px; 
   width: 100%; 
 

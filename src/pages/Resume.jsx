@@ -32,7 +32,7 @@ const Resume = () => {
           <div class="skill-item">Programming Languages</div>
           <div class="skill-item">Tools & Technologies</div>
           <div class="skill-item">Hardware</div>
-        </div> 
+        </div>
 
 
 
@@ -60,9 +60,11 @@ const Resume = () => {
 
         <section className="contact-section">
           <h3 className='resumeHeaders'>Contact</h3>
-          <li>Email Address: averyajacobson@gmail.com</li>
-          <li>Phone Number: 952-594-9290</li>
-          <li>Location: Minneapolis Minnesota or Remote</li>
+          <div class="contactInfo">
+            <li>Email Address: averyajacobson@gmail.com</li>
+            <li>Phone Number: 952-594-9290</li>
+            <li>Location: Minneapolis Minnesota or Remote</li>
+          </div>
         </section>
 
         <section className="hobbies-section">
