@@ -16,7 +16,7 @@ const About = () => {
           <img src={profilePhoto} alt="Profile" className="profilePhoto mb-4" />
           <div className="col-md-4 text-center">
           </div>
-          <section>
+          <section className="aboutTextSection">
             <div className="aboutText">
 
               Hi, I'm Avery Jacobson! I have been a senior software engineer as a SDET for 10 years.

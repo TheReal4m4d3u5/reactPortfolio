@@ -32,7 +32,7 @@ const Resume = () => {
           <div class="skill-item">Programming Languages</div>
           <div class="skill-item">Tools & Technologies</div>
           <div class="skill-item">Hardware</div>
-        </div>
+        </div> 
 
 
 
@@ -42,8 +42,8 @@ const Resume = () => {
         <section className="education-ection">
           <h3 className='resumeeaders'>Education</h3>
           <ul>
-            <li>Associates from Normandale Community college in computer science</li>
-            <li>Associates from Normandale Community college in Foundations of Engineering in Electrical Engineering</li>
+            <li>Associates from Normandale Community College in Computer Science</li>
+            <li>Associates from Normandale Community College in Foundations of Engineering in Electrical Engineering</li>
             <li>Associates from ITT Tech in Computer Science</li>
             <li>Certifications: SQL certificate from Normandale, Developer Certificate from the University of Minnesota.</li>
             <li>Ongoing Learning: Taking classes at Metro State in Computer Science.</li>
@@ -67,9 +67,9 @@ const Resume = () => {
 
         <section className="hobbies-section">
           <h3 className='resumeHeaders'>Interests and Hobbies</h3>
-          <ul>
+          <div className="hobbiesText">
             <li>I like to play guitar and walk my dog.</li>
-          </ul>
+          </div>
         </section>
       </section>
 
