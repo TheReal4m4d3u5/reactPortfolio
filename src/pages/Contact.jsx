@@ -53,41 +53,43 @@ function Contact() {
           <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
         </div>
 
-        <form className='contactForm' onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="from_name"
-            placeholder="Enter your name"
-            value={formData.name}
-            onChange={handleChange}
-            onBlur={() => handleBlur('name', formData.name)}
-            required
-          />
-          {errors.name && <p className="error-message">{errors.name}</p>}
+        <section className="contactForm-Wrapper">
+          <form className='contactForm' onSubmit={sendEmail}>
+            <input
+              type="text"
+              name="from_name"
+              placeholder="Enter your name"
+              value={formData.name}
+              onChange={handleChange}
+              onBlur={() => handleBlur('name', formData.name)}
+              required
+            />
+            {errors.name && <p className="error-message">{errors.name}</p>}
 
-          <input
-            type="email"
-            name="from_email"
-            placeholder="Enter your email"
-            value={formData.email}
-            onChange={handleChange}
-            onBlur={() => handleBlur('email', formData.email)}
-            required
-          />
-          {errors.email && <p className="error-message">{errors.email}</p>}
+            <input
+              type="email"
+              name="from_email"
+              placeholder="Enter your email"
+              value={formData.email}
+              onChange={handleChange}
+              onBlur={() => handleBlur('email', formData.email)}
+              required
+            />
+            {errors.email && <p className="error-message">{errors.email}</p>}
 
-          <textarea
-            name="message"
-            placeholder="Enter your message"
-            value={formData.message}
-            onChange={handleChange}
-            onBlur={() => handleBlur('message', formData.message)}
-            required
-          />
-          {errors.message && <p className="error-message">{errors.message}</p>}
+            <textarea
+              name="message"
+              placeholder="Enter your message"
+              value={formData.message}
+              onChange={handleChange}
+              onBlur={() => handleBlur('message', formData.message)}
+              required
+            />
+            {errors.message && <p className="error-message">{errors.message}</p>}
 
-          <button type="submit">Send</button>
-        </form>
+            <button type="submit">Send</button>
+          </form>
+        </section>
       </section>
     </div>
   );

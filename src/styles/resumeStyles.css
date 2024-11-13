@@ -55,12 +55,12 @@
 }
 
 .mainResumeContent {
-  color: #333;
+  color: white;
   height: 100vh;
   padding-top: 50px;
   padding-left: 100px;
   padding-right: 100px;
-  font-size: 3rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   border-radius: 8px;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
@@ -118,12 +118,12 @@
 
 .resumeLinks {
   display: flex;
-  color: #333;
+  color: white;
   justify-content: center;
   text-align: center;
   gap: 500px;
   margin-top: 0px;
-  font-size: 5rem;
+  font-size: 1rem;
   flex-wrap: wrap;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
 
@@ -148,18 +148,18 @@
 }
 
 .link-button {
-  font-size: 12rem;
+  font-size: 1rem;
   /* Increase font size for larger text */
   padding: 15px 30px;
   /* Add more padding to enlarge button area */
-  color: #333;
+  color: white;
   font-size: 2.8rem;
   font-weight: bold;
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s;
-  font-size: 6rem;
+  font-size: 2.5rem;
 }
 
 .footer-link-button {

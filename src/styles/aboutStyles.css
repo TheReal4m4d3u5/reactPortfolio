@@ -13,8 +13,8 @@
 }
 
 .profilePhoto {
-  width: 1250px; /* Set a fixed width and height for the circle */
-  height: 1250px;
+  width: 250px; /* Set a fixed width and height for the circle */
+  height: 250px;
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image fills the circle without distortion */
   border: 5px solid #fff; 
@@ -54,7 +54,7 @@
   padding-left: 50px;
   padding-top: 50px; 
   /* padding-bottom: 75px; */
-  padding-right: 1200px;
+  padding-right: 400px;
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
   color: white;
@@ -80,7 +80,7 @@
 .aboutText{
   padding-top: 100px;
   padding-left: 200px;
-  font-size: 18rem;
+  font-size: 4rem;
   color: black;
  
   text-shadow: 2px 2px 8px white; 

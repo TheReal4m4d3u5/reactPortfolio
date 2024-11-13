@@ -85,18 +85,19 @@
 
   flex: 1 1 calc(33.333% - 40px);
   /* Three cards per row with space for gap */
-  min-width: 900px;
+  min-width: 100px;
   height: auto;
   /* Make sure each card takes up the full height */
   margin: 60px;
   gap: 20px;
   display: flex;
   flex-direction: column;
-  min-height: 1400px;
+  min-height: 400px;
 }
 
 .project-card img {
-  min-height: 500px;
+  min-height: 150px;
+  min-width: 150px;
 }
 
 

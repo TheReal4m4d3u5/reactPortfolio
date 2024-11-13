@@ -42,10 +42,10 @@ const Resume = () => {
         <section className="education-ection">
           <h3 className='resumeeaders'>Education</h3>
           <ul>
-            <li>Associates from IIT Tech in computer science</li>
             <li>Associates from Normandale Community college in computer science</li>
             <li>Associates from Normandale Community college in Foundations of Engineering in Electrical Engineering</li>
-            <li>Certifications: SQL certificate from Normandale, Developer Certificate from the University of Minnesota Coursera or Udacity.</li>
+            <li>Associates from ITT Tech in Computer Science</li>
+            <li>Certifications: SQL certificate from Normandale, Developer Certificate from the University of Minnesota.</li>
             <li>Ongoing Learning: Taking classes at Metro State in Computer Science.</li>
           </ul>
         </section>
