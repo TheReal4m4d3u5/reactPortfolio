@@ -23,7 +23,7 @@ const Resume = () => {
 
           <h3 className='resumeHeaders'>Professional Summary</h3>
           <section className='professinalText'>
-            <p>I have worked as a senior software engineer as a SDET for the last 10 years</p>
+            <p>Full Stack developer with 10 years as senior Software Development Engineer in Test (SDET).</p>
 
           </section>
         </section>

@@ -50,8 +50,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-
-
+  backdrop-filter: saturate(180%) blur(10px);
 }
 
 .about {
@@ -87,12 +86,14 @@
 }
 
 .aboutText {
-  padding-top: 100px;
-  padding-left: 200px;
+  margin-top: 25px;
+  margin-left: 200px;
+  padding: 100px;
   font-size: 4rem;
   color: black;
   font-weight: bold;
   text-shadow: 2px 2px 8px white;
+  backdrop-filter: saturate(80%) blur(7px);
 }
 
 .about {
