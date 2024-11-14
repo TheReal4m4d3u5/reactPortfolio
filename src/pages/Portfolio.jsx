@@ -31,7 +31,7 @@ const projects = [
     description: 'Searches a databas for movies and to add them to a watch or seen list.',
     image: image7,
     gitLink: 'https://github.com/TheReal4m4d3u5/movieSearch',
-    deployed: 'https://meek-cassata-691e1b.netlify.app/',
+    deployed: 'https://funny-biscochitos-9e1673.netlify.app/',
   },
   {
     title: 'Candidate Search',
