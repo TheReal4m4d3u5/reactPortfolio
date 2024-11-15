@@ -7,7 +7,13 @@
   background-color: black;
   color: white;
   width: 100%;
-  min-height: 200px;
+  min-height: 150px;
+}
+
+.skill-item{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /* Brand name styling */
@@ -59,6 +65,10 @@
   /* Show the menu toggle button */
   .menu-toggle {
     display: block;
+  }
+
+  .header{
+    min-height: 200px;
   }
 
   .brand{
