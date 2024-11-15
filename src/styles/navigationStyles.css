@@ -1,199 +1,93 @@
-.links {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-  background-color: #000;
-}
-
-/* .nav-link.active {
-  color: #ffffff !important; 
-  font-weight: bold;
-  border-bottom: 2px solid #ffffff; 
-} */
-
-.nav-link.active {
-  color: #ffffff !important;
-  font-weight: bold;
-  /* border-bottom: 2px solid #ffffff;  */
-}
-
-.name-gradient {
-  font-size: 3rem; /* Adjust the font size as needed */
-  font-weight: bold;
-  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Define your gradient colors */
-  -webkit-background-clip: text; /* For WebKit browsers */
-  background-clip: text; /* Standard property */
-  color: transparent; /* Makes the text transparent to reveal the gradient */
-}
-
-.nav-link {
-  color: #ffffff !important;
-  margin-right: 50px;
-  font-size: 3rem;
-  text-decoration: none;
-}
-
-.navbar-collapse {
-  display: flex;
-  justify-content: flex-end;
-}
-
-
-
-.headerLinks .nav-link {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 5px 10px;
-  transition: color 0.3s ease, background-color 0.3s ease;
-  flex-wrap: wrap;
-}
-
-
-
-.headerLinks .nav-link.active {
-  color: #FFD700;
-  background-color: rgba(255, 215, 0, 0.2);
-  border-radius: 5px;
-  padding: 5px 10px;
-  flex-wrap: wrap;
-}
-
-.github {
-  padding-right: 200px;
-}
-
+/* Basic header styling */
 .header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: right;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
-  /* Black background for header */
-  padding: 10px 30px;
-  /* Adds padding to left and right */
+
+  background-color: black;
+  color: white;
   width: 100%;
-  min-height: 130px;
-  align-items: center;
-
-  align-items: center;
-  font-size: .1rem;
 }
 
-
-
-.headerName {
-  font-size: 4rem;
-  font-weight: bold;
-  padding-left: 150px;
-  text-decoration: none;
+/* Brand name styling */
+.brand {
+  font-size: 1.5rem;
 }
 
-.headerLinks {
-  font-size: 6rem;
-  display: flex;
-  gap: 20px;
-  margin-left: auto;
-  padding-right: 50px;
-  flex-wrap: wrap;
+.headerName{
+  margin-left: 75px;
 }
 
-.headerLinks .nav-link {
+/* Link styling */
+.navigation a {
   color: white;
-  font-weight: bold;
+  margin: 0 1rem;
   text-decoration: none;
-
-  display: flex;
-  flex-wrap: wrap;
+  font-size: 1.2rem;
+  margin-right: 50px;
 }
 
+.navigation a:hover,
+.navigation a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
 
-
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: right;
+/* Menu toggle button */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
   color: white;
+  cursor: pointer;
   margin-right: 100px;
 }
 
-.navbar-dark .navbar-collapse {
-  display: flex !important;
-  align-items: center;
-}
-
-.navbar-dark .nav-link {
-  margin-left: 1rem;
-}
-
-.navbar-dark .navbar-brand {
-  color: white !important;
-}
-
-.navbar {
-  height: 100px;
+/* Navigation layout */
+.navigation {
   display: flex;
-
+  gap: 1rem;
+  margin-right: 50px;
 }
 
-.navbar-brand,
-.navbar-nav {
-  align-items: center;
-}
-
-.navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar {
-  margin: 0;
-  padding: 0;
-}
-
-/* @media screen and (max-width: 700px) {
-  .headerLinks {
-    margin-right: 0px;
-    padding-right: 10px;
-    margin-right: 0px;
-    align-items: right;
-    margin-left: 70px;
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  /* Show the menu toggle button */
+  .menu-toggle {
+    display: block;
   }
-} */
 
+  /* Hide navigation by default on smaller screens */
+  .navigation {
+    display: none;
+    flex-direction: column;
 
-/* @media screen and (max-width: 700px) {
-  .nav-link {
-    margin-right: 10px;
-    font-size: 1.5rem;
-    align-items: right;
+    top: 100%; /* Position below the header */
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 1rem 0;
+    margin-right: 0;
   }
-  .nav{
+
+
+  .navigation.open {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    margin-right: 10px;
-  } 
-  .content{
-    height: 100vh;
+    width: 200px;
   }
 
-
-  .headerName {
-    font-size: 1.5rem;
-  }
-  .header {
-    height: 20px;
-    min-height: 75px;
+  .menu-toggle.open {
+    color: pink; /* Change color when open */
+    margin-right: 0;
+    display: flex;
+    justify-content: r;
   }
 
-  .headerName {
-    padding-left: 50px;
+  .navigation a {
+    margin: 0.5rem 0;
+    text-align: center;
+    display: block;
   }
+}
 
-} */

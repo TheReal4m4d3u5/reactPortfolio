@@ -16,7 +16,7 @@ function App() {
    
         <Outlet />
   
-        <Footer class="footer" />
+        <Footer className="footer" />
  
     </>
   );

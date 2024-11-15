@@ -1,38 +1,26 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
 import Navigation from './Navigation';
 import '../styles/navigationStyles.css';
 
-const name = "Avery Jacobson";
+function Header() {
+  const [isOpen, setIsOpen] = useState(false);
 
-const Header = () => {
-  const [currentPage, setCurrentPage] = useState("about");
-
-  const setActiveSection = (page) => {
-    setCurrentPage(page);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <>
-      <Navbar bg="dark" variant="dark" expand="lg" className="header" >
-
-        <Navbar.Brand href="#home" className="headerName" >
-          Avery Jacobson
-
-        </Navbar.Brand>
-
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-      
-            <Navigation className="" activePage={currentPage} />
-  
-        </Navbar.Collapse>
-
-
-      </Navbar >
-
-
-    </>
+    <header className="header">
+      <div className="brand headerName">Avery Jacobson</div>
+      <button 
+        className={`menu-toggle ${isOpen ? 'open' : ''}`} 
+        onClick={toggleMenu}
+      >
+        ☰
+      </button>
+      <Navigation isOpen={isOpen} />
+    </header>
   );
-};
+}
 
 export default Header;
