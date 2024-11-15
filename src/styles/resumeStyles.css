@@ -242,6 +242,7 @@
 
 @media (max-width: 768px) {
   .mainResumeContent{
-   padding: 20px;
+   padding: 15px;
+   padding-left: 20px;
   }
  }
