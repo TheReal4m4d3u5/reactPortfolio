@@ -7,11 +7,12 @@
   background-color: black;
   color: white;
   width: 100%;
+  min-height: 200px;
 }
 
 /* Brand name styling */
 .brand {
-  font-size: 1.5rem;
+  font-size: 3.5rem;
 }
 
 .headerName{
@@ -23,7 +24,7 @@
   color: white;
   margin: 0 1rem;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-right: 50px;
 }
 
@@ -47,8 +48,10 @@
 /* Navigation layout */
 .navigation {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
   gap: 1rem;
-  margin-right: 50px;
+  margin-right: 5px;
 }
 
 /* Responsive styles for screens smaller than 768px */
@@ -56,6 +59,14 @@
   /* Show the menu toggle button */
   .menu-toggle {
     display: block;
+  }
+
+  .brand{
+    font-size: 2.2rem;
+  }
+
+  .headerName{
+    margin-left: 25px;
   }
 
   /* Hide navigation by default on smaller screens */
@@ -69,6 +80,7 @@
     background-color: black;
     padding: 1rem 0;
     margin-right: 0;
+    font-size: 1.2rem;
   }
 
 
@@ -85,9 +97,13 @@
   }
 
   .navigation a {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     margin: 0.5rem 0;
     text-align: center;
     display: block;
+    font-size: 1rem;
   }
 }
 
