@@ -240,74 +240,8 @@
   width: 100%;
 }
 
-/* 
-
-@media screen and (max-width: 998px) {
-  .resumeLinks {
-    gap: 0;
-
+@media (max-width: 768px) {
+  .mainResumeContent{
+   padding: 20px;
   }
-}
-
-
-
-@media screen and (max-width: 700px) {
-  .resumeLinks {
-    gap: 0;
-
-  }
-}
-
-
-@media screen and (max-width: 700px) {
-  .resume-page {
-    gap: 0;
-    height: unset;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .contact-section {
-    font-size: 1.1rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .mainResumeContent {
-    height: unset;
-    padding-bottom: 100px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .skills-container{
-    width: 100%;
-  }
-
-  .resumeHeaders{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .contact-section{
-    padding-left: 10px;
-  }
-
-
-  .education-ection h3{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .resume-section ul {
-    padding-left: 10px;
-  }
-
-  .hobbiesText li{
-    padding-left: 10px;
-  }
-
-} */
+ }
