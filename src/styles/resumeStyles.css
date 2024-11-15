@@ -250,6 +250,7 @@
  @media (max-width: 350px) {
   .contactInfo {
     font-size: 1.2rem;
+    max-width: 100px;
   }
  }
 
