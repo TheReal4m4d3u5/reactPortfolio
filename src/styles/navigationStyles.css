@@ -156,7 +156,7 @@
   padding: 0;
 }
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .headerLinks {
     margin-right: 0px;
     padding-right: 10px;
@@ -164,10 +164,10 @@
     align-items: right;
     margin-left: 70px;
   }
-}
+} */
 
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .nav-link {
     margin-right: 10px;
     font-size: 1.5rem;
@@ -183,10 +183,7 @@
     height: 100vh;
   }
 
-  #about{
-    height: 100vh;
-    margin-bottom: 50px;
-  }
+
   .headerName {
     font-size: 1.5rem;
   }
@@ -199,4 +196,4 @@
     padding-left: 50px;
   }
 
-}
+} */

@@ -77,7 +77,7 @@
 .cards {
   height: 100%;
 }
-
+/* 
 @media screen and (max-width: 700px) {
   .portfolio-Wraper {
     height: unset;
@@ -98,4 +98,4 @@
   }
 
 
-}
+} */

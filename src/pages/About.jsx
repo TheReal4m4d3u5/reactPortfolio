@@ -8,23 +8,23 @@ const About = () => {
   return (
 
 
-    <section id="about" className="container mt-5">
+    <section id="aboutHome">
 
-      <div className="content">
 
         <div className="about">
-          <img src={profilePhoto} alt="Profile" className="profilePhoto mb-4" />
-          <div className="col-md-4 text-center">
-          </div>
+           <section className="photoSection">
+            <img src={profilePhoto} alt="Profile" className="profilePhoto mb-4" />
+          </section>
+
           <section className="aboutTextSection">
             <div className="aboutText">
               Hi, I'm Avery Jacobson! I am a Full Stack Developer with 10 years Experience as senior Software Development Engineer in Test (SDET).
             </div>
-          </section>
+          </section>  
         </div>
-      </div>
-    </section>
 
+
+    </section>
   );
 };
 
