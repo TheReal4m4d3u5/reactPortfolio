@@ -110,7 +110,7 @@
     text-shadow: 2px 2px 8px white;
 }
 
-.contactForm-Wrapper{
+.contactForm-Wrapper {
     display: flex;
     width: 100%;
     align-items: center;
@@ -120,7 +120,7 @@
 .contact-page-content {
     margin-top: 30px;
     justify-content: center;
-  }
+}
 
 .error-message {
     color: red;
@@ -164,33 +164,45 @@ form {
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    width: 100%; /* Ensure full width within the form */
-    padding: 10px; /* Add padding for a balanced look */
-    font-size: 18px; /* Increase font size for readability */
+    width: 100%;
+    /* Ensure full width within the form */
+    padding: 10px;
+    /* Add padding for a balanced look */
+    font-size: 18px;
+    /* Increase font size for readability */
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 15px; /* Space between fields */
+    margin-bottom: 15px;
+    /* Space between fields */
 }
 
 
 form textarea {
-    width: 100%; /* Ensure full width within the form */
-    padding: 10px; /* Add padding for a balanced look */
-    font-size: 18px; /* Increase font size for readability */
+    width: 100%;
+    /* Ensure full width within the form */
+    padding: 10px;
+    /* Add padding for a balanced look */
+    font-size: 18px;
+    /* Increase font size for readability */
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 15px; /* Space between fields */
+    margin-bottom: 15px;
+    /* Space between fields */
     height: 300px;
 }
 
 form button[type="submit"] {
-    width: 100%; /* Full width button */
-    padding: 12px; /* More padding for a larger button */
-    font-size: 20px; /* Larger font for better readability */
+    width: 100%;
+    /* Full width button */
+    padding: 12px;
+    /* More padding for a larger button */
+    font-size: 20px;
+    /* Larger font for better readability */
     font-weight: bold;
     max-width: 50px;
     max-height: 50px;
-    background-color: #007bff; /* Button background color */
+    background-color: #007bff;
+    /* Button background color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -199,13 +211,67 @@ form button[type="submit"] {
 }
 
 
-/* @media screen and (max-width: 700px) {
-    .contact-page{
-        padding: 10px;
-    }
-    .contact-page-content{
-        padding: 0px;
-        margin-top: 0px;
-    }
-  } */
+@media screen and (max-width: 810px) {
 
+
+    .contact-page form{
+        height: 400px;
+    }
+
+}
+
+
+@media screen and (max-width: 625px) {
+    .contact-page{
+        padding: 50px;
+        padding-top: 0;
+    }
+
+    .contact-page-content{
+        margin-top: 10px;
+    }
+
+    .contact-heading h2{
+        font-size: 2rem;
+    }
+    .contact-heading p{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+
+
+    .contact-page form{
+        margin-bottom: 60px;
+        height: 350px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .contact-page{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .contactForm{
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 375px) {
+
+
+    .contact-page form{
+        margin-bottom: 60px;
+        height: 350px;
+    }
+
+}
