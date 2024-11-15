@@ -45,7 +45,10 @@
   padding-bottom: 70px;
   padding-top: 20px;
   font-size: 1.25rem;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 250px;
 }
 

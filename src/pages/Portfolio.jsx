@@ -10,14 +10,26 @@ import image5 from '../../src/assets/image5.png'; // Correct import path and fil
 import image6 from '../../src/assets/image6.png'; // Correct import path and file extension
 import image7 from '../../src/assets/movieSearch.png';
 import image8 from '../../src/assets/candidateSearch.png';
+import image9 from '../../src/assets/image9.png'; // Correct import path and file extension
+import image10 from '../../src/assets/image10.png'; // Correct import path and file extension
+
+
 
 const projects = [
+
   {
-    title: 'Sound Board',
-    description: 'A soundboard created using HTML, CSS, JavaScript, and Bootstrap.',
-    image: image1,
-    gitLink: 'https://github.com/TheReal4m4d3u5/soundBoard',
-    deployed: 'https://beautiful-dusk-78e4ee.netlify.app/',
+    title: 'Aline',
+    description: 'A full stack website that allows you to search for events and save your events',
+    image: image9,
+    gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
+    deployed: 'https://aline-events.onrender.com/',
+  },
+  {
+    title: 'Kanban Board',
+    description: 'A full stack custom built kanban board',
+    image: image10,
+    gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
+    deployed: 'https://github.com/TheReal4m4d3u5/kanbanBoard',
   },
   {
     title: 'Weather App',
@@ -27,11 +39,11 @@ const projects = [
     deployed: 'https://weatherapp-ew0q.onrender.com',
   },
   {
-    title: 'Movie Search',
-    description: 'Searches a databas for movies and to add them to a watch or seen list.',
+    title: 'Film Tracker',
+    description: 'Full stack movies database search and alows user to add them to a watch or seen list.',
     image: image7,
     gitLink: 'https://github.com/TheReal4m4d3u5/movieSearch',
-    deployed: 'https://funny-biscochitos-9e1673.netlify.app/',
+    deployed: 'https://meek-cassata-691e1b.netlify.app/',
   },
   {
     title: 'Candidate Search',
@@ -70,8 +82,14 @@ const projects = [
     description: 'A vite and react application that generates a web profile',
     image: image6,
     link: 'https://github.com/TheReal4m4d3u5/reactPortfolio',
-  }
-
+  },
+  {
+    title: 'Sound Board',
+    description: 'A soundboard created using HTML, CSS, JavaScript, and Bootstrap.',
+    image: image1,
+    gitLink: 'https://github.com/TheReal4m4d3u5/soundBoard',
+    deployed: 'https://beautiful-dusk-78e4ee.netlify.app/',
+  },
 ];
 
 const Portfolio = () => {
@@ -80,11 +98,12 @@ const Portfolio = () => {
 
     <div className="portfolio-page">
 
-      <section className="portfolio-Wraper">
-        <section className="portfolio-Header">
-          <h2 className="mb-4">My Portfolio</h2>
-        </section>
 
+
+      <section className="portfolio-Wraper">
+
+      <h1 className="portfilioHeaderText">My Portfolio</h1>
+          <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
 
         <Row className="portfolioCards">
           {projects.map((project, index) => (
