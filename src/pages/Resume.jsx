@@ -141,7 +141,8 @@ const Resume = () => {
         <section className="contact-section">
           <h3 className='resumeHeaders'>Contact</h3>
           <div className="contactInfo">
-            <li>Email Address: averyajacobson@gmail.com</li>
+            <li>Email Address:</li>
+            <div>averyajacobson@gmail.com</div>
             <li>Phone Number: 952-594-9290</li>
             <li>Location: Minneapolis Minnesota or Remote</li>
           </div>
