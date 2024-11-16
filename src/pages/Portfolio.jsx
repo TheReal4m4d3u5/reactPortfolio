@@ -18,7 +18,7 @@ import image11 from '../../src/assets/carProgram.png'; // Correct import path an
 const projects = [
   {
     title: 'MatDrive',
-    description: 'A fireframe of car driving around a city only using linear algebra and Matlab ',
+    description: 'A wireframe of car driving around a city only using linear algebra and Matlab ',
     image: image11,
     gitLink: 'https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car',
   },
