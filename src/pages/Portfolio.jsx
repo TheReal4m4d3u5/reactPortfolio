@@ -12,11 +12,16 @@ import image7 from '../../src/assets/movieSearch.png';
 import image8 from '../../src/assets/candidateSearch.png';
 import image9 from '../../src/assets/image9.png'; // Correct import path and file extension
 import image10 from '../../src/assets/image10.png'; // Correct import path and file extension
-
+import image11 from '../../src/assets/carProgram.png'; // Correct import path and file extension
 
 
 const projects = [
-
+  {
+    title: 'MatDrive',
+    description: 'A fireframe of car driving around a city only using linear algebra and Matlab ',
+    image: image11,
+    gitLink: 'https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car',
+  },
   {
     title: 'Aline',
     description: 'A full stack website that allows you to search for events and save your events',

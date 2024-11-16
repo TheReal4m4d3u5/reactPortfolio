@@ -11,10 +11,7 @@ const Resume = () => {
 
         <div className="resumeLinks">
           <a href={resume} download="Avery_Jacobson_Resume.pdf" className="link-button">
-            Resume
-          </a>
-          <a href="https://www.linkedin.com/in/avery-jacobson-aa36225a/" target="_blank" rel="noopener noreferrer" className="link-button">
-            LinkedIn
+            Downlaod Resume
           </a>
         </div>
 
