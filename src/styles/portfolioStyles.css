@@ -46,14 +46,63 @@
   background-attachment: fixed;
   /* Keeps the image fixed on scroll */
   flex-wrap: wrap;
+
+  margin-bottom: 150px;
 }
 
-.portfilioHeaderText{
+.javaScriptHeader{
   display: flex;
   width: 100%;
   justify-content: center;
   font-size: 3rem;
 }
+
+.javaHeader{
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+
+.mongoDBHeader{
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.cHeader{
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.matLabHeader{
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.portfilioHeaderText{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+
+.disclaimerWraper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .disclaimer{
   display: flex;
   width: 100%;
@@ -92,9 +141,6 @@
 
   text-shadow: 2px 2px 8px white;
 }
-
-
-
 
 
 .cards {

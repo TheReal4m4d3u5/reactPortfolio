@@ -42,8 +42,8 @@
 
 /* Menu toggle button */
 .menu-toggle {
-  display: flex;
-  font-size: 2rem;
+  display:none;
+
   background: none;
   border: none;
   color: white;

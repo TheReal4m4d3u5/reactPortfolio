@@ -13,15 +13,84 @@ import image8 from '../../src/assets/candidateSearch.png';
 import image9 from '../../src/assets/image9.png'; // Correct import path and file extension
 import image10 from '../../src/assets/image10.png'; // Correct import path and file extension
 import image11 from '../../src/assets/carProgram.png'; // Correct import path and file extension
+import image12 from '../../src/assets/battleship.png'; // Correct import path and file extension
+import image13 from '../../src/assets/csci1203A6.png'; // Correct import path and file extension
+import image14 from '../../src/assets/csci1113A5.png'; // Correct import path and file extension
+import image15 from '../../src/assets/csci1111A7.png'; // Correct import path and file extension
+import image16 from '../../src/assets/csci1111A5.png'; // Correct import path and file extension
+import image17 from '../../src/assets/csci1113A6.png'; // Correct import path and file extension
 
-
-const projects = [
+const matLabProjects = [
   {
     title: 'MatDrive',
     description: 'A wireframe of car driving around a city only using linear algebra and Matlab ',
     image: image11,
     gitLink: 'https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car',
   },
+];
+
+
+const mongoProjects = [
+  {
+    title: 'Student Statistics',
+    description: 'A back-end application that uses MongoDB, Mongoose, and Express.js to calculate student statistics.',
+    image: image11,
+    gitLink: 'https://github.com/TheReal4m4d3u5/studentStatisticsBack-End',
+  },
+];
+
+
+const javaProjects = [
+  {
+    title: 'Battleshipt',
+    description: 'A command line program that lets two people play battleship',
+    image: image12,
+    gitLink: 'https://github.com/TheReal4m4d3u5/csci_1203_assignment_battleship',
+  },
+
+  {
+    title: 'MiniBot Simulator',
+    description: 'A functioning ur_Robot-like Java class with basic robot behaviors, demonstrated in a simple test program.',
+    image: image13,
+    gitLink: 'https://github.com/TheReal4m4d3u5/csci_1203_assignment_6/tree/main',
+  },
+];
+
+const cProjects = [
+  {
+    title: 'Card Dealer',
+    description: 'This program simulates a deck of playing cards, providing functionality to shuffle, deal cards, and display card details.',
+    image: image15,
+    gitLink: 'https://github.com/TheReal4m4d3u5/csci_1111_assignment_7',
+  },
+
+  {
+    title: 'Event Probability Simulator',
+    description: 'Simulates random events (coin flips and die rolls) and analyzes the distribution of results and determine if the results appear uniformly random.',
+    image: image16,
+    gitLink: 'https://github.com/TheReal4m4d3u5/csci_1111_assignment_5',
+  },
+
+  {
+    title: 'Functions and command-line argument',
+    description: 'A command line demonstration of command line arguments',
+    image: image17,
+    gitLink: 'https://github.com/TheReal4m4d3u5/csci_1113_assignment_6',
+  },
+
+  {
+    title: 'Car Calculator',
+    description: 'This program calculates and outputs distances traveled by two cars under constant acceleration.',
+    image: image14,
+    gitLink: 'https://github.com/TheReal4m4d3u5/csci_1113_assignment_5',
+  },
+
+];
+
+
+
+
+const javaScriptProjects = [
   {
     title: 'Aline',
     description: 'A full stack website that allows you to search for events and save your events',
@@ -108,11 +177,19 @@ const Portfolio = () => {
       <section className="portfolio-Wraper">
 
         <h1 className="portfilioHeaderText">My Portfolio</h1>
-        <div className="disclaimerWraper">
-          <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
-        </div>
+
+
+
+
         <Row className="portfolioCards">
-          {projects.map((project, index) => (
+
+          <div className="javaScriptHeader">React Javascript</div>
+
+          <div className="disclaimerWraper">
+            <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
+          </div>
+
+          {javaScriptProjects.map((project, index) => (
 
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
 
@@ -127,6 +204,146 @@ const Portfolio = () => {
             </Col>
 
           ))}
+
+
+          <div className="mongoDBHeader">MongoDB</div>
+
+          {mongoProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+              />
+
+            </Col>
+
+          ))}
+
+
+          <div className="matLabHeader">Matlab</div>
+
+          {matLabProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+              />
+
+            </Col>
+
+          ))}
+
+
+
+          <div className="javaHeader">Java</div>
+
+          {javaProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+              />
+
+            </Col>
+
+          ))}
+
+
+          <div className="cHeader">C</div>
+
+          {cProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+              />
+
+            </Col>
+
+          ))}
+
+
+          {/* <div className="">Open GL</div>
+
+          {javaProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+              />
+
+            </Col>
+
+          ))} */}
+
+
+          {/* <div className="">C++</div>
+
+          {javaProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+              />
+
+            </Col>
+
+          ))} */}
+
+
+          {/* <div className="">Python Projects</div>
+
+          {javaProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+              />
+
+            </Col>
+
+          ))} */}
+
+
+
+
+
+
         </Row>
       </section>
     </div>
