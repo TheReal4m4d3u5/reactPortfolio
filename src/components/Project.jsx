@@ -2,10 +2,29 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import '../styles/projectStyles.css';
 
-const Project = ({ title, description, image, gitlink, deployedlink }) => {
+const Project = ({ title, description, image, gitlink, deployedlink, video, videoText }) => {
   return (
     <Card className="project-card h-100">
-      <Card.Img variant="top" src={image} alt={`${title} screenshot`} className="project-image" />
+      <div className="imageVideo">
+        {image && (
+          <Card.Img
+            variant="top"
+            src={image}
+            alt={`${title} screenshot`}
+            className="project-image"
+          />
+        )}
+        {video && (
+
+          <div className="project-video">
+            <video controls className="w-100">
+              <source src={video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        )}
+      </div>
+      <Card.Text className="videoText">{videoText}</Card.Text>
       <div className="myCard">
         <Card.Body className="d-flex flex-column">
           <Card.Title>{title}</Card.Title>

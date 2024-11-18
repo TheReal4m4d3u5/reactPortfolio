@@ -20,6 +20,12 @@ import image15 from '../../src/assets/csci1111A7.png'; // Correct import path an
 import image16 from '../../src/assets/csci1111A5.png'; // Correct import path and file extension
 import image17 from '../../src/assets/csci1113A6.png'; // Correct import path and file extension
 
+
+import socialMediaVideo from '../../src/assets/socialMediaAPI.mp4'; // Correct import path and file extension
+
+
+
+
 const matLabProjects = [
   {
     title: 'MatDrive',
@@ -37,6 +43,15 @@ const mongoProjects = [
     image: image11,
     gitLink: 'https://github.com/TheReal4m4d3u5/studentStatisticsBack-End',
   },
+
+  {
+    video: socialMediaVideo,
+    title: 'Social Media API',
+    description: 'A back-end social media restul application that uses MongoDB. ',
+    videoText: "Click to watch video",
+    gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
+  },
+
 ];
 
 
@@ -197,6 +212,7 @@ const Portfolio = () => {
                 title={project.title}
                 description={project.description}
                 image={project.image}
+                video={project.video}
                 gitlink={project.gitLink}
                 deployedlink={project.deployed}
               />
@@ -216,6 +232,8 @@ const Portfolio = () => {
                 title={project.title}
                 description={project.description}
                 image={project.image}
+                video={project.video}
+                videoText={project.videoText}
                 gitlink={project.gitLink}
                 deployedlink={project.deployed}
               />
