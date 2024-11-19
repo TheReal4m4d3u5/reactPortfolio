@@ -1,8 +1,7 @@
 # React Portfolio
 
-   
-
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
+  
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
 
 Link to deployed Site 
 
@@ -10,10 +9,8 @@ https://weatherapp-ew0q.onrender.com
 
 ## Description 
 
-This project is to create a react portfolio
-
-
-
+This project is a responsive and visually appealing portfolio website built with React and React-Bootstrap. 
+It serves as a platform to showcase projects, share professional information, and enable easy communication with visitors.
 
 ## Table of Contents  
 
