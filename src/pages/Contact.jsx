@@ -39,7 +39,7 @@ function Contact() {
     emailjs.sendForm('service_kg0h8nr', 'template_xwxts6q', e.target, 'oJYn056XuORmYfCO8')
       .then((result) => {
         alert("Message Sent Successfully!");
-        setFormData({ name: '', email: '', message: '' }); // Clear form after submission
+        setFormData({ from_name: '', from_email: '', message: '' });
       }, (error) => {
         alert("An error occurred, please try again.");
       });

@@ -5,7 +5,18 @@
 
 Link to deployed Site 
 
-https://weatherapp-ew0q.onrender.com 
+https://zesty-starlight-a7d6e2.netlify.app/
+
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+
 
 ## Description 
 
