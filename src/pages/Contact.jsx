@@ -4,15 +4,15 @@ import emailjs from 'emailjs-com';
 
 function Contact() {
   const [formData, setFormData] = useState({
-    from_name: '',  // Updated key to match the input name attribute
-    from_email: '', // Updated key to match the input name attribute
+    from_name: '',  
+    from_email: '', 
     message: '',
   });
 
   const [errors, setErrors] = useState({
-    name: '',
-    email: '',
-    message: '',
+    from_name: '', 
+    from_email: '', 
+    message: '', 
   });
 
   const handleBlur = (field, value) => {
@@ -59,23 +59,23 @@ function Contact() {
               type="text"
               name="from_name"
               placeholder="Enter your name"
-              value={formData.name}
+              value={formData.from_name}
               onChange={handleChange}
               onBlur={() => handleBlur('name', formData.name)}
               required
             />
-            {errors.name && <p className="error-message">{errors.name}</p>}
+            {errors.from_name && <p className="error-message">{errors.from_name}</p>}
 
             <input
               type="email"
               name="from_email"
               placeholder="Enter your email"
-              value={formData.email}
+              value={formData.from_email}
               onChange={handleChange}
-              onBlur={() => handleBlur('email', formData.email)}
+              onBlur={() => handleBlur('from_email', formData.from_email)}
               required
             />
-            {errors.email && <p className="error-message">{errors.email}</p>}
+            {errors.from_email && <p className="error-message">{errors.from_email}</p>}
 
             <textarea
               name="message"
