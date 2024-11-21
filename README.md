@@ -8,13 +8,13 @@ Link to deployed Site
 https://zesty-starlight-a7d6e2.netlify.app/
 
 
-![alt text](image-1.png)
+![about photo](image-1.png)
 
-![alt text](image-2.png)
+![contact photo](image-2.png)
 
-![alt text](image-3.png)
+![portfolio photo](image-3.png)
 
-![alt text](image-4.png)
+![resume photo](image-4.png)
 
 
 
