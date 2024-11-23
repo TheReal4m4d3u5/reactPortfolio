@@ -16,6 +16,9 @@ function Contact() {
   });
 
   const handleBlur = (field, value) => {
+
+    console.log("value: " + value)
+
     if (!value) {
       setErrors((prevErrors) => ({
         ...prevErrors,
@@ -31,6 +34,7 @@ function Contact() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    console.log("first value: " + value)
     setFormData({ ...formData, [name]: value });
   };
 
@@ -61,7 +65,7 @@ function Contact() {
               placeholder="Enter your name"
               value={formData.from_name}
               onChange={handleChange}
-              onBlur={() => handleBlur('name', formData.name)}
+              onBlur={() => handleBlur('from_name', formData.from_namename)}
               required
             />
             {errors.from_name && <p className="error-message">{errors.from_name}</p>}

@@ -4,7 +4,7 @@ import '../styles/projectStyles.css';
 
 const Project = ({ title, description, image, gitlink, deployedlink, video, videoText }) => {
   return (
-    <Card className="project-card h-100">
+    <Card className="project-card h-150">
       <div className="imageVideo">
         {image && (
           <Card.Img

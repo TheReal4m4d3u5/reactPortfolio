@@ -19,10 +19,15 @@ import image14 from '../../src/assets/csci1113A5.png'; // Correct import path an
 import image15 from '../../src/assets/csci1111A7.png'; // Correct import path and file extension
 import image16 from '../../src/assets/csci1111A5.png'; // Correct import path and file extension
 import image17 from '../../src/assets/csci1113A6.png'; // Correct import path and file extension
-
+import bookSearch from '../../src/assets/bookSearch.png'; // Correct import path and file extension
 
 import socialMediaVideo from '../../src/assets/socialMediaAPI.mp4'; // Correct import path and file extension
 
+
+
+const graphqlProjects = [
+
+];
 
 
 
@@ -38,9 +43,10 @@ const matLabProjects = [
 
 const mongoProjects = [
   {
+    video: socialMediaVideo,
     title: 'Student Statistics',
     description: 'A back-end application that uses MongoDB, Mongoose, and Express.js to calculate student statistics.',
-    image: image11,
+    videoText: "Click to watch video",
     gitLink: 'https://github.com/TheReal4m4d3u5/studentStatisticsBack-End',
   },
 
@@ -51,7 +57,20 @@ const mongoProjects = [
     videoText: "Click to watch video",
     gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
   },
-
+  {
+    title: 'Tech Matchup App',
+    description: 'a full-stack web application built with the MERN stack. The app allows users to create matchups between two technologies and vote for their favorite. Uses Apollo Client for making GraphQL queries and mutations to interact with the backend.',
+    image: bookSearch,
+    gitLink: 'https://github.com/TheReal4m4d3u5/bookSearchEngine',
+    deployed: 'https://booksearchengine-5ikq.onrender.com',
+  },
+  {
+    title: 'Book Search Engine',
+    description: 'lets users search books via the Google Books API, create accounts, and manage personalized book lists. With GraphQL API and JWT authentication, it ensures efficient data handling and secure sessions for a seamless experience.',
+    image: bookSearch,
+    gitLink: 'https://github.com/TheReal4m4d3u5/bookSearchEngine',
+    deployed: 'https://booksearchengine-5ikq.onrender.com',
+  },
 ];
 
 
@@ -223,6 +242,9 @@ const Portfolio = () => {
 
 
           <div className="mongoDBHeader">MongoDB</div>
+          <div className="disclaimerWraper">
+            <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
+          </div>
 
           {mongoProjects.map((project, index) => (
 
