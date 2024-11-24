@@ -19,16 +19,60 @@ import image14 from '../../src/assets/csci1113A5.png'; // Correct import path an
 import image15 from '../../src/assets/csci1111A7.png'; // Correct import path and file extension
 import image16 from '../../src/assets/csci1111A5.png'; // Correct import path and file extension
 import image17 from '../../src/assets/csci1113A6.png'; // Correct import path and file extension
-import bookSearch from '../../src/assets/bookSearch.png'; // Correct import path and file extension
+import bookSearch from '../../src/assets/bookSearch.png'; // Correct import path and file 
+
+
+import selenium from '../../src/assets/selenium.png'; // Correct import path and file extension
+
+
+import tDD1 from '../../src/assets/tDD1.png'; // Correct import path and file extension
+import reactTDD from '../../src/assets/reactTDD.png'; // Correct import path and file extension
 
 import socialMediaVideo from '../../src/assets/socialMediaAPI.mp4'; // Correct import path and file extension
+import vehicleVideo from '../../src/assets/module8.mp4'; // Correct import path and file extension
 
 
+const seleniumProjects = [
 
-const graphqlProjects = [
+  {
+    title: 'My Selenium Test Suite',
+    description: `My own custom build Selenium test suite`,
+    image: selenium,
+    gitLink: 'https://github.com/TheReal4m4d3u5/mySelenium',
+  },
 
 ];
 
+const tDDProjects = [
+
+  {
+    title: 'Tech Quiz Test Suite',
+    description: `Built with a MERN stack (MongoDB, Express.js, React, Node.js), by adding comprehensive testing using Cypress. The app allows users to take a 10-question quiz, answer questions sequentially, view their final score, and start a new quiz. Component tests focus on the Quiz component's behavior, while end-to-end tests simulate the full user journey, from starting the quiz to viewing the score and restarting.`,
+    image: tDD1,
+    gitLink: 'https://github.com/TheReal4m4d3u5/techQuizTestSuite',
+  },
+
+  {
+    title: 'Ensure React Components Render Properly ',
+    description: 'Focuses on implementing tests to ensure React components render properly and match snapshots. This requires setting up testing environment with tools like @testing-library/react, vitest, and happy-dom, importing the necessary components into test files, and writing tests to verify components render without errors and match snapshots.',
+    image: tDD1,
+    gitLink: 'https://github.com/TheReal4m4d3u5/ensureReactComponentsRenderProperly',
+  },
+  {
+    title: 'Reactify Essentials TDD',
+    description: 'This program is a React-based application built with TypeScript, focusing on creating reusable components and maintaining high-quality standards through robust testing. It features a Calculator component that supports arithmetic operations, a potential Advertisement component for displaying promotional content, and a modern testing setup using Vitest and React Testing Library. The testing environment is enhanced with Happy DOM for DOM simulation.',
+    image: reactTDD,
+    gitLink: 'https://github.com/TheReal4m4d3u5/reactifyEssentialsTest',
+  },
+
+  {
+    title: 'TDD Test Cases',
+    description: 'This project emphasizes strong foundational skills in TDD, testing frameworks, and building robust, validated code.',
+    image: tDD1,
+    gitLink: 'https://github.com/TheReal4m4d3u5/tDDTestCases',
+  },
+
+];
 
 
 const matLabProjects = [
@@ -175,7 +219,8 @@ const javaScriptProjects = [
   {
     title: 'Vehicle App',
     description: 'An interactive vehicle selection and customization app.',
-    image: image4,
+    video: vehicleVideo,
+    videoText: "Click to watch video",
     gitLink: 'https://github.com/TheReal4m4d3u5/Create-Vehicle',
   },
   {
@@ -232,6 +277,7 @@ const Portfolio = () => {
                 description={project.description}
                 image={project.image}
                 video={project.video}
+                videoText={project.videoText}
                 gitlink={project.gitLink}
                 deployedlink={project.deployed}
               />
@@ -316,6 +362,40 @@ const Portfolio = () => {
                 image={project.image}
                 gitlink={project.gitLink}
                 deployedlink={project.deployed}
+              />
+
+            </Col>
+
+          ))}
+
+          <div className="cHeader">TDD</div>
+
+          {tDDProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                gitlink={project.gitLink}
+              />
+
+            </Col>
+
+          ))}
+
+          <div className="cHeader">BDD</div>
+
+          {seleniumProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                gitlink={project.gitLink}
               />
 
             </Col>
