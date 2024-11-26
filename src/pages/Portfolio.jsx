@@ -20,7 +20,7 @@ import image15 from '../../src/assets/csci1111A7.png'; // Correct import path an
 import image16 from '../../src/assets/csci1111A5.png'; // Correct import path and file extension
 import image17 from '../../src/assets/csci1113A6.png'; // Correct import path and file extension
 import bookSearch from '../../src/assets/bookSearch.png'; // Correct import path and file 
-
+import cirlceCI from '../../src/assets/cirlceCI.png'; // Correct import path and file  
 
 import selenium from '../../src/assets/selenium.png'; // Correct import path and file extension
 
@@ -45,9 +45,10 @@ const seleniumProjects = [
 const ciCDProjects = [
   {
     title: 'GitHub Actions CI-CD Setup',
-    description: `Full stack CI/CD deployment that uses Github actions`,
-    image: selenium,
+    description: `Full stack CI/CD deployment, using git protections and a staging and production deployment using CirlceCI`,
+    image: cirlceCI,
     gitLink: 'https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main',
+    staging: 'https://githubactionsci-cdsetup-staging.onrender.com',
     deployed: 'https://github-actions-ci-cd-setup-9j9z.onrender.com',
   },
 ];
@@ -414,7 +415,7 @@ const Portfolio = () => {
 
 
           <div className="cHeader">CI/CD Devops</div>
-
+          <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           {ciCDProjects.map((project, index) => (
 
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
@@ -424,6 +425,7 @@ const Portfolio = () => {
                 description={project.description}
                 image={project.image}
                 gitlink={project.gitLink}
+                staginglink={project.staging}
                 deployedlink={project.deployed}
               />
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import '../styles/projectStyles.css';
 
-const Project = ({ title, description, image, gitlink, deployedlink, video, videoText }) => {
+const Project = ({ title, description, image, gitlink, deployedlink, video, videoText, staginglink}) => {
   return (
     <Card className="project-card h-150">
       <div className="imageVideo">
@@ -41,7 +41,20 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
               View Github Project
             </a>
           )}
-          <div></div>
+          {staginglink && (
+            <div className="mt-2">
+              <a
+                role="button"
+                tabIndex="0"
+                href={staginglink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary custom-btn"
+              >
+                View Staging Project
+              </a>
+            </div>
+          )}
           {deployedlink && (
             <a
               role="button"
