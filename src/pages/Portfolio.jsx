@@ -51,6 +51,16 @@ const ciCDProjects = [
     staging: 'https://githubactionsci-cdsetup-staging.onrender.com',
     deployed: 'https://github-actions-ci-cd-setup-9j9z.onrender.com',
   },
+
+  {
+    title: 'GitHub Actions CI-CD Setup',
+    description: `Full stack CI/CD deployment, using git protections and a staging and production deployment using Git Actions`,
+    image: cirlceCI,
+    gitLink: 'https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main',
+    staging: 'https://githubactionsci-cdsetup-staging.onrender.com',
+    deployed: 'https://github-actions-ci-cd-setup-9j9z.onrender.com',
+  },
+
 ];
 
 
