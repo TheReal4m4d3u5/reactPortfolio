@@ -33,15 +33,25 @@ import vehicleVideo from '../../src/assets/module8.mp4'; // Correct import path 
 
 
 const seleniumProjects = [
-
   {
     title: 'My Selenium Test Suite',
     description: `My own custom build Selenium test suite using Maven, Java, Appium, BDD, Cucumber and Chromedriver`,
     image: selenium,
     gitLink: 'https://github.com/TheReal4m4d3u5/mySelenium',
   },
-
 ];
+
+
+const ciCDProjects = [
+  {
+    title: 'GitHub Actions CI-CD Setup',
+    description: `Full stack CI/CD deployment that uses Github actions`,
+    image: selenium,
+    gitLink: 'https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main',
+    deployed: 'https://github-actions-ci-cd-setup-9j9z.onrender.com',
+  },
+];
+
 
 const tDDProjects = [
 
@@ -401,6 +411,26 @@ const Portfolio = () => {
             </Col>
 
           ))}
+
+
+          <div className="cHeader">CI/CD Devops</div>
+
+          {ciCDProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+              />
+
+            </Col>
+
+          ))}
+
 
 
           {/* <div className="">Open GL</div>
