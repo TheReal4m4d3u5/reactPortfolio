@@ -36,7 +36,7 @@ const seleniumProjects = [
 
   {
     title: 'My Selenium Test Suite',
-    description: `My own custom build Selenium test suite`,
+    description: `My own custom build Selenium test suite using Maven, Java, Appium, BDD, Cucumber and Chromedriver`,
     image: selenium,
     gitLink: 'https://github.com/TheReal4m4d3u5/mySelenium',
   },
@@ -181,7 +181,7 @@ const javaScriptProjects = [
     description: 'A full stack custom built kanban board',
     image: image10,
     gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
-    deployed: 'https://github.com/TheReal4m4d3u5/kanbanBoard',
+    deployed: 'https://kanbanboard-552l.onrender.com',
   },
   {
     title: 'Weather App',
