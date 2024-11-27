@@ -15,6 +15,8 @@
   display: flex;
   align-items: center;
   max-height: 200px;
+  min-height: 200px;
+  max-width: 350px;
   min-width: 350px;
 }
 
@@ -144,4 +146,6 @@
   display: flex;
   flex-direction: column; /* Stacks the video and text vertically */
   align-items: center; /* Centers content horizontally */
+  min-height: 200px;
+  max-height: 200px;
 }
