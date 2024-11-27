@@ -2,34 +2,35 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Project from '../components/Project';
 import '../styles/portfolioStyles.css';
-import image1 from '../../src/assets/image1.png'; // Correct import path and file extension
-import image2 from '../../src/assets/image2.png'; // Correct import path and file extension
-import image3 from '../../src/assets/image3.png'; // Correct import path and file extension
-import image4 from '../../src/assets/image4.png'; // Correct import path and file extension
-import image5 from '../../src/assets/image5.png'; // Correct import path and file extension
-import image6 from '../../src/assets/image6.png'; // Correct import path and file extension
+import image1 from '../../src/assets/image1.png';
+import image2 from '../../src/assets/image2.png'; 
+import image3 from '../../src/assets/image3.png';
+import image4 from '../../src/assets/image4.png'; 
+import image5 from '../../src/assets/image5.png'; 
+import image6 from '../../src/assets/image6.png'; 
 import image7 from '../../src/assets/movieSearch.png';
 import image8 from '../../src/assets/candidateSearch.png';
-import image9 from '../../src/assets/image9.png'; // Correct import path and file extension
-import image10 from '../../src/assets/image10.png'; // Correct import path and file extension
-import image11 from '../../src/assets/carProgram.png'; // Correct import path and file extension
-import image12 from '../../src/assets/battleship.png'; // Correct import path and file extension
-import image13 from '../../src/assets/csci1203A6.png'; // Correct import path and file extension
-import image14 from '../../src/assets/csci1113A5.png'; // Correct import path and file extension
-import image15 from '../../src/assets/csci1111A7.png'; // Correct import path and file extension
-import image16 from '../../src/assets/csci1111A5.png'; // Correct import path and file extension
-import image17 from '../../src/assets/csci1113A6.png'; // Correct import path and file extension
-import bookSearch from '../../src/assets/bookSearch.png'; // Correct import path and file 
-import cirlceCI from '../../src/assets/cirlceCI.png'; // Correct import path and file  
+import image9 from '../../src/assets/image9.png'; 
+import image10 from '../../src/assets/image10.png';
+import image11 from '../../src/assets/carProgram.png';
+import image12 from '../../src/assets/battleship.png'; 
+import image13 from '../../src/assets/csci1203A6.png'; 
+import image14 from '../../src/assets/csci1113A5.png'; 
+import image15 from '../../src/assets/csci1111A7.png'; 
+import image16 from '../../src/assets/csci1111A5.png'; 
+import image17 from '../../src/assets/csci1113A6.png'; 
+import bookSearch from '../../src/assets/bookSearch.png'; 
+import cirlceCI from '../../src/assets/cirlceCI.png'; 
 
-import selenium from '../../src/assets/selenium.png'; // Correct import path and file extension
+import selenium from '../../src/assets/selenium.png'; 
 
 
-import tDD1 from '../../src/assets/tDD1.png'; // Correct import path and file extension
-import reactTDD from '../../src/assets/reactTDD.png'; // Correct import path and file extension
+import tDD1 from '../../src/assets/tDD1.png'; 
+import reactTDD from '../../src/assets/reactTDD.png';
 
-import socialMediaVideo from '../../src/assets/socialMediaAPI.mp4'; // Correct import path and file extension
-import vehicleVideo from '../../src/assets/module8.mp4'; // Correct import path and file extension
+import socialMediaVideo from '../../src/assets/socialMediaAPI.mp4'; 
+import vehicleVideo from '../../src/assets/module8.mp4'; 
+import employeeDB from '../../src/assets/employeeDB.mp4'; 
 
 
 const seleniumProjects = [
@@ -104,6 +105,19 @@ const matLabProjects = [
     gitLink: 'https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car',
   },
 ];
+
+
+const sqlProjects = [
+
+  {
+    video: employeeDB,
+    videoText: "Click to watch video",
+    title: 'Employee DB',
+    description: `Sql employee database `,
+    gitLink: 'https://github.com/TheReal4m4d3u5/EmployeeDB',
+  },
+];
+
 
 
 const mongoProjects = [
@@ -306,6 +320,30 @@ const Portfolio = () => {
             </Col>
 
           ))}
+
+          
+
+          <div className="mongoDBHeader">SQL</div>
+
+
+          {sqlProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                video={project.video}
+                videoText={project.videoText}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+              />
+
+            </Col>
+
+          ))} 
+
 
 
           <div className="mongoDBHeader">MongoDB</div>

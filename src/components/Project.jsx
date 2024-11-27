@@ -56,6 +56,7 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
             </div>
           )}
           {deployedlink && (
+            <div className="mt-2">
             <a
               role="button"
               tabIndex="0"
@@ -66,6 +67,7 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
             >
               View Deployed Project
             </a>
+            </div>
           )}
         </Card.Body>
       </div>
