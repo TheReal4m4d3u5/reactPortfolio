@@ -10,11 +10,7 @@
   min-height: 150px;
 }
 
-.skill-item{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
+
 
 /* Brand name styling */
 .brand {

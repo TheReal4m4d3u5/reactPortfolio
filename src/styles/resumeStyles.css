@@ -176,8 +176,37 @@
   padding-right: 10px;
 }
 
+.skill-item{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .skill-item {
   flex: 1;
+}
+
+li {
+
+  align-items: left;
+  text-align: left;
+  width: 100%;
+}
+
+.skills li {
+  line-height: 1.5; 
+  text-indent: -1.5em; 
+  padding-left: 1.5em;
+
+}
+
+.skills {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+
+.skills{
+  margin-bottom: 20px;
 }
 
 .skill-item:nth-child(2) {
@@ -234,11 +263,7 @@
 
 
 
-.skills {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
+
 
 @media (max-width: 768px) {
   .mainResumeContent{

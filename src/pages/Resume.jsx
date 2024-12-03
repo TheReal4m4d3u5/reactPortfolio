@@ -22,16 +22,31 @@ const Resume = () => {
           <h3 className='resumeHeaders'>Professional Summary</h3>
           <h3 className='coreSkills'>Core Skills</h3>
           <section className='professinalText'>
-            <p>Full Stack developer with 10 years as Senior Software Development Engineer in Test (SDET).</p>
+            <p>Full Stack Developer & SDET with 10+ years of experience delivering software
+solutions. Skilled in full-stack development, and automation, with expertise in C, C++,
+Java, JavaScript, React, TypeScript and Python. Proficient in RESTful/GraphQL APIs,
+SQL/NoSQL databases, CI/CD pipelines, and cloud-native development. Adept at
+leveraging frameworks like Selenium, Appium, Cucumber, and BDD to streamline
+testing and enhance application quality. Known for problem-solving, collaboration, and
+driving efficiency to achieve business goals.
+.</p>
 
           </section>
         </section>
 
         <div className="skills-container">
-          <div className="skill-item">Programming Languages</div>
+          <div className="skill-item">Core Competencies</div>
         </div>
 
-        <div>C, C++, C#, Java, Python, JavaScript, Visual Basic .NET, Bash, Batch, SQl, LISP, Assembly language, OpenGL(Libraries), GLUT, Equalizer, Glee, GLEW, GLUS, GLM, HTML, CSS, PHP, Perl, AngularJS, XML, AJAX, Jquery, VB script, VBA</div>
+        <div className="skills">
+          <li>C, C++, Java, Python, JavaScript, React, Typescript, Visual Basic .NET, LISP, Assembly Language, OpenGL(libraries), HTML, CSS, VB Script </li>
+          <li>Database Technologies: SQL, PostgresSQL, MongoDB, GraphQL </li>
+          <li>Testing & Automation: Selenium, Cucumber, Appium, TestComplete, Maven </li>
+          <li>CI/CD & DevOps: Jenkins, Bamboo, Docker, Jest, Cypress, Git Actions, CircleCI</li>
+          <li>Tools & Platforms: JIRA, TestRail, Git, GitHub </li>
+          <li>Methodologies: Agile, SDLC, BDD, TDD </li>
+          <li>Cloud Technologies: Azur </li>
+        </div>
 
 
         <div className="skill-item">Tools & Technologies</div>
@@ -59,9 +74,22 @@ const Resume = () => {
         <section className="professional-section">
           <h3 className='resumeHeaders'>Professoinal Experience</h3>
           <ul>
-            <li>Worked the last four years as a senior software Engineer for Wells Fargo as a sdet</li>
+            <li>Senior Software Engineer						  
+Wells Fargo, Minneapolis, MN
+8/21 – 4/24
+•	Developed and executed integration and regression testing scripts using Java, Selenium, and BDD (Cucumber) for Wells Fargo’s brokerage platform.
+•	Built CI/CD pipelines with Jenkins and Maven, reducing manual testing time by 80%.
+•	Collaborated with cross-functional teams to troubleshoot defects, enhancing application stability.
+
+
+•	Helped with the development of Wells Fargo’s brokerage website and app. 
+•	Actively involved in various phases of Software Development Life Cycle (SDLC).
+•	Java, Selenium, Appium, Maven, BDD, Cucumber, Eclipse, Jenkins.
+•	Planned, developed, documented, scheduled and executed integration and regression testing scripts using CI/CD tools. 
+
+</li>
             <div></div>
-            <li>Wells Fargo Eden Prairie, MN  							  3/20 – Current
+            <li>Wells Fargo Eden Prairie, MN  							  3/20 -8/21
               Application System Engineer
               •	a team to select a version control tool and research plug-ins needed to work with our automation tool.
               •	Designed workflow of software automation development and set up the workflow tool Jira.
