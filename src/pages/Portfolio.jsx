@@ -21,6 +21,7 @@ import image16 from '../../src/assets/csci1111A5.png';
 import image17 from '../../src/assets/csci1113A6.png'; 
 import bookSearch from '../../src/assets/bookSearch.png'; 
 import cirlceCI from '../../src/assets/cirlceCI.png'; 
+import blog from '../../src/assets/blog.png'; 
 
 import selenium from '../../src/assets/selenium.png'; 
 
@@ -211,6 +212,14 @@ const javaScriptProjects = [
     gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
     deployed: 'https://aline-events.onrender.com/',
   },
+
+  {
+    title: 'Blog',
+    description: 'A custom build blog',
+    image: blog,
+    gitLink: 'https://github.com/TheReal4m4d3u5/firstBlog',
+  },
+
   {
     title: 'Kanban Board',
     description: 'A full stack custom built kanban board',
