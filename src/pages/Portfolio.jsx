@@ -74,7 +74,7 @@ const pythonProjects = [
   },
   {
     title: 'Shopping Cart',
-    description: `This project involves implementing a Composition Price Calculation system to calculate the total price of items in a shopping cart. The goal is to design a reusable PriceCalculator class with a calculate_total_price method to handle pricing logic. This class is integrated into three item classes—PhysicalItem, DigitalItem, and GiftCard—through composition. Each item class delegates price calculation to the PriceCalculator, simplifying pricing logic and adhering to separation of concerns. Bonus challenges include extending the calculator for more complex pricing rules or additional item types.`,
+    description: `This project involves implementing a Composition Price Calculation system to calculate the total price of items in a shopping cart. The goal is to design a reusable PriceCalculator class with a calculate_total_price method to handle pricing logic. This class is integrated into three item classes—PhysicalItem, DigitalItem, and GiftCard—through composition. Each item class delegates price calculation to the PriceCalculator, simplifying pricing logic and adhering to separation of concerns.`,
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/shoppingCart',
   },
