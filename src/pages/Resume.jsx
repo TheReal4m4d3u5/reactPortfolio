@@ -20,23 +20,14 @@ const Resume = () => {
         <section className="professional-section">
 
           <h3 className='resumeHeaders'>Professional Summary</h3>
-          <h3 className='coreSkills'>Core Skills</h3>
+  
           <section className='professinalText'>
-            <p>Full Stack Developer & SDET with 10+ years of experience delivering software
-solutions. Skilled in full-stack development, and automation, with expertise in C, C++,
-Java, JavaScript, React, TypeScript and Python. Proficient in RESTful/GraphQL APIs,
-SQL/NoSQL databases, CI/CD pipelines, and cloud-native development. Adept at
-leveraging frameworks like Selenium, Appium, Cucumber, and BDD to streamline
-testing and enhance application quality. Known for problem-solving, collaboration, and
-driving efficiency to achieve business goals.
-.</p>
+            <p>Accomplished Full Stack Developer and SDET with over 10 years of experience delivering high-quality software solutions. Proficient in full-stack development, automation, and quality assurance, with expertise in C, C++, Java, JavaScript, React, TypeScript, and Python. Skilled in Test-Driven Development (TDD) using Jest, Cypress, Git Actions, and CircleCI to enhance code quality and streamline development pipelines. Extensive experience with RESTful and GraphQL APIs, SQL/NoSQL databases, and CI/CD pipelines. Adept at cloud-native development and leveraging frameworks like Selenium, Appium, Cucumber, and BDD to optimize testing. Known for a results-driven approach, innovative problem-solving, and delivering robust, scalable solutions.</p>
 
           </section>
         </section>
+        <h3 className='coreSkills'>Core Skills</h3>
 
-        <div className="skills-container">
-          <div className="skill-item">Core Competencies</div>
-        </div>
 
         <div className="skills">
           <li>C, C++, Java, Python, JavaScript, React, Typescript, Visual Basic .NET, LISP, Assembly Language, OpenGL(libraries), HTML, CSS, VB Script </li>
