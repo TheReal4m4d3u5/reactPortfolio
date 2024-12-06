@@ -26,46 +26,41 @@ const Resume = () => {
 
           </section>
         </section>
-        <h3 className='coreSkills'>Core Skills</h3>
-
-
+        <div className="skill-item">Core Skills</div>
         <div className="skills">
-          <li>C, C++, Java, Python, JavaScript, React, Typescript, Visual Basic .NET, LISP, Assembly Language, OpenGL(libraries), HTML, CSS, VB Script </li>
-          <li>Database Technologies: SQL, PostgresSQL, MongoDB</li>
-          <li>Testing & Automation: Selenium, Cucumber, Appium, TestComplete, Maven </li>
-          <li>CI/CD & DevOps: Jenkins, Bamboo, Docker, Jest, Cypress, Git Actions, CircleCI</li>
-          <li>Tools & Platforms: JIRA, TestRail, Git, GitHub, GraphQL, RESTful APIs </li>
-          <li>Methodologies: Agile, SDLC, BDD, TDD </li>
-          <li>Cloud Technologies: Azur, AWS </li>
-        </div>
+  <li><span style={{ fontWeight: "bold" }}>Languages:</span> C, C++, Java, Python, JavaScript, React, Typescript, Visual Basic .NET, LISP, Assembly Language, OpenGL(libraries), HTML, CSS, VB Script</li>
+  <li><span style={{ fontWeight: "bold" }}>Database Technologies:</span> SQL, PostgresSQL, MongoDB</li>
+  <li><span style={{ fontWeight: "bold" }}>Testing & Automation:</span> Selenium, Cucumber, Appium, TestComplete, Maven</li>
+  <li><span style={{ fontWeight: "bold" }}>CI/CD & DevOps:</span> Jenkins, Bamboo, Docker, Jest, Cypress, Git Actions, CircleCI</li>
+  <li><span style={{ fontWeight: "bold" }}>Tools & Platforms:</span> JIRA, TestRail, Git, GitHub, GraphQL, RESTful APIs</li>
+  <li><span style={{ fontWeight: "bold" }}>Methodologies:</span> Agile, SDLC, BDD, TDD</li>
+  <li><span style={{ fontWeight: "bold" }}>Cloud Technologies:</span> Azur, AWS</li>
+</div>
 
 
         <div className="skill-item">Tools & Technologies</div>
-        <li>Operating Systems: Linux, Unix, RTOS, Avionics RTOS</li>
-        <li>Programming & Scripting: Python 2.7x, Matlab, Labview, EASy68k, DrRacket</li>
-        <li>Development Tools: GCC, Visual Studio, Eclipse, Xilinx, IAR Systems, Apache Subversion, Cygwin, MinGW</li>
-        <li>Version Control: GitHub, GIT, Harvest, Subversion</li>
-        <li>Testing & Collaboration: Jira, Testlink, Test Rail, TestComplete, Redmine, IBM Notes, Microsoft Office, MS Teams</li>
-        <li>Embedded Systems: ARM Cortex, AVR ATMega, Arduino, Raspberry Pi, Basys2</li>
-        <li>Protocols & Interfaces: Arinc 664, Arinc 429, RS-232, ZigBee, UART, TCP/IP</li>
-        <li>Instrumentation: Oscilloscope, frequency generator, spectrum analyzer, digital multimeter, D/C power supply</li>
+        <li><strong>Operating Systems:</strong> Linux, Unix, RTOS, Avionics RTOS</li>
+        <li><strong>Programming & Scripting:</strong> Python 2.7x, Matlab, Labview, EASy68k, DrRacket</li>
+        <li><strong>Development Tools:</strong> GCC, Visual Studio, Eclipse, Xilinx, IAR Systems, Apache Subversion, Cygwin, MinGW</li>
+        <li><strong>Version Control:</strong> GitHub, GIT, Harvest, Subversion</li>
+        <li><strong>Testing & Collaboration:</strong> Jira, Testlink, Test Rail, TestComplete, Redmine, IBM Notes, Microsoft Office, MS Teams</li>
+        <li><strong>Embedded Systems:</strong> ARM Cortex, AVR ATMega, Arduino, Raspberry Pi, Basys2</li>
+        <li><strong>Protocols & Interfaces:</strong> Arinc 664, Arinc 429, RS-232, ZigBee, UART, TCP/IP</li>
+        <li><strong>Instrumentation:</strong> Oscilloscope, frequency generator, spectrum analyzer, digital multimeter, D/C power supply</li>
 
         <div className="skill-item">Hardware</div>
-        <li>Components & Microcontrollers: Accelerometer, GSM, CDMA, GPS, Ublocks, ICs, Infrared</li>
-        <li>Peripherals & Boards: Raspberry Pi, Arduino, Basys2, JTAG</li>
-        <li>Tools & Software: FPGA, Digital Logic, Virtual Box, ADE, Doors, Hercules</li>
+        <li><strong>Components & Microcontrollers:</strong> Accelerometer, GSM, CDMA, GPS, Ublocks, ICs, Infrared</li>
+        <li><strong>Peripherals & Boards:</strong> Raspberry Pi, Arduino, Basys2, JTAG</li>
+        <li><strong>Tools & Software:</strong> FPGA, Digital Logic, Virtual Box, ADE, Doors, Hercules</li>
 
 
-        <section className="education-ection">
-          <h3 className='resumeeaders'>Education</h3>
-          <ul>
+        <div className="skill-item">Education</div>
+
             <li>Associates from Normandale Community College in Computer Science</li>
             <li>Associates from Normandale Community College in Foundations of Engineering in Electrical Engineering</li>
             <li>Associates from ITT Tech in Computer Science</li>
             <li>Certifications: SQL certificate from Normandale, Developer Certificate from the University of Minnesota.</li>
             <li>Ongoing Learning: Taking classes at Metro State in Computer Science.</li>
-          </ul>
-        </section>
 
 
         <section className="professional-section">
