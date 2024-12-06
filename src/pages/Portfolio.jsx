@@ -321,17 +321,13 @@ const Portfolio = () => {
 
 
         <Row className="portfolioCards">
-
           <div className="javaScriptHeader">React Javascript</div>
-
           <div className="disclaimerWraper">
             <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           </div>
 
           {javaScriptProjects.map((project, index) => (
-
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
               <Project
                 title={project.title}
                 description={project.description}
@@ -563,30 +559,6 @@ const Portfolio = () => {
             </Col>
 
           ))} */}
-
-
-          {/* <div className="">Python Projects</div>
-
-          {javaProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-              />
-
-            </Col>
-
-          ))} */}
-
-
-
-
-
 
         </Row>
       </section>

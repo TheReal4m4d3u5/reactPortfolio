@@ -20,7 +20,7 @@ const Resume = () => {
         <section className="professional-section">
 
           <h3 className='resumeHeaders'>Professional Summary</h3>
-  
+
           <section className='professinalText'>
             <p>Accomplished Full Stack Developer and SDET with over 10 years of experience delivering high-quality software solutions. Proficient in full-stack development, automation, and quality assurance, with expertise in C, C++, Java, JavaScript, React, TypeScript, and Python. Skilled in Test-Driven Development (TDD) using Jest, Cypress, Git Actions, and CircleCI to enhance code quality and streamline development pipelines. Extensive experience with RESTful and GraphQL APIs, SQL/NoSQL databases, and CI/CD pipelines. Adept at cloud-native development and leveraging frameworks like Selenium, Appium, Cucumber, and BDD to optimize testing. Known for a results-driven approach, innovative problem-solving, and delivering robust, scalable solutions.</p>
 
@@ -41,13 +41,19 @@ const Resume = () => {
 
 
         <div className="skill-item">Tools & Technologies</div>
-        <div>•	Linux, Unix, GitHub, RTOS, GCC, Visual Studio, Jira, IAR, Matlab, Labview, Xilinx, Eclipse, DrRacket, Python 2.7x, EASy68k, Apache Subversion, Hercules, Cygwin, MinGW, Doors, IBM Notes, Microsoft Office, Testlink, Test Rail, Test Complete, Redmine, Apache, Harvest, ADE, Avionics RTOS, ARM Cortex, AVR ATMega, GSM, CDMA, accelerometer, GPS, Ublocks, ZigBee, Infrared, Arduino, Basys2, Raspberry Pi, ICs, JTAG, UART, oscilloscope, frequency generator, spectrum analyzer, digital multi meter, D/C power supply, Arinc 664, Arinc 429, RS-232, network switch.</div>
+        <li>Operating Systems: Linux, Unix, RTOS, Avionics RTOS</li>
+        <li>Programming & Scripting: Python 2.7x, Matlab, Labview, EASy68k, DrRacket</li>
+        <li>Development Tools: GCC, Visual Studio, Eclipse, Xilinx, IAR Systems, Apache Subversion, Cygwin, MinGW</li>
+        <li>Version Control: GitHub, GIT, Harvest, Subversion</li>
+        <li>Testing & Collaboration: Jira, Testlink, Test Rail, TestComplete, Redmine, IBM Notes, Microsoft Office, MS Teams</li>
+        <li>Embedded Systems: ARM Cortex, AVR ATMega, Arduino, Raspberry Pi, Basys2</li>
+        <li>Protocols & Interfaces: Arinc 664, Arinc 429, RS-232, ZigBee, UART, TCP/IP</li>
+        <li>Instrumentation: Oscilloscope, frequency generator, spectrum analyzer, digital multimeter, D/C power supply</li>
+
         <div className="skill-item">Hardware</div>
-        <div>•	A/C D/C, accelerometer, ADE (bus management software), Apache, Arduino, Arinc protocols, ARM Cortex, AVR (microcontroller), Basys2, CDMA, controller software, Cygwin, DLL, digital logic, Doors, digital multi meter, Eclipse, DHCP, frequency generator, FPGA, GCC, GIT, GitHub, GPS, GSM, Harvest, Hercules, IAR Systems, IBM Notes, infrared, integrated circuits, Jira, JTAG, Labview, Linux, Matlab, MS Office, MS Teams, MinGW, network switch, oscilloscope, Raspberry Pi, real time operating systems, Redmine, RS-232, spectrum analyzer, Subversion, TCP/IP, TestComplete, Testlink, Test Rail, UART, Ublocks, Unix, Virtual Box, Visual Studio, Xilinx, ZigBee </div>
-
-
-
-
+        <li>Components & Microcontrollers: Accelerometer, GSM, CDMA, GPS, Ublocks, ICs, Infrared</li>
+        <li>Peripherals & Boards: Raspberry Pi, Arduino, Basys2, JTAG</li>
+        <li>Tools & Software: FPGA, Digital Logic, Virtual Box, ADE, Doors, Hercules</li>
 
 
         <section className="education-ection">
@@ -65,20 +71,20 @@ const Resume = () => {
         <section className="professional-section">
           <h3 className='resumeHeaders'>Professoinal Experience</h3>
           <ul>
-            <li>Senior Software Engineer						  
-Wells Fargo, Minneapolis, MN
-8/21 – 4/24
-•	Developed and executed integration and regression testing scripts using Java, Selenium, and BDD (Cucumber) for Wells Fargo’s brokerage platform.
-•	Built CI/CD pipelines with Jenkins and Maven, reducing manual testing time by 80%.
-•	Collaborated with cross-functional teams to troubleshoot defects, enhancing application stability.
+            <li>Senior Software Engineer
+              Wells Fargo, Minneapolis, MN
+              8/21 – 4/24
+              •	Developed and executed integration and regression testing scripts using Java, Selenium, and BDD (Cucumber) for Wells Fargo’s brokerage platform.
+              •	Built CI/CD pipelines with Jenkins and Maven, reducing manual testing time by 80%.
+              •	Collaborated with cross-functional teams to troubleshoot defects, enhancing application stability.
 
 
-•	Helped with the development of Wells Fargo’s brokerage website and app. 
-•	Actively involved in various phases of Software Development Life Cycle (SDLC).
-•	Java, Selenium, Appium, Maven, BDD, Cucumber, Eclipse, Jenkins.
-•	Planned, developed, documented, scheduled and executed integration and regression testing scripts using CI/CD tools. 
+              •	Helped with the development of Wells Fargo’s brokerage website and app.
+              •	Actively involved in various phases of Software Development Life Cycle (SDLC).
+              •	Java, Selenium, Appium, Maven, BDD, Cucumber, Eclipse, Jenkins.
+              •	Planned, developed, documented, scheduled and executed integration and regression testing scripts using CI/CD tools.
 
-</li>
+            </li>
             <div></div>
             <li>Wells Fargo Eden Prairie, MN  							  3/20 -8/21
               Application System Engineer
