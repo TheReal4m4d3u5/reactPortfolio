@@ -40,12 +40,12 @@ driving efficiency to achieve business goals.
 
         <div className="skills">
           <li>C, C++, Java, Python, JavaScript, React, Typescript, Visual Basic .NET, LISP, Assembly Language, OpenGL(libraries), HTML, CSS, VB Script </li>
-          <li>Database Technologies: SQL, PostgresSQL, MongoDB, GraphQL </li>
+          <li>Database Technologies: SQL, PostgresSQL, MongoDB</li>
           <li>Testing & Automation: Selenium, Cucumber, Appium, TestComplete, Maven </li>
           <li>CI/CD & DevOps: Jenkins, Bamboo, Docker, Jest, Cypress, Git Actions, CircleCI</li>
-          <li>Tools & Platforms: JIRA, TestRail, Git, GitHub </li>
+          <li>Tools & Platforms: JIRA, TestRail, Git, GitHub, GraphQL, RESTful APIs </li>
           <li>Methodologies: Agile, SDLC, BDD, TDD </li>
-          <li>Cloud Technologies: Azur </li>
+          <li>Cloud Technologies: Azur, AWS </li>
         </div>
 
 
