@@ -68,31 +68,54 @@ const ciCDProjects = [
 const pythonProjects = [
   {
     title: 'Coin Toss',
-    description: `This program simulates a coin toss to determine which player starts a two-person game. The CoinToss class initializes with no side up and includes a toss method that uses randomness to set the coin's side to "Heads" or "Tails." Players input their guess, and the program compares it to the toss result to decide who starts first. `,
+    description: `Simulates a coin toss to determine which player starts a two-person game. The CoinToss class initializes with no side up and includes a toss method that uses randomness to set the coin's side to "Heads" or "Tails." Players input their guess, and the program compares it to the toss result to decide who starts first. `,
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/coin_toss',
   },
   {
     title: 'Shopping Cart',
-    description: `This project involves implementing a Composition Price Calculation system to calculate the total price of items in a shopping cart. The goal is to design a reusable PriceCalculator class with a calculate_total_price method to handle pricing logic. This class is integrated into three item classes PhysicalItem, DigitalItem, and GiftCard through composition. Each item class delegates price calculation to the PriceCalculator, simplifying pricing logic and adhering to separation of concerns.`,
+    description: `Implements a Composition Price Calculation system to calculate the total price of items in a shopping cart. The goal is to design a reusable PriceCalculator class with a calculate_total_price method to handle pricing logic. This class is integrated into three item classes PhysicalItem, DigitalItem, and GiftCard through composition. Each item class delegates price calculation to the PriceCalculator, simplifying pricing logic and adhering to separation of concerns.`,
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/shoppingCart',
   },
   {
     title: 'Shopping Cart Polymorphism',
-    description: `This project implements a polymorphic shopping cart in JavaScript, where different item types—PhysicalItem, DigitalItem, and GiftCard—calculate their prices uniquely. Each item extends a base class CartItem and overrides the calculatePrice method to apply specific pricing logic: adding shipping fees for physical items, applying no fees for digital items, and applying discounts for gift cards. The ShoppingCart class aggregates these items, allowing users to add items and compute the total price dynamically. This design demonstrates polymorphism by treating all items uniformly while preserving their individual behaviors.`,
+    description: `Implements a polymorphic shopping cart in JavaScript, where different item types—PhysicalItem, DigitalItem, and GiftCard—calculate their prices uniquely. Each item extends a base class CartItem and overrides the calculatePrice method to apply specific pricing logic: adding shipping fees for physical items, applying no fees for digital items, and applying discounts for gift cards. The ShoppingCart class aggregates these items, allowing users to add items and compute the total price dynamically. This design demonstrates polymorphism by treating all items uniformly while preserving their individual behaviors.`,
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/shoppingCartPolymorphism',
+  },
+  {
+    title: 'Customer Room Reservations',
+    description: `A Python-based room reservation system for hotel management, allowing customers to book rooms, check availability, and manage reservations. It features a Customer class that inherits from a Reservation class, enabling room validation, booking, and updating room availability stored in a JSON file. Reservation details, including customer information and total cost, are saved in a CSV file for record-keeping. The system ensures efficient room management and handles errors gracefully during the booking process.`,
+    image: coinToss,
+    gitLink: 'https://github.com/TheReal4m4d3u5/shoppingCartPolymorphism',
+  },
+  {
+    title: 'Bank Account',
+    description: `A simple command-line banking application that allows users to manage their savings account by making deposits and withdrawals. It imports a SavingsAccount class from a separate bank_account.py file, which provides methods to deposit funds, withdraw funds, and display the balance in thousands with two decimal precision. The program interacts with the user by prompting for a starting balance, paycheck amount, and withdrawal amount, updating the account balance accordingly and ensuring transactions are reflected accurately.`,
+    image: coinToss,
+    gitLink: 'https://github.com/TheReal4m4d3u5/bankAccount',
   },
 
   {
-    title: 'Customer Room Reservations',
-    description: `This project is a Python-based room reservation system for hotel management, allowing customers to book rooms, check availability, and manage reservations. It features a Customer class that inherits from a Reservation class, enabling room validation, booking, and updating room availability stored in a JSON file. Reservation details, including customer information and total cost, are saved in a CSV file for record-keeping. The system ensures efficient room management and handles errors gracefully during the booking process.`,
+    title: 'Student Profile Creator',
+    description: `This is a Student Profile Creator that allows school administrators to collect and store student information securely. It features input validation for email and password, generating unique student IDs based on names, and storing the profiles in a CSV file. The program ensures data integrity by checking for valid email formats and enforcing password length requirements. The profiles are saved and can be displayed using CSV read-and-write operations, making it a simple yet effective tool for managing student records.`,
     image: coinToss,
-    gitLink: 'https://github.com/TheReal4m4d3u5/shoppingCartPolymorphism',
+    gitLink: 'https://github.com/TheReal4m4d3u5/studentProfileCreator',
   },
 
-
+  {
+    title: 'Write to a file',
+    description: `Provides a simple interface for managing book sales data in a CSV file. It includes functionality to append new sales records and view the existing data. The CSV_handler.py file contains functions to add data to the CSV and read its contents using Python's csv module. The book_data.py file collects user input for book title, author, copies sold, and price, then appends this data to the CSV and displays the updated contents. This project is designed for easy data entry and review for sales management purposes.`,
+    image: coinToss,
+    gitLink: 'https://github.com/TheReal4m4d3u5/writeToFilePY',
+  },
+  {
+    title: 'Examp Averages',
+    description: `A Python script designed to read exam scores from a CSV file and calculate the average score for each subject. Using the csv module and the Path module from pathlib, the script dynamically constructs the file path, reads the CSV data with DictReader, and processes the scores by converting them to integers and storing them in a dictionary. The script then calculates the average for each subject and prints the results formatted to one decimal place. This automation simplifies the process of analyzing and summarizing exam scores for teachers.`,
+    image: coinToss,
+    gitLink: 'https://github.com/TheReal4m4d3u5/examAverages',
+  },
 
 ];
 
