@@ -93,7 +93,7 @@ const pythonProjects = [
   },
 
 
-  
+
 ];
 
 
@@ -331,23 +331,6 @@ const Portfolio = () => {
         <h1 className="portfilioHeaderText">My Portfolio</h1>
 
         <Row className="portfolioCards">
-          <div className="javaScriptHeader">React.js / Javascript / Typescript</div>
-
-
-          {javaScriptProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                video={project.video}
-                videoText={project.videoText}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-              />
-
-            </Col>
-          ))}
 
           <div className="mongoDBHeader">Full Stack</div>
           <div className="disclaimerWraper">
@@ -369,6 +352,22 @@ const Portfolio = () => {
             </Col>
           ))}
 
+
+          <div className="javaScriptHeader">React.js / Javascript / Typescript</div>
+          {javaScriptProjects.map((project, index) => (
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                video={project.video}
+                videoText={project.videoText}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+              />
+
+            </Col>
+          ))}
 
 
           <div className="mongoDBHeader">SQL</div>
