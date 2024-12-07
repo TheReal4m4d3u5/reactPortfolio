@@ -88,7 +88,7 @@ const pythonProjects = [
     title: 'Customer Room Reservations',
     description: `A Python-based room reservation system for hotel management, allowing customers to book rooms, check availability, and manage reservations. It features a Customer class that inherits from a Reservation class, enabling room validation, booking, and updating room availability stored in a JSON file. Reservation details, including customer information and total cost, are saved in a CSV file for record-keeping. The system ensures efficient room management and handles errors gracefully during the booking process.`,
     image: coinToss,
-    gitLink: 'https://github.com/TheReal4m4d3u5/shoppingCartPolymorphism',
+    gitLink: 'https://github.com/TheReal4m4d3u5/customerRoomReservations',
   },
   {
     title: 'Bank Account',
@@ -115,6 +115,13 @@ const pythonProjects = [
     description: `A Python script designed to read exam scores from a CSV file and calculate the average score for each subject. Using the csv module and the Path module from pathlib, the script dynamically constructs the file path, reads the CSV data with DictReader, and processes the scores by converting them to integers and storing them in a dictionary. The script then calculates the average for each subject and prints the results formatted to one decimal place. This automation simplifies the process of analyzing and summarizing exam scores for teachers.`,
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/examAverages',
+  },
+
+  {
+    title: 'Hotel Reservation System',
+    description: `A command-line application that enables hotel clerks to manage room bookings efficiently. It allows users to view available rooms with details such as room number, type, price, and amenities, as well as reserve or cancel reservations by updating the room's availability status. The system also includes functionality to generate reports showing the total count and details of both available and reserved rooms. This project leverages Python classes for room management and offers an interactive interface for seamless reservation handling.`,
+    image: coinToss,
+    gitLink: 'https://github.com/TheReal4m4d3u5/hotelReservationSystem',
   },
 
 ];
