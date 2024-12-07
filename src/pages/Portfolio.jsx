@@ -332,9 +332,7 @@ const Portfolio = () => {
 
         <Row className="portfolioCards">
           <div className="javaScriptHeader">React.js / Javascript / Typescript</div>
-          <div className="disclaimerWraper">
-            <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
-          </div>
+
 
           {javaScriptProjects.map((project, index) => (
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
@@ -352,6 +350,9 @@ const Portfolio = () => {
           ))}
 
           <div className="mongoDBHeader">Full Stack</div>
+          <div className="disclaimerWraper">
+            <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
+          </div>
 
           {fullStackProjects.map((project, index) => (
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
