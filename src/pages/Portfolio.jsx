@@ -78,6 +78,22 @@ const pythonProjects = [
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/shoppingCart',
   },
+  {
+    title: 'Shopping Cart Polymorphism',
+    description: `This project implements a polymorphic shopping cart in JavaScript, where different item types—PhysicalItem, DigitalItem, and GiftCard—calculate their prices uniquely. Each item extends a base class CartItem and overrides the calculatePrice method to apply specific pricing logic: adding shipping fees for physical items, applying no fees for digital items, and applying discounts for gift cards. The ShoppingCart class aggregates these items, allowing users to add items and compute the total price dynamically. This design demonstrates polymorphism by treating all items uniformly while preserving their individual behaviors.`,
+    image: coinToss,
+    gitLink: 'https://github.com/TheReal4m4d3u5/shoppingCartPolymorphism',
+  },
+
+  {
+    title: 'Customer Room Reservations',
+    description: `This project is a Python-based room reservation system for hotel management, allowing customers to book rooms, check availability, and manage reservations. It features a Customer class that inherits from a Reservation class, enabling room validation, booking, and updating room availability stored in a JSON file. Reservation details, including customer information and total cost, are saved in a CSV file for record-keeping. The system ensures efficient room management and handles errors gracefully during the booking process.`,
+    image: coinToss,
+    gitLink: 'https://github.com/TheReal4m4d3u5/shoppingCartPolymorphism',
+  },
+
+
+  
 ];
 
 
@@ -130,7 +146,8 @@ const sqlProjects = [
     video: employeeDB,
     videoText: "Click to watch video",
     title: 'Employee DB',
-    description: `Sql employee database `,
+    description: `
+The Employee Tracker is a command-line application built with Node.js, Inquirer, and PostgreSQL that allows business owners to manage and organize employee data efficiently. It provides a menu-driven interface to view and manage departments, roles, and employees, enabling users to add new entries, update employee roles, and display formatted tables of company information. The application connects to a PostgreSQL database to store and retrieve data dynamically, offering a streamlined solution for internal company resource management.`,
     gitLink: 'https://github.com/TheReal4m4d3u5/EmployeeDB',
   },
 ];
@@ -149,7 +166,7 @@ const mongoProjects = [
   {
     video: socialMediaVideo,
     title: 'Social Media API',
-    description: 'A back-end social media restul application that uses MongoDB. ',
+    description: `This project is a Social Network API built using Express.js for routing, MongoDB for the NoSQL database, and Mongoose as the ODM. The API enables users to create, update, and delete profiles, share thoughts, react to friends' thoughts, and manage friend lists. The project includes RESTful endpoints to handle CRUD operations for users, thoughts, and reactions, demonstrating the ability to manage large amounts of unstructured data efficiently.`,
     videoText: "Click to watch video",
     gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
   },
@@ -162,7 +179,7 @@ const mongoProjects = [
   },
   {
     title: 'Book Search Engine',
-    description: 'lets users search books via the Google Books API, create accounts, and manage personalized book lists. With GraphQL API and JWT authentication, it ensures efficient data handling and secure sessions for a seamless experience.',
+    description: 'This project is a full-stack MERN (MongoDB, Express.js, React, Node.js) application that allows users to search for books using the Google Books API and save their favorite books. The RESTful API has been refactored to a GraphQL API using Apollo Server to handle queries and mutations for user authentication, book searching, and saving or removing books. The front end integrates Apollo Client for GraphQL requests and supports user authentication with JWT. The app is deployed on Render with a MongoDB Atlas database, providing a seamless and efficient experience for managing personalized book lists.',
     image: bookSearch,
     gitLink: 'https://github.com/TheReal4m4d3u5/bookSearchEngine',
     deployed: 'https://booksearchengine-5ikq.onrender.com',
@@ -217,39 +234,47 @@ const cProjects = [
 
 ];
 
-
-
-
-const javaScriptProjects = [
+const fullStackProjects = [
   {
     title: 'Aline',
-    description: 'A full stack website that allows you to search for events and save your events',
+    description: 'Aline-Events is a full-stack web application built with Node.js, Express.js, React, and PostgreSQL using the Sequelize ORM. It features a RESTful API for retrieving and adding event data, with JWT authentication for secure access. The application integrates with the Ticketmaster API for event information and the OpenWeather API for real-time weather forecasts. The frontend is responsive and interactive, ensuring a polished user experience. The project follows the separation of concerns design principle, protects sensitive information with environment variables, and is deployed on Render for seamless access.',
     image: image9,
     gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
     deployed: 'https://aline-events.onrender.com/',
   },
-
-  {
-    title: 'Blog',
-    description: 'A custom build blog',
-    image: blog,
-    gitLink: 'https://github.com/TheReal4m4d3u5/firstBlog',
-  },
-
-  {
-    title: 'Kanban Board',
-    description: 'A full stack custom built kanban board',
-    image: image10,
-    gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
-    deployed: 'https://kanbanboard-552l.onrender.com',
-  },
   {
     title: 'Weather App',
-    description: 'A custom-built full-stack weather app.',
+    description: 'This project is a full-stack weather dashboard application that retrieves and displays the 5-day weather forecast for various cities using the OpenWeather API. The front end provides a search interface where users can input city names and view current and future weather conditions, including temperature, humidity, wind speed, and weather icons. The back end, built with Node.js and Express, handles API calls, stores search history in a JSON file, and serves data to the client. The application is deployed on Render for live use and integrates features like search history persistence and optional city deletion functionality.',
     image: image2,
     gitLink: 'https://github.com/TheReal4m4d3u5/WeatherAPP',
     deployed: 'https://weatherapp-ew0q.onrender.com',
   },
+  {
+    title: 'Candidate Search',
+    description: 'The Candidate Search application is a React-based front-end project written in TypeScript that interfaces with the GitHub API to display user profiles. It allows employers to review candidates by fetching their GitHub data (name, location, avatar, and more), save potential candidates to local storage, and reject others. The project provides dynamic navigation between candidate review and a saved candidates list, ensuring data persistence across sessions. The application is deployed on Render and includes clean UI components, responsive design, and best practices for maintainability and scalability.',
+    image: image8,
+    gitLink: 'https://github.com/TheReal4m4d3u5/candidateSearch',
+    deployed: 'https://funny-biscochitos-9e1673.netlify.app/',
+  },
+  {
+    title: 'Kanban Board',
+    description: 'This project is a full-stack Kanban board application that incorporates JWT-based authentication to secure user access. The application includes a login page where users provide credentials, which are verified on the server. Upon successful authentication, a JWT is issued and stored in local storage, allowing users to manage their tasks securely. Protected routes ensure that only authenticated users can access the Kanban board, and JWTs are validated for each request to maintain security. The app is deployed on Render, integrating PostgreSQL for database management.',
+    image: image10,
+    gitLink: 'https://github.com/TheReal4m4d3u5/kanbanBoard',
+    deployed: 'https://kanbanboard-552l.onrender.com',
+  },
+];
+
+const javaScriptProjects = [
+
+
+  {
+    title: 'Blog',
+    description: `This project is a two-page personal blog application built with HTML, CSS, and JavaScript. It allows users to submit blog posts via a form containing fields for username, blog title, and content. Submitted posts are stored in localStorage and displayed on a separate blog page. The blog page features a light/dark mode toggle to switch themes dynamically and a "Back" button to return to the form. The application includes validation to ensure all fields are filled before submission and displays a list of blog posts with the author's username, title, and content.`,
+    image: blog,
+    gitLink: 'https://github.com/TheReal4m4d3u5/firstBlog',
+  },
+
   {
     title: 'Film Tracker',
     description: 'Full stack movies database search and alows user to add them to a watch or seen list.',
@@ -257,13 +282,7 @@ const javaScriptProjects = [
     gitLink: 'https://github.com/TheReal4m4d3u5/movieSearch',
     deployed: 'https://meek-cassata-691e1b.netlify.app/',
   },
-  {
-    title: 'Candidate Search',
-    description: 'Fetches a querry to githubs API key for potential candidates and alows the user to save them in a potenitial candidate search',
-    image: image8,
-    gitLink: 'https://github.com/TheReal4m4d3u5/candidateSearch',
-    deployed: 'https://funny-biscochitos-9e1673.netlify.app/',
-  },
+
   {
     title: 'Bucket Checklist',
     description: 'Alows user to create a checklist ranking them by priority and alows the user to check them off when completed',
@@ -271,14 +290,8 @@ const javaScriptProjects = [
     gitLink: 'https://github.com/TheReal4m4d3u5/bucketList',
   },
   {
-    title: 'Employee Database',
-    description: 'A database management system for employee records.',
-    image: image3,
-    gitLink: 'https://github.com/TheReal4m4d3u5/EmployeeDB',
-  },
-  {
     title: 'Vehicle App',
-    description: 'An interactive vehicle selection and customization app.',
+    description: 'The Vehicle Builder is a TypeScript-based command-line application that allows users to create and interact with different types of vehicles: cars, trucks, and motorbikes. Using the Inquirer package for user prompts, the application lets users input vehicle details, perform vehicle-specific actions (e.g., driving a car, loading cargo in a truck, or performing stunts with a motorbike), and manage existing vehicles. The project demonstrates effective use of classes, TypeScript interfaces, and user-driven workflows.',
     video: vehicleVideo,
     videoText: "Click to watch video",
     gitLink: 'https://github.com/TheReal4m4d3u5/Create-Vehicle',
@@ -291,7 +304,7 @@ const javaScriptProjects = [
   },
   {
     title: 'React Profile',
-    description: 'A vite and react application that generates a web profile',
+    description: `This project is a React-based single-page portfolio application that showcases a web developer's skills and projects. It features dynamic navigation with React Router to seamlessly switch between sections like About Me, Portfolio, Contact, and Resume without reloading the page. The Portfolio section highlights six projects using a reusable Project component, each with links to deployed applications and GitHub repositories. The Contact section includes a form with validation for user inputs. The application is styled with a custom design, responsive for mobile-first use, and deployed on Netlify for accessibility.`,
     image: image6,
     gitLink: 'https://github.com/TheReal4m4d3u5/reactPortfolio',
     deployed: 'https://zesty-starlight-a7d6e2.netlify.app/',
@@ -317,11 +330,8 @@ const Portfolio = () => {
 
         <h1 className="portfilioHeaderText">My Portfolio</h1>
 
-
-
-
         <Row className="portfolioCards">
-          <div className="javaScriptHeader">React Javascript</div>
+          <div className="javaScriptHeader">React.js / Javascript / Typescript</div>
           <div className="disclaimerWraper">
             <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           </div>
@@ -339,7 +349,23 @@ const Portfolio = () => {
               />
 
             </Col>
+          ))}
 
+          <div className="mongoDBHeader">Full Stack</div>
+
+          {fullStackProjects.map((project, index) => (
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                video={project.video}
+                videoText={project.videoText}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+              />
+
+            </Col>
           ))}
 
 
