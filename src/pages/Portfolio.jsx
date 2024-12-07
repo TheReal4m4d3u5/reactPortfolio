@@ -332,7 +332,7 @@ const Portfolio = () => {
 
         <Row className="portfolioCards">
 
-          <div className="mongoDBHeader">Full Stack</div>
+          <div className="mongoDBHeader">Full Stack PERN</div>
           <div className="disclaimerWraper">
             <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           </div>
@@ -351,6 +351,31 @@ const Portfolio = () => {
 
             </Col>
           ))}
+
+
+          <div className="mongoDBHeader">Full Stack MERN</div>
+          <div className="disclaimerWraper">
+            <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
+          </div>
+
+          {mongoProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                video={project.video}
+                videoText={project.videoText}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+              />
+
+            </Col>
+
+          ))}
+
 
 
           <div className="javaScriptHeader">React.js / Javascript / Typescript</div>
@@ -392,29 +417,6 @@ const Portfolio = () => {
           ))}
 
 
-
-          <div className="mongoDBHeader">MongoDB</div>
-          <div className="disclaimerWraper">
-            <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
-          </div>
-
-          {mongoProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                video={project.video}
-                videoText={project.videoText}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-              />
-
-            </Col>
-
-          ))}
 
 
           <div className="matLabHeader">Matlab</div>
