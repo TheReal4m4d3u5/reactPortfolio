@@ -38,9 +38,10 @@ import employeeDB from '../../src/assets/employeeDB.mp4';
 const seleniumProjects = [
   {
     title: 'My Selenium Test Suite',
-    description: `My own custom build Selenium test suite using Maven, Java, Appium, BDD, Cucumber and Chromedriver`,
+    description: `A custom-built Selenium test suite for automated testing.`,
     image: selenium,
     gitLink: 'https://github.com/TheReal4m4d3u5/mySelenium',
+    tags: ['Selenium', 'Maven', 'Java', 'Appium', 'BDD', 'Cucumber', 'Chromedriver'],
   },
 ];
 
@@ -48,19 +49,21 @@ const seleniumProjects = [
 const ciCDProjects = [
   {
     title: 'GitHub Actions CI-CD Setup',
-    description: `Full stack CI/CD deployment, using git protections and a staging and production deployment using CirlceCI`,
+    description: `Full stack CI/CD deployment with git protections and staging and production environments.`,
     image: cirlceCI,
     gitLink: 'https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main',
     staging: 'https://githubactionsci-cdsetup-staging.onrender.com',
     deployed: 'https://github-actions-ci-cd-setup-9j9z.onrender.com',
+    tags: ['CI/CD', 'CircleCI', 'Staging', 'Production Deployment', 'Git Protections'],
   },
   {
     title: 'GitHub Actions CI-CD Setup',
-    description: `Full stack CI/CD deployment, using git protections and a staging and production deployment using Git Actions`,
+    description: `Full stack deployment pipeline.`,
     image: cirlceCI,
     gitLink: 'https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main',
     staging: 'https://githubactionsci-cdsetup-staging.onrender.com',
     deployed: 'https://github-actions-ci-cd-setup-9j9z.onrender.com',
+    tags: ['CI/CD', 'GitHub Actions', 'Git Protections', 'Staging Deployment', 'Production Deployment'],
   },
 ];
 
@@ -68,60 +71,69 @@ const ciCDProjects = [
 const pythonProjects = [
   {
     title: 'Coin Toss',
-    description: `Simulates a coin toss to determine which player starts a two-person game. The CoinToss class initializes with no side up and includes a toss method that uses randomness to set the coin's side to "Heads" or "Tails." Players input their guess, and the program compares it to the toss result to decide who starts first. `,
+    description: `Simulates a coin toss to determine which player starts a two-person game. Players input their guess, and the program compares it to the toss result to decide who starts first.`,
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/coin_toss',
+    tags: ['Python', 'Command-Line Application'],
   },
   {
     title: 'Shopping Cart',
-    description: `Implements a Composition Price Calculation system to calculate the total price of items in a shopping cart. The goal is to design a reusable PriceCalculator class with a calculate_total_price method to handle pricing logic. This class is integrated into three item classes PhysicalItem, DigitalItem, and GiftCard through composition. Each item class delegates price calculation to the PriceCalculator, simplifying pricing logic and adhering to separation of concerns.`,
+    description: 'A system to calculate the total price of items in a shopping cart using composition.',
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/shoppingCart',
+    tags: ['Python', 'Composition'],
   },
   {
     title: 'Shopping Cart Polymorphism',
-    description: `Implements a polymorphic shopping cart in JavaScript, where different item types—PhysicalItem, DigitalItem, and GiftCard—calculate their prices uniquely. Each item extends a base class CartItem and overrides the calculatePrice method to apply specific pricing logic: adding shipping fees for physical items, applying no fees for digital items, and applying discounts for gift cards. The ShoppingCart class aggregates these items, allowing users to add items and compute the total price dynamically. This design demonstrates polymorphism by treating all items uniformly while preserving their individual behaviors.`,
+    description: 'A polymorphic shopping cart where different item types calculate prices uniquely.',
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/shoppingCartPolymorphism',
+    tags: ['Python', 'Polymorphism'],
   },
   {
     title: 'Customer Room Reservations',
-    description: `A Python-based room reservation system for hotel management, allowing customers to book rooms, check availability, and manage reservations. It features a Customer class that inherits from a Reservation class, enabling room validation, booking, and updating room availability stored in a JSON file. Reservation details, including customer information and total cost, are saved in a CSV file for record-keeping. The system ensures efficient room management and handles errors gracefully during the booking process.`,
+    description: 'A system for hotel management to book rooms, check availability, and manage reservations.',
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/customerRoomReservations',
+    tags: ['Python', 'CSV', 'JSON'],
   },
   {
     title: 'Bank Account',
-    description: `A simple command-line banking application that allows users to manage their savings account by making deposits and withdrawals. It imports a SavingsAccount class from a separate bank_account.py file, which provides methods to deposit funds, withdraw funds, and display the balance in thousands with two decimal precision. The program interacts with the user by prompting for a starting balance, paycheck amount, and withdrawal amount, updating the account balance accordingly and ensuring transactions are reflected accurately.`,
+    description: 'A command-line banking application for managing savings account deposits and withdrawals.',
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/bankAccount',
+    tags: ['Python', 'Command-Line Application'],
   },
 
   {
     title: 'Student Profile Creator',
-    description: `This is a Student Profile Creator that allows school administrators to collect and store student information securely. It features input validation for email and password, generating unique student IDs based on names, and storing the profiles in a CSV file. The program ensures data integrity by checking for valid email formats and enforcing password length requirements. The profiles are saved and can be displayed using CSV read-and-write operations, making it a simple yet effective tool for managing student records.`,
+    description: 'A tool for managing student profiles with input validation and CSV storage.',
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/studentProfileCreator',
+    tags: ['Python', 'CSV', 'Input Validation'],
   },
 
   {
-    title: 'Write to a file',
-    description: `Provides a simple interface for managing book sales data in a CSV file. It includes functionality to append new sales records and view the existing data. The CSV_handler.py file contains functions to add data to the CSV and read its contents using Python's csv module. The book_data.py file collects user input for book title, author, copies sold, and price, then appends this data to the CSV and displays the updated contents. This project is designed for easy data entry and review for sales management purposes.`,
+    title: 'Write to a File',
+    description: 'A tool for managing book sales data stored in a CSV file.',
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/writeToFilePY',
+    tags: ['Python', 'CSV', 'File Management'],
   },
   {
-    title: 'Examp Averages',
-    description: `A Python script designed to read exam scores from a CSV file and calculate the average score for each subject. Using the csv module and the Path module from pathlib, the script dynamically constructs the file path, reads the CSV data with DictReader, and processes the scores by converting them to integers and storing them in a dictionary. The script then calculates the average for each subject and prints the results formatted to one decimal place. This automation simplifies the process of analyzing and summarizing exam scores for teachers.`,
+    title: 'Exam Averages',
+    description: 'A script to read exam scores from a CSV file and calculate average scores.',
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/examAverages',
+    tags: ['Python', 'CSV', 'Data Analysis'],
   },
 
   {
     title: 'Hotel Reservation System',
-    description: `A command-line application that enables hotel clerks to manage room bookings efficiently. It allows users to view available rooms with details such as room number, type, price, and amenities, as well as reserve or cancel reservations by updating the room's availability status. The system also includes functionality to generate reports showing the total count and details of both available and reserved rooms. This project leverages Python classes for room management and offers an interactive interface for seamless reservation handling.`,
+    description: 'A command-line application for managing hotel room bookings and availability.',
     image: coinToss,
     gitLink: 'https://github.com/TheReal4m4d3u5/hotelReservationSystem',
+    tags: ['Python', 'Command-Line Application'],
   },
 
 ];
@@ -132,29 +144,33 @@ const tDDProjects = [
 
   {
     title: 'Tech Quiz Test Suite',
-    description: `Built with a MERN stack (MongoDB, Express.js, React, Node.js), by adding comprehensive testing using Cypress. The app allows users to take a 10-question quiz, answer questions sequentially, view their final score, and start a new quiz. Component tests focus on the Quiz component's behavior, while end-to-end tests simulate the full user journey, from starting the quiz to viewing the score and restarting.`,
+    description: 'A quiz application with comprehensive component and end-to-end testing.',
     image: tDD1,
     gitLink: 'https://github.com/TheReal4m4d3u5/techQuizTestSuite',
+    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Cypress', 'MERN Stack'],
   },
 
   {
-    title: 'Ensure React Components Render Properly ',
-    description: 'Focuses on implementing tests to ensure React components render properly and match snapshots. This requires setting up testing environment with tools like @testing-library/react, vitest, and happy-dom, importing the necessary components into test files, and writing tests to verify components render without errors and match snapshots.',
+    title: 'Ensure React Components Render Properly',
+    description: 'A project that implements tests to ensure React components render correctly and match snapshots.',
     image: tDD1,
     gitLink: 'https://github.com/TheReal4m4d3u5/ensureReactComponentsRenderProperly',
+    tags: ['React', 'Vitest', 'React Testing Library', 'Happy DOM', 'Testing'],
   },
   {
     title: 'Reactify Essentials TDD',
-    description: 'This program is a React-based application built with TypeScript, focusing on creating reusable components and maintaining high-quality standards through robust testing. It features a Calculator component that supports arithmetic operations, a potential Advertisement component for displaying promotional content, and a modern testing setup using Vitest and React Testing Library. The testing environment is enhanced with Happy DOM for DOM simulation.',
+    description: 'A React-based application with reusable components and a robust testing setup.',
     image: reactTDD,
     gitLink: 'https://github.com/TheReal4m4d3u5/reactifyEssentialsTest',
+    tags: ['React', 'TypeScript', 'Vitest', 'React Testing Library', 'Happy DOM', 'TDD'],
   },
 
   {
     title: 'TDD Test Cases',
-    description: 'This project emphasizes strong foundational skills in TDD, testing frameworks, and building robust, validated code.',
+    description: 'A project focusing on foundational skills in TDD and testing frameworks.',
     image: tDD1,
     gitLink: 'https://github.com/TheReal4m4d3u5/tDDTestCases',
+    tags: ['TDD', 'Testing Frameworks', 'JavaScript'],
   },
 
 ];
@@ -166,6 +182,7 @@ const matLabProjects = [
     description: 'A wireframe of car driving around a city only using linear algebra and Matlab ',
     image: image11,
     gitLink: 'https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car',
+    tags: ['Matlab', 'Linear Algebra'],
   },
 ];
 
@@ -174,11 +191,11 @@ const sqlProjects = [
 
   {
     video: employeeDB,
-    videoText: "Click to watch video",
+    videoText: 'Click to watch video',
     title: 'Employee DB',
-    description: `
-The Employee Tracker is a command-line application built with Node.js, Inquirer, and PostgreSQL that allows business owners to manage and organize employee data efficiently. It provides a menu-driven interface to view and manage departments, roles, and employees, enabling users to add new entries, update employee roles, and display formatted tables of company information. The application connects to a PostgreSQL database to store and retrieve data dynamically, offering a streamlined solution for internal company resource management.`,
+    description: 'A command-line application that allows business owners to manage and organize employee data efficiently.',
     gitLink: 'https://github.com/TheReal4m4d3u5/EmployeeDB',
+    tags: ['Node.js', 'Inquirer', 'PostgreSQL', 'Command-Line Application'],
   },
 ];
 
@@ -188,48 +205,54 @@ const mongoProjects = [
   {
     video: socialMediaVideo,
     title: 'Student Statistics',
-    description: 'A back-end application that uses MongoDB, Mongoose, and Express.js to calculate student statistics.',
-    videoText: "Click to watch video",
+    description: 'A back-end application to calculate student statistics.',
+    videoText: 'Click to watch video',
     gitLink: 'https://github.com/TheReal4m4d3u5/studentStatisticsBack-End',
+    tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose'],
   },
 
   {
     video: socialMediaVideo,
     title: 'Social Media API',
-    description: `This project is a Social Network API built using Express.js for routing, MongoDB for the NoSQL database, and Mongoose as the ODM. The API enables users to create, update, and delete profiles, share thoughts, react to friends' thoughts, and manage friend lists. The project includes RESTful endpoints to handle CRUD operations for users, thoughts, and reactions, demonstrating the ability to manage large amounts of unstructured data efficiently.`,
-    videoText: "Click to watch video",
+    description: 'A Social Network API with RESTful endpoints for managing users, thoughts, and reactions.',
+    videoText: 'Click to watch video',
     gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
+    tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'RESTful API'],
   },
   {
     title: 'Tech Matchup App',
-    description: 'a full-stack web application built with the MERN stack. The app allows users to create matchups between two technologies and vote for their favorite. Uses Apollo Client for making GraphQL queries and mutations to interact with the backend.',
+    description: 'A full-stack web application that allows users to create matchups and vote for their favorite technologies.',
     image: bookSearch,
     gitLink: 'https://github.com/TheReal4m4d3u5/bookSearchEngine',
     deployed: 'https://booksearchengine-5ikq.onrender.com',
+    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'GraphQL', 'Apollo Server', 'MERN Stack'],
   },
   {
     title: 'Book Search Engine',
-    description: 'This project is a full-stack MERN (MongoDB, Express.js, React, Node.js) application that allows users to search for books using the Google Books API and save their favorite books. The RESTful API has been refactored to a GraphQL API using Apollo Server to handle queries and mutations for user authentication, book searching, and saving or removing books. The front end integrates Apollo Client for GraphQL requests and supports user authentication with JWT. The app is deployed on Render with a MongoDB Atlas database, providing a seamless and efficient experience for managing personalized book lists.',
+    description: 'A full-stack application to search and save books using the Google Books API.',
     image: bookSearch,
     gitLink: 'https://github.com/TheReal4m4d3u5/bookSearchEngine',
     deployed: 'https://booksearchengine-5ikq.onrender.com',
+    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'GraphQL', 'Apollo Server', 'JWT', 'MERN Stack'],
   },
 ];
 
 
 const javaProjects = [
   {
-    title: 'Battleshipt',
-    description: 'A command line program that lets two people play battleship',
+    title: 'Battleship',
+    description: 'A command-line program that lets two people play battleship.',
     image: image12,
     gitLink: 'https://github.com/TheReal4m4d3u5/csci_1203_assignment_battleship',
+    tags: ['Java', 'Command-Line Application', 'Game Simulation'],
   },
 
   {
     title: 'MiniBot Simulator',
-    description: 'A functioning ur_Robot-like Java class with basic robot behaviors, demonstrated in a simple test program.',
+    description: 'A Java class with basic robot behaviors, demonstrated in a simple test program.',
     image: image13,
     gitLink: 'https://github.com/TheReal4m4d3u5/csci_1203_assignment_6/tree/main',
+    tags: ['Java', 'Robot Simulation', 'Command-Line Application'],
   },
 ];
 
@@ -239,27 +262,31 @@ const cProjects = [
     description: 'This program simulates a deck of playing cards, providing functionality to shuffle, deal cards, and display card details.',
     image: image15,
     gitLink: 'https://github.com/TheReal4m4d3u5/csci_1111_assignment_7',
+    tags: ['C', 'Command-Line Application'],
   },
 
   {
     title: 'Event Probability Simulator',
-    description: 'Simulates random events (coin flips and die rolls) and analyzes the distribution of results and determine if the results appear uniformly random.',
+    description: 'Simulates random events and analyzes the distribution of results to determine if they appear uniformly random.',
     image: image16,
     gitLink: 'https://github.com/TheReal4m4d3u5/csci_1111_assignment_5',
+    tags: ['C', 'Randomness', 'Command-Line Application'],
   },
 
   {
-    title: 'Functions and command-line argument',
-    description: 'A command line demonstration of command line arguments',
+    title: 'Functions and Command-Line Argument',
+    description: 'A demonstration of command-line arguments and functions.',
     image: image17,
     gitLink: 'https://github.com/TheReal4m4d3u5/csci_1113_assignment_6',
+    tags: ['C', 'Command-Line Application'],
   },
 
   {
     title: 'Car Calculator',
-    description: 'This program calculates and outputs distances traveled by two cars under constant acceleration.',
+    description: 'Calculates and outputs distances traveled by two cars under constant acceleration.',
     image: image14,
     gitLink: 'https://github.com/TheReal4m4d3u5/csci_1113_assignment_5',
+    tags: ['C', 'Physics Simulation', 'Command-Line Application'],
   },
 
 ];
@@ -267,31 +294,35 @@ const cProjects = [
 const fullStackProjects = [
   {
     title: 'Aline',
-    description: 'Aline-Events is a full-stack web application built with Node.js, Express.js, React, and PostgreSQL using the Sequelize ORM. It features a RESTful API for retrieving and adding event data, with JWT authentication for secure access. The application integrates with the Ticketmaster API for event information and the OpenWeather API for real-time weather forecasts. The frontend is responsive and interactive, ensuring a polished user experience. The project follows the separation of concerns design principle, protects sensitive information with environment variables, and is deployed on Render for seamless access.',
+    description: 'A full-stack web application that features a RESTful API for retrieving and adding event data. The application integrates with the Ticketmaster API for event information and the OpenWeather API for real-time weather forecasts. The frontend is responsive and interactive, ensuring a polished user experience. Protects sensitive information with environment variables, and all api calls are done on the backend',
     image: image9,
     gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
     deployed: 'https://aline-events.onrender.com/',
+    tags: ['Node.js', 'Express.js', 'React', 'PostgreSQL', 'Sequelize', 'RESTful API', 'JWT', 'Ticketmaster API', 'OpenWeather API', 'Render'],
   },
   {
     title: 'Weather App',
-    description: 'This project is a full-stack weather dashboard application that retrieves and displays the 5-day weather forecast for various cities using the OpenWeather API. The front end provides a search interface where users can input city names and view current and future weather conditions, including temperature, humidity, wind speed, and weather icons. The back end, built with Node.js and Express, handles API calls, stores search history in a JSON file, and serves data to the client. The application is deployed on Render for live use and integrates features like search history persistence and optional city deletion functionality.',
+    description: 'A full-stack weather dashboard application that retrieves and displays the current day and the 5-day weather forecast for various cities.',
     image: image2,
     gitLink: 'https://github.com/TheReal4m4d3u5/WeatherAPP',
     deployed: 'https://weatherapp-ew0q.onrender.com',
+    tags: ['Node.js', 'Express.js', 'React', 'OpenWeather API', 'JSON', 'Render'],
   },
   {
     title: 'Candidate Search',
-    description: 'The Candidate Search application is a React-based front-end project written in TypeScript that interfaces with the GitHub API to display user profiles. It allows employers to review candidates by fetching their GitHub data (name, location, avatar, and more), save potential candidates to local storage, and reject others. The project provides dynamic navigation between candidate review and a saved candidates list, ensuring data persistence across sessions. The application is deployed on Render and includes clean UI components, responsive design, and best practices for maintainability and scalability.',
+    description: 'A React-based front-end application that interfaces with the GitHub API to display and manage candidate profiles.',
     image: image8,
     gitLink: 'https://github.com/TheReal4m4d3u5/candidateSearch',
     deployed: 'https://funny-biscochitos-9e1673.netlify.app/',
+    tags: ['React', 'TypeScript', 'GitHub API', 'Netlify'],
   },
   {
     title: 'Kanban Board',
-    description: 'This project is a full-stack Kanban board application that incorporates JWT-based authentication to secure user access. The application includes a login page where users provide credentials, which are verified on the server. Upon successful authentication, a JWT is issued and stored in local storage, allowing users to manage their tasks securely. Protected routes ensure that only authenticated users can access the Kanban board, and JWTs are validated for each request to maintain security. The app is deployed on Render, integrating PostgreSQL for database management.',
+    description: 'A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.',
     image: image10,
     gitLink: 'https://github.com/TheReal4m4d3u5/kanbanBoard',
     deployed: 'https://kanbanboard-552l.onrender.com',
+    tags: ['Node.js', 'Express.js', 'React', 'JWT', 'PostgreSQL', 'Render'],
   },
 ];
 
@@ -300,51 +331,58 @@ const javaScriptProjects = [
 
   {
     title: 'Blog',
-    description: `This project is a two-page personal blog application built with HTML, CSS, and JavaScript. It allows users to submit blog posts via a form containing fields for username, blog title, and content. Submitted posts are stored in localStorage and displayed on a separate blog page. The blog page features a light/dark mode toggle to switch themes dynamically and a "Back" button to return to the form. The application includes validation to ensure all fields are filled before submission and displays a list of blog posts with the author's username, title, and content.`,
+    description: 'A two-page personal blog application that allows users to submit blog posts via a form and store them in localStorage.',
     image: blog,
     gitLink: 'https://github.com/TheReal4m4d3u5/firstBlog',
+    tags: ['HTML', 'CSS', 'JavaScript', 'LocalStorage'],
   },
 
   {
     title: 'Film Tracker',
-    description: 'Full stack movies database search and alows user to add them to a watch or seen list.',
+    description: 'A full-stack movie database search application where users can add films to a watch or seen list.',
     image: image7,
     gitLink: 'https://github.com/TheReal4m4d3u5/movieSearch',
     deployed: 'https://meek-cassata-691e1b.netlify.app/',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Netlify'],
   },
 
   {
     title: 'Bucket Checklist',
-    description: 'Alows user to create a checklist ranking them by priority and alows the user to check them off when completed',
+    description: 'An application that allows users to create a checklist, rank items by priority, and mark them as completed.',
     image: image3,
     gitLink: 'https://github.com/TheReal4m4d3u5/bucketList',
+    tags: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     title: 'Vehicle App',
-    description: 'The Vehicle Builder is a TypeScript-based command-line application that allows users to create and interact with different types of vehicles: cars, trucks, and motorbikes. Using the Inquirer package for user prompts, the application lets users input vehicle details, perform vehicle-specific actions (e.g., driving a car, loading cargo in a truck, or performing stunts with a motorbike), and manage existing vehicles. The project demonstrates effective use of classes, TypeScript interfaces, and user-driven workflows.',
+    description: 'A TypeScript-based command-line application for creating and interacting with different types of vehicles.',
     video: vehicleVideo,
-    videoText: "Click to watch video",
+    videoText: 'Click to watch video',
     gitLink: 'https://github.com/TheReal4m4d3u5/Create-Vehicle',
+    tags: ['TypeScript', 'Node.js', 'Inquirer', 'Command-Line'],
   },
   {
     title: 'Readme Generator',
-    description: 'A app that generates a readme.md',
+    description: 'An application that generates a README.md file.',
     image: image5,
     gitLink: 'https://github.com/TheReal4m4d3u5/Readme-Generator',
+    tags: ['Node.js', 'JavaScript', 'Command-Line'],
   },
   {
     title: 'React Profile',
-    description: `This project is a React-based single-page portfolio application that showcases a web developer's skills and projects. It features dynamic navigation with React Router to seamlessly switch between sections like About Me, Portfolio, Contact, and Resume without reloading the page. The Portfolio section highlights six projects using a reusable Project component, each with links to deployed applications and GitHub repositories. The Contact section includes a form with validation for user inputs. The application is styled with a custom design, responsive for mobile-first use, and deployed on Netlify for accessibility.`,
+    description: 'A React-based single-page portfolio application that showcases a web developer’s skills and projects.',
     image: image6,
     gitLink: 'https://github.com/TheReal4m4d3u5/reactPortfolio',
     deployed: 'https://zesty-starlight-a7d6e2.netlify.app/',
+    tags: ['React', 'React Router', 'Netlify'],
   },
   {
     title: 'Sound Board',
-    description: 'A soundboard created using HTML, CSS, JavaScript, and Bootstrap.',
+    description: 'A soundboard application created with HTML, CSS, JavaScript, and Bootstrap.',
     image: image1,
     gitLink: 'https://github.com/TheReal4m4d3u5/soundBoard',
     deployed: 'https://beautiful-dusk-78e4ee.netlify.app/',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Netlify'],
   },
 ];
 
@@ -353,15 +391,9 @@ const Portfolio = () => {
 
 
     <div className="portfolio-page">
-
-
-
       <section className="portfolio-Wraper">
-
         <h1 className="portfilioHeaderText">My Portfolio</h1>
-
         <Row className="portfolioCards">
-
           <div className="mongoDBHeader">Full Stack PERN</div>
           <div className="disclaimerWraper">
             <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
@@ -377,6 +409,7 @@ const Portfolio = () => {
                 videoText={project.videoText}
                 gitlink={project.gitLink}
                 deployedlink={project.deployed}
+                tags={project.tags}
               />
 
             </Col>
@@ -400,6 +433,7 @@ const Portfolio = () => {
                 videoText={project.videoText}
                 gitlink={project.gitLink}
                 deployedlink={project.deployed}
+                tags={project.tags}
               />
 
             </Col>
@@ -419,6 +453,7 @@ const Portfolio = () => {
                 videoText={project.videoText}
                 gitlink={project.gitLink}
                 deployedlink={project.deployed}
+                tags={project.tags}
               />
 
             </Col>
@@ -440,6 +475,7 @@ const Portfolio = () => {
                 videoText={project.videoText}
                 gitlink={project.gitLink}
                 deployedlink={project.deployed}
+                tags={project.tags}
               />
 
             </Col>
@@ -461,6 +497,7 @@ const Portfolio = () => {
                 image={project.image}
                 gitlink={project.gitLink}
                 deployedlink={project.deployed}
+                tags={project.tags}
               />
 
             </Col>
@@ -481,6 +518,7 @@ const Portfolio = () => {
                 image={project.image}
                 gitlink={project.gitLink}
                 deployedlink={project.deployed}
+                tags={project.tags}
               />
 
             </Col>
@@ -500,6 +538,7 @@ const Portfolio = () => {
                 image={project.image}
                 gitlink={project.gitLink}
                 deployedlink={project.deployed}
+                tags={project.tags}
               />
 
             </Col>
@@ -519,6 +558,7 @@ const Portfolio = () => {
                 image={project.image}
                 gitlink={project.gitLink}
                 deployedlink={project.deployed}
+                tags={project.tags}
               />
 
             </Col>
@@ -536,6 +576,7 @@ const Portfolio = () => {
                 description={project.description}
                 image={project.image}
                 gitlink={project.gitLink}
+                tags={project.tags}
               />
 
             </Col>
@@ -553,6 +594,7 @@ const Portfolio = () => {
                 description={project.description}
                 image={project.image}
                 gitlink={project.gitLink}
+                tags={project.tags}
               />
 
             </Col>
@@ -573,6 +615,7 @@ const Portfolio = () => {
                 gitlink={project.gitLink}
                 staginglink={project.staging}
                 deployedlink={project.deployed}
+                tags={project.tags}
               />
 
             </Col>

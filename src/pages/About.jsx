@@ -18,7 +18,9 @@ const About = () => {
 
           <section className="aboutTextSection">
             <div className="aboutText">
-              Hi, I'm Avery Jacobson! I am a Full Stack Developer with 10 years Experience as senior Software Development Engineer in Test (SDET).
+              <div> Software Developer & Electrical Engineer</div>
+              <div>Hi, I'm Avery Jacobson!</div>
+               I am a Full Stack Developer with 10 years Experience as senior Software Development Engineer in Test (SDET).
             </div>
           </section>  
         </div>
