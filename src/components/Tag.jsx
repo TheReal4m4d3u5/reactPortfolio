@@ -56,7 +56,7 @@ const iconMap = {
 const Tag = ({ name }) => {
   return (
     <div className="tag">
-      {iconMap[name]} <span className="tag-text">{name}</span>
+    <div className="tabIcon">{iconMap[name]}</div> <span className="tag-text">{name}</span>
     </div>
   );
 };

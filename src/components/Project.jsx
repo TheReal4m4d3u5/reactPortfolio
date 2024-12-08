@@ -29,6 +29,7 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
             {tags && (
               <div className="flex flex-wrap">
                 {tags.map((tag) => (
+                
                   <Tag key={tag} name={tag} />
                 ))}
               </div>

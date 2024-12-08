@@ -393,8 +393,29 @@ const Portfolio = () => {
     <div className="portfolio-page">
       <section className="portfolio-Wraper">
         <h1 className="portfilioHeaderText">My Portfolio</h1>
+
+
+        {/* Index Section */}
+        <nav className="portfolio-index">
+          
+            <a href="#pern">Full Stack PERN</a>
+            <a href="#mern">Full Stack MERN</a>
+            <a href="#javascript">React.js / JavaScript / TypeScript</a>
+            <a href="#sql">SQL</a>
+            <a href="#matlab">Matlab</a>
+            <a href="#java">Java</a>
+            <a href="#python">Python</a>
+            <a href="#c">C</a>
+            <a href="#tdd">TDD</a>
+            <a href="#bdd">BDD</a>
+            <a href="#cicd">CI/CD DevOps</a>
+         
+        </nav>
+
+
         <Row className="portfolioCards">
-          <div className="mongoDBHeader">Full Stack PERN</div>
+          
+          <div id="pern" className="monHeader">Full Stack PERN</div>
           <div className="disclaimerWraper">
             <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           </div>
@@ -416,7 +437,7 @@ const Portfolio = () => {
           ))}
 
 
-          <div className="mongoDBHeader">Full Stack MERN</div>
+          <div id="mern"  className="mongoDBHeader">Full Stack MERN</div>
           <div className="disclaimerWraper">
             <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           </div>
@@ -442,7 +463,7 @@ const Portfolio = () => {
 
 
 
-          <div className="javaScriptHeader">React.js / Javascript / Typescript</div>
+          <div id="javascript" className="mongoDBHeader">React.js / Javascript / Typescript</div>
           {javaScriptProjects.map((project, index) => (
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
               <Project
@@ -460,9 +481,7 @@ const Portfolio = () => {
           ))}
 
 
-          <div className="mongoDBHeader">SQL</div>
-
-
+          <div id="sql" className="mongoDBHeader">SQL</div>
           {sqlProjects.map((project, index) => (
 
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
@@ -483,12 +502,8 @@ const Portfolio = () => {
           ))}
 
 
-
-
-          <div className="matLabHeader">Matlab</div>
-
+          <div id="matlab" className="mongoDBHeader">Matlab</div>
           {matLabProjects.map((project, index) => (
-
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
 
               <Project
@@ -506,7 +521,7 @@ const Portfolio = () => {
 
 
 
-          <div className="javaHeader">Java</div>
+          <div id="java" className="mongoDBHeader">Java</div>
 
           {javaProjects.map((project, index) => (
 
@@ -526,7 +541,7 @@ const Portfolio = () => {
           ))}
 
 
-          <div className="javaHeader">Python</div>
+          <div id="python" className="mongoDBHeader">Python</div>
 
           {pythonProjects.map((project, index) => (
 
@@ -546,7 +561,7 @@ const Portfolio = () => {
           ))}
 
 
-          <div className="cHeader">C</div>
+          <div id="c" className="mongoDBHeader">C</div>
 
           {cProjects.map((project, index) => (
 
@@ -565,7 +580,7 @@ const Portfolio = () => {
 
           ))}
 
-          <div className="cHeader">TDD</div>
+          <div id="tdd" className="mongoDBHeader">TDD</div>
 
           {tDDProjects.map((project, index) => (
 
@@ -583,7 +598,7 @@ const Portfolio = () => {
 
           ))}
 
-          <div className="cHeader">BDD</div>
+          <div id="bdd" className="mongoDBHeader">BDD</div>
 
           {seleniumProjects.map((project, index) => (
 
@@ -602,7 +617,7 @@ const Portfolio = () => {
           ))}
 
 
-          <div className="cHeader">CI/CD Devops</div>
+          <div id="cicd" className="mongoDBHeader">CI/CD Devops</div>
           <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           {ciCDProjects.map((project, index) => (
 
