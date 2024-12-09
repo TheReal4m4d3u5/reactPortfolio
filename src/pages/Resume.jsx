@@ -25,13 +25,11 @@ const cloudTechnologies = ['Azure', 'AWS'];
 const toolsTechnologies = {
   'Operating Systems': ['Linux', 'Unix', 'RTOS', 'Avionics RTOS'],
   'Instrumentation': ['Oscilloscope', 'Frequency Generator', 'Spectrum Analyzer', 'Digital Multimeter', 'D/C Power Supply'],
-
   'Development Tools': ['GCC', 'Visual Studio', 'Eclipse', 'Xilinx', 'IAR Systems', 'Apache Subversion', 'Cygwin', 'MinGW'],
   'Version Control': ['GitHub', 'GIT', 'Harvest', 'Subversion'],
   'Testing & Collaboration': ['Jira', 'Testlink', 'Test Rail', 'TestComplete', 'Redmine', 'IBM Notes', 'Microsoft Office', 'MS Teams'],
   'Embedded Systems': ['ARM Cortex', 'AVR ATMega', 'Arduino', 'Raspberry Pi', 'Basys2'],
   'Protocols & Interfaces': ['Arinc 664', 'Arinc 429', 'RS-232', 'ZigBee', 'UART', 'TCP/IP'],
-  'Programming & Scripting': ['Python 2.7x', 'Matlab', 'Labview', 'EASy68k', 'DrRacket'],
 };
 
 const hardware = {
@@ -50,7 +48,7 @@ const Resume = () => {
 
         <div className="resumeLinks">
           <a href={resume} download="Avery_Jacobson_Resume.pdf" className="link-button">
-            Downlaod Resume
+            Download Resume
           </a>
         </div>
 
@@ -146,7 +144,7 @@ const Resume = () => {
         </div>
 
         <section className="professional-section">
-          <h3 className='resumeHeaders'>Professoinal Experience</h3>
+          <h3 className='resumeHeaders'>Professional Experience</h3>
           <ul>
             <li>Senior Software Engineer
               Wells Fargo, Minneapolis, MN
@@ -167,11 +165,11 @@ const Resume = () => {
               Application System Engineer
               •	a team to select a version control tool and research plug-ins needed to work with our automation tool.
               •	Designed workflow of software automation development and set up the workflow tool Jira.
-              •	Working in Core, Well’s Fargo’s Home Lending tool. Usuring that there are not defect, all products are returning and that the tool is working correctly in the Sales Consultation space.
+              •	Working in Core, Well’s Fargo’s Home Lending tool. Ensuring that there are not defect, all products are returning and that the tool is working correctly in the Sales Consultation space.
               •	Scrum, Agile team
               •	Functional UI testing, creating unit tests for front UI development work.
               •	Develop Java Selenium code for automation.
-              •	Create testing documentation in the APplciation Lifecycle Management tool.
+              •	Create testing documentation in the Application Lifecycle Management tool.
               •	Work with the Rules and GAIP team to make sure products are returning correctly.
               •	Work on End to End testing teams to seed loans to test from start to finish.
             </li>
