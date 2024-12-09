@@ -6,38 +6,57 @@ import Tag from '../components/Tag';
 
 
 const coreSkills = [
-  'C', 'C++', 'Java', 'Python', 'JavaScript', 'React', 'TypeScript',
-  'Visual Basic .NET', 'LISP', 'Assembly Language', 'OpenGL', 'HTML', 'CSS', 'VB Script',
+  'Assembly Language', 'C', 'C++', 'CSS', 'HTML', 'Java', 'JavaScript',
+  'LISP', 'OpenGL', 'Python', 'React', 'TypeScript', 'VB Script', 'Visual Basic .NET',
 ];
 
-const databaseTechnologies = ['SQL', 'PostgreSQL', 'MongoDB'];
+const databaseTechnologies = [
+  'MongoDB', 'PostgreSQL', 'SQL',
+];
 
-const testingAutomation = ['Selenium', 'Cucumber', 'Appium', 'TestComplete', 'Maven'];
+const testingAutomation = [
+  'Appium', 'Cucumber', 'Maven', 'Selenium', 'TestComplete',
+];
 
-const ciCdDevOps = ['Jenkins', 'Bamboo', 'Docker', 'Jest', 'Cypress', 'Git Actions', 'CircleCI'];
+const ciCdDevOps = [
+  'Bamboo', 'CircleCI', 'Cypress', 'Docker', 'Git Actions', 'Jenkins', 'Jest',
+];
 
-const toolsPlatforms = ['JIRA', 'TestRail', 'Git', 'GitHub', 'GraphQL', 'RESTful APIs'];
+const toolsPlatforms = [
+  'Apache Subversion', 'Cygwin', 'Eclipse', 'GCC', 'Git', 'GitHub', 'GraphQL',
+  'IAR Systems', 'JIRA', 'MinGW', 'RESTful APIs', 'TestRail', 'Visual Studio', 'Xilinx',
+];
 
-const methodologies = ['Agile', 'SDLC', 'BDD', 'TDD'];
+const methodologies = [
+  'Agile', 'BDD', 'SDLC', 'TDD',
+];
 
-const cloudTechnologies = ['Azure', 'AWS'];
+const cloudTechnologies = [
+  'AWS', 'Azure',
+];
 
-const toolsTechnologies = {
-  'Operating Systems': ['Linux', 'Unix', 'RTOS', 'Avionics RTOS'],
-  'Instrumentation': ['Oscilloscope', 'Frequency Generator', 'Spectrum Analyzer', 'Digital Multimeter', 'D/C Power Supply'],
-  'Development Tools': ['GCC', 'Visual Studio', 'Eclipse', 'Xilinx', 'IAR Systems', 'Apache Subversion', 'Cygwin', 'MinGW'],
-  'Version Control': ['GitHub', 'GIT', 'Harvest', 'Subversion'],
-  'Testing & Collaboration': ['Jira', 'Testlink', 'Test Rail', 'TestComplete', 'Redmine', 'IBM Notes', 'Microsoft Office', 'MS Teams'],
-  'Embedded Systems': ['ARM Cortex', 'AVR ATMega', 'Arduino', 'Raspberry Pi', 'Basys2'],
-  'Protocols & Interfaces': ['Arinc 664', 'Arinc 429', 'RS-232', 'ZigBee', 'UART', 'TCP/IP'],
-};
+const operatingSystems = [
+  'Avionics RTOS', 'Linux', 'RTOS', 'Unix',
+];
 
-const hardware = {
-  'Components & Microcontrollers': ['Accelerometer', 'GSM', 'CDMA', 'GPS', 'Ublocks', 'ICs', 'Infrared'],
-  'Peripherals & Boards': ['Raspberry Pi', 'Arduino', 'Basys2', 'JTAG'],
-  'Tools & Software': ['FPGA', 'Digital Logic', 'Virtual Box', 'ADE', 'Doors', 'Hercules'],
-};
+const hardware = [
+  'Accelerometer', 'Arduino', 'Basys2', 'CDMA', 'GPS', 'GSM', 'ICs', 'Infrared',
+  'JTAG', 'Raspberry Pi', 'Ublocks',
+];
 
+const protocolsInterfaces = [
+  'Arinc 429', 'Arinc 664', 'RS-232', 'TCP/IP', 'UART', 'ZigBee',
+];
+
+const testingCollaboration = [
+  'IBM Notes', 'Jira', 'Microsoft Office', 'MS Teams', 'Redmine', 'Test Rail',
+  'TestComplete', 'Testlink',
+];
+
+const instrumentationTools = [
+  'D/C Power Supply', 'Digital Logic', 'Digital Multimeter', 'FPGA',
+  'Frequency Generator', 'Oscilloscope', 'Spectrum Analyzer'
+];
 
 const Resume = () => {
   return (
@@ -63,60 +82,66 @@ const Resume = () => {
 
           </section>
         </section>
-        <div className="skill-item">Core Skills</div>
-        <div className="skills">
-          {coreSkills.map(skill => <Tag key={skill} name={skill} />)}
-        </div>
 
-        <div className="skill-item">Database Technologies</div>
-        <div className="skills">
-          {databaseTechnologies.map(db => <Tag key={db} name={db} />)}
-        </div>
+<div className="skill-item">Core Skills</div>
+<div className="skills">
+  {coreSkills.map(skill => <Tag key={skill} name={skill} />)}
+</div>
 
-        <div className="skill-item">Testing & Automation</div>
-        <div className="skills">
-          {testingAutomation.map(tool => <Tag key={tool} name={tool} />)}
-        </div>
+<div className="skill-item">Database Technologies</div>
+<div className="skills">
+  {databaseTechnologies.map(db => <Tag key={db} name={db} />)}
+</div>
 
-        <div className="skill-item">CI/CD & DevOps</div>
-        <div className="skills">
-          {ciCdDevOps.map(tool => <Tag key={tool} name={tool} />)}
-        </div>
+<div className="skill-item">Testing & Automation</div>
+<div className="skills">
+  {testingAutomation.map(tool => <Tag key={tool} name={tool} />)}
+</div>
 
-        <div className="skill-item">Tools & Platforms</div>
-        <div className="skills">
-          {toolsPlatforms.map(tool => <Tag key={tool} name={tool} />)}
-        </div>
+<div className="skill-item">CI/CD & DevOps</div>
+<div className="skills">
+  {ciCdDevOps.map(tool => <Tag key={tool} name={tool} />)}
+</div>
 
-        <div className="skill-item">Methodologies</div>
-        <div className="skills">
-          {methodologies.map(method => <Tag key={method} name={method} />)}
-        </div>
+<div className="skill-item">Tools & Platforms</div>
+<div className="skills">
+  {toolsPlatforms.map(tool => <Tag key={tool} name={tool} />)}
+</div>
 
-        <div className="skill-item">Cloud Technologies</div>
-        <div className="skills">
-          {cloudTechnologies.map(cloud => <Tag key={cloud} name={cloud} />)}
-        </div>
+<div className="skill-item">Methodologies</div>
+<div className="skills">
+  {methodologies.map(method => <Tag key={method} name={method} />)}
+</div>
 
-        <div className="skill-item">Tools & Technologies</div>
-        {Object.entries(toolsTechnologies).map(([category, items]) => (
-          <div key={category}>
-            <strong>{category}:</strong>
-            <div className="skills">
-              {items.map(item => <Tag key={item} name={item} />)}
-            </div>
-          </div>
-        ))}
+<div className="skill-item">Cloud Technologies</div>
+<div className="skills">
+  {cloudTechnologies.map(cloud => <Tag key={cloud} name={cloud} />)}
+</div>
 
-        <div className="skill-item">Hardware</div>
-        {Object.entries(hardware).map(([category, items]) => (
-          <div key={category}>
-            <strong>{category}:</strong>
-            <div className="skills">
-              {items.map(item => <Tag key={item} name={item} />)}
-            </div>
-          </div>
-        ))}
+<div className="skill-item">Operating Systems</div>
+<div className="skills">
+  {operatingSystems.map(os => <Tag key={os} name={os} />)}
+</div>
+
+<div className="skill-item">Hardware</div>
+<div className="skills">
+  {hardware.map(item => <Tag key={item} name={item} />)}
+</div>
+
+<div className="skill-item">Instrumentation & Tools</div>
+<div className="skills">
+  {instrumentationTools.map(tool => <Tag key={tool} name={tool} />)}
+</div>
+
+<div className="skill-item">Testing & Collaboration</div>
+<div className="skills">
+  {testingCollaboration.map(tool => <Tag key={tool} name={tool} />)}
+</div>
+
+<div className="skill-item">Protocols & Interfaces</div>
+<div className="skills">
+  {protocolsInterfaces.map(protocol => <Tag key={protocol} name={protocol} />)}
+</div>
 
         <div className="skill-item">Education</div>
 
