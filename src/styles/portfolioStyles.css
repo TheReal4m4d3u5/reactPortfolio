@@ -55,7 +55,7 @@
   width: 100%;
   justify-content: center;
   font-size: 3rem;
-  text-shadow: 2px 2px 8px white;
+
 }
 
 .javaHeader{
@@ -64,7 +64,7 @@
   width: 100%;
   justify-content: center;
   font-size: 3rem;
-  text-shadow: 2px 2px 8px white;
+
 }
 
 
@@ -75,7 +75,8 @@
   width: 100%;
   justify-content: center;
   font-size: 3rem;
-  text-shadow: 2px 2px 8px white;
+  text-shadow: 2px 2px 8px white; 
+
 }
 
 .mongoDBHeader{
@@ -84,7 +85,8 @@
   width: 100%;
   justify-content: center;
   font-size: 3rem;
-  text-shadow: 2px 2px 8px white;
+  text-shadow: 2px 2px 8px white; 
+
 }
 
 .cHeader{
@@ -93,7 +95,7 @@
   width: 100%;
   justify-content: center;
   font-size: 3rem;
-  text-shadow: 2px 2px 8px white;
+
 }
 
 .matLabHeader{
@@ -102,14 +104,14 @@
   width: 100%;
   justify-content: center;
   font-size: 3rem;
-  text-shadow: 2px 2px 8px white;
+
 }
 
 .portfilioHeaderText{
   display: flex;
   justify-content: center;
   font-size: 3rem;
-  text-shadow: 2px 2px 8px white;
+  text-shadow: 2px 2px 8px white; 
 }
 
 
@@ -123,7 +125,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  text-shadow: 2px 2px 8px white;
+
 }
 
 
@@ -174,17 +176,7 @@
 .custom-btn {
 
   color: black;
-  text-shadow:
-    -1px -1px 0 black,
-    /* Top-left */
-    1px -1px 0 black,
-    /* Top-right */
-    -1px 1px 0 black,
-    /* Bottom-left */
-    1px 1px 0 black;
-  /* Bottom-right */
 
-  text-shadow: 2px 2px 8px white;
 }
 
 

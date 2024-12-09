@@ -5,7 +5,7 @@
 
   margin: 0 auto;
   color: black;
-  text-shadow: 2px 2px 8px white; 
+
 
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
@@ -56,7 +56,6 @@
 
 .mainResumeContent {
   color: black;
-  text-shadow: 2px 2px 8px white; 
   height: 100%;
   padding-top: 50px;
   padding-left: 100px;
@@ -132,7 +131,7 @@
 .resumeLinks {
   display: flex;
   color: black;
-  text-shadow: 2px 2px 8px white; 
+
   justify-content: center;
   text-align: center;
   margin-top: 0px;
