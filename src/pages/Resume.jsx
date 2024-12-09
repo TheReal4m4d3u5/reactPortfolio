@@ -1,6 +1,45 @@
 import React from 'react';
 import '../styles/resumeStyles.css';
 import resume from '../assets/Avery Jacobson.pdf'
+import Tag from '../components/Tag';
+
+
+
+const coreSkills = [
+  'C', 'C++', 'Java', 'Python', 'JavaScript', 'React', 'TypeScript',
+  'Visual Basic .NET', 'LISP', 'Assembly Language', 'OpenGL', 'HTML', 'CSS', 'VB Script',
+];
+
+const databaseTechnologies = ['SQL', 'PostgreSQL', 'MongoDB'];
+
+const testingAutomation = ['Selenium', 'Cucumber', 'Appium', 'TestComplete', 'Maven'];
+
+const ciCdDevOps = ['Jenkins', 'Bamboo', 'Docker', 'Jest', 'Cypress', 'Git Actions', 'CircleCI'];
+
+const toolsPlatforms = ['JIRA', 'TestRail', 'Git', 'GitHub', 'GraphQL', 'RESTful APIs'];
+
+const methodologies = ['Agile', 'SDLC', 'BDD', 'TDD'];
+
+const cloudTechnologies = ['Azure', 'AWS'];
+
+const toolsTechnologies = {
+  'Operating Systems': ['Linux', 'Unix', 'RTOS', 'Avionics RTOS'],
+  'Instrumentation': ['Oscilloscope', 'Frequency Generator', 'Spectrum Analyzer', 'Digital Multimeter', 'D/C Power Supply'],
+
+  'Development Tools': ['GCC', 'Visual Studio', 'Eclipse', 'Xilinx', 'IAR Systems', 'Apache Subversion', 'Cygwin', 'MinGW'],
+  'Version Control': ['GitHub', 'GIT', 'Harvest', 'Subversion'],
+  'Testing & Collaboration': ['Jira', 'Testlink', 'Test Rail', 'TestComplete', 'Redmine', 'IBM Notes', 'Microsoft Office', 'MS Teams'],
+  'Embedded Systems': ['ARM Cortex', 'AVR ATMega', 'Arduino', 'Raspberry Pi', 'Basys2'],
+  'Protocols & Interfaces': ['Arinc 664', 'Arinc 429', 'RS-232', 'ZigBee', 'UART', 'TCP/IP'],
+  'Programming & Scripting': ['Python 2.7x', 'Matlab', 'Labview', 'EASy68k', 'DrRacket'],
+};
+
+const hardware = {
+  'Components & Microcontrollers': ['Accelerometer', 'GSM', 'CDMA', 'GPS', 'Ublocks', 'ICs', 'Infrared'],
+  'Peripherals & Boards': ['Raspberry Pi', 'Arduino', 'Basys2', 'JTAG'],
+  'Tools & Software': ['FPGA', 'Digital Logic', 'Virtual Box', 'ADE', 'Doors', 'Hercules'],
+};
+
 
 const Resume = () => {
   return (
@@ -28,40 +67,83 @@ const Resume = () => {
         </section>
         <div className="skill-item">Core Skills</div>
         <div className="skills">
-  <li><span style={{ fontWeight: "bold" }}>Languages:</span> C, C++, Java, Python, JavaScript, React, Typescript, Visual Basic .NET, LISP, Assembly Language, OpenGL(libraries), HTML, CSS, VB Script</li>
-  <li><span style={{ fontWeight: "bold" }}>Database Technologies:</span> SQL, PostgresSQL, MongoDB</li>
-  <li><span style={{ fontWeight: "bold" }}>Testing & Automation:</span> Selenium, Cucumber, Appium, TestComplete, Maven</li>
-  <li><span style={{ fontWeight: "bold" }}>CI/CD & DevOps:</span> Jenkins, Bamboo, Docker, Jest, Cypress, Git Actions, CircleCI</li>
-  <li><span style={{ fontWeight: "bold" }}>Tools & Platforms:</span> JIRA, TestRail, Git, GitHub, GraphQL, RESTful APIs</li>
-  <li><span style={{ fontWeight: "bold" }}>Methodologies:</span> Agile, SDLC, BDD, TDD</li>
-  <li><span style={{ fontWeight: "bold" }}>Cloud Technologies:</span> Azur, AWS</li>
-</div>
+          {coreSkills.map(skill => <Tag key={skill} name={skill} />)}
+        </div>
 
+        <div className="skill-item">Database Technologies</div>
+        <div className="skills">
+          {databaseTechnologies.map(db => <Tag key={db} name={db} />)}
+        </div>
+
+        <div className="skill-item">Testing & Automation</div>
+        <div className="skills">
+          {testingAutomation.map(tool => <Tag key={tool} name={tool} />)}
+        </div>
+
+        <div className="skill-item">CI/CD & DevOps</div>
+        <div className="skills">
+          {ciCdDevOps.map(tool => <Tag key={tool} name={tool} />)}
+        </div>
+
+        <div className="skill-item">Tools & Platforms</div>
+        <div className="skills">
+          {toolsPlatforms.map(tool => <Tag key={tool} name={tool} />)}
+        </div>
+
+        <div className="skill-item">Methodologies</div>
+        <div className="skills">
+          {methodologies.map(method => <Tag key={method} name={method} />)}
+        </div>
+
+        <div className="skill-item">Cloud Technologies</div>
+        <div className="skills">
+          {cloudTechnologies.map(cloud => <Tag key={cloud} name={cloud} />)}
+        </div>
 
         <div className="skill-item">Tools & Technologies</div>
-        <li><strong>Operating Systems:</strong> Linux, Unix, RTOS, Avionics RTOS</li>
-        <li><strong>Programming & Scripting:</strong> Python 2.7x, Matlab, Labview, EASy68k, DrRacket</li>
-        <li><strong>Development Tools:</strong> GCC, Visual Studio, Eclipse, Xilinx, IAR Systems, Apache Subversion, Cygwin, MinGW</li>
-        <li><strong>Version Control:</strong> GitHub, GIT, Harvest, Subversion</li>
-        <li><strong>Testing & Collaboration:</strong> Jira, Testlink, Test Rail, TestComplete, Redmine, IBM Notes, Microsoft Office, MS Teams</li>
-        <li><strong>Embedded Systems:</strong> ARM Cortex, AVR ATMega, Arduino, Raspberry Pi, Basys2</li>
-        <li><strong>Protocols & Interfaces:</strong> Arinc 664, Arinc 429, RS-232, ZigBee, UART, TCP/IP</li>
-        <li><strong>Instrumentation:</strong> Oscilloscope, frequency generator, spectrum analyzer, digital multimeter, D/C power supply</li>
+        {Object.entries(toolsTechnologies).map(([category, items]) => (
+          <div key={category}>
+            <strong>{category}:</strong>
+            <div className="skills">
+              {items.map(item => <Tag key={item} name={item} />)}
+            </div>
+          </div>
+        ))}
 
         <div className="skill-item">Hardware</div>
-        <li><strong>Components & Microcontrollers:</strong> Accelerometer, GSM, CDMA, GPS, Ublocks, ICs, Infrared</li>
-        <li><strong>Peripherals & Boards:</strong> Raspberry Pi, Arduino, Basys2, JTAG</li>
-        <li><strong>Tools & Software:</strong> FPGA, Digital Logic, Virtual Box, ADE, Doors, Hercules</li>
-
+        {Object.entries(hardware).map(([category, items]) => (
+          <div key={category}>
+            <strong>{category}:</strong>
+            <div className="skills">
+              {items.map(item => <Tag key={item} name={item} />)}
+            </div>
+          </div>
+        ))}
 
         <div className="skill-item">Education</div>
 
-            <li>Associates from Normandale Community College in Computer Science</li>
-            <li>Associates from Normandale Community College in Foundations of Engineering in Electrical Engineering</li>
-            <li>Associates from ITT Tech in Computer Science</li>
-            <li>Certifications: SQL certificate from Normandale, Developer Certificate from the University of Minnesota.</li>
-            <li>Ongoing Learning: Taking classes at Metro State in Computer Science.</li>
+        <div className="bootCamp">
+        <li>Coding Boot Camp Certification</li>
+        <li>University of Minnesota, Minneapolis, MN</li>
+        <li>6/16/2024-12/12/2024</li>
+        </div>
+      
+        <div className="normandale">
+        <li>Associates of Applied Science in Foundations of Engineering</li>
+        <li>Associates of Applied Science in Computer Science</li>
+        <li>Normandale College – Bloomington, MN</li>
+        <li>Tutored Math, Physics, Computer Science</li>
+        <li>Math club president</li>
+        <li>SQL Certification </li>
+        </div>
 
+        <div className="ittTech">
+        <li>Associate of Computer Software Technology</li>
+        <li>ITT Technical Institute, Eden Prairie, MN</li>
+        </div>
+        <div className="onGoingLearning">
+        <li>Ongoing Learning: Taking classes at Metro State in Computer Science.</li>
+        </div>
 
         <section className="professional-section">
           <h3 className='resumeHeaders'>Professoinal Experience</h3>

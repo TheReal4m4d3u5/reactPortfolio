@@ -47,7 +47,11 @@
 
   background-attachment: fixed;
   /* Keeps the image fixed on scroll */
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  /* text-align: center; */
+  /* align-items: center; */
 }
 
 .mainResumeContent {
@@ -57,9 +61,13 @@
   padding-top: 50px;
   padding-left: 100px;
   padding-right: 100px;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
   line-height: 1.6;
   border-radius: 8px;
+  max-width: 900px;
+  backdrop-filter: saturate(105%) blur(135px);
 }
 
 .contact-section li{
@@ -193,6 +201,24 @@ li {
   width: 100%;
 }
 
+.bootCamp {
+  margin-bottom: 50px;
+}
+
+.normandale{
+  margin-bottom: 50px;
+}
+
+.ittTech{
+  margin-bottom: 50px;
+}
+
+.skill-item{
+  margin-top: 150px;
+}
+
+
+
 .skills li {
   line-height: 1.5; 
   text-indent: -1.5em; 
@@ -202,7 +228,7 @@ li {
 
 .skills {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   width: 100%;
 }
 
