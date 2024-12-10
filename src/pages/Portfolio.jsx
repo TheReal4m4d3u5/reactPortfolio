@@ -293,15 +293,28 @@ const cProjects = [
 
 ];
 
-const fullStackProjects = [
+
+const pernProjects = [
   {
-    title: 'Aline',
-    description: 'A full-stack web application that features a RESTful API for retrieving and adding event data. The application integrates with the Ticketmaster API for event information and the OpenWeather API for real-time weather forecasts. The frontend is responsive and interactive, ensuring a polished user experience. Protects sensitive information with environment variables, and all api calls are done on the backend',
-    image: image9,
-    gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
-    deployed: 'https://aline-events.onrender.com/',
-    tags: ['Node.js', 'Express.js', 'React', 'PostgreSQL', 'Sequelize', 'RESTful API', 'JWT', 'Ticketmaster API', 'OpenWeather API', 'Render'],
+    title: 'Weather App',
+    description: 'A full-stack weather dashboard application that retrieves and displays the current day and the 5-day weather forecast for various cities.',
+    image: image2,
+    gitLink: 'https://github.com/TheReal4m4d3u5/WeatherAPP',
+    deployed: 'https://weatherapp-ew0q.onrender.com',
+    tags: ['Node.js', 'Express.js', 'React', 'OpenWeather API', 'JSON', 'Render'],
   },
+  {
+    title: 'Kanban Board',
+    description: 'A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.',
+    image: image10,
+    gitLink: 'https://github.com/TheReal4m4d3u5/kanbanBoard',
+    deployed: 'https://kanbanboard-552l.onrender.com',
+    tags: ['Node.js', 'Express.js', 'React', 'JWT', 'PostgreSQL', 'Render'],
+  },
+];
+
+
+const fullStackProjects = [
   {
     title: 'Weather App',
     description: 'A full-stack weather dashboard application that retrieves and displays the current day and the 5-day weather forecast for various cities.',
@@ -317,14 +330,6 @@ const fullStackProjects = [
     gitLink: 'https://github.com/TheReal4m4d3u5/candidateSearch',
     deployed: 'https://funny-biscochitos-9e1673.netlify.app/',
     tags: ['React', 'TypeScript', 'GitHub API', 'Netlify'],
-  },
-  {
-    title: 'Kanban Board',
-    description: 'A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.',
-    image: image10,
-    gitLink: 'https://github.com/TheReal4m4d3u5/kanbanBoard',
-    deployed: 'https://kanbanboard-552l.onrender.com',
-    tags: ['Node.js', 'Express.js', 'React', 'JWT', 'PostgreSQL', 'Render'],
   },
 ];
 
@@ -399,30 +404,30 @@ const Portfolio = () => {
 
         {/* Index Section */}
         <nav className="portfolio-index">
-          
-            <a href="#pern">Full Stack PERN</a>
-            <a href="#mern">Full Stack MERN</a>
-            <a href="#javascript">React.js / JavaScript / TypeScript</a>
-            <a href="#sql">SQL</a>
-            <a href="#matlab">Matlab</a>
-            <a href="#java">Java</a>
-            <a href="#python">Python</a>
-            <a href="#c">C</a>
-            <a href="#tdd">TDD</a>
-            <a href="#bdd">BDD</a>
-            <a href="#cicd">CI/CD DevOps</a>
-         
+
+          <a href="#pern">Full Stack PERN</a>
+          <a href="#mern">Full Stack MERN</a>
+          <a href="#javascript">React.js / JavaScript / TypeScript</a>
+          <a href="#sql">SQL</a>
+          <a href="#matlab">Matlab</a>
+          <a href="#java">Java</a>
+          <a href="#python">Python</a>
+          <a href="#c">C</a>
+          <a href="#tdd">TDD</a>
+          <a href="#bdd">BDD</a>
+          <a href="#cicd">CI/CD DevOps</a>
+
         </nav>
 
 
         <Row className="portfolioCards">
-          
+
           <div id="pern" className="monHeader">Full Stack PERN</div>
           <div className="disclaimerWraper">
             <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           </div>
 
-          {fullStackProjects.map((project, index) => (
+          {pernProjects.map((project, index) => (
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
               <Project
                 title={project.title}
@@ -439,7 +444,7 @@ const Portfolio = () => {
           ))}
 
 
-          <div id="mern"  className="mongoDBHeader">Full Stack MERN</div>
+          <div id="mern" className="mongoDBHeader">Full Stack MERN</div>
           <div className="disclaimerWraper">
             <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           </div>
@@ -461,6 +466,28 @@ const Portfolio = () => {
 
             </Col>
 
+          ))}
+
+
+          <div id="pern" className="monHeader">Full Stack</div>
+          <div className="disclaimerWraper">
+            <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
+          </div>
+
+          {fullStackProjects.map((project, index) => (
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                video={project.video}
+                videoText={project.videoText}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+                tags={project.tags}
+              />
+
+            </Col>
           ))}
 
 
