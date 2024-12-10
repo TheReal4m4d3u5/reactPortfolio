@@ -24,6 +24,8 @@ import cirlceCI from '../../src/assets/cirlceCI.png';
 import coinToss from '../../src/assets/coinToss.png';
 import blog from '../../src/assets/blog.png';
 
+import gitActions from '../../src/assets/gitActions.png';
+
 import selenium from '../../src/assets/selenium.png';
 
 
@@ -48,7 +50,7 @@ const seleniumProjects = [
 
 const ciCDProjects = [
   {
-    title: 'GitHub Actions CI-CD Setup',
+    title: 'CI-CD Setup',
     description: `Full stack CI/CD deployment with git protections and staging and production environments.`,
     image: cirlceCI,
     gitLink: 'https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main',
@@ -59,7 +61,7 @@ const ciCDProjects = [
   {
     title: 'GitHub Actions CI-CD Setup',
     description: `Full stack deployment pipeline.`,
-    image: cirlceCI,
+    image: gitActions,
     gitLink: 'https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main',
     staging: 'https://githubactionsci-cdsetup-staging.onrender.com',
     deployed: 'https://github-actions-ci-cd-setup-9j9z.onrender.com',
