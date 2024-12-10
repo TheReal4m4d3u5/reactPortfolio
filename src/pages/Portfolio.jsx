@@ -469,7 +469,7 @@ const Portfolio = () => {
           ))}
 
 
-          <div id="pern" className="monHeader">Full Stack</div>
+          <div id="pern" className="mongoDBHeader">Full Stack</div>
           <div className="disclaimerWraper">
             <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           </div>
