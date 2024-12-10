@@ -23,19 +23,14 @@ import bookSearch from '../../src/assets/bookSearch.png';
 import cirlceCI from '../../src/assets/cirlceCI.png';
 import coinToss from '../../src/assets/coinToss.png';
 import blog from '../../src/assets/blog.png';
-
 import gitActions from '../../src/assets/gitActions.png';
-
 import selenium from '../../src/assets/selenium.png';
-
-
 import tDD1 from '../../src/assets/tDD1.png';
 import reactTDD from '../../src/assets/reactTDD.png';
 
 import socialMediaVideo from '../../src/assets/socialMediaAPI.mp4';
 import vehicleVideo from '../../src/assets/module8.mp4';
 import employeeDB from '../../src/assets/employeeDB.mp4';
-
 
 const seleniumProjects = [
   {
@@ -296,12 +291,12 @@ const cProjects = [
 
 const pernProjects = [
   {
-    title: 'Weather App',
-    description: 'A full-stack weather dashboard application that retrieves and displays the current day and the 5-day weather forecast for various cities.',
-    image: image2,
-    gitLink: 'https://github.com/TheReal4m4d3u5/WeatherAPP',
-    deployed: 'https://weatherapp-ew0q.onrender.com',
-    tags: ['Node.js', 'Express.js', 'React', 'OpenWeather API', 'JSON', 'Render'],
+    title: 'Aline',
+    description: 'A full-stack web application that features a RESTful API for retrieving and adding event data. The application integrates with the Ticketmaster API for event information and the OpenWeather API for real-time weather forecasts. The frontend is responsive and interactive, ensuring a polished user experience. Protects sensitive information with environment variables, and all api calls are done on the backend',
+    image: image9,
+    gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
+    deployed: 'https://aline-events.onrender.com/',
+    tags: ['Node.js', 'Express.js', 'React', 'PostgreSQL', 'Sequelize', 'RESTful API', 'JWT', 'Ticketmaster API', 'OpenWeather API', 'Render'],
   },
   {
     title: 'Kanban Board',
