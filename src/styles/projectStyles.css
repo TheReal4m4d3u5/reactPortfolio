@@ -1,10 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 .project-card img {
-  height: 50px;
-  width: 50px;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  min-width: 350px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  max-height: 350px; /* Added a max-height for consistent image display */
   object-fit: cover;
 }
+
+.project-card {
+
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+
+  margin: 20px;
+  gap: 20px;
+  color: black;
+  border-radius: 8px;
+  min-width: 350px;  /* Set a minimum width */
+  max-width: 800px;  /* Limit maximum width */
+  width: 100%;       /* Ensure responsiveness */
+  min-height: 300px;
+  max-height: 800px;
+  overflow: hidden;  /* Prevent overflow issues */
+  box-sizing: border-box;
+  backdrop-filter: saturate(95%) blur(220px);
+}
+
+
 
 .myFlexCard{
   display: flex;
@@ -80,62 +114,9 @@
   color: white;
 }
 
-.project-card img {
-  
-  
-  min-height: 250px;
-  min-width: 350px;
-  
-}
 
 
-.project-card {
 
-  display: block;
-  flex-direction: column;
-  font-family: 'Roboto', sans-serif;
-  text-shadow:
-    -1px -1px 0 black,
-
-    1px -1px 0 black,
- 
-    -1px 1px 0 black,
- 
-    1px 1px 0 black;
-
-
-  margin-bottom: 20px;
-  flex: 1 1 30%;
-
-  color: black;
-  border-radius: 8px;
-
-  flex: 1 1 calc(33.333% - 40px);
-
-  min-width: 775px;
-  height: auto;
-
-  margin: 20px; 
-  gap: 20px;
-  flex-direction: column;
-  min-height: 300px;
-  max-height: 800px;
-  flex-direction: column;
-  align-items: left;
-  text-align: left;
-  max-width: 800px; 
-
-  width: 100%; 
-
-  border-radius: 8px;
-  overflow: hidden;
-
-  box-sizing: border-box;
-
-  flex: 1 1 100%;
-
-  backdrop-filter: saturate(95%) blur(220px);
-}
 
 
 .card-img-top{

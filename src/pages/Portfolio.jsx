@@ -28,10 +28,80 @@ import gitActions from '../../src/assets/gitActions.png';
 import selenium from '../../src/assets/selenium.png';
 import tDD1 from '../../src/assets/tDD1.png';
 import reactTDD from '../../src/assets/reactTDD.png';
+import employease from '../../src/assets/employease.png';
 
 import socialMediaVideo from '../../src/assets/socialMediaAPI.mp4';
 import vehicleVideo from '../../src/assets/module8.mp4';
 import employeeDB from '../../src/assets/employeeDB.mp4';
+
+
+
+const pernProjects = [
+  {
+    title: 'Aline',
+    description: 'A full-stack web application that features a RESTful API for retrieving and adding event data. The application integrates with the Ticketmaster API for event information and the OpenWeather API for real-time weather forecasts. The frontend is responsive and interactive, ensuring a polished user experience. Protects sensitive information with environment variables, and all api calls are done on the backend',
+    image: image9,
+    gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
+    deployed: 'https://aline-events.onrender.com/',
+    tags: ['Node.js', 'Express.js', 'React', 'PostgreSQL', 'Sequelize', 'RESTful API', 'JWT', 'Ticketmaster API', 'OpenWeather API', 'Render'],
+  },
+  {
+    title: 'Kanban Board',
+    description: 'A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.',
+    image: image10,
+    gitLink: 'https://github.com/TheReal4m4d3u5/kanbanBoard',
+    deployed: 'https://kanbanboard-552l.onrender.com',
+    tags: ['Node.js', 'Express.js', 'React', 'JWT', 'PostgreSQL', 'Render'],
+  },
+];
+
+
+const mongoProjects = [
+
+  {
+    title: 'EmployEase',
+    description: 'EmployEase is a job search and application tracker that integrates with The Muse API, allowing users to search for job opportunities and manage their applications in a streamlined manner. Built using the MERN stack, it offers personalized tracking and secure authentication for job seekers.',
+    image: employease,
+    gitLink: 'https://github.com/TheReal4m4d3u5/EmployEase',
+    deployed: 'https://employease-hubi.onrender.com/',
+    tags: ['React', 'Node.js.js', 'Express.js', 'Node.js', 'MongoDB Atlas', 'Mongoose', 'GraphQL', 'The Muse API', 'JWT', 'Render', 'GitHub Action', 'Apollo Client', 'MERN Stack'],
+  },
+  {
+    title: 'Book Search Engine',
+    description: 'A full-stack application to search and save books using the Google Books API.',
+    image: bookSearch,
+    gitLink: 'https://github.com/TheReal4m4d3u5/bookSearchEngine',
+    deployed: 'https://booksearchengine-5ikq.onrender.com',
+    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'GraphQL', 'Apollo Server', 'JWT', 'MERN Stack'],
+  },
+  {
+    video: socialMediaVideo,
+    title: 'Social Media API',
+    description: 'A Social Network API with RESTful endpoints for managing users, thoughts, and reactions.',
+    videoText: 'Click to watch video',
+    gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
+    tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'RESTful API'],
+  },
+  {
+    title: 'Tech Matchup App',
+    description: 'A full-stack web application that allows users to create matchups and vote for their favorite technologies.',
+    image: bookSearch,
+    gitLink: 'https://github.com/TheReal4m4d3u5/bookSearchEngine',
+    deployed: 'https://booksearchengine-5ikq.onrender.com',
+    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'GraphQL', 'Apollo Server', 'MERN Stack'],
+  },
+  {
+    video: socialMediaVideo,
+    title: 'Student Statistics',
+    description: 'A back-end application to calculate student statistics.',
+    videoText: 'Click to watch video',
+    gitLink: 'https://github.com/TheReal4m4d3u5/studentStatisticsBack-End',
+    tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose'],
+  },
+
+];
+
+
 
 const seleniumProjects = [
   {
@@ -199,42 +269,6 @@ const sqlProjects = [
 
 
 
-const mongoProjects = [
-
-  {
-    title: 'Book Search Engine',
-    description: 'A full-stack application to search and save books using the Google Books API.',
-    image: bookSearch,
-    gitLink: 'https://github.com/TheReal4m4d3u5/bookSearchEngine',
-    deployed: 'https://booksearchengine-5ikq.onrender.com',
-    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'GraphQL', 'Apollo Server', 'JWT', 'MERN Stack'],
-  },
-  {
-    video: socialMediaVideo,
-    title: 'Social Media API',
-    description: 'A Social Network API with RESTful endpoints for managing users, thoughts, and reactions.',
-    videoText: 'Click to watch video',
-    gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
-    tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'RESTful API'],
-  },
-  {
-    title: 'Tech Matchup App',
-    description: 'A full-stack web application that allows users to create matchups and vote for their favorite technologies.',
-    image: bookSearch,
-    gitLink: 'https://github.com/TheReal4m4d3u5/bookSearchEngine',
-    deployed: 'https://booksearchengine-5ikq.onrender.com',
-    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'GraphQL', 'Apollo Server', 'MERN Stack'],
-  },
-  {
-    video: socialMediaVideo,
-    title: 'Student Statistics',
-    description: 'A back-end application to calculate student statistics.',
-    videoText: 'Click to watch video',
-    gitLink: 'https://github.com/TheReal4m4d3u5/studentStatisticsBack-End',
-    tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose'],
-  },
-
-];
 
 
 const javaProjects = [
@@ -291,24 +325,7 @@ const cProjects = [
 ];
 
 
-const pernProjects = [
-  {
-    title: 'Aline',
-    description: 'A full-stack web application that features a RESTful API for retrieving and adding event data. The application integrates with the Ticketmaster API for event information and the OpenWeather API for real-time weather forecasts. The frontend is responsive and interactive, ensuring a polished user experience. Protects sensitive information with environment variables, and all api calls are done on the backend',
-    image: image9,
-    gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
-    deployed: 'https://aline-events.onrender.com/',
-    tags: ['Node.js', 'Express.js', 'React', 'PostgreSQL', 'Sequelize', 'RESTful API', 'JWT', 'Ticketmaster API', 'OpenWeather API', 'Render'],
-  },
-  {
-    title: 'Kanban Board',
-    description: 'A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.',
-    image: image10,
-    gitLink: 'https://github.com/TheReal4m4d3u5/kanbanBoard',
-    deployed: 'https://kanbanboard-552l.onrender.com',
-    tags: ['Node.js', 'Express.js', 'React', 'JWT', 'PostgreSQL', 'Render'],
-  },
-];
+
 
 
 const cppProjects = [
