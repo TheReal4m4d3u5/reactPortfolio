@@ -22,6 +22,7 @@ import image17 from '../../src/assets/csci1113A6.png';
 import bookSearch from '../../src/assets/bookSearch.png';
 import cirlceCI from '../../src/assets/cirlceCI.png';
 import coinToss from '../../src/assets/coinToss.png';
+import hangman from '../../src/assets/hangman.png';
 import blog from '../../src/assets/blog.png';
 import gitActions from '../../src/assets/gitActions.png';
 import selenium from '../../src/assets/selenium.png';
@@ -309,6 +310,17 @@ const pernProjects = [
 ];
 
 
+const cppProjects = [
+  {
+    title: 'Hangman',
+    description: 'A Hangman game written in C++',
+    image: hangman,
+    gitLink: 'https://github.com/TheReal4m4d3u5/cPlusPlusHTP_18.12',
+    tags: ['C++', 'Command Line'],
+  }
+];
+
+
 const fullStackProjects = [
   {
     title: 'Weather App',
@@ -329,8 +341,6 @@ const fullStackProjects = [
 ];
 
 const javaScriptProjects = [
-
-
   {
     title: 'Blog',
     description: 'A two-page personal blog application that allows users to submit blog posts via a form and store them in localStorage.',
@@ -408,6 +418,7 @@ const Portfolio = () => {
           <a href="#java">Java</a>
           <a href="#python">Python</a>
           <a href="#c">C</a>
+          <a href="#cpp">C++</a>
           <a href="#tdd">TDD</a>
           <a href="#bdd">BDD</a>
           <a href="#cicd">CI/CD DevOps</a>
@@ -604,6 +615,27 @@ const Portfolio = () => {
 
           ))}
 
+
+          <div id="cpp" className="mongoDBHeader">C++</div>
+
+          {cppProjects.map((project, index) => (
+
+            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+
+              <Project
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                gitlink={project.gitLink}
+                deployedlink={project.deployed}
+                tags={project.tags}
+              />
+
+            </Col>
+
+          ))}
+
+
           <div id="tdd" className="mongoDBHeader">TDD</div>
 
           {tDDProjects.map((project, index) => (
@@ -682,23 +714,6 @@ const Portfolio = () => {
           ))} */}
 
 
-          {/* <div className="">C++</div>
-
-          {javaProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-              />
-
-            </Col>
-
-          ))} */}
 
         </Row>
       </section>
