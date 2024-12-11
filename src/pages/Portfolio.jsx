@@ -200,15 +200,15 @@ const sqlProjects = [
 
 
 const mongoProjects = [
-  {
-    video: socialMediaVideo,
-    title: 'Student Statistics',
-    description: 'A back-end application to calculate student statistics.',
-    videoText: 'Click to watch video',
-    gitLink: 'https://github.com/TheReal4m4d3u5/studentStatisticsBack-End',
-    tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose'],
-  },
 
+  {
+    title: 'Book Search Engine',
+    description: 'A full-stack application to search and save books using the Google Books API.',
+    image: bookSearch,
+    gitLink: 'https://github.com/TheReal4m4d3u5/bookSearchEngine',
+    deployed: 'https://booksearchengine-5ikq.onrender.com',
+    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'GraphQL', 'Apollo Server', 'JWT', 'MERN Stack'],
+  },
   {
     video: socialMediaVideo,
     title: 'Social Media API',
@@ -226,13 +226,14 @@ const mongoProjects = [
     tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'GraphQL', 'Apollo Server', 'MERN Stack'],
   },
   {
-    title: 'Book Search Engine',
-    description: 'A full-stack application to search and save books using the Google Books API.',
-    image: bookSearch,
-    gitLink: 'https://github.com/TheReal4m4d3u5/bookSearchEngine',
-    deployed: 'https://booksearchengine-5ikq.onrender.com',
-    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'GraphQL', 'Apollo Server', 'JWT', 'MERN Stack'],
+    video: socialMediaVideo,
+    title: 'Student Statistics',
+    description: 'A back-end application to calculate student statistics.',
+    videoText: 'Click to watch video',
+    gitLink: 'https://github.com/TheReal4m4d3u5/studentStatisticsBack-End',
+    tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose'],
   },
+
 ];
 
 
