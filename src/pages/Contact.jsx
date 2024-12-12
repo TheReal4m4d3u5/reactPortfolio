@@ -65,7 +65,7 @@ function Contact() {
               placeholder="Enter your name"
               value={formData.from_name}
               onChange={handleChange}
-              onBlur={() => handleBlur('from_name', formData.from_namename)}
+              onBlur={() => handleBlur('from_name', formData.from_name)}
               required
             />
             {errors.from_name && <p className="error-message">{errors.from_name}</p>}
