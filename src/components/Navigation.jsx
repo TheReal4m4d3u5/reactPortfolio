@@ -12,9 +12,9 @@ const Navigation = ({ isOpen }) => {
   return (
     <nav className={`navigation ${isOpen ? 'open' : ''}`}>
       <Link to="/about" className={isDefaultPage? 'active' : ''}>About</Link>
-      <Link to="/contact" className={currentPage === '/contact' ? 'active' : ''}>Contact</Link>
       <Link to="/portfolio" className={currentPage === '/portfolio' ? 'active' : ''}>Portfolio</Link>
       <Link to="/resume" className={currentPage === '/resume' ? 'active' : ''}>Resume</Link>
+      <Link to="/contact" className={currentPage === '/contact' ? 'active' : ''}>Contact</Link>
     </nav>
   );
 };
