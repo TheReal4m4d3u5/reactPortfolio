@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/resumeStyles.css';
-import resume from '../assets/Avery Jacobson.pdf'
+import resume from '../../public/Avery Jacobson.pdf'
 import Tag from '../components/Tag';
 
 
