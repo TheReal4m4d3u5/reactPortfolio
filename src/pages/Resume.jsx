@@ -66,7 +66,7 @@ const Resume = () => {
       <section className='mainResumeContent'>
 
         <div className="resumeLinks">
-          <a href={resume} download="Avery_Jacobson_Resume.pdf" className="link-button">
+          <a href="/Avery Jacobson.pdf" download="Avery Jacobson.pdf" className="link-button">
             Download Resume
           </a>
         </div>
