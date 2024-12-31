@@ -6,7 +6,7 @@ import Tag from '../components/Tag';
 
 
 const coreSkills = [
-  'Assembly Language', 'C', 'C++', 'CSS', 'HTML', 'Java', 'JavaScript',
+  'Assembly Language', 'C', 'C++', 'C#', 'CSS', 'HTML', 'Java', 'JavaScript', 'Node.js',
   'LISP', 'OpenGL', 'Python', 'React', 'TypeScript', 'VB Script', 'Visual Basic .NET',
 ];
 
@@ -23,7 +23,7 @@ const ciCdDevOps = [
 ];
 
 const toolsPlatforms = [
-  'Apache Subversion', 'Cygwin', 'Eclipse', 'GCC', 'Git', 'GitHub', 'GraphQL',
+  'Apache Subversion', 'ASP.NET', 'Cygwin','Eclipse', 'Express', 'GCC', 'Git', 'GitHub', 'GraphQL',
   'IAR Systems', 'JIRA', 'MinGW', 'RESTful APIs', 'TestRail', 'Visual Studio', 'Xilinx',
 ];
 
@@ -78,7 +78,7 @@ const Resume = () => {
           <h3 className='resumeHeaders'>Professional Summary</h3>
 
           <section className='professinalText'>
-            <p>Accomplished Full Stack Developer and SDET with over 10 years of experience delivering high-quality software solutions. Proficient in full-stack development, automation, and quality assurance, with expertise in C, C++, Java, JavaScript, React, TypeScript, and Python. Skilled in Test-Driven Development (TDD) using Jest, Cypress, Git Actions, and CircleCI to enhance code quality and streamline development pipelines. Extensive experience with RESTful and GraphQL APIs, SQL/NoSQL databases, and CI/CD pipelines. Adept at cloud-native development and leveraging frameworks like Selenium, Appium, Cucumber, and BDD to optimize testing. Known for a results-driven approach, innovative problem-solving, and delivering robust, scalable solutions.</p>
+            <p>Accomplished Full Stack Developer and SDET with over 10 years of experience designing, developing, and delivering scalable, high-quality software solutions and automation frameworks. Proficient in full-stack development with expertise in Node.js, Express, and React for building robust APIs and dynamic web applications. Skilled in modern programming languages, including C, C++, C#, Java, Python, JavaScript, and TypeScript, with a strong understanding of RESTful and GraphQL APIs. Extensive experience working with SQL/NoSQL databases and building CI/CD pipelines to streamline deployments. Adept in Test-Driven Development (TDD) and Behavior-Driven Development (BDD), leveraging tools like Jest, Cypress, Selenium, and Cucumber to optimize quality and efficiency. Expertise in cloud technologies (AWS, Azure) and Agile methodologies, collaborating with cross-functional teams to deliver innovative software.</p>
 
           </section>
         </section>
@@ -146,9 +146,9 @@ const Resume = () => {
         <div className="skill-item">Education</div>
 
         <div className="bootCamp">
-        <li>Coding Boot Camp Certification</li>
+        <li>Professional Developer's Certificate</li>
         <li>University of Minnesota, Minneapolis, MN</li>
-        <li>6/16/2024-12/12/2024</li>
+        <li>12/12/2024</li>
         </div>
       
         <div className="normandale">
