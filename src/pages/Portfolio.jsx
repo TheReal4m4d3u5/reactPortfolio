@@ -427,13 +427,13 @@ const Portfolio = () => {
         {/* Index Section */}
         <nav className="portfolio-index">
 
-          <div class="top-links">
+          <div className="top-links">
             <a href="#featured">Featured Projects</a>
             <a href="#backend">Backend / Systems</a>
             <a href="#embedded">Embedded / Hardware</a>
           </div>
 
-          <div class="main-links">
+          <div className="main-links">
             <a href="#pern">Full Stack PERN</a>
             <a href="#mern">Full Stack MERN</a>
             <a href="#javascript">React.js / JavaScript / TypeScript</a>
