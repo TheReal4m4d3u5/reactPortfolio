@@ -446,7 +446,6 @@ const Portfolio = () => {
             <a href="#tdd">TDD</a>
             <a href="#bdd">BDD</a>
             <a href="#cicd">CI/CD DevOps</a>
-
           </div>
 
         </nav>
