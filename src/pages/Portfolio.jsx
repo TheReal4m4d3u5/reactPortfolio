@@ -246,14 +246,13 @@ const tDDProjects = [
 const matLabProjects = [
   {
     title: 'MatDrive',
-    description: `A simulation engine for vehicle navigation.
+    description: `A mathematical simulation engine modeling vehicle movement across a graph-based city. Implements linear algebra transformations, parametric motion, and stochastic decision processes to simulate path selection and orientation.
+    Bridges mathematical modeling with system design to produce realistic, state-driven movement.
 
-Graph-based routing
-Linear algebra transformations
-Parametric motion
-Stochastic decision-making
-
-Simulates realistic movement and orientation.`,
+• Graph-based vehicle navigation
+• Linear algebra transformations
+• Parametric motion modeling
+• Stochastic decision processes`,
 
     image: image11,
     gitLink: 'https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car',
