@@ -20,7 +20,23 @@ const About = () => {
           <div className="aboutTextWraper">
             <div className="aboutTextHeader"> Software Developer & Electrical Engineer</div>
             <div className="aboutText">
-              Hi, I'm Avery Jacobson! My passion for software and electrical engineering stems from a deep curiosity about how technology powers the world around us. With over a decade of experience as a Software Development Engineer in Test (SDET) and Full Stack Developer, I've cultivated a diverse skill set that bridges coding, automation, and hardware integration. I've developed robust applications, streamlined CI/CD pipelines, and optimized testing frameworks with tools like Selenium, Appium, and Jenkins. I thrive on solving complex challenges, crafting scalable solutions, and pushing the boundaries of technology to deliver reliable, high-quality results. My journey reflects blending the best of software development and electrical engineering into every project I pursue.
+              <p>
+                Software Engineer focused on building reliable backend systems and scalable data workflows, with over 10 years of experience delivering high-quality solutions in production environments.
+              </p>
+
+              <p>
+                My work centers on API design, data validation, system reliability, and performance optimization across large-scale applications. I bring a strong foundation in mathematics and statistics, applying analytical thinking to ensure data integrity and correctness in complex systems.
+              </p>
+              <p>
+                In addition to backend development, I have experience working close to hardware and embedded systems, giving me a systems-level perspective that spans from low-level interactions to distributed application design.
+              </p>
+              <p>
+                Currently, I am building ZeroLedger, a platform focused on modeling and analyzing CO₂ footprint through data-driven workflows, combining backend engineering with applied mathematical modeling.
+              </p>
+              <p>
+                I am particularly interested in backend, platform, and distributed systems roles where reliability, data accuracy, and system design are critical.
+              </p>
+
             </div>
 
           </div>
