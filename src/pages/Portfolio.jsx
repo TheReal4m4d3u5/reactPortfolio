@@ -564,14 +564,9 @@ const Portfolio = () => {
 
 
           <div id="matlab" className="mongoDBHeader">Matlab</div>
-
           <div id="filters">
-            <button id="featured" onClick={() => toggleFilter('Featured')}>
- 
-            </button>
-            <button id="matlabFilter" onClick={() => toggleFilter('MATLAB')}>
-   
-            </button>
+            <button id="featured" onClick={() => toggleFilter('Featured')}></button>
+            <button id="matlabFilter" onClick={() => toggleFilter('MATLAB')}></button>
           </div>
 
 
