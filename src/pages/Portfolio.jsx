@@ -562,6 +562,8 @@ const Portfolio = () => {
           ))}
 
 
+          <p><p/>
+
           <div id="filters">
             <button id="featured" onClick={() => toggleFilter('Featured')}>
             </button>
