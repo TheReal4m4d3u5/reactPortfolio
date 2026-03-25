@@ -24,6 +24,10 @@
 
 .project-description {
   white-space: pre-line;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.5;
 }
 
 

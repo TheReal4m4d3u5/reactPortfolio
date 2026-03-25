@@ -248,12 +248,12 @@ const matLabProjects = [
     title: 'MatDrive',
     description: `A simulation engine for vehicle navigation.
 
-• Graph traversal
-• Linear algebra
-• Parametric motion
-• Stochastic decision-making
+Graph-based routing
+Linear algebra transformations
+Parametric motion
+Stochastic decision-making
 
-Simulates realistic movement.`,
+Simulates realistic movement and orientation.`,
 
     image: image11,
     gitLink: 'https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car',
