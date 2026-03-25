@@ -10,6 +10,13 @@
   margin-bottom: 20px;
 }
 
+.main-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
 .portfolio-page {
   
 
