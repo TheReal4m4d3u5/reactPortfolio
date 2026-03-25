@@ -562,31 +562,18 @@ const Portfolio = () => {
           ))}
 
 
-          <p><p/>
+
+
+          <div id="matlab" className="mongoDBHeader">Matlab</div>
 
           <div id="filters">
             <button id="featured" onClick={() => toggleFilter('Featured')}>
+              Featured
             </button>
-            <button id="matlab" onClick={() => toggleFilter('MATLAB')}>
+            <button id="matlabFilter" onClick={() => toggleFilter('MATLAB')}>
               Matlab
             </button>
           </div>
-
-          {matLabProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-                tags={project.tags}
-              />
-
-            </Col>
-
-          ))}
 
 
 
