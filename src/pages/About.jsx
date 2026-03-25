@@ -18,7 +18,7 @@ const About = () => {
 
         <section className="aboutTextSection">
           <div className="aboutTextWraper">
-            <div className="aboutTextHeader"> Software Developer & Electrical Engineer</div>
+            <div className="aboutTextHeader">Backend & Systems Engineer | APIs, Data, Reliability</div>
             <div className="aboutText">
               <p>
                 Software Engineer focused on building reliable backend systems and scalable data workflows, with over 10 years of experience delivering high-quality solutions in production environments.
