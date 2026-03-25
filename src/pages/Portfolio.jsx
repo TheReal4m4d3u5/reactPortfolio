@@ -246,10 +246,10 @@ const tDDProjects = [
 const matLabProjects = [
   {
     title: 'MatDrive',
-    description: 'A wireframe of car driving around a city only using linear algebra and Matlab ',
+    description: 'A simulation engine modeling vehicle navigation through a graph-based city, combining linear algebra transformations, parametric motion, and stochastic decision-making to drive realistic movement and orientation.',
     image: image11,
     gitLink: 'https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car',
-    tags: ['Matlab', 'Linear Algebra'],
+    tags: ['MATLAB', 'Linear Algebra', 'Graph Theory', 'Simulation', 'Systems Design'],
   },
 ];
 
@@ -562,7 +562,14 @@ const Portfolio = () => {
           ))}
 
 
-          <div id="matlab" className="mongoDBHeader">Matlab</div>
+          <div id="filters">
+            <button id="featured" onClick={() => toggleFilter('Featured')}>
+            </button>
+            <button id="matlab" onClick={() => toggleFilter('MATLAB')}>
+              Matlab
+            </button>
+          </div>
+
           {matLabProjects.map((project, index) => (
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
 
