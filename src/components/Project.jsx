@@ -19,12 +19,10 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
           />
         )}
 
-
-
         <div className="myCard">
           <Card.Body className="d-flex flex-column">
             <Card.Title>{title}</Card.Title>
-            <Card.Text>{description}</Card.Text>
+            <Card.Text className="project-description">{description}</Card.Text>
 
             {tags && (
               <div className="flex flex-wrap">
@@ -34,7 +32,6 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
                 ))}
               </div>
             )}
-
 
             <div className="viewGithubProject">
               {gitlink && (
@@ -50,8 +47,6 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
                 </a>
               )}
             </div>
-
-
 
             {staginglink && (
               <div className="mt-2">

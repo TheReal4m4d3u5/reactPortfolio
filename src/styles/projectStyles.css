@@ -21,6 +21,12 @@
   flex-wrap: wrap;
 }
 
+
+.project-description {
+  white-space: pre-line;
+}
+
+
 .project-card {
 
   display: flex;
