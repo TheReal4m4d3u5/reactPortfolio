@@ -202,5 +202,10 @@
   max-height: 200px;
 }
 
+.project-card {
+  height: auto;
+  min-height: unset;
+  overflow: visible;
+}
 
 
