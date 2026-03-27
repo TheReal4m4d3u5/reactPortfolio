@@ -592,7 +592,7 @@ const Portfolio = () => {
 
           <div id="java" className="mongoDBHeader">Java</div>
           <div id="filters">
-            <button id="backend" onClick={() => toggleFilter('Featured')}></button>
+            <button id="featured" onClick={() => toggleFilter('Featured')}></button>
             <button id="backend" onClick={() => toggleFilter('backend')}></button>
           </div>
 
