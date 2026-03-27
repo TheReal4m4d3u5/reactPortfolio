@@ -564,13 +564,11 @@ const Portfolio = () => {
           ))}
 
 
-
-          <div id="matlab" className="mongoDBHeader">Matlab</div>
           <div id="filters">
             <button id="featured" onClick={() => toggleFilter('Featured')}></button>
             <button id="matlabFilter" onClick={() => toggleFilter('MATLAB')}></button>
           </div>
-
+          <div id="matlab" className="mongoDBHeader">Matlab</div>
 
           {matLabProjects.map((project, index) => (
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
@@ -589,7 +587,11 @@ const Portfolio = () => {
           ))}
 
 
-
+          <div id="filters">
+            <button id="featured" onClick={() => toggleFilter('Featured')}></button>
+            <button id="featured" onClick={() => toggleFilter('Backend / Systems')}></button>
+            <button id="matlabFilter" onClick={() => toggleFilter('Java')}></button>
+          </div>
           <div id="java" className="mongoDBHeader">Java</div>
 
           {javaProjects.map((project, index) => (
