@@ -91,8 +91,8 @@
   max-width: 800px;  /* Limit maximum width */
   width: 100%;       /* Ensure responsiveness */
   min-height: 300px;
-  max-height: 800px;
-  overflow: hidden;  /* Prevent overflow issues */
+  max-height: auto;
+  overflow: visible;  /* Prevent overflow issues */
   box-sizing: border-box;
   backdrop-filter: saturate(95%) blur(220px);
 }
