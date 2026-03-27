@@ -279,6 +279,16 @@ const sqlProjects = [
 
 
 const javaProjects = [
+
+
+    {
+    title: 'Card Dealer',
+    description: 'This program simulates a deck of playing cards, providing functionality to shuffle, deal cards, and display card details.',
+    image: image15,
+    gitLink: 'https://github.com/TheReal4m4d3u5/csci_1111_assignment_7',
+    tags: ['C', 'Command-Line Application'],
+  },
+
   {
     title: 'Grocery Inventory Backend System',
     description: 'A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design',
