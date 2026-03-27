@@ -21,6 +21,29 @@
   flex-wrap: wrap;
 }
 
+.project-image {
+  width: 100%;
+  max-width: 320px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: none;
+}
+
+.project-description {
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.project-card {
+  border-radius: 18px;
+}
+
+.tags-container {
+  gap: 10px;
+}
+
+
 
 .project-description {
   white-space: pre-line;
