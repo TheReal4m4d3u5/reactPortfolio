@@ -288,14 +288,6 @@ const javaProjects = [
     gitLink: 'https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372',
     tags: ['Java', 'OOP', 'Backend Systems', 'Software Design'],
   },
-
-  {
-    title: 'Grocery Inventory Backend System',
-    description: 'A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design',
-    image: grocerySytsem,
-    gitlink: 'https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372',
-    tags: ['Java', 'OOP', 'Backend Systems', 'Software Design'],
-  }
 ];
 
 const cProjects = [
