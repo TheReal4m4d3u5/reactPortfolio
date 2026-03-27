@@ -30,6 +30,11 @@
   border: none;
 }
 
+.project-card .card-title {
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
 .project-description {
   white-space: pre-line;
   line-height: 1.5;
