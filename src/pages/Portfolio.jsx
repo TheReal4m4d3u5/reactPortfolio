@@ -285,8 +285,8 @@ const javaProjects = [
     title: 'Card Dealer',
     description: 'This program simulates a deck of playing cards, providing functionality to shuffle, deal cards, and display card details.',
     image: image15,
-    gitLink: 'https://github.com/TheReal4m4d3u5/csci_1111_assignment_7',
-    tags: ['C', 'Command-Line Application'],
+    gitLink: 'https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372',
+    tags: ['Java', 'OOP', 'Backend Systems', 'Software Design'],
   },
 
   {
