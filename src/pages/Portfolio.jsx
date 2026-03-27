@@ -40,7 +40,8 @@ import employeeDB from '../../src/assets/employeeDB.mp4';
 const pernProjects = [
   {
     title: 'Aline',
-    description: 'Designed and developed a full-stack application that aggregates live event and weather data through multiple external APIs. Built a backend-driven architecture using Node.js and Express to securely manage API integrations, data processing, and environment variables. Implemented RESTful services for data retrieval and persistence with PostgreSQL, and developed a responsive React frontend for dynamic user interaction. Structured the system with clear separation of concerns to support scalability, security, and maintainability, simulating production-level API integration patterns.', image: image9,
+    description: 'A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design', 
+    image: image9,
     gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
     deployed: 'https://aline-events.onrender.com/',
     tags: ['Node.js', 'Express.js', 'React', 'PostgreSQL', 'Sequelize', 'RESTful API', 'JWT', 'Ticketmaster API', 'OpenWeather API', 'Render'],
