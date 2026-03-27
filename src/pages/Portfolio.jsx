@@ -278,19 +278,14 @@ const sqlProjects = [
 ];
 
 
-
-
-
 const javaProjects = [
   {
     title: 'Grocery Inventory Backend System',
-    description: 'A Java-based backend system modeling real-world grocery store workflows, including inventory tracking, cart management, and checkout processing. Built using object-oriented design principles (encapsulation, inheritance, polymorphism) with a layered architecture and extensible service layer for future scalability.',
-    image: grocerySytsem,
-    gitLink: 'https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372',
-    tags: ['Java', 'Command-Line OOP', 'Backend Systems', 'CLI Application'],
-  },
-
-  
+    description: 'A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design',
+    image: image12,
+    gitlink: 'YOUR_GITHUB_LINK',
+    tags: ['Java', 'OOP', 'Backend Systems', 'Software Design'],
+  }
 ];
 
 const cProjects = [
