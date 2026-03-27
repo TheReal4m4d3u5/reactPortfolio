@@ -40,6 +40,19 @@
   line-height: 1.5;
 }
 
+.project-title {
+  margin-bottom: 14px;
+}
+
+.project-links {
+  margin-top: 16px;
+}
+
+.project-description {
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
 .project-card {
   border-radius: 18px;
 }
