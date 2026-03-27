@@ -432,11 +432,11 @@ const Portfolio = () => {
 
           <div className="top-links">
             <a href="#featured">Featured Projects</a>
-            <p>|</p>
+            <h1>|</h1>
             <a href="#backend">Backend Systems</a>
-            <p>|</p>
+            <h1>|</h1>
             <a href="#backend">Modeling Systems</a>
-            <p>|</p>
+            <h1>|</h1>
             <a href="#embedded">Embedded Systems</a>
           </div>
 
