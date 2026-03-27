@@ -282,9 +282,9 @@ const javaProjects = [
 
 
     {
-    title: 'Card Dealer',
+    title: 'Grocery Inventory Backend System',
     description: 'This program simulates a deck of playing cards, providing functionality to shuffle, deal cards, and display card details.',
-    image: image15,
+    image: grocerySytsem,
     gitLink: 'https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372',
     tags: ['Java', 'OOP', 'Backend Systems', 'Software Design'],
   },
