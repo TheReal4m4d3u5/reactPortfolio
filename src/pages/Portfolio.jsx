@@ -19,6 +19,7 @@ import image14 from '../../src/assets/csci1113A5.png';
 import image15 from '../../src/assets/csci1111A7.png';
 import image16 from '../../src/assets/csci1111A5.png';
 import image17 from '../../src/assets/csci1113A6.png';
+import grocerySysem from '../../src/assets/grocerySysem.png';
 import bookSearch from '../../src/assets/bookSearch.png';
 import cirlceCI from '../../src/assets/cirlceCI.png';
 import coinToss from '../../src/assets/coinToss.png';
@@ -284,7 +285,7 @@ const javaProjects = [
   {
     title: 'Grocery Inventory Backend System',
     description: 'A Java-based backend system modeling real-world grocery store workflows, including inventory tracking, cart management, and checkout processing. Built using object-oriented design principles (encapsulation, inheritance, polymorphism) with a layered architecture and extensible service layer for future scalability.',
-    image: image12,
+    image: grocerySysem,
     gitLink: 'https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372',
     tags: ['Java', 'Command-Line OOP', 'Backend Systems', 'CLI Application'],
   },
