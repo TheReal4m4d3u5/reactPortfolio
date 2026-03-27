@@ -1,21 +1,15 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import '../styles/projectStyles.css';
 import Tag from './Tag';
 
-const Project = ({
-  title,
-  description,
-  image,
-  gitlink,
-  deployedlink,
-  staginglink,
-  tags,
-}) => {
+const Project = ({ title, description, image, gitlink, deployedlink, video, videoText, staginglink, tags }) => {
   return (
-    <Card className="project-card">
+    <Card className="project-card ">
+
+
       <div className="myFlexCard">
-        {/* Image */}
+
         {image && (
           <Card.Img
             variant="top"
@@ -25,66 +19,88 @@ const Project = ({
           />
         )}
 
-        {/* Content */}
         <div className="myCard">
-          <Card.Body className="d-flex flex-column h-100">
-            {/* Title */}
-            <Card.Title className="project-title">
-              {title}
-            </Card.Title>
+          <Card.Body className="d-flex flex-column">
+            <Card.Title>{title}</Card.Title>
+            <Card.Text className="project-description">{description}</Card.Text>
 
-            {/* Description */}
-            <Card.Text className="project-description">
-              {description}
-            </Card.Text>
-
-            {/* Tags */}
             {tags && (
-              <div className="tags-container">
-                {tags.map((tag, index) => (
-                  <Tag key={index} text={tag} />
+              <div className="flex flex-wrap">
+                {tags.map((tag) => (
+                
+                  <Tag key={tag} name={tag} />
                 ))}
               </div>
             )}
 
-            {/* Links (always pushed to bottom) */}
-            <div className="project-links mt-auto">
+            <div className="viewGithubProject">
               {gitlink && (
                 <a
+                  role="button"
+                  tabIndex="0"
                   href={gitlink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-primary custom-btn"
+                  className="mt-auto btn viewGithubProject btn-primary custom-btn"
                 >
                   View Github Project
                 </a>
               )}
+            </div>
 
-              {deployedlink && (
+            {staginglink && (
+              <div className="mt-2">
                 <a
-                  href={deployedlink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary custom-btn mt-2"
-                >
-                  View Live Project
-                </a>
-              )}
-
-              {staginglink && (
-                <a
+                  role="button"
+                  tabIndex="0"
                   href={staginglink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-secondary custom-btn mt-2"
+                  className="btn btn-secondary custom-btn"
                 >
-                  View Staging
+                  View Staging Project
                 </a>
-              )}
-            </div>
+              </div>
+            )}
+            {deployedlink && (
+              <div className="mt-2">
+                <a
+                  role="button"
+                  tabIndex="0"
+                  href={deployedlink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-auto btn btn-primary custom-btn"
+                >
+                  View Deployed Project
+                </a>
+              </div>
+            )}
           </Card.Body>
         </div>
+
+
+        <div className="imageVideo">
+          {video && (
+
+            <div className="project-video">
+              <video controls className="w-100">
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          )}
+
+        </div>
+
+
+
       </div>
+
+
+
+
+
     </Card>
   );
 };
