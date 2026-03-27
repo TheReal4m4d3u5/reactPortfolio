@@ -282,20 +282,15 @@ const sqlProjects = [
 
 const javaProjects = [
   {
-    title: 'Battleship',
-    description: 'A command-line program that lets two people play battleship.',
+    title: 'Grocery Inventory Backend System',
+    description: 'A Java-based backend system modeling real-world grocery store workflows, including inventory tracking, cart management, and checkout processing. Built using object-oriented design principles (encapsulation, inheritance, polymorphism) with a layered architecture and extensible service layer for future scalability.',
     image: image12,
-    gitLink: 'https://github.com/TheReal4m4d3u5/csci_1203_assignment_battleship',
-    tags: ['Java', 'Command-Line Application', 'Game Simulation'],
+    gitLink: 'https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372',
+    tags: ['Java', 'Command-Line OOP', 'Backend Systems', 'CLI Application'],
   },
 
-  {
-    title: 'MiniBot Simulator',
-    description: 'A Java class with basic robot behaviors, demonstrated in a simple test program.',
-    image: image13,
-    gitLink: 'https://github.com/TheReal4m4d3u5/csci_1203_assignment_6/tree/main',
-    tags: ['Java', 'Robot Simulation', 'Command-Line Application'],
-  },
+
+  
 ];
 
 const cProjects = [
