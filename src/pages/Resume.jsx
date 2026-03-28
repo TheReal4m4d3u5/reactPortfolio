@@ -46,10 +46,9 @@ const Resume = () => {
         <section className="professional-section">
           <h3 className="resumeHeaders">Professional Summary</h3>
           <p>
-            Senior Software Engineer with 10+ years of experience building scalable applications and
-            designing automated testing solutions for web, mobile, and API-driven systems.
-            Proven ability to improve software quality, accelerate delivery, and bridge development
-            and testing through full-stack engineering and automation strategy.
+            Senior Software Engineer with 10+ years of experience building scalable applications and designing automated testing solutions for web, mobile, and API-driven systems. Proven ability to improve software quality, accelerate delivery, and bridge development and testing through full-stack engineering and automation strategy. Strong foundation in mathematics and statistics applied to data validation, system reliability, performance optimization, and modeling real-world system behavior.
+
+            Strong background in backend services, CI/CD integration, and system reliability across distributed environments. Experienced working in Agile teams, delivering robust, maintainable, and high-performance software solutions, with a focus on integrating data-driven modeling and validation into backend architectures.
           </p>
 
           <p>
@@ -154,18 +153,18 @@ const Resume = () => {
 
           <ul>
             <li>
-              <strong>B.S. Computer Science</strong> (Minor: Industrial and Applied Mathematics)  
+              <strong>B.S. Computer Science</strong> (Minor: Industrial and Applied Mathematics)
               <br />
               Metropolitan State University — Expected 2027
             </li>
 
             <li>
-              Professional Full Stack Web Development Certificate  
+              Professional Full Stack Web Development Certificate
               University of Minnesota
             </li>
 
             <li>
-              A.A.S Foundations of Engineering & Computer Science  
+              A.A.S Foundations of Engineering & Computer Science
               Normandale College
             </li>
           </ul>
