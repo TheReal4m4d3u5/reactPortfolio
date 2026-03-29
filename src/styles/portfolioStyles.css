@@ -1,150 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-
-
-.portfolio-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 12px;
-}
-
-.top-links{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.top-links a,
-.sub-links a {
-  white-space: nowrap;
-  text-decoration: underline;
-}
-
-
-.sub-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-
-.matLabHeader {
-  margin-top: 20px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  font-size: 3rem;
-}
-
-
-
 .portfolio-page {
-
-
-  background: linear-gradient(to bottom,
-      #ffd7eb,
-      /* Very soft pink */
-      #ffc4e3,
-      /* Light pastel pink */
-      #ffb1db,
-      /* Soft pink */
-      #ff9fd3,
-      /* Soft pink with a hint of lavender */
-      #ff8ccc,
-      /* Pinkish lavender */
-      #e887c7,
-      /* Slightly deeper pink-lavender */
-      #d17fc3,
-      /* Muted lavender with pink */
-      #b775c2,
-      /* Light purple-pink */
-      #a069be,
-      /* Soft purple with pink tones */
-      #7a61d2,
-      /* Muted blue-purple */
-      #5760d0
-      /* Darker purple with a hint more blue */
-    );
+  background: linear-gradient(
+    to bottom,
+    #ffd7eb,
+    #ffc4e3,
+    #ffb1db,
+    #ff9fd3,
+    #ff8ccc,
+    #e887c7,
+    #d17fc3,
+    #b775c2,
+    #a069be,
+    #7a61d2,
+    #5760d0
+  );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   background-attachment: fixed;
-  /* Keeps the image fixed on scroll */
-  flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 .portfolio-Wraper {
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
   background-attachment: fixed;
-  /* Keeps the image fixed on scroll */
-  flex-wrap: wrap;
-
-  margin-bottom: 50px;
-}
-
-.javaScriptHeader {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  font-size: 3rem;
-
-}
-
-.javaHeader {
-  margin-top: 20px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  font-size: 3rem;
-
-}
-
-
-
-.monHeader {
-  margin-top: 50px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  font-size: 3rem;
-  text-shadow: 2px 2px 8px white;
-
-}
-
-.mongoDBHeader {
-  margin-top: 200px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  font-size: 3rem;
-  text-shadow: 2px 2px 8px white;
-
-}
-
-.cHeader {
-  margin-top: 20px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  font-size: 3rem;
-
-}
-
-.matLabHeader {
-  margin-top: 20px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  font-size: 3rem;
-
+  padding: 20px 20px 60px;
 }
 
 .portfilioHeaderText {
@@ -152,198 +35,157 @@
   justify-content: center;
   font-size: 3rem;
   text-shadow: 2px 2px 8px white;
+  margin-bottom: 24px;
 }
 
+.portfolio-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.top-links,
+.sub-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.top-links {
+  gap: 20px;
+}
+
+.sub-links {
+  gap: 15px;
+}
+
+.top-links a,
+.sub-links a {
+  white-space: nowrap;
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+}
+
+.mongoDBHeader,
+.javaHeader,
+.javaScriptHeader,
+.matLabHeader,
+.cHeader,
+.monHeader {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px white;
+  margin-top: 80px;
+  margin-bottom: 16px;
+}
 
 .disclaimerWraper {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .disclaimer {
   display: flex;
+  justify-content: center;
+  text-align: center;
   width: 100%;
-  justify-content: center;
-
+  max-width: 800px;
+  font-size: 0.95rem;
+  padding: 0 16px;
 }
 
-
-.portfolioCards {
+.filters {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-}
-
-.portfolioCards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-
-.portfolio-index {
-
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  padding-top: 0px;
-  padding-left: 125px;
-  padding-right: 125px;
+  gap: 12px;
   margin-bottom: 20px;
-
-  border-radius: 8px;
-
-
+  flex-wrap: wrap;
 }
 
-.portfolio-index li {
-  color: black;
-  padding: 0;
+.portfolioCards {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
-.portfolio-index a {
-
-  color: black;
-  font-weight: bold;
-  gap: 20px;
-
+.cards {
+  display: flex;
+  justify-content: center;
 }
 
 .custom-btn {
-
   color: black;
-
 }
 
+.custom-btn:hover {
+  color: white;
+}
 
-.cards {
-  height: 100%;
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 768px) {
+  .portfilioHeaderText {
+    font-size: 2.5rem;
+  }
+
+  .mongoDBHeader,
+  .javaHeader,
+  .javaScriptHeader,
+  .matLabHeader,
+  .cHeader,
+  .monHeader {
+    font-size: 2.25rem;
+    margin-top: 60px;
+  }
+
+  .top-links {
+    gap: 14px;
+  }
+
+  .sub-links {
+    gap: 12px;
+  }
 }
 
 @media screen and (max-width: 530px) {
-
   .disclaimerWraper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-left: 10px;
+    padding: 0 10px;
+  }
+
+  .disclaimer {
     max-width: 500px;
   }
-
 }
-
-
-@media screen and (max-width: 510px) {
-
-  .disclaimerWraper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-left: 15px;
-    max-width: 475px;
-  }
-
-}
-
-
-@media screen and (max-width: 490px) {
-
-  .disclaimerWraper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-left: 25px;
-    max-width: 450px;
-  }
-
-}
-
 
 @media screen and (max-width: 475px) {
-
-  .disclaimerWraper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-left: 30px;
-    max-width: 425px;
-  }
-}
-
-@media screen and (max-width: 455px) {
-
-  .disclaimerWraper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-left: 30px;
-    max-width: 400px;
+  .portfilioHeaderText {
+    font-size: 2rem;
   }
 
-}
-
-@media screen and (max-width: 430px) {
-
-  .disclaimerWraper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-left: 30px;
-    max-width: 375px;
+  .mongoDBHeader,
+  .javaHeader,
+  .javaScriptHeader,
+  .matLabHeader,
+  .cHeader,
+  .monHeader {
+    font-size: 1.8rem;
+    margin-top: 50px;
   }
 
-}
-
-@media screen and (max-width: 405px) {
-
-  .disclaimerWraper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-left: 20px;
-    max-width: 350px;
+  .top-links,
+  .sub-links {
+    gap: 10px;
   }
-
-}
-
-
-@media screen and (max-width: 385px) {
 
   .disclaimer {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-left: 10px;
-
-    max-width: 360px;
-  }
-
-  .disclaimerWraper {
-    margin-left: 25px;
-    max-width: 330px;
-  }
-}
-
-
-@media screen and (max-width: 385px) {
-
-  .disclaimer {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-left: 10px;
-
-    max-width: 360px;
-  }
-
-  .disclaimerWraper {
-    margin-left: 25px;
-    max-width: 300px;
+    font-size: 0.9rem;
   }
 }
