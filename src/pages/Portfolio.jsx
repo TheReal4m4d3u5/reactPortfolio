@@ -569,7 +569,7 @@ const Portfolio = () => {
             <a href="#embedded">Embedded Systems</a>
           </div>
 
-          <div className="main-links">
+          <div className="sub-links">
             <a href="#apis">APIs</a>
             <a href="#dataPipelines">Data Pipelines</a>
             <a href="#sql">SQL</a>
