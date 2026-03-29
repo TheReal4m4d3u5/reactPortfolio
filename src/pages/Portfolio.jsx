@@ -103,6 +103,15 @@ const mongoProjects = [
 ];
 
 
+const bddProjects = [
+  {
+    title: 'My Selenium Test Suite',
+    description: `A custom-built Selenium test suite for automated testing.`,
+    image: selenium,
+    gitLink: 'https://github.com/TheReal4m4d3u5/mySelenium',
+    tags: ['Selenium', 'Maven', 'Java', 'Appium', 'BDD', 'Cucumber', 'Chromedriver'],
+  },
+];
 
 const apiProjects = [
   {
@@ -558,7 +567,7 @@ const Portfolio = () => {
           ))}
 
 
-          <div id="sql" className="mongoDBHeader">sql</div>
+          <div id="sql" className="mongoDBHeader">SQL</div>
           <div className="disclaimerWraper">
             <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           </div>
@@ -751,7 +760,7 @@ const Portfolio = () => {
 
           <div id="bdd" className="mongoDBHeader">BDD</div>
 
-          {seleniumProjects.map((project, index) => (
+          {bddProjects.map((project, index) => (
 
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
 
