@@ -564,7 +564,7 @@ const Portfolio = () => {
 
             <a href="#backend">Backend Systems</a>
 
-            <a href="#backend">Math & Modeling Systems</a>
+            <a href="#mathModelingSystems">Math & Modeling Systems</a>
 
             <a href="#embedded">Embedded Systems</a>
           </div>
@@ -580,7 +580,7 @@ const Portfolio = () => {
             <a href="#optimization">Optimization</a>
             <a href="#forcasting">Forecasting</a>
             <a href="#tdd">TDD</a>
-            <a href="bdd">BDD</a>
+            <a href="#bdd">BDD</a>
             <a href="#cicd">CI/CD DevOps</a>
           </div>
 
