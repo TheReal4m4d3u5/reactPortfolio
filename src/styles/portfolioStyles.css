@@ -23,6 +23,7 @@ body {
     #5760d0
   );
   background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .portfolio-page {

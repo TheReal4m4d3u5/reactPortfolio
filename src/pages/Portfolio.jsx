@@ -269,7 +269,7 @@ const simulationProjects = [
   },
 ];
 
-const focastingProjects = [
+const forcastingProjects = [
   {
     title: 'My Selenium Test Suite',
     description: `A custom-built Selenium test suite for automated testing.`,
@@ -556,7 +556,7 @@ const Portfolio = () => {
 
       <div className="portfolio-page">
         <section className="portfolio-Wraper">
-          <h1 className="portfilioHeaderText">My Prtfolio</h1>
+          <h1 className="portfilioHeaderText">My Portfolio</h1>
 
 
           {/* Index Section */}
@@ -780,7 +780,7 @@ const Portfolio = () => {
           <div id="forcasting" className="mongoDBHeader">Forcasting</div>
 
           <Row className="portfolioCards">
-            {focastingProjects.map((project, index) => (
+            {forcastingProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <Project
                   title={project.title}
