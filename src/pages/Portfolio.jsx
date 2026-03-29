@@ -548,249 +548,254 @@ const javaScriptProjects = [
 const Portfolio = () => {
   return (
 
-
-    <div className="portfolio-page">
-      <section className="portfolio-Wraper">
-        <h1 className="portfilioHeaderText">My Portfolio</h1>
+    <body>
 
 
-        {/* Index Section */}
-        <nav className="portfolio-index">
 
-          <div className="top-links">
 
-            <a href="#featured">Featured Projects</a>
 
-            <a href="#backend">Backend Systems</a>
+      <div className="portfolio-page">
+        <section className="portfolio-Wraper">
+          <h1 className="portfilioHeaderText">My Portfolio</h1>
 
-            <a href="#mathModelingSystems">Math & Modeling Systems</a>
 
-            <a href="#embedded">Embedded Systems</a>
+          {/* Index Section */}
+          <nav className="portfolio-index">
+
+            <div className="top-links">
+
+              <a href="#featured">Featured Projects</a>
+
+              <a href="#backend">Backend Systems</a>
+
+              <a href="#mathModelingSystems">Math & Modeling Systems</a>
+
+              <a href="#embedded">Embedded Systems</a>
+            </div>
+
+            <div className="sub-links">
+              <a href="#apis">APIs</a>
+              <a href="#dataPipelines">Data Pipelines</a>
+              <a href="#sql">SQL</a>
+              <a href="#java">Java</a>
+              <a href="#python">Python</a>
+              <a href="#matlab">Matlab</a>
+              <a href="#simulation">Simulation</a>
+              <a href="#optimization">Optimization</a>
+              <a href="#forcasting">Forcasting</a>
+              <a href="#tdd">TDD</a>
+              <a href="#bdd">BDD</a>
+              <a href="#cicd">CI/CD DevOps</a>
+            </div>
+
+          </nav>
+
+
+
+
+
+          <div id="apis" className="mongoDBHeader">APIs</div>
+          <div className="disclaimerWraper">
+            <div className="disclaimer">
+              Some deployments will take 1 to 15 mins to spin up if they haven't been in use
+            </div>
           </div>
 
-          <div className="sub-links">
-            <a href="#apis">APIs</a>
-            <a href="#dataPipelines">Data Pipelines</a>
-            <a href="#sql">SQL</a>
-            <a href="#java">Java</a>
-            <a href="#python">Python</a>
-            <a href="#matlab">Matlab</a>
-            <a href="#simulation">Simulation</a>
-            <a href="#optimization">Optimization</a>
-            <a href="#forcasting">Forcasting</a>
-            <a href="#tdd">TDD</a>
-            <a href="#bdd">BDD</a>
-            <a href="#cicd">CI/CD DevOps</a>
+          <Row className="portfolioCards">
+            {apiProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  video={project.video}
+                  videoText={project.videoText}
+                  gitlink={project.gitLink}
+                  deployedlink={project.deployed}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
+
+
+
+
+          <div id="dataPipelines" className="mongoDBHeader">Data Pipelines</div>
+          <div className="disclaimerWraper">
+            <div className="disclaimer">
+              Some deployments will take 1 to 15 mins to spin up if they haven't been in use
+            </div>
           </div>
 
-        </nav>
+          <Row className="portfolioCards">
+            {dataPipelineProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  video={project.video}
+                  videoText={project.videoText}
+                  gitlink={project.gitLink}
+                  deployedlink={project.deployed}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
 
 
-
-
-
-        <div id="apis" className="mongoDBHeader">APIs</div>
-        <div className="disclaimerWraper">
-          <div className="disclaimer">
-            Some deployments will take 1 to 15 mins to spin up if they haven't been in use
+          <div id="sql" className="mongoDBHeader">SQL</div>
+          <div className="disclaimerWraper">
+            <div className="disclaimer">
+              Some deployments will take 1 to 15 mins to spin up if they haven't been in use
+            </div>
           </div>
-        </div>
 
-        <Row className="portfolioCards">
-          {apiProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className="cards">
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                video={project.video}
-                videoText={project.videoText}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-                tags={project.tags}
-              />
-            </Col>
-          ))}
-        </Row>
-
+          <Row className="portfolioCards">
+            {sqlProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  video={project.video}
+                  videoText={project.videoText}
+                  gitlink={project.gitLink}
+                  deployedlink={project.deployed}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
 
 
 
-        <div id="dataPipelines" className="mongoDBHeader">Data Pipelines</div>
-        <div className="disclaimerWraper">
-          <div className="disclaimer">
-            Some deployments will take 1 to 15 mins to spin up if they haven't been in use
+          <div id="java" className="mongoDBHeader">Java</div>
+
+          <Row className="portfolioCards">
+            {javaProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  video={project.video}
+                  videoText={project.videoText}
+                  gitlink={project.gitLink}
+                  deployedlink={project.deployed}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
+
+
+          <div id="python" className="mongoDBHeader">Python</div>
+
+          <Row className="portfolioCards">
+            {pythonProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  video={project.video}
+                  videoText={project.videoText}
+                  gitlink={project.gitLink}
+                  deployedlink={project.deployed}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
+
+
+
+          <div id="matlab" className="mongoDBHeader">Matlab</div>
+
+          <div className="filters">
+            <button onClick={() => toggleFilter('Featured')}></button>
+            <button onClick={() => toggleFilter('MATLAB')}></button>
           </div>
-        </div>
 
-        <Row className="portfolioCards">
-          {dataPipelineProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className="cards">
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                video={project.video}
-                videoText={project.videoText}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-                tags={project.tags}
-              />
-            </Col>
-          ))}
-        </Row>
+          <Row className="portfolioCards">
+            {matLabProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  gitlink={project.gitLink}
+                  deployedlink={project.deployed}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
 
 
-        <div id="sql" className="mongoDBHeader">SQL</div>
-        <div className="disclaimerWraper">
-          <div className="disclaimer">
-            Some deployments will take 1 to 15 mins to spin up if they haven't been in use
+          <div id="simulation" className="mongoDBHeader">Simulation</div>
+
+          <div className="filters">
+            <button onClick={() => toggleFilter('Featured')}></button>
+            <button onClick={() => toggleFilter('backend')}></button>
           </div>
-        </div>
 
-        <Row className="portfolioCards">
-          {sqlProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className="cards">
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                video={project.video}
-                videoText={project.videoText}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-                tags={project.tags}
-              />
-            </Col>
-          ))}
-        </Row>
+          <Row className="portfolioCards">
+            {simulationProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  gitlink={project.gitLink}
+                  deployedlink={project.deployed}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
 
 
+          <div id="optimization" className="mongoDBHeader">Optimization</div>
 
-        <div id="java" className="mongoDBHeader">Java</div>
-
-        <Row className="portfolioCards">
-          {javaProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className="cards">
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                video={project.video}
-                videoText={project.videoText}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-                tags={project.tags}
-              />
-            </Col>
-          ))}
-        </Row>
+          <Row className="portfolioCards">
+            {optimizationProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  gitlink={project.gitLink}
+                  deployedlink={project.deployed}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
 
 
-        <div id="python" className="mongoDBHeader">Python</div>
+          <div id="forcasting" className="mongoDBHeader">Forcasting</div>
 
-        <Row className="portfolioCards">
-          {pythonProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className="cards">
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                video={project.video}
-                videoText={project.videoText}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-                tags={project.tags}
-              />
-            </Col>
-          ))}
-        </Row>
+          <Row className="portfolioCards">
+            {focastingProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  gitlink={project.gitLink}
+                  deployedlink={project.deployed}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
 
 
-
-        <div id="matlab" className="mongoDBHeader">Matlab</div>
-
-        <div className="filters">
-          <button onClick={() => toggleFilter('Featured')}></button>
-          <button onClick={() => toggleFilter('MATLAB')}></button>
-        </div>
-
-        <Row className="portfolioCards">
-          {matLabProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className="cards">
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-                tags={project.tags}
-              />
-            </Col>
-          ))}
-        </Row>
-
-
-        <div id="simulation" className="mongoDBHeader">Simulation</div>
-
-        <div className="filters">
-          <button onClick={() => toggleFilter('Featured')}></button>
-          <button onClick={() => toggleFilter('backend')}></button>
-        </div>
-
-        <Row className="portfolioCards">
-          {simulationProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className="cards">
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-                tags={project.tags}
-              />
-            </Col>
-          ))}
-        </Row>
-
-
-        <div id="optimization" className="mongoDBHeader">Optimization</div>
-
-        <Row className="portfolioCards">
-          {optimizationProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className="cards">
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-                tags={project.tags}
-              />
-            </Col>
-          ))}
-        </Row>
-
-
-        <div id="forcasting" className="mongoDBHeader">Forcasting</div>
-
-        <Row className="portfolioCards">
-          {focastingProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className="cards">
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-                tags={project.tags}
-              />
-            </Col>
-          ))}
-        </Row>
-
-
-        {/* <div id="cpp" className="mongoDBHeader">C++</div>
+          {/* <div id="cpp" className="mongoDBHeader">C++</div>
 
           {cppProjects.map((project, index) => (
 
@@ -810,65 +815,65 @@ const Portfolio = () => {
           ))} */}
 
 
-        <div id="tdd" className="mongoDBHeader">TDD</div>
+          <div id="tdd" className="mongoDBHeader">TDD</div>
 
-        <Row className="portfolioCards">
-          {tDDProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className="cards">
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                gitlink={project.gitLink}
-                tags={project.tags}
-              />
-            </Col>
-          ))}
-        </Row>
-
-
-        <div id="bdd" className="mongoDBHeader">BDD</div>
-
-        <Row className="portfolioCards">
-          {bddProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className="cards">
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                gitlink={project.gitLink}
-                tags={project.tags}
-              />
-            </Col>
-          ))}
-        </Row>
+          <Row className="portfolioCards">
+            {tDDProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  gitlink={project.gitLink}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
 
 
-        <div id="cicd" className="mongoDBHeader">CI/CD DevOps</div>
+          <div id="bdd" className="mongoDBHeader">BDD</div>
 
-        <div className="disclaimer">
-          Some deployments will take 1 to 15 mins to spin up if they haven't been in use
-        </div>
-
-        <Row className="portfolioCards">
-          {ciCDProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className="cards">
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                gitlink={project.gitLink}
-                staginglink={project.staging}
-                deployedlink={project.deployed}
-                tags={project.tags}
-              />
-            </Col>
-          ))}
-        </Row>
+          <Row className="portfolioCards">
+            {bddProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  gitlink={project.gitLink}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
 
 
+          <div id="cicd" className="mongoDBHeader">CI/CD DevOps</div>
 
-        {/* <div className="">Open GL</div>
+          <div className="disclaimer">
+            Some deployments will take 1 to 15 mins to spin up if they haven't been in use
+          </div>
+
+          <Row className="portfolioCards">
+            {ciCDProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  gitlink={project.gitLink}
+                  staginglink={project.staging}
+                  deployedlink={project.deployed}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
+
+
+
+          {/* <div className="">Open GL</div>
 
           {javaProjects.map((project, index) => (
 
@@ -886,11 +891,11 @@ const Portfolio = () => {
 
           ))} */}
 
-      </section>
+        </section>
 
 
-    </div >
-
+      </div >
+    </body>
   );
 };
 
