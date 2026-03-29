@@ -7,7 +7,7 @@ body,
   margin: 0;
 }
 
-body {
+/* body {
   background: linear-gradient(
     to bottom,
     #ffd7eb,
@@ -23,7 +23,7 @@ body {
     #5760d0
   );
   background-repeat: no-repeat;
-}
+} */
 
 .portfolio-page {
   min-height: 100vh;
