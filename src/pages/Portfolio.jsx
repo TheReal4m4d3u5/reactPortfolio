@@ -548,9 +548,8 @@ const javaScriptProjects = [
 const Portfolio = () => {
   return (
 
+
     <body>
-
-
 
 
 
@@ -895,6 +894,7 @@ const Portfolio = () => {
 
 
       </div >
+
     </body>
   );
 };
