@@ -104,6 +104,56 @@ const mongoProjects = [
 
 
 
+const apiProjects = [
+  {
+    title: 'My Selenium Test Suite',
+    description: `A custom-built Selenium test suite for automated testing.`,
+    image: selenium,
+    gitLink: 'https://github.com/TheReal4m4d3u5/mySelenium',
+    tags: ['Selenium', 'Maven', 'Java', 'Appium', 'BDD', 'Cucumber', 'Chromedriver'],
+  },
+];
+
+const dataPipelineProjects = [
+  {
+    title: 'My Selenium Test Suite',
+    description: `A custom-built Selenium test suite for automated testing.`,
+    image: selenium,
+    gitLink: 'https://github.com/TheReal4m4d3u5/mySelenium',
+    tags: ['Selenium', 'Maven', 'Java', 'Appium', 'BDD', 'Cucumber', 'Chromedriver'],
+  },
+];
+
+const optimizationProjects = [
+  {
+    title: 'My Selenium Test Suite',
+    description: `A custom-built Selenium test suite for automated testing.`,
+    image: selenium,
+    gitLink: 'https://github.com/TheReal4m4d3u5/mySelenium',
+    tags: ['Selenium', 'Maven', 'Java', 'Appium', 'BDD', 'Cucumber', 'Chromedriver'],
+  },
+];
+
+const simulationProjects = [
+  {
+    title: 'My Selenium Test Suite',
+    description: `A custom-built Selenium test suite for automated testing.`,
+    image: selenium,
+    gitLink: 'https://github.com/TheReal4m4d3u5/mySelenium',
+    tags: ['Selenium', 'Maven', 'Java', 'Appium', 'BDD', 'Cucumber', 'Chromedriver'],
+  },
+];
+
+const forcastingProjects = [
+  {
+    title: 'My Selenium Test Suite',
+    description: `A custom-built Selenium test suite for automated testing.`,
+    image: selenium,
+    gitLink: 'https://github.com/TheReal4m4d3u5/mySelenium',
+    tags: ['Selenium', 'Maven', 'Java', 'Appium', 'BDD', 'Cucumber', 'Chromedriver'],
+  },
+];
+
 const seleniumProjects = [
   {
     title: 'My Selenium Test Suite',
@@ -466,7 +516,7 @@ const Portfolio = () => {
             <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           </div>
 
-          {pernProjects.map((project, index) => (
+          {apiProjects.map((project, index) => (
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
               <Project
                 title={project.title}
@@ -488,7 +538,7 @@ const Portfolio = () => {
             <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
           </div>
 
-          {mongoProjects.map((project, index) => (
+          {dataPipelineProjects.map((project, index) => (
 
             <Col key={index} sm={12} md={6} lg={4} className='cards'>
 
