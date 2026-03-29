@@ -27,6 +27,24 @@ body {
 }
 
 .portfolio-page {
+
+  background: linear-gradient(
+    to bottom,
+    #ffd7eb,
+    #ffc4e3,
+    #ffb1db,
+    #ff9fd3,
+    #ff8ccc,
+    #e887c7,
+    #d17fc3,
+    #b775c2,
+    #a069be,
+    #7a61d2,
+    #5760d0
+  );
+  background-repeat: no-repeat;
+    background-size: cover;
+
   min-height: 100vh;
   width: 100%;
   background: transparent;
