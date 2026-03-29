@@ -212,8 +212,7 @@ const apiProjects = [
   {
     video: socialMediaVideo,
     title: 'Social Media API',
-    const description = "Designed and implemented a RESTful backend system for managing users, posts, and reactions.\n\n• Built modular API architecture with Express and MongoDB\n• Implemented CRUD operations with structured data validation\n• Modeled relationships between users, posts, and reactions\n• Designed scalable API patterns for real-world social platforms"; videoText: 'Click to watch video',
-    gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
+    description: "Designed and implemented a RESTful backend system for managing users, posts, and reactions.\n\n• Built modular API architecture with Express and MongoDB\n• Implemented CRUD operations with structured data validation\n• Modeled relationships between users, posts, and reactions\n• Designed scalable API patterns for real-world social platforms", gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
     tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'RESTful API'],
   },
 
@@ -270,7 +269,7 @@ const simulationProjects = [
   },
 ];
 
-const forcastingProjects = [
+const focastingProjects = [
   {
     title: 'My Selenium Test Suite',
     description: `A custom-built Selenium test suite for automated testing.`,
@@ -564,7 +563,7 @@ const Portfolio = () => {
 
             <a href="#backend">Backend Systems</a>
 
-            <a href="#backend">Math & Modeling Systems</a>
+            <a href="#mathModelingSystems">Math & Modeling Systems</a>
 
             <a href="#embedded">Embedded Systems</a>
           </div>
@@ -587,15 +586,19 @@ const Portfolio = () => {
         </nav>
 
 
+
+
+
+        <div id="apis" className="mongoDBHeader">APIs</div>
+        <div className="disclaimerWraper">
+          <div className="disclaimer">
+            Some deployments will take 1 to 15 mins to spin up if they haven't been in use
+          </div>
+        </div>
+
         <Row className="portfolioCards">
-
-          <div id="apis" className="mongoDBHeader">APIs</div>
-          <div className="disclaimerWraper">
-            <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
-          </div>
-
           {apiProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+            <Col key={index} sm={12} md={6} lg={4} className="cards">
               <Project
                 title={project.title}
                 description={project.description}
@@ -606,20 +609,23 @@ const Portfolio = () => {
                 deployedlink={project.deployed}
                 tags={project.tags}
               />
-
             </Col>
           ))}
+        </Row>
 
 
-          <div id="dataPipelines" className="mongoDBHeader">Data Pipelines</div>
-          <div className="disclaimerWraper">
-            <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
+
+
+        <div id="dataPipelines" className="mongoDBHeader">Data Pipelines</div>
+        <div className="disclaimerWraper">
+          <div className="disclaimer">
+            Some deployments will take 1 to 15 mins to spin up if they haven't been in use
           </div>
+        </div>
 
+        <Row className="portfolioCards">
           {dataPipelineProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
+            <Col key={index} sm={12} md={6} lg={4} className="cards">
               <Project
                 title={project.title}
                 description={project.description}
@@ -630,19 +636,21 @@ const Portfolio = () => {
                 deployedlink={project.deployed}
                 tags={project.tags}
               />
-
             </Col>
-
           ))}
+        </Row>
 
 
-          <div id="sql" className="mongoDBHeader">SQL</div>
-          <div className="disclaimerWraper">
-            <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
+        <div id="sql" className="mongoDBHeader">SQL</div>
+        <div className="disclaimerWraper">
+          <div className="disclaimer">
+            Some deployments will take 1 to 15 mins to spin up if they haven't been in use
           </div>
+        </div>
 
+        <Row className="portfolioCards">
           {sqlProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+            <Col key={index} sm={12} md={6} lg={4} className="cards">
               <Project
                 title={project.title}
                 description={project.description}
@@ -653,15 +661,17 @@ const Portfolio = () => {
                 deployedlink={project.deployed}
                 tags={project.tags}
               />
-
             </Col>
           ))}
+        </Row>
 
 
 
-          <div id="java" className="mongoDBHeader">Java</div>
+        <div id="java" className="mongoDBHeader">Java</div>
+
+        <Row className="portfolioCards">
           {javaProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
+            <Col key={index} sm={12} md={6} lg={4} className="cards">
               <Project
                 title={project.title}
                 description={project.description}
@@ -672,16 +682,16 @@ const Portfolio = () => {
                 deployedlink={project.deployed}
                 tags={project.tags}
               />
-
             </Col>
           ))}
+        </Row>
 
 
-          <div id="python" className="mongoDBHeader">Python</div>
+        <div id="python" className="mongoDBHeader">Python</div>
+
+        <Row className="portfolioCards">
           {pythonProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
+            <Col key={index} sm={12} md={6} lg={4} className="cards">
               <Project
                 title={project.title}
                 description={project.description}
@@ -692,23 +702,22 @@ const Portfolio = () => {
                 deployedlink={project.deployed}
                 tags={project.tags}
               />
-
             </Col>
-
           ))}
+        </Row>
 
 
 
-          <div id="matlab" className="mongoDBHeader">Matlab</div>
-          <div id="filters">
-            <button id="featured" onClick={() => toggleFilter('Featured')}></button>
-            <button id="matlabFilter" onClick={() => toggleFilter('MATLAB')}></button>
-          </div>
+        <div id="matlab" className="mongoDBHeader">Matlab</div>
 
+        <div className="filters">
+          <button onClick={() => toggleFilter('Featured')}></button>
+          <button onClick={() => toggleFilter('MATLAB')}></button>
+        </div>
 
+        <Row className="portfolioCards">
           {matLabProjects.map((project, index) => (
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
+            <Col key={index} sm={12} md={6} lg={4} className="cards">
               <Project
                 title={project.title}
                 description={project.description}
@@ -717,24 +726,21 @@ const Portfolio = () => {
                 deployedlink={project.deployed}
                 tags={project.tags}
               />
-
             </Col>
-
           ))}
+        </Row>
 
 
+        <div id="simulation" className="mongoDBHeader">Simulation</div>
 
-          <div id="simulation" className="mongoDBHeader">Simulation</div>
-          <div id="filters">
-            <button id="featured" onClick={() => toggleFilter('Featured')}></button>
-            <button id="backend" onClick={() => toggleFilter('backend')}></button>
-          </div>
+        <div className="filters">
+          <button onClick={() => toggleFilter('Featured')}></button>
+          <button onClick={() => toggleFilter('backend')}></button>
+        </div>
 
-
+        <Row className="portfolioCards">
           {simulationProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
+            <Col key={index} sm={12} md={6} lg={4} className="cards">
               <Project
                 title={project.title}
                 description={project.description}
@@ -743,18 +749,16 @@ const Portfolio = () => {
                 deployedlink={project.deployed}
                 tags={project.tags}
               />
-
             </Col>
-
           ))}
+        </Row>
 
 
-          <div id="optimization" className="mongoDBHeader">Optimization</div>
+        <div id="optimization" className="mongoDBHeader">Optimization</div>
 
+        <Row className="portfolioCards">
           {optimizationProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
+            <Col key={index} sm={12} md={6} lg={4} className="cards">
               <Project
                 title={project.title}
                 description={project.description}
@@ -763,18 +767,16 @@ const Portfolio = () => {
                 deployedlink={project.deployed}
                 tags={project.tags}
               />
-
             </Col>
-
           ))}
+        </Row>
 
 
-          <div id="forcasting" className="mongoDBHeader">forcasting</div>
+        <div id="forecasting" className="mongoDBHeader">Forecasting</div>
 
-          {forcastingProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
+        <Row className="portfolioCards">
+          {focastingProjects.map((project, index) => (
+            <Col key={index} sm={12} md={6} lg={4} className="cards">
               <Project
                 title={project.title}
                 description={project.description}
@@ -783,13 +785,12 @@ const Portfolio = () => {
                 deployedlink={project.deployed}
                 tags={project.tags}
               />
-
             </Col>
-
           ))}
+        </Row>
 
 
-          {/* <div id="cpp" className="mongoDBHeader">C++</div>
+        {/* <div id="cpp" className="mongoDBHeader">C++</div>
 
           {cppProjects.map((project, index) => (
 
@@ -809,12 +810,11 @@ const Portfolio = () => {
           ))} */}
 
 
-          <div id="tdd" className="mongoDBHeader">TDD</div>
+        <div id="tdd" className="mongoDBHeader">TDD</div>
 
+        <Row className="portfolioCards">
           {tDDProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
+            <Col key={index} sm={12} md={6} lg={4} className="cards">
               <Project
                 title={project.title}
                 description={project.description}
@@ -822,17 +822,16 @@ const Portfolio = () => {
                 gitlink={project.gitLink}
                 tags={project.tags}
               />
-
             </Col>
-
           ))}
+        </Row>
 
-          <div id="bdd" className="mongoDBHeader">BDD</div>
 
+        <div id="bdd" className="mongoDBHeader">BDD</div>
+
+        <Row className="portfolioCards">
           {bddProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
+            <Col key={index} sm={12} md={6} lg={4} className="cards">
               <Project
                 title={project.title}
                 description={project.description}
@@ -840,18 +839,20 @@ const Portfolio = () => {
                 gitlink={project.gitLink}
                 tags={project.tags}
               />
-
             </Col>
-
           ))}
+        </Row>
 
 
-          <div id="cicd" className="mongoDBHeader">CI/CD Devops</div>
-          <div className="disclaimer">Some deployments will take 1 to 15 mins to spin up if they haven't been in use</div>
+        <div id="cicd" className="mongoDBHeader">CI/CD DevOps</div>
+
+        <div className="disclaimer">
+          Some deployments will take 1 to 15 mins to spin up if they haven't been in use
+        </div>
+
+        <Row className="portfolioCards">
           {ciCDProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
+            <Col key={index} sm={12} md={6} lg={4} className="cards">
               <Project
                 title={project.title}
                 description={project.description}
@@ -861,14 +862,13 @@ const Portfolio = () => {
                 deployedlink={project.deployed}
                 tags={project.tags}
               />
-
             </Col>
-
           ))}
+        </Row>
 
 
 
-          {/* <div className="">Open GL</div>
+        {/* <div className="">Open GL</div>
 
           {javaProjects.map((project, index) => (
 
@@ -886,11 +886,10 @@ const Portfolio = () => {
 
           ))} */}
 
-
-
-        </Row>
       </section>
-    </div>
+
+
+    </div >
 
   );
 };
