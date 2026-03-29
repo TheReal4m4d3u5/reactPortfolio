@@ -40,7 +40,7 @@ import employeeDB from '../../src/assets/employeeDB.mp4';
 const pernProjects = [
   {
     title: 'Aline',
-    description: 'A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design', 
+    description: 'A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design',
     image: image9,
     gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
     deployed: 'https://aline-events.onrender.com/',
@@ -62,14 +62,14 @@ const pernProjects = [
 const backendSystemsProjects = [
   {
     title: 'Aline',
-    description: 'A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design', 
+    description: 'A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design',
     image: image9,
     gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
     deployed: 'https://aline-events.onrender.com/',
     tags: ['Node.js', 'Express.js', 'React', 'PostgreSQL', 'Sequelize', 'RESTful API', 'JWT', 'Ticketmaster API', 'OpenWeather API', 'Render'],
   },
 
-      {
+  {
     title: 'Grocery Inventory Backend System',
     description: 'A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design',
     image: grocerySytsem,
@@ -86,7 +86,7 @@ const backendSystemsProjects = [
     tags: ['Node.js', 'Express.js', 'React', 'JWT', 'PostgreSQL', 'Render'],
   },
 
-    {
+  {
     video: socialMediaVideo,
     title: 'Social Media API',
     description: 'A Social Network API with RESTful endpoints for managing users, thoughts, and reactions.',
@@ -95,7 +95,7 @@ const backendSystemsProjects = [
     tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'RESTful API'],
   },
 
-    {
+  {
     video: employeeDB,
     videoText: 'Click to watch video',
     title: 'Employee DB',
@@ -105,7 +105,7 @@ const backendSystemsProjects = [
   },
 
 
-    {
+  {
     title: 'Hotel Reservation System',
     description: 'A command-line application for managing hotel room bookings and availability.',
     image: coinToss,
@@ -119,7 +119,7 @@ const backendSystemsProjects = [
 
 
 
-  const mathModelingProjects = [
+const mathModelingProjects = [
   {
     title: 'MatDrive',
     description: `A mathematical simulation engine modeling vehicle movement across a graph-based city.
@@ -209,11 +209,10 @@ const bddProjects = [
 
 const apiProjects = [
 
-      {
+  {
     video: socialMediaVideo,
     title: 'Social Media API',
-    description: 'A Social Network API with RESTful endpoints for managing users, thoughts, and reactions.',
-    videoText: 'Click to watch video',
+    const description = "Designed and implemented a RESTful backend system for managing users, posts, and reactions.\n\n• Built modular API architecture with Express and MongoDB\n• Implemented CRUD operations with structured data validation\n• Modeled relationships between users, posts, and reactions\n• Designed scalable API patterns for real-world social platforms"; videoText: 'Click to watch video',
     gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
     tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'RESTful API'],
   },
@@ -221,7 +220,7 @@ const apiProjects = [
 
   {
     title: 'Aline',
-    description: 'A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design', 
+    description: 'A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design',
     image: image9,
     gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
     deployed: 'https://aline-events.onrender.com/',
@@ -232,9 +231,9 @@ const apiProjects = [
 const dataPipelineProjects = [
 
 
-    {
+  {
     title: 'Aline',
-    description: 'A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design', 
+    description: 'A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design',
     image: image9,
     gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
     deployed: 'https://aline-events.onrender.com/',
@@ -437,7 +436,7 @@ const sqlProjects = [
 const javaProjects = [
 
 
-    {
+  {
     title: 'Grocery Inventory Backend System',
     description: 'A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design',
     image: grocerySytsem,
@@ -564,9 +563,9 @@ const Portfolio = () => {
             <a href="#featured">Featured Projects</a>
 
             <a href="#backend">Backend Systems</a>
-  
+
             <a href="#backend">Math & Modeling Systems</a>
-    
+
             <a href="#embedded">Embedded Systems</a>
           </div>
 
