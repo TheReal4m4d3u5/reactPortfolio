@@ -577,7 +577,7 @@ const Portfolio = () => {
             <a href="#matlab">Matlab</a>
             <a href="#simulation">Simulation</a>
             <a href="#optimization">Optimization</a>
-            <a href="#forcasting">Forecasting</a>
+            <a href="#forcasting">Forcasting</a>
             <a href="#tdd">TDD</a>
             <a href="#bdd">BDD</a>
             <a href="#cicd">CI/CD DevOps</a>
@@ -772,7 +772,7 @@ const Portfolio = () => {
         </Row>
 
 
-        <div id="forecasting" className="mongoDBHeader">Forecasting</div>
+        <div id="forcasting" className="mongoDBHeader">Forcasting</div>
 
         <Row className="portfolioCards">
           {focastingProjects.map((project, index) => (
