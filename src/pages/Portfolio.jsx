@@ -212,8 +212,7 @@ const apiProjects = [
   {
     video: socialMediaVideo,
     title: 'Social Media API',
-    const description = "Designed and implemented a RESTful backend system for managing users, posts, and reactions.\n\n• Built modular API architecture with Express and MongoDB\n• Implemented CRUD operations with structured data validation\n• Modeled relationships between users, posts, and reactions\n• Designed scalable API patterns for real-world social platforms"; videoText: 'Click to watch video',
-    gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
+    description: "Designed and implemented a RESTful backend system for managing users, posts, and reactions.\n\n• Built modular API architecture with Express and MongoDB\n• Implemented CRUD operations with structured data validation\n• Modeled relationships between users, posts, and reactions\n• Designed scalable API patterns for real-world social platforms", gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
     tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'RESTful API'],
   },
 
