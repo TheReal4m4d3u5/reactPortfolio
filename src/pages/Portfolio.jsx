@@ -556,7 +556,7 @@ const Portfolio = () => {
 
       <div className="portfolio-page">
         <section className="portfolio-Wraper">
-          <h1 className="portfilioHeaderText">My Portfolio</h1>
+          <h1 className="portfilioHeaderText">My Portolio</h1>
 
 
           {/* Index Section */}
