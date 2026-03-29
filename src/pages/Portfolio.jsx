@@ -57,6 +57,100 @@ const pernProjects = [
 ];
 
 
+
+
+const backendSystemsProjects = [
+  {
+    title: 'Aline',
+    description: 'A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design', 
+    image: image9,
+    gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
+    deployed: 'https://aline-events.onrender.com/',
+    tags: ['Node.js', 'Express.js', 'React', 'PostgreSQL', 'Sequelize', 'RESTful API', 'JWT', 'Ticketmaster API', 'OpenWeather API', 'Render'],
+  },
+
+      {
+    title: 'Grocery Inventory Backend System',
+    description: 'A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design',
+    image: grocerySytsem,
+    gitLink: 'https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372',
+    tags: ['Java', 'OOP', 'Backend Systems', 'Software Design'],
+  },
+
+  {
+    title: 'Kanban Board',
+    description: 'A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.',
+    image: image10,
+    gitLink: 'https://github.com/TheReal4m4d3u5/kanbanBoard',
+    deployed: 'https://kanbanboard-552l.onrender.com',
+    tags: ['Node.js', 'Express.js', 'React', 'JWT', 'PostgreSQL', 'Render'],
+  },
+
+    {
+    video: socialMediaVideo,
+    title: 'Social Media API',
+    description: 'A Social Network API with RESTful endpoints for managing users, thoughts, and reactions.',
+    videoText: 'Click to watch video',
+    gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
+    tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'RESTful API'],
+  },
+
+    {
+    video: employeeDB,
+    videoText: 'Click to watch video',
+    title: 'Employee DB',
+    description: 'Built a backend-style system for managing room availability, reservations, and booking workflows.\n• Modeled reservation state and availability constraints across multiple rooms\n• Implemented booking logic with validation to prevent conflicts and overbooking\n• Designed structured data handling for reservations and room inventory\n• Simulates real-world reservation workflows and system state transitions  ',
+    gitLink: 'https://github.com/TheReal4m4d3u5/EmployeeDB',
+    tags: ['Node.js', 'Inquirer', 'PostgreSQL', 'Command-Line Application'],
+  },
+
+
+    {
+    title: 'Hotel Reservation System',
+    description: 'A command-line application for managing hotel room bookings and availability.',
+    image: coinToss,
+    gitLink: 'https://github.com/TheReal4m4d3u5/hotelReservationSystem',
+    tags: ['Python', 'Command-Line Application'],
+  },
+
+
+];
+
+
+
+
+  const mathModelingProjects = [
+  {
+    title: 'MatDrive',
+    description: `A mathematical simulation engine modeling vehicle movement across a graph-based city.
+
+Implements linear algebra transformations, parametric motion, and stochastic decision processes to simulate path selection and orientation.
+
+Applies mathematical modeling within a structured system to produce realistic, state-driven movement.
+
+• Graph-based navigation
+• Linear algebra transformations
+• Parametric motion modeling
+• Stochastic decision-making`,
+
+    image: image11,
+    gitLink: 'https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car',
+    tags: ['MATLAB', 'Linear Algebra', 'Graph Theory', 'Simulation', 'Systems Design'],
+  },
+
+
+  {
+    title: 'Event Probability Simulator',
+    description: 'Simulates random events and analyzes the distribution of results to determine if they appear uniformly random.',
+    image: image16,
+    gitLink: 'https://github.com/TheReal4m4d3u5/csci_1111_assignment_5',
+    tags: ['C', 'Randomness', 'Command-Line Application'],
+  },
+];
+
+
+
+
 const mongoProjects = [
 
   {
@@ -114,22 +208,46 @@ const bddProjects = [
 ];
 
 const apiProjects = [
+
+      {
+    video: socialMediaVideo,
+    title: 'Social Media API',
+    description: 'A Social Network API with RESTful endpoints for managing users, thoughts, and reactions.',
+    videoText: 'Click to watch video',
+    gitLink: 'https://github.com/TheReal4m4d3u5/socialNetworkAPI',
+    tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'RESTful API'],
+  },
+
+
   {
-    title: 'My Selenium Test Suite',
-    description: `A custom-built Selenium test suite for automated testing.`,
-    image: selenium,
-    gitLink: 'https://github.com/TheReal4m4d3u5/mySelenium',
-    tags: ['Selenium', 'Maven', 'Java', 'Appium', 'BDD', 'Cucumber', 'Chromedriver'],
+    title: 'Aline',
+    description: 'A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design', 
+    image: image9,
+    gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
+    deployed: 'https://aline-events.onrender.com/',
+    tags: ['Node.js', 'Express.js', 'React', 'PostgreSQL', 'Sequelize', 'RESTful API', 'JWT', 'Ticketmaster API', 'OpenWeather API', 'Render'],
   },
 ];
 
 const dataPipelineProjects = [
+
+
+    {
+    title: 'Aline',
+    description: 'A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design', 
+    image: image9,
+    gitLink: 'https://github.com/TheReal4m4d3u5/Aline-Events',
+    deployed: 'https://aline-events.onrender.com/',
+    tags: ['Node.js', 'Express.js', 'React', 'PostgreSQL', 'Sequelize', 'RESTful API', 'JWT', 'Ticketmaster API', 'OpenWeather API', 'Render'],
+  },
+
   {
-    title: 'My Selenium Test Suite',
-    description: `A custom-built Selenium test suite for automated testing.`,
-    image: selenium,
-    gitLink: 'https://github.com/TheReal4m4d3u5/mySelenium',
-    tags: ['Selenium', 'Maven', 'Java', 'Appium', 'BDD', 'Cucumber', 'Chromedriver'],
+    video: employeeDB,
+    videoText: 'Click to watch video',
+    title: 'Employee DB',
+    description: 'A command-line application that allows business owners to manage and organize employee data efficiently.',
+    gitLink: 'https://github.com/TheReal4m4d3u5/EmployeeDB',
+    tags: ['Node.js', 'Inquirer', 'PostgreSQL', 'Command-Line Application'],
   },
 ];
 
@@ -197,20 +315,8 @@ const ciCDProjects = [
 
 
 const pythonProjects = [
-  {
-    title: 'Coin Toss',
-    description: `Simulates a coin toss to determine which player starts a two-person game. Players input their guess, and the program compares it to the toss result to decide who starts first.`,
-    image: coinToss,
-    gitLink: 'https://github.com/TheReal4m4d3u5/coin_toss',
-    tags: ['Python', 'Command-Line Application'],
-  },
-  {
-    title: 'Shopping Cart',
-    description: 'A system to calculate the total price of items in a shopping cart using composition.',
-    image: coinToss,
-    gitLink: 'https://github.com/TheReal4m4d3u5/shoppingCart',
-    tags: ['Python', 'Composition'],
-  },
+
+
   {
     title: 'Shopping Cart Polymorphism',
     description: 'A polymorphic shopping cart where different item types calculate prices uniquely.',
@@ -233,28 +339,8 @@ const pythonProjects = [
     tags: ['Python', 'Command-Line Application'],
   },
 
-  {
-    title: 'Student Profile Creator',
-    description: 'A tool for managing student profiles with input validation and CSV storage.',
-    image: coinToss,
-    gitLink: 'https://github.com/TheReal4m4d3u5/studentProfileCreator',
-    tags: ['Python', 'CSV', 'Input Validation'],
-  },
 
-  {
-    title: 'Write to a File',
-    description: 'A tool for managing book sales data stored in a CSV file.',
-    image: coinToss,
-    gitLink: 'https://github.com/TheReal4m4d3u5/writeToFilePY',
-    tags: ['Python', 'CSV', 'File Management'],
-  },
-  {
-    title: 'Exam Averages',
-    description: 'A script to read exam scores from a CSV file and calculate average scores.',
-    image: coinToss,
-    gitLink: 'https://github.com/TheReal4m4d3u5/examAverages',
-    tags: ['Python', 'CSV', 'Data Analysis'],
-  },
+
 
   {
     title: 'Hotel Reservation System',
@@ -335,6 +421,16 @@ const sqlProjects = [
     gitLink: 'https://github.com/TheReal4m4d3u5/EmployeeDB',
     tags: ['Node.js', 'Inquirer', 'PostgreSQL', 'Command-Line Application'],
   },
+
+  {
+    title: 'Kanban Board',
+    description: 'A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.',
+    image: image10,
+    gitLink: 'https://github.com/TheReal4m4d3u5/kanbanBoard',
+    deployed: 'https://kanbanboard-552l.onrender.com',
+    tags: ['Node.js', 'Express.js', 'React', 'JWT', 'PostgreSQL', 'Render'],
+  },
+
 ];
 
 
@@ -420,13 +516,7 @@ const fullStackProjects = [
 ];
 
 const javaScriptProjects = [
-  {
-    title: 'Blog',
-    description: 'A two-page personal blog application that allows users to submit blog posts via a form and store them in localStorage.',
-    image: blog,
-    gitLink: 'https://github.com/TheReal4m4d3u5/firstBlog',
-    tags: ['HTML', 'CSS', 'JavaScript', 'LocalStorage'],
-  },
+
 
   {
     title: 'Film Tracker',
@@ -444,21 +534,8 @@ const javaScriptProjects = [
     gitLink: 'https://github.com/TheReal4m4d3u5/bucketList',
     tags: ['HTML', 'CSS', 'JavaScript'],
   },
-  {
-    title: 'Vehicle App',
-    description: 'A TypeScript-based command-line application for creating and interacting with different types of vehicles.',
-    video: vehicleVideo,
-    videoText: 'Click to watch video',
-    gitLink: 'https://github.com/TheReal4m4d3u5/Create-Vehicle',
-    tags: ['TypeScript', 'Node.js', 'Inquirer', 'Command-Line'],
-  },
-  {
-    title: 'Readme Generator',
-    description: 'An application that generates a README.md file.',
-    image: image5,
-    gitLink: 'https://github.com/TheReal4m4d3u5/Readme-Generator',
-    tags: ['Node.js', 'JavaScript', 'Command-Line'],
-  },
+
+
   {
     title: 'React Profile',
     description: 'A React-based single-page portfolio application that showcases a web developer’s skills and projects.',
@@ -467,14 +544,7 @@ const javaScriptProjects = [
     deployed: 'https://zesty-starlight-a7d6e2.netlify.app/',
     tags: ['React', 'React Router', 'Netlify'],
   },
-  {
-    title: 'Sound Board',
-    description: 'A soundboard application created with HTML, CSS, JavaScript, and Bootstrap.',
-    image: image1,
-    gitLink: 'https://github.com/TheReal4m4d3u5/soundBoard',
-    deployed: 'https://beautiful-dusk-78e4ee.netlify.app/',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Netlify'],
-  },
+
 ];
 
 const Portfolio = () => {
