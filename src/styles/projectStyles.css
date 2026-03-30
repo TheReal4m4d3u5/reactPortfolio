@@ -1,16 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-.project-card img {
+.project-card {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  border-radius: 18px;
   width: 100%;
-  height: auto;
-  min-height: 250px;
-  min-width: 350px;
-  object-fit: cover;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px;
+  gap: 16px;
+  box-sizing: border-box;
+  overflow: visible;
+  backdrop-filter: saturate(95%) blur(220px);
+}
+
+.myFlexCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.myCard {
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 2px 2px 8px white;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-card .card-title,
+.project-title {
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.project-description {
+  white-space: pre-line;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.project-links {
+  margin-top: 16px;
+}
+
+.project-image,
+.project-media {
+  display: block;
+  width: 100%;
+  max-width: 320px;
   height: auto;
-  min-height: 250px;
-  max-height: 350px; /* Added a max-height for consistent image display */
-  object-fit: cover;
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin: 0 auto 16px;
+}
+
+.project-video {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 16px;
+}
+
+.videoText {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  max-width: 420px;
+  margin: 24px auto 0;
 }
 
 .filters {
@@ -21,126 +95,14 @@
   flex-wrap: wrap;
 }
 
-.project-image {
-  width: 100%;
-  max-width: 320px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: none;
-}
-
-.project-card .card-title {
-  margin-bottom: 14px;
-  font-weight: 600;
-}
-
-.project-description {
-  white-space: pre-line;
-  line-height: 1.5;
-}
-
-.project-title {
-  margin-bottom: 14px;
-}
-
-.project-links {
-  margin-top: 16px;
-}
-
-.project-description {
-  white-space: pre-line;
-  line-height: 1.5;
-}
-
-.project-card {
-  border-radius: 18px;
-}
-
-.tags-container {
-  gap: 10px;
-}
-
-
-
-.project-description {
-  white-space: pre-line;
-  text-align: left;
-  max-width: 400px;
-  margin: 0 auto;
-  line-height: 1.5;
-}
-
-
-.project-card {
-
-  display: flex;
-  flex-direction: column;
-  font-family: 'Roboto', sans-serif;
-  text-shadow:
-    -1px -1px 0 black,
-    1px -1px 0 black,
-    -1px 1px 0 black,
-    1px 1px 0 black;
-
-  margin: 20px;
-  gap: 20px;
-  color: black;
-  border-radius: 8px;
-  min-width: 350px;  /* Set a minimum width */
-  max-width: 800px;  /* Limit maximum width */
-  width: 100%;       /* Ensure responsiveness */
-  min-height: 300px;
-  max-height: auto;
-  overflow: visible;  /* Prevent overflow issues */
-  box-sizing: border-box;
-  backdrop-filter: saturate(95%) blur(220px);
-}
-
-
-
-.myFlexCard{
-  display: flex;
-  flex-direction: column;   /* THIS is the fix */
-  align-items: center;
-  gap: 16px;
-}
-
-
-.project-video{
-  max-height: 2px;
-}
-
-.w-100{
-  display: flex;
-  align-items: center;
-  max-height: 200px;
-  min-height: 200px;
-  max-width: 350px;
-  min-width: 350px;
-}
-
-.viewGithubProject{
+.viewGithubProject {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.videoText{
-
-  display: flex;
-  align-items: center;
-  font-family: 'Roboto', sans-serif;
-
-
-}
-
-
-
-
 .view-project-btn {
   font-family: 'Roboto', sans-serif;
   color: black;
-
   border: none;
 }
 
@@ -148,66 +110,10 @@
   text-decoration: none;
 }
 
-.myCard {
-  font-family: 'Roboto', sans-serif;
-  text-shadow: 2px 2px 8px white; 
-  padding-bottom: 70px;
-  font-size: 1.25rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-}
-
-
 .cardBody {
   padding-top: 20px;
 }
 
-
-
 .custom-btn:hover {
   color: white;
 }
-
-
-
-
-
-
-.card-img-top{
-  min-width: 800px; 
-  padding-left: 40px;
-}
-
-
-.project-video {
-  margin-bottom: 180px; /* Adds space below the video */
-  min-width: 300px;
-}
-
-.videoText {
-  text-align: center; /* Centers the text */
- 
-}
-
-.imageVideo {
-  display: block;
-
-
-  min-height: 200px;
-  max-height: 200px;
-}
-
-.project-card {
-  height: auto;
-  min-height: unset;
-  overflow: visible;
-}
-
-

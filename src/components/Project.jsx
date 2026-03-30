@@ -1,13 +1,29 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import '../styles/projectStyles.css';
 import Tag from './Tag';
 
-const Project = ({ title, description, image, gitlink, deployedlink, video, staginglink, tags }) => {
+const Project = ({ title, description, image, gitlink, deployedlink, video, videoText, staginglink, tags }) => {
   return (
-    <Card className="project-card">
+    <Card className="project-card ">
+
+
       <div className="myFlexCard">
-        {image && !video && (
+
+        <div className="imageVideo">
+          {video && (
+
+            <div className="project-video">
+              <video controls className="project-media">
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          )}
+
+        </div>
+
+        {image && (
           <Card.Img
             variant="top"
             src={image}
@@ -16,30 +32,23 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, stag
           />
         )}
 
-        {video && (
-          <div className="project-video">
-            <video controls className="media-element">
-              <source src={video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        )}
-
         <div className="myCard">
+
           <Card.Body className="d-flex flex-column">
+            
             <Card.Title>{title}</Card.Title>
             <Card.Text className="project-description">{description}</Card.Text>
-
             {tags && (
-              <div className="tags-container">
+              <div className="flex flex-wrap">
                 {tags.map((tag) => (
+                
                   <Tag key={tag} name={tag} />
                 ))}
               </div>
             )}
 
-            {gitlink && (
-              <div className="viewGithubProject">
+            <div className="viewGithubProject">
+              {gitlink && (
                 <a
                   role="button"
                   tabIndex="0"
@@ -50,8 +59,8 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, stag
                 >
                   View Github Project
                 </a>
-              </div>
-            )}
+              )}
+            </div>
 
             {staginglink && (
               <div className="mt-2">
@@ -67,7 +76,6 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, stag
                 </a>
               </div>
             )}
-
             {deployedlink && (
               <div className="mt-2">
                 <a
@@ -84,7 +92,16 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, stag
             )}
           </Card.Body>
         </div>
+
+
+
+
       </div>
+
+
+
+
+
     </Card>
   );
 };
