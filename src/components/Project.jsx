@@ -10,7 +10,19 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
 
       <div className="myFlexCard">
 
-        {/* <div className="imageVideo">
+
+
+        {image && (
+          <Card.Img
+            variant="top"
+            src={image}
+            alt={`${title} screenshot`}
+            className="project-image"
+          />
+        )}
+
+
+        <div className="imageVideo">
           {video && (
 
             <div className="project-video">
@@ -21,16 +33,8 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
             </div>
           )}
 
-        </div> */}
+        </div>
 
-        {image && (
-          <Card.Img
-            variant="top"
-            src={image}
-            alt={`${title} screenshot`}
-            className="project-image"
-          />
-        )}
 
         <div className="myCard">
 
