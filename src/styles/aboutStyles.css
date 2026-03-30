@@ -1,223 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-
 #aboutHome {
   background-image: url('/src/assets/background1.png');
-  display: flex;
-  width: 100%;
-  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
 }
 
 .about {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 100%;
+  gap: 40px;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .photoSection {
+  display: flex;
   justify-content: center;
-  margin-left: 100px;
-  margin-top: 75px;
+  align-items: center;
 }
 
 .profilePhoto {
-  height: 450px;
+  height: 400px;
+  width: auto;
   border-radius: 50%;
   border: 5px solid #fff;
+  object-fit: cover;
 }
 
-
-.aboutTextWraper {
-  margin-top: 50px;
-  margin-left: 100px;
-  padding: 100px;
-  padding-bottom: 20px;
-  font-size: 4rem;
-  color: black;
-  font-weight: bold;
-  backdrop-filter: saturate(80%) blur(50px);
-  justify-content: center;
-  font-size: 3rem;
-  min-width: 600px;
-  max-width: 800px;
-  /* padding-bottom: 75px; */
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.8rem;
-}
-
-
-.aboutText {
-
-margin-top: 10px;
-  font-size: 4rem;
-  color: black;
-  font-weight: bold;
-
+.aboutTextSection {
+  display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  min-width: 600px;
-  max-width: 800px;
-  /* padding-bottom: 75px; */
+}
+
+.aboutTextWraper {
+  padding: 40px;
+  color: black;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
+  backdrop-filter: saturate(80%) blur(50px);
+  max-width: 850px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-@media screen and (max-width: 1660px) {
+.aboutTextHeader {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
 
-  .photoSection {
-    margin-left: 15px;
-    margin-top: 15px;
-  }
+.aboutText {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  max-width: 800px;
+}
 
+.aboutText p {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 1400px) {
   .profilePhoto {
-    height: 350px;
+    height: 340px;
+  }
+
+  .aboutTextHeader {
+    font-size: 2.1rem;
   }
 
   .aboutText {
-    margin-top: 20px;
-    margin-left: 20px;
-    min-width: 100px;
-    max-width: 600px;
-    padding: 50px;
+    font-size: 1.15rem;
   }
 }
-
-
-
-@media screen and (max-width: 1460px) {
-
-  .photoSection {
-    margin-left: 15px;
-    margin-top: 15px;
-  }
-
-  .aboutText {
-    margin-top: 20px;
-    margin-left: 20px;
-    min-width: 100px;
-    max-width: 600px;
-    padding: 50px;
-  }
-}
-
-@media screen and (max-width: 1195px) {
-
-  .profilePhoto {
-    height: 350px;
-  }
-
-  .aboutText {
-    font-size: 2.5rem;
-    padding: 30px;
-  }
-}
-
-
-@media screen and (max-width: 1195px) {
-
-  .profilePhoto {
-    height: 350px;
-  }
-
-  .aboutText {
-    font-size: 2.5rem;
-    padding: 30px;
-  }
-}
-
-
-@media screen and (max-width: 1055px) {
-
-  .profilePhoto {
-    height: 350px;
-  }
-
-  .aboutText {
-    font-size: 2.5rem;
-    padding: 30px;
-    height: 500px;
-    max-width: 300px;
-  }
-}
-
 
 @media screen and (max-width: 1000px) {
-
-  .profilePhoto {
-    height: 350px;
-  }
-
-  .aboutText {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 770px) {
-
-  .profilePhoto {
-    height: 250px;
-  }
-
-  .aboutText {
-    font-size: 2rem;
-    height: 400px;
-    margin-bottom: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-
-@media screen and (max-width: 770px) {
-
-  #aboutHome{
-    height: unset;
-  }
   .about {
-    width: 100%;
-    height: 100%;
-    display: unset;
-  }
-  
-
-  .photoSection {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    margin-top: 20px;
+    gap: 30px;
+    padding: 30px 20px;
   }
 
-  .aboutTextSection {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-  }
-
-
-  .aboutText {
-    margin-left: 0;
-  }
-
-}
-
-@media screen and (max-width: 320px) {
   .profilePhoto {
-    height: 250px;
+    height: 300px;
+  }
+
+  .aboutTextWraper {
+    padding: 30px;
+  }
+
+  .aboutTextHeader {
+    font-size: 1.9rem;
+  }
+
+  .aboutText {
+    font-size: 1.05rem;
   }
 }
 
+@media screen and (max-width: 770px) {
+  #aboutHome {
+    min-height: unset;
+  }
 
-@media screen and (max-width: 290px) {
+  .about {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 15px 40px;
+  }
+
+  .photoSection,
+  .aboutTextSection {
+    width: 100%;
+  }
+
+  .profilePhoto {
+    height: 240px;
+  }
+
+  .aboutTextWraper {
+    padding: 20px;
+  }
+
+  .aboutTextHeader {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
   .aboutText {
-    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profilePhoto {
+    height: 200px;
+  }
+
+  .aboutTextWraper {
+    padding: 16px;
+  }
+
+  .aboutTextHeader {
+    font-size: 1.35rem;
+  }
+
+  .aboutText {
+    font-size: 0.95rem;
   }
 }
