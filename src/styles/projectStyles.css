@@ -101,7 +101,9 @@
 
 .myFlexCard{
   display: flex;
+  flex-direction: column;   /* THIS is the fix */
   align-items: center;
+  gap: 16px;
 }
 
 
