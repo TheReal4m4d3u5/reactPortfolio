@@ -1,88 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-/* ===== GLOBAL VARIABLE (PRO MOVE) ===== */
 :root {
   --footer-height: 100px;
 }
 
-/* ===== MAIN SECTION ===== */
 #aboutHome {
   background-image: url('/src/assets/background1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   width: 100%;
   min-height: 100vh;
-
   display: flex;
-
-  /* ensures content never hits footer */
   padding-bottom: var(--footer-height);
 }
 
-/* ===== LAYOUT ===== */
 .about {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 100%;
-  gap: 40px;
-  padding: 40px;
-
+  gap: 30px;
+  padding: 18px 40px 40px 40px;
   box-sizing: border-box;
 }
 
-/* ===== PHOTO ===== */
 .photoSection {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
 }
 
 .profilePhoto {
-  height: 400px;
+  height: 310px;
   width: auto;
   border-radius: 50%;
   border: 5px solid #fff;
   object-fit: cover;
+  display: block;
 }
 
-/* ===== TEXT SECTION ===== */
 .aboutTextSection {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .aboutTextWraper {
-  padding: 40px;
+  padding: 28px 32px;
+  padding-bottom: calc(var(--footer-height) + 40px);
   color: black;
   font-family: 'Roboto', sans-serif;
-
   backdrop-filter: saturate(80%) blur(50px);
-
-  max-width: 850px;
+  max-width: 640px;
   width: 100%;
   box-sizing: border-box;
-
-  /* extra breathing room above footer */
-  padding-bottom: calc(var(--footer-height) + 40px);
+  margin: 0;
 }
 
-/* ===== HEADER ===== */
 .aboutTextHeader {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
-/* ===== BODY TEXT ===== */
 .aboutText {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   max-width: 800px;
 }
@@ -92,42 +81,53 @@
   margin-bottom: 18px;
 }
 
-/* ===== RESPONSIVE ===== */
 @media screen and (max-width: 1400px) {
+  .about {
+    gap: 24px;
+    padding: 18px 28px 32px 28px;
+  }
+
   .profilePhoto {
-    height: 340px;
+    height: 280px;
+  }
+
+  .aboutTextWraper {
+    max-width: 600px;
+    padding: 24px 28px;
+    padding-bottom: calc(var(--footer-height) + 40px);
   }
 
   .aboutTextHeader {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 
   .aboutText {
-    font-size: 1.15rem;
+    font-size: 1.08rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .about {
-    gap: 30px;
-    padding: 30px 20px;
+    gap: 20px;
+    padding: 18px 20px 28px 20px;
   }
 
   .profilePhoto {
-    height: 300px;
+    height: 240px;
   }
 
   .aboutTextWraper {
-    padding: 30px;
-    padding-bottom: calc(var(--footer-height) + 60px);
+    padding: 22px;
+    padding-bottom: calc(var(--footer-height) + 50px);
+    max-width: 560px;
   }
 
   .aboutTextHeader {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 
   .aboutText {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 }
 
@@ -138,6 +138,8 @@
 
   .about {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     padding: 20px 15px 40px;
   }
@@ -145,6 +147,7 @@
   .photoSection,
   .aboutTextSection {
     width: 100%;
+    justify-content: center;
   }
 
   .profilePhoto {
@@ -154,6 +157,8 @@
   .aboutTextWraper {
     padding: 20px;
     padding-bottom: calc(var(--footer-height) + 80px);
+    margin-top: 0;
+    max-width: 100%;
   }
 
   .aboutTextHeader {
