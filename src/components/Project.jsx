@@ -10,38 +10,34 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
 
       <div className="myFlexCard">
 
-        <div className="imageVideo">
+        <div className="media-container">
           {video && (
-
-            <div className="project-video">
-              <video controls className="project-media">
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+            <video
+              src={video}
+              controls
+              className="project-media"
+            />
           )}
 
+          {image && !video && (
+            <img
+              src={image}
+              alt={title}
+              className="project-media"
+            />
+          )}
         </div>
-
-        {image && (
-          <Card.Img
-            variant="top"
-            src={image}
-            alt={`${title} screenshot`}
-            className="project-image"
-          />
-        )}
 
         <div className="myCard">
 
           <Card.Body className="d-flex flex-column">
-            
+
             <Card.Title>{title}</Card.Title>
             <Card.Text className="project-description">{description}</Card.Text>
             {tags && (
               <div className="flex flex-wrap">
                 {tags.map((tag) => (
-                
+
                   <Tag key={tag} name={tag} />
                 ))}
               </div>
