@@ -1,26 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+/* ===== GLOBAL VARIABLE (PRO MOVE) ===== */
+:root {
+  --footer-height: 100px;
+}
+
+/* ===== MAIN SECTION ===== */
 #aboutHome {
   background-image: url('/src/assets/background1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   width: 100%;
   min-height: 100vh;
+
   display: flex;
+
+  /* ensures content never hits footer */
+  padding-bottom: var(--footer-height);
 }
 
+/* ===== LAYOUT ===== */
 .about {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
   width: 100%;
   gap: 40px;
   padding: 40px;
+
   box-sizing: border-box;
 }
 
+/* ===== PHOTO ===== */
 .photoSection {
   display: flex;
   justify-content: center;
@@ -35,6 +50,7 @@
   object-fit: cover;
 }
 
+/* ===== TEXT SECTION ===== */
 .aboutTextSection {
   display: flex;
   justify-content: center;
@@ -45,12 +61,18 @@
   padding: 40px;
   color: black;
   font-family: 'Roboto', sans-serif;
+
   backdrop-filter: saturate(80%) blur(50px);
+
   max-width: 850px;
   width: 100%;
   box-sizing: border-box;
+
+  /* extra breathing room above footer */
+  padding-bottom: calc(var(--footer-height) + 40px);
 }
 
+/* ===== HEADER ===== */
 .aboutTextHeader {
   font-size: 2.4rem;
   font-weight: 700;
@@ -58,6 +80,7 @@
   line-height: 1.2;
 }
 
+/* ===== BODY TEXT ===== */
 .aboutText {
   font-size: 1.25rem;
   line-height: 1.7;
@@ -69,6 +92,7 @@
   margin-bottom: 18px;
 }
 
+/* ===== RESPONSIVE ===== */
 @media screen and (max-width: 1400px) {
   .profilePhoto {
     height: 340px;
@@ -95,6 +119,7 @@
 
   .aboutTextWraper {
     padding: 30px;
+    padding-bottom: calc(var(--footer-height) + 60px);
   }
 
   .aboutTextHeader {
@@ -128,6 +153,7 @@
 
   .aboutTextWraper {
     padding: 20px;
+    padding-bottom: calc(var(--footer-height) + 80px);
   }
 
   .aboutTextHeader {
@@ -147,6 +173,7 @@
 
   .aboutTextWraper {
     padding: 16px;
+    padding-bottom: calc(var(--footer-height) + 90px);
   }
 
   .aboutTextHeader {
