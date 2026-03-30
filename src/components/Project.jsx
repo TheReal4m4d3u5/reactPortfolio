@@ -10,7 +10,7 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
 
       <div className="myFlexCard">
 
-        <div className="imageVideo">
+        {/* <div className="imageVideo">
           {video && (
 
             <div className="project-video">
@@ -21,7 +21,7 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
             </div>
           )}
 
-        </div>
+        </div> */}
 
         {image && (
           <Card.Img
