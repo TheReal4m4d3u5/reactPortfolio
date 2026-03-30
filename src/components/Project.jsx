@@ -10,6 +10,19 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
 
       <div className="myFlexCard">
 
+        <div className="imageVideo">
+          {video && (
+
+            <div className="project-video">
+              <video controls className="w-100">
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          )}
+
+        </div>
+
         {image && (
           <Card.Img
             variant="top"
@@ -20,10 +33,11 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
         )}
 
         <div className="myCard">
+
           <Card.Body className="d-flex flex-column">
+            
             <Card.Title>{title}</Card.Title>
             <Card.Text className="project-description">{description}</Card.Text>
-
             {tags && (
               <div className="flex flex-wrap">
                 {tags.map((tag) => (
@@ -77,20 +91,6 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
               </div>
             )}
           </Card.Body>
-        </div>
-
-
-        <div className="imageVideo">
-          {video && (
-
-            <div className="project-video">
-              <video controls className="w-100">
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          )}
-
         </div>
 
 
