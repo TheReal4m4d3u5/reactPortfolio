@@ -33,7 +33,7 @@
   color: black;
   width: 100%;
   max-width: 900px;
-  padding: 50px 60px calc(var(--footer-height) + 40px);
+  padding: 50px clamp(20px, 5vw, 60px) calc(var(--footer-height) + 40px);
   font-size: 1.2rem;
   line-height: 1.7;
   border-radius: 8px;
@@ -57,6 +57,8 @@
 
 .resume-section {
   margin-top: 30px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .resume-section h3 {
@@ -213,7 +215,7 @@ li {
 
 @media (max-width: 768px) {
   .mainResumeContent {
-    padding: 20px 18px calc(var(--footer-height) + 70px);
+    padding: 20px 24px calc(var(--footer-height) + 70px);
     font-size: 1rem;
     line-height: 1.7;
   }
@@ -225,6 +227,8 @@ li {
 
   .resume-section {
     margin-top: 24px;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 
   .resume-section h3 {
@@ -275,7 +279,7 @@ li {
 
 @media (max-width: 480px) {
   .mainResumeContent {
-    padding: 18px 14px calc(var(--footer-height) + 80px);
+    padding: 18px 28px calc(var(--footer-height) + 80px);
     font-size: 0.98rem;
   }
 
@@ -297,6 +301,10 @@ li {
 }
 
 @media (max-width: 350px) {
+  .mainResumeContent {
+    padding: 16px 22px calc(var(--footer-height) + 80px);
+  }
+
   .contactInfo {
     font-size: 0.9rem;
   }
