@@ -4,6 +4,7 @@
   --footer-height: 100px;
 }
 
+/* ===== MAIN BACKGROUND ===== */
 #aboutHome {
   background-image: url('/src/assets/background1.png');
   background-size: cover;
@@ -15,26 +16,26 @@
   padding-bottom: var(--footer-height);
 }
 
+/* ===== LAYOUT ===== */
 .about {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
   gap: 30px;
-  padding: 18px 40px 40px 40px;
+  padding: 12px 24px 40px 24px;
   box-sizing: border-box;
 }
 
+/* ===== PHOTO ===== */
 .photoSection {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 0;
-  padding: 0;
 }
 
 .profilePhoto {
-  height: 310px;
+  height: 300px;
   width: auto;
   border-radius: 50%;
   border: 5px solid #fff;
@@ -42,15 +43,15 @@
   display: block;
 }
 
+/* ===== TEXT SECTION ===== */
 .aboutTextSection {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex: 1;
-  margin: 0;
-  padding: 0;
 }
 
+/* ===== TEXT BOX ===== */
 .aboutTextWraper {
   padding: 28px 32px;
   padding-bottom: calc(var(--footer-height) + 40px);
@@ -60,20 +61,27 @@
   max-width: 640px;
   width: 100%;
   box-sizing: border-box;
-  margin: 0;
+
+  /* CENTER TEXT */
+  text-align: center;
 }
 
+/* ===== HEADER ===== */
 .aboutTextHeader {
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.2;
+  text-align: center;
 }
 
+/* ===== BODY TEXT ===== */
 .aboutText {
   font-size: 1.2rem;
   line-height: 1.7;
-  max-width: 800px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .aboutText p {
@@ -81,20 +89,15 @@
   margin-bottom: 18px;
 }
 
+/* ===== RESPONSIVE ===== */
 @media screen and (max-width: 1400px) {
   .about {
     gap: 24px;
-    padding: 18px 28px 32px 28px;
+    padding: 12px 20px 32px 20px;
   }
 
   .profilePhoto {
-    height: 280px;
-  }
-
-  .aboutTextWraper {
-    max-width: 600px;
-    padding: 24px 28px;
-    padding-bottom: calc(var(--footer-height) + 40px);
+    height: 260px;
   }
 
   .aboutTextHeader {
@@ -109,17 +112,16 @@
 @media screen and (max-width: 1000px) {
   .about {
     gap: 20px;
-    padding: 18px 20px 28px 20px;
+    padding: 12px 16px 28px 16px;
   }
 
   .profilePhoto {
-    height: 240px;
+    height: 220px;
   }
 
   .aboutTextWraper {
     padding: 22px;
     padding-bottom: calc(var(--footer-height) + 50px);
-    max-width: 560px;
   }
 
   .aboutTextHeader {
@@ -151,19 +153,17 @@
   }
 
   .profilePhoto {
-    height: 240px;
+    height: 220px;
   }
 
   .aboutTextWraper {
     padding: 20px;
     padding-bottom: calc(var(--footer-height) + 80px);
-    margin-top: 0;
     max-width: 100%;
   }
 
   .aboutTextHeader {
     font-size: 1.6rem;
-    text-align: center;
   }
 
   .aboutText {
@@ -173,7 +173,7 @@
 
 @media screen and (max-width: 400px) {
   .profilePhoto {
-    height: 200px;
+    height: 180px;
   }
 
   .aboutTextWraper {
