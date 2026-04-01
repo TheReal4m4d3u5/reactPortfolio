@@ -458,6 +458,15 @@ const pythonProjects = [
     description:
       "A polymorphic shopping cart where different item types calculate prices uniquely.",
     image: coinToss,
+    gitLink: "https://github.com/TheReal4m4d3u5/MarketSim-Lite",
+    tags: ["Python", "Polymorphism"],
+  },
+
+  {
+    title: "Shopping Cart Polymorphism",
+    description:
+      "A polymorphic shopping cart where different item types calculate prices uniquely.",
+    image: coinToss,
     gitLink: "https://github.com/TheReal4m4d3u5/shoppingCartPolymorphism",
     tags: ["Python", "Polymorphism"],
   },
