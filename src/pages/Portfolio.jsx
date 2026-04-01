@@ -30,6 +30,8 @@ import selenium from "../../src/assets/selenium.png";
 import tDD1 from "../../src/assets/tDD1.png";
 import reactTDD from "../../src/assets/reactTDD.png";
 import employease from "../../src/assets/employease.png";
+import monteCarloSimulation from "../../src/assets/monteCarloSimulation.png";
+
 
 import socialMediaVideo from "../../src/assets/socialMediaAPI.mp4";
 import vehicleVideo from "../../src/assets/module8.mp4";
@@ -446,7 +448,7 @@ const pythonProjects = [
     title: "Probabilistic Market Engine",
     description:
       "A statistical analysis and Monte Carlo simulation engine that models stock price behavior using historical data. Computes volatility, return distributions, and probabilistic forecasts to estimate future price ranges and risk.",
-    image: coinToss, // (we can improve this later)
+    image: monteCarloSimulation, // (we can improve this later)
     gitlink: "https://github.com/TheReal4m4d3u5/MarketSim-Lite",
     tags: ["Python", "Statistics", "Simulation", "Forecasting"],
   },
