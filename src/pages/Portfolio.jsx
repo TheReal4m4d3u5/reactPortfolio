@@ -444,14 +444,6 @@ const ciCDProjects = [
 ];
 
 const pythonProjects = [
-  {
-    title: "Probabilistic Market Engine",
-    description:
-      "A statistical analysis and Monte Carlo simulation engine that models stock price behavior using historical data. Computes volatility, return distributions, and probabilistic forecasts to estimate future price ranges and risk.",
-    image: monteCarloSimulation, // (we can improve this later)
-    gitlink: "https://github.com/TheReal4m4d3u5/MarketSim-Lite",
-    tags: ["Python", "Statistics", "Simulation", "Forecasting"],
-  },
 
     {
     title: "Probabilistic Market Engine",
