@@ -447,20 +447,22 @@ const pythonProjects = [
   {
     title: "Probabilistic Market Engine",
     description:
-      "A ts to estimate future price ranges and risk.",
+      "A statistical analysis and Monte Carlo simulation engine that models stock price behavior using historical data. Computes volatility, return distributions, and probabilistic forecasts to estimate future price ranges and risk.",
     image: monteCarloSimulation, // (we can improve this later)
     gitlink: "https://github.com/TheReal4m4d3u5/MarketSim-Lite",
     tags: ["Python", "Statistics", "Simulation", "Forecasting"],
   },
 
-  {
-    title: "Shopping Cart Polymorphism",
+    {
+    title: "Probabilistic Market Engine",
     description:
-      "A polymorphic shopping cart where different item types calculate prices uniquely.",
-    image: coinToss,
+      "A statistical analysis and Monte Carlo simulation engine that models stock price behavior using historical data. Computes volatility, return distributions, and probabilistic forecasts to estimate future price ranges and risk.",
+    image: monteCarloSimulation,
     gitLink: "https://github.com/TheReal4m4d3u5/MarketSim-Lite",
-    tags: ["Python", "Polymorphism"],
+    tags: ["Python", "Statistics", "Simulation", "Forecasting"],
   },
+
+
 
   {
     title: "Shopping Cart Polymorphism",
