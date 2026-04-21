@@ -32,7 +32,6 @@ import reactTDD from "../../src/assets/reactTDD.png";
 import employease from "../../src/assets/employease.png";
 import monteCarloSimulation from "../../src/assets/monteCarloSimulation.png";
 
-
 import socialMediaVideo from "../../src/assets/socialMediaAPI.mp4";
 import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
@@ -410,6 +409,22 @@ const seleniumProjects = [
 
 const ciCDProjects = [
   {
+    title: "Production-Ready Social Media API (CI/CD Enabled)",
+    description: `Developed a production-ready RESTful backend system with an end-to-end CI/CD pipeline, enabling automated testing, containerization, and deployment to modern cloud infrastructure.`,
+    image: cirlceCI,
+    gitLink: "https://github.com/TheReal4m4d3u5/cicd-demo",
+    staging: "https://githubactionsci-cdsetup-staging.onrender.com",
+    deployed: "https://github-actions-ci-cd-setup-9j9z.onrender.com",
+    tags: [
+      "CI/CD",
+      "Jenkins",
+      "Docker",
+      "Kubernetes",
+      "GitHub Actions",
+      "Production Deployment",
+    ],
+  },
+  {
     title: "CI-CD Setup",
     description: `Full stack CI/CD deployment with git protections and staging and production environments.`,
     image: cirlceCI,
@@ -444,8 +459,7 @@ const ciCDProjects = [
 ];
 
 const pythonProjects = [
-
-    {
+  {
     title: "Probabilistic Market Engine",
     description:
       "A statistical analysis and Monte Carlo simulation engine that models stock price behavior using historical data. Computes volatility, return distributions, and probabilistic forecasts to estimate future price ranges and risk.",
@@ -453,8 +467,6 @@ const pythonProjects = [
     gitLink: "https://github.com/TheReal4m4d3u5/MarketSim-Lite",
     tags: ["Python", "Statistics", "Simulation", "Forecasting"],
   },
-
-
 
   {
     title: "Shopping Cart Polymorphism",
