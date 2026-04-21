@@ -155,8 +155,6 @@ const Resume = () => {
             <li>
               <strong>B.S. Computer Science</strong> (Minor: Industrial and Applied Mathematics)
               <br />
-              Bachelor of Science in Computer Science
-              Minor: Industrial & Applied Mathematics
               Metropolitan State University — Expected 2027
 
             </li>
