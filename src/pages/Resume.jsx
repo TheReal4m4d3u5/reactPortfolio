@@ -155,17 +155,19 @@ const Resume = () => {
             <li>
               <strong>B.S. Computer Science</strong> (Minor: Industrial and Applied Mathematics)
               <br />
+              Bachelor of Science in Computer Science
+              Minor: Industrial & Applied Mathematics
               Metropolitan State University — Expected 2027
             </li>
 
             <li>
-              Professional Full Stack Web Development Certificate
+              Professional Certificate in Full Stack Web Development
               University of Minnesota
             </li>
 
             <li>
-              A.A.S Foundations of Engineering & Computer Science
-              Normandale College
+              A.A.S. in Engineering & Computer Science
+              Normandale Community College
             </li>
           </ul>
         </section>
