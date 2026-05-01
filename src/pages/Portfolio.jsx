@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link, useLocation } from 'react-router-dom';
 import Project from "../components/Project";
 import "../styles/portfolioStyles.css";
 import image1 from "../../src/assets/image1.png";
@@ -1094,6 +1095,10 @@ const Portfolio = () => {
               Interested in a deeper look at my work across systems, languages,
               and experiments?
             </p>
+
+
+            <Link to="/egnineeringArchive" className={isDefaultPage? 'active' : ''}>Engineering Archive</Link>
+
 
           <Row className="portfolioCards">
             {engineeringArchives.map((project, index) => (
