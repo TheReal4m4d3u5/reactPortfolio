@@ -84,11 +84,11 @@ const Project = ({
           </Card.Body>
         </div>
 
-        return linkTo ? (
+        {/* return linkTo ? (
         <Link to={linkTo} className="card-link-wrapper">
           {content}
         </Link>
-        ) : ( content );
+        ) : ( content ); */}
 
       </div>
     </Card>
