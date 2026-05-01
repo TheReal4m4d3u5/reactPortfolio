@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Project from "../components/Project";
 import "../styles/portfolioStyles.css";
@@ -69,14 +68,31 @@ const pernProjects = [
   },
 ];
 
+
 const engineeringArchive = [
   {
     title: "Engineering Archive",
-    description: "Explore all projects, experiments, and systems.",
-    image: someImage,
-    // linkTo: "/engineering-archive",
+    description:
+      "Link to Engineering Archive",
+    image: image9,
+    gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
+    deployed: "https://aline-events.onrender.com/",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "React",
+      "PostgreSQL",
+      "Sequelize",
+      "RESTful API",
+      "JWT",
+      "Ticketmaster API",
+      "OpenWeather API",
+      "Render",
+    ],
   },
+
 ];
+
 
 const backendSystemsProjects = [
   {
@@ -1079,37 +1095,24 @@ const Portfolio = () => {
               and experiments?
             </p>
 
-            <Row className="portfolioCards">
-              {engineeringArchive.map((project, index) => (
-                <Col key={index} sm={12} md={6} lg={4} className="cards">
-                  <Project
-                    title={project.title}
-                    description={project.description}
-                    image={project.image}
-                    // linkTo={project.linkTo}
-                  />
-                </Col>
-              ))}
-            </Row>
+          <Row className="portfolioCards">
+            {engineeringArchives.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  gitlink={project.gitLink}
+                  staginglink={project.staging}
+                  deployedlink={project.deployed}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
+
           </div>
 
-          {/*  
-            <Row className="portfolioCards">
-              {engineeringArchives.map((project, index) => (
-                <Col key={index} sm={12} md={6} lg={4} className="cards">
-                  <Project
-                    title={project.title}
-                    description={project.description}
-                    image={project.image}
-                    gitlink={project.gitLink}
-                    staginglink={project.staging}
-                    deployedlink={project.deployed}
-                    tags={project.tags}
-                  />
-                </Col>
-              ))}
-            </Row>
-          </div> */}
         </section>
       </div>
     </body>
