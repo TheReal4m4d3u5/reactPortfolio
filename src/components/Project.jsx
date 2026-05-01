@@ -1,38 +1,43 @@
-import React from "react";
-import { Card, Button } from "react-bootstrap";
-import "../styles/projectStyles.css";
-import Tag from "./Tag";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Card, Button } from 'react-bootstrap';
+import '../styles/projectStyles.css';
+import Tag from './Tag';
 
-const Project = ({
-  title,
-  description,
-  image,
-  gitlink,
-  deployedlink,
-  video,
-  videoText,
-  staginglink,
-  tags,
-  linkTo,
-}) => {
+const Project = ({ title, description, image, gitlink, deployedlink, video, videoText, staginglink, tags }) => {
   return (
     <Card className="project-card ">
+
+
       <div className="myFlexCard">
+
         <div className="media-container">
-          {video && <video src={video} controls className="project-media" />}
+          {video && (
+            <video
+              src={video}
+              controls
+              className="project-media"
+            />
+          )}
 
           {image && !video && (
-            <img src={image} alt={title} className="project-media" />
+            <img
+              src={image}
+              alt={title}
+              className="project-media"
+            />
           )}
         </div>
+
         <div className="myCard">
+
           <Card.Body className="d-flex flex-column">
+
             <Card.Title>{title}</Card.Title>
             <Card.Text className="project-description">{description}</Card.Text>
             {tags && (
               <div className="flex flex-wrap">
                 {tags.map((tag) => (
+
                   <Tag key={tag} name={tag} />
                 ))}
               </div>
@@ -84,13 +89,15 @@ const Project = ({
           </Card.Body>
         </div>
 
-        {/* return linkTo ? (
-        <Link to={linkTo} className="card-link-wrapper">
-          {content}
-        </Link>
-        ) : ( content ); */}
+
+
 
       </div>
+
+
+
+
+
     </Card>
   );
 };
