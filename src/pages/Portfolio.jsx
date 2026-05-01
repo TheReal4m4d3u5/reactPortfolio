@@ -74,7 +74,7 @@ const engineeringArchive = [
     title: "Engineering Archive",
     description: "Explore all projects, experiments, and systems.",
     image: someImage,
-    linkTo: "/engineering-archive",
+    // linkTo: "/engineering-archive",
   },
 ];
 
@@ -1086,7 +1086,7 @@ const Portfolio = () => {
                     title={project.title}
                     description={project.description}
                     image={project.image}
-                    linkTo={project.linkTo}
+                    // linkTo={project.linkTo}
                   />
                 </Col>
               ))}
