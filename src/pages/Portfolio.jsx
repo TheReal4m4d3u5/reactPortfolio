@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Project from "../components/Project";
 import "../styles/portfolioStyles.css";
@@ -71,22 +72,9 @@ const pernProjects = [
 const engineeringArchive = [
   {
     title: "Engineering Archive",
-    description: "Link to Engineering Archive",
-    image: image9,
-    gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
-    deployed: "https://aline-events.onrender.com/",
-    tags: [
-      "Node.js",
-      "Express.js",
-      "React",
-      "PostgreSQL",
-      "Sequelize",
-      "RESTful API",
-      "JWT",
-      "Ticketmaster API",
-      "OpenWeather API",
-      "Render",
-    ],
+    description: "View full archive of projects",
+    image: someImage,
+    linkTo: "/engineering-archive",
   },
 ];
 
@@ -1107,6 +1095,7 @@ const Portfolio = () => {
               ))}
             </Row>
           </div>
+
           {/*  
             <Row className="portfolioCards">
               {engineeringArchives.map((project, index) => (
