@@ -68,12 +68,10 @@ const pernProjects = [
   },
 ];
 
-
 const engineeringArchive = [
   {
     title: "Engineering Archive",
-    description:
-      "Link to Engineering Archive",
+    description: "Link to Engineering Archive",
     image: image9,
     gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
     deployed: "https://aline-events.onrender.com/",
@@ -90,9 +88,7 @@ const engineeringArchive = [
       "Render",
     ],
   },
-
 ];
-
 
 const backendSystemsProjects = [
   {
@@ -1088,31 +1084,29 @@ const Portfolio = () => {
 
           ))} */}
 
-          <div className="archive-section">
+          {/* <div className="archive-section">
             <h3>Explore More</h3>
             <p>
               Interested in a deeper look at my work across systems, languages,
               and experiments?
             </p>
 
-          <Row className="portfolioCards">
-            {engineeringArchives.map((project, index) => (
-              <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  gitlink={project.gitLink}
-                  staginglink={project.staging}
-                  deployedlink={project.deployed}
-                  tags={project.tags}
-                />
-              </Col>
-            ))}
-          </Row>
-
-          </div>
-
+            <Row className="portfolioCards">
+              {engineeringArchives.map((project, index) => (
+                <Col key={index} sm={12} md={6} lg={4} className="cards">
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    gitlink={project.gitLink}
+                    staginglink={project.staging}
+                    deployedlink={project.deployed}
+                    tags={project.tags}
+                  />
+                </Col>
+              ))}
+            </Row>
+          </div> */}
         </section>
       </div>
     </body>
