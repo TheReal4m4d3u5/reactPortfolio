@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 import Project from "../components/Project";
 import "../styles/portfolioStyles.css";
 import image1 from "../../src/assets/image1.png";
@@ -69,12 +69,10 @@ const pernProjects = [
   },
 ];
 
-
 const engineeringArchive = [
   {
     title: "Engineering Archive",
-    description:
-      "Link to Engineering Archive",
+    description: "Link to Engineering Archive",
     image: image9,
     gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
     deployed: "https://aline-events.onrender.com/",
@@ -91,9 +89,7 @@ const engineeringArchive = [
       "Render",
     ],
   },
-
 ];
-
 
 const backendSystemsProjects = [
   {
@@ -1096,11 +1092,11 @@ const Portfolio = () => {
               and experiments?
             </p>
 
+            <Link to="/engineering-archive" className="archive-link">
+              View Engineering Archive →
+            </Link>
 
-            <Link to="/egnineeringArchive" className={isDefaultPage? 'active' : ''}>Engineering Archive</Link>
-
-
-          <Row className="portfolioCards">
+            {/* <Row className="portfolioCards">
             {engineeringArchives.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <Project
@@ -1114,10 +1110,8 @@ const Portfolio = () => {
                 />
               </Col>
             ))}
-          </Row>
-
+            </Row> */}
           </div>
-
         </section>
       </div>
     </body>
