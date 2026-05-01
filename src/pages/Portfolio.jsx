@@ -1092,7 +1092,7 @@ const Portfolio = () => {
             </p>
 
             <Row className="portfolioCards">
-              {ciCDProjects.map((project, index) => (
+              {engineeringArchive.map((project, index) => (
                 <Col key={index} sm={12} md={6} lg={4} className="cards">
                   <Project
                     title={project.title}
