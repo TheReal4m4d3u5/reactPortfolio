@@ -68,6 +68,32 @@ const pernProjects = [
   },
 ];
 
+
+const engineeringArchive = [
+  {
+    title: "Engineering Archive",
+    description:
+      "Link to Engineering Archive",
+    image: image9,
+    gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
+    deployed: "https://aline-events.onrender.com/",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "React",
+      "PostgreSQL",
+      "Sequelize",
+      "RESTful API",
+      "JWT",
+      "Ticketmaster API",
+      "OpenWeather API",
+      "Render",
+    ],
+  },
+
+];
+
+
 const backendSystemsProjects = [
   {
     title: "Aline",
@@ -1069,11 +1095,24 @@ const Portfolio = () => {
               and experiments?
             </p>
 
-            <a href="/engineering-archive" className="archive-link">
-              View Full Engineering Archive →
-            </a>
+          <Row className="portfolioCards">
+            {engineeringArchives.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  gitlink={project.gitLink}
+                  staginglink={project.staging}
+                  deployedlink={project.deployed}
+                  tags={project.tags}
+                />
+              </Col>
+            ))}
+          </Row>
+
           </div>
-          
+
         </section>
       </div>
     </body>
