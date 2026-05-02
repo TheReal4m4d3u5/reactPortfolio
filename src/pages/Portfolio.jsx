@@ -1092,9 +1092,14 @@ const Portfolio = () => {
               and experiments?
             </p>
 
-            <Link to="/engineering-archive" className="archive-link">
+            <a
+              href="https://averyfullportfolio.netlify.app/"
+              className="archive-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Engineering Archive →
-            </Link>
+            </a>
 
             {/* <Row className="portfolioCards">
             {engineeringArchives.map((project, index) => (
