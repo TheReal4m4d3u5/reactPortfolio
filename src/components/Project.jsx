@@ -13,6 +13,8 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import Modal from "react-modal";
+
 const Project = ({
   title,
   description,
@@ -26,7 +28,7 @@ const Project = ({
 }) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
-
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
   const projectImages = Array.isArray(images) ? images : [];
   const fallbackImages = Array.isArray(image) ? image : image ? [image] : [];
   const galleryImages =
@@ -38,7 +40,37 @@ const Project = ({
         {(video || galleryImages.length > 0) && (
           <div className="media-container">
             {video ? (
-              <video src={video} controls className="project-media" />
+              <>
+                <video src={video} controls className="project-media" />
+
+                <Button
+                  className="project-btn"
+                  onClick={() => setIsVideoOpen(true)}
+                >
+                  Watch Larger Demo
+                </Button>
+
+                <Modal
+                  isOpen={isVideoOpen}
+                  onRequestClose={() => setIsVideoOpen(false)}
+                  className="video-modal"
+                  overlayClassName="video-modal-overlay"
+                >
+                  <button
+                    className="video-modal-close"
+                    onClick={() => setIsVideoOpen(false)}
+                  >
+                    ×
+                  </button>
+
+                  <video
+                    src={video}
+                    controls
+                    autoPlay
+                    className="video-modal-player"
+                  />
+                </Modal>
+              </>
             ) : (
               <>
                 <Swiper
