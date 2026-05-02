@@ -132,3 +132,12 @@
   object-fit: contain;
   border-radius: 8px;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+}
