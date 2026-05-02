@@ -760,9 +760,7 @@ const Portfolio = () => {
               <a href="#mathModelingSystems">Math & Modeling Systems</a>
 
               <a href="#embedded">Embedded Systems</a>
-            </div>
 
-            <div className="sub-links">
               <a href="#apis">APIs</a>
               <a href="#dataPipelines">Data Pipelines</a>
               <a href="#sql">SQL</a>
