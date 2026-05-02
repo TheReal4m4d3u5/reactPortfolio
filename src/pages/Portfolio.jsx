@@ -36,6 +36,7 @@ import monteCarloSimulation from "../../src/assets/monteCarloSimulation.png";
 import socialMediaVideo from "../../src/assets/socialMediaAPI.mp4";
 import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
+import { motion } from "framer-motion";
 
 const pernProjects = [
   {
@@ -776,9 +777,10 @@ const Portfolio = () => {
             </div>
           </nav>
 
-          <div id="apis" className="mongoDBHeader">
-            APIs
-          </div>
+          <h2 id="apis" className="mongoDBHeader">
+            API's
+          </h2>
+
           <div className="disclaimerWraper">
             <div className="disclaimer">
               Some deployments will take 1 to 15 mins to spin up if they haven't
@@ -789,16 +791,32 @@ const Portfolio = () => {
           <Row className="portfolioCards">
             {apiProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  video={project.video}
-                  videoText={project.videoText}
-                  gitlink={project.gitLink}
-                  deployedlink={project.deployed}
-                  tags={project.tags}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    video={project.video}
+                    videoText={project.videoText}
+                    gitlink={project.gitLink}
+                    deployedlink={project.deployed}
+                    tags={project.tags}
+                  />
+                </motion.div>
               </Col>
             ))}
           </Row>
