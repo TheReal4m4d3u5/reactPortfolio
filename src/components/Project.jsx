@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Lightbox from "yet-another-react-lightbox";
 
@@ -14,7 +14,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import Modal from "react-modal";
-
+Modal.setAppElement("#root");
 const Project = ({
   title,
   description,
@@ -41,14 +41,16 @@ const Project = ({
           <div className="media-container">
             {video ? (
               <>
-                <video src={video} controls className="project-media" />
+                <div className="video-wrapper">
+                  <video src={video} controls className="project-media" />
 
-                <Button
-                  className="project-btn"
-                  onClick={() => setIsVideoOpen(true)}
-                >
-                  Watch Larger Demo
-                </Button>
+                  <button
+                    className="custom-fullscreen-btn"
+                    onClick={() => setIsVideoOpen(true)}
+                  >
+                    ⛶
+                  </button>
+                </div>
 
                 <Modal
                   isOpen={isVideoOpen}
