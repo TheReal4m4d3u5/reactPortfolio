@@ -307,7 +307,7 @@ const apiProjects = [
     title: "Aline",
     description:
       "A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design",
-    image: image9,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
     deployed: "https://aline-events.onrender.com/",
     tags: [
