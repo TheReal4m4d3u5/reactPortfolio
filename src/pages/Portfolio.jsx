@@ -42,7 +42,7 @@ const pernProjects = [
     title: "Aline",
     description:
       "A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design",
-    image: image9,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
     deployed: "https://aline-events.onrender.com/",
     tags: [
@@ -62,7 +62,7 @@ const pernProjects = [
     title: "Kanban Board",
     description:
       "A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.",
-    image: image10,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/kanbanBoard",
     deployed: "https://kanbanboard-552l.onrender.com",
     tags: ["Node.js", "Express.js", "React", "JWT", "PostgreSQL", "Render"],
@@ -73,7 +73,7 @@ const engineeringArchive = [
   {
     title: "Engineering Archive",
     description: "Link to Engineering Archive",
-    image: image9,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
     deployed: "https://aline-events.onrender.com/",
     tags: [
@@ -96,7 +96,7 @@ const backendSystemsProjects = [
     title: "Aline",
     description:
       "A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design",
-    image: image9,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
     deployed: "https://aline-events.onrender.com/",
     tags: [
@@ -117,7 +117,7 @@ const backendSystemsProjects = [
     title: "Grocery Inventory Backend System",
     description:
       "A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design",
-    image: grocerySytsem,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372",
     tags: ["Java", "OOP", "Backend Systems", "Software Design"],
   },
@@ -126,7 +126,7 @@ const backendSystemsProjects = [
     title: "Kanban Board",
     description:
       "A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.",
-    image: image10,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/kanbanBoard",
     deployed: "https://kanbanboard-552l.onrender.com",
     tags: ["Node.js", "Express.js", "React", "JWT", "PostgreSQL", "Render"],
@@ -156,7 +156,7 @@ const backendSystemsProjects = [
     title: "Hotel Reservation System",
     description:
       "A command-line application for managing hotel room bookings and availability.",
-    image: coinToss,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/hotelReservationSystem",
     tags: ["Python", "Command-Line Application"],
   },
@@ -176,7 +176,7 @@ Applies mathematical modeling within a structured system to produce realistic, s
 • Parametric motion modeling
 • Stochastic decision-making`,
 
-    image: image11,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car",
     tags: [
       "MATLAB",
@@ -191,7 +191,7 @@ Applies mathematical modeling within a structured system to produce realistic, s
     title: "Event Probability Simulator",
     description:
       "Simulates random events and analyzes the distribution of results to determine if they appear uniformly random.",
-    image: image16,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/csci_1111_assignment_5",
     tags: ["C", "Randomness", "Command-Line Application"],
   },
@@ -202,7 +202,7 @@ const mongoProjects = [
     title: "EmployEase",
     description:
       "EmployEase is a job search and application tracker that integrates with The Muse API, allowing users to search for job opportunities and manage their applications in a streamlined manner. Built using the MERN stack, it offers personalized tracking and secure authentication for job seekers.",
-    image: employease,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/EmployEase",
     deployed: "https://employease-hubi.onrender.com/",
     tags: [
@@ -225,7 +225,7 @@ const mongoProjects = [
     title: "Book Search Engine",
     description:
       "A full-stack application to search and save books using the Google Books API.",
-    image: bookSearch,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/bookSearchEngine",
     deployed: "https://booksearchengine-5ikq.onrender.com",
     tags: [
@@ -252,7 +252,7 @@ const mongoProjects = [
     title: "Tech Matchup App",
     description:
       "A full-stack web application that allows users to create matchups and vote for their favorite technologies.",
-    image: bookSearch,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/bookSearchEngine",
     deployed: "https://booksearchengine-5ikq.onrender.com",
     tags: [
@@ -279,7 +279,7 @@ const bddProjects = [
   {
     title: "My Selenium Test Suite",
     description: `A custom-built Selenium test suite for automated testing.`,
-    image: selenium,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
     tags: [
       "Selenium",
@@ -330,7 +330,7 @@ const dataPipelineProjects = [
     title: "Aline",
     description:
       "A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design",
-    image: image9,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
     deployed: "https://aline-events.onrender.com/",
     tags: [
@@ -362,7 +362,7 @@ const optimizationProjects = [
   {
     title: "My Selenium Test Suite",
     description: `A custom-built Selenium test suite for automated testing.`,
-    image: selenium,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
     tags: [
       "Selenium",
@@ -380,7 +380,7 @@ const simulationProjects = [
   {
     title: "My Selenium Test Suite",
     description: `A custom-built Selenium test suite for automated testing.`,
-    image: selenium,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
     tags: [
       "Selenium",
@@ -398,7 +398,7 @@ const forcastingProjects = [
   {
     title: "My Selenium Test Suite",
     description: `A custom-built Selenium test suite for automated testing.`,
-    image: selenium,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
     tags: [
       "Selenium",
@@ -416,7 +416,7 @@ const seleniumProjects = [
   {
     title: "My Selenium Test Suite",
     description: `A custom-built Selenium test suite for automated testing.`,
-    image: selenium,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
     tags: [
       "Selenium",
@@ -434,7 +434,7 @@ const ciCDProjects = [
   {
     title: "Production-Ready Social Media API (CI/CD Enabled)",
     description: `Developed a production-ready RESTful backend system with an end-to-end CI/CD pipeline, enabling automated testing, containerization, and deployment to modern cloud infrastructure.`,
-    image: cirlceCI,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/cicd-demo",
     staging: "https://githubactionsci-cdsetup-staging.onrender.com",
     deployed: "https://github-actions-ci-cd-setup-9j9z.onrender.com",
@@ -450,7 +450,7 @@ const ciCDProjects = [
   {
     title: "CI-CD Setup",
     description: `Full stack CI/CD deployment with git protections and staging and production environments.`,
-    image: cirlceCI,
+    image: [image9, image1, image2, image3],
     gitLink:
       "https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main",
     staging: "https://githubactionsci-cdsetup-staging.onrender.com",
@@ -466,7 +466,7 @@ const ciCDProjects = [
   {
     title: "GitHub Actions CI-CD Setup",
     description: `Full stack deployment pipeline.`,
-    image: gitActions,
+    image: [image9, image1, image2, image3],
     gitLink:
       "https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main",
     staging: "https://githubactionsci-cdsetup-staging.onrender.com",
@@ -486,7 +486,7 @@ const pythonProjects = [
     title: "Probabilistic Market Engine",
     description:
       "A statistical analysis and Monte Carlo simulation engine that models stock price behavior using historical data. Computes volatility, return distributions, and probabilistic forecasts to estimate future price ranges and risk.",
-    image: monteCarloSimulation,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/MarketSim-Lite",
     tags: ["Python", "Statistics", "Simulation", "Forecasting"],
   },
@@ -495,7 +495,7 @@ const pythonProjects = [
     title: "Shopping Cart Polymorphism",
     description:
       "A polymorphic shopping cart where different item types calculate prices uniquely.",
-    image: coinToss,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/shoppingCartPolymorphism",
     tags: ["Python", "Polymorphism"],
   },
@@ -503,7 +503,7 @@ const pythonProjects = [
     title: "Customer Room Reservations",
     description:
       "A system for hotel management to book rooms, check availability, and manage reservations.",
-    image: coinToss,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/customerRoomReservations",
     tags: ["Python", "CSV", "JSON"],
   },
@@ -511,7 +511,7 @@ const pythonProjects = [
     title: "Bank Account",
     description:
       "A command-line banking application for managing savings account deposits and withdrawals.",
-    image: coinToss,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/bankAccount",
     tags: ["Python", "Command-Line Application"],
   },
@@ -520,7 +520,7 @@ const pythonProjects = [
     title: "Hotel Reservation System",
     description:
       "A command-line application for managing hotel room bookings and availability.",
-    image: coinToss,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/hotelReservationSystem",
     tags: ["Python", "Command-Line Application"],
   },
@@ -531,7 +531,7 @@ const tDDProjects = [
     title: "Tech Quiz Test Suite",
     description:
       "A quiz application with comprehensive component and end-to-end testing.",
-    image: tDD1,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/techQuizTestSuite",
     tags: [
       "MongoDB",
@@ -547,7 +547,7 @@ const tDDProjects = [
     title: "Ensure React Components Render Properly",
     description:
       "A project that implements tests to ensure React components render correctly and match snapshots.",
-    image: tDD1,
+    image: [image9, image1, image2, image3],
     gitLink:
       "https://github.com/TheReal4m4d3u5/ensureReactComponentsRenderProperly",
     tags: ["React", "Vitest", "React Testing Library", "Happy DOM", "Testing"],
@@ -556,7 +556,7 @@ const tDDProjects = [
     title: "Reactify Essentials TDD",
     description:
       "A React-based application with reusable components and a robust testing setup.",
-    image: reactTDD,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/reactifyEssentialsTest",
     tags: [
       "React",
@@ -572,7 +572,7 @@ const tDDProjects = [
     title: "TDD Test Cases",
     description:
       "A project focusing on foundational skills in TDD and testing frameworks.",
-    image: tDD1,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/tDDTestCases",
     tags: ["TDD", "Testing Frameworks", "JavaScript"],
   },
@@ -592,7 +592,7 @@ Applies mathematical modeling within a structured system to produce realistic, s
 • Parametric motion modeling
 • Stochastic decision-making`,
 
-    image: image11,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car",
     tags: [
       "MATLAB",
@@ -619,7 +619,7 @@ const sqlProjects = [
     title: "Kanban Board",
     description:
       "A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.",
-    image: image10,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/kanbanBoard",
     deployed: "https://kanbanboard-552l.onrender.com",
     tags: ["Node.js", "Express.js", "React", "JWT", "PostgreSQL", "Render"],
@@ -631,7 +631,7 @@ const javaProjects = [
     title: "Grocery Inventory Backend System",
     description:
       "A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design",
-    image: grocerySytsem,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372",
     tags: ["Java", "OOP", "Backend Systems", "Software Design"],
   },
@@ -642,7 +642,7 @@ const cProjects = [
     title: "Card Dealer",
     description:
       "This program simulates a deck of playing cards, providing functionality to shuffle, deal cards, and display card details.",
-    image: image15,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/csci_1111_assignment_7",
     tags: ["C", "Command-Line Application"],
   },
@@ -651,7 +651,7 @@ const cProjects = [
     title: "Event Probability Simulator",
     description:
       "Simulates random events and analyzes the distribution of results to determine if they appear uniformly random.",
-    image: image16,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/csci_1111_assignment_5",
     tags: ["C", "Randomness", "Command-Line Application"],
   },
@@ -659,7 +659,7 @@ const cProjects = [
   {
     title: "Functions and Command-Line Argument",
     description: "A demonstration of command-line arguments and functions.",
-    image: image17,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/csci_1113_assignment_6",
     tags: ["C", "Command-Line Application"],
   },
@@ -668,7 +668,7 @@ const cProjects = [
     title: "Car Calculator",
     description:
       "Calculates and outputs distances traveled by two cars under constant acceleration.",
-    image: image14,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/csci_1113_assignment_5",
     tags: ["C", "Physics Simulation", "Command-Line Application"],
   },
@@ -678,7 +678,7 @@ const cppProjects = [
   {
     title: "Hangman",
     description: "A Hangman game written in C++",
-    image: hangman,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/cPlusPlusHTP_18.12",
     tags: ["C++", "Command Line"],
   },
@@ -689,7 +689,7 @@ const fullStackProjects = [
     title: "Weather App",
     description:
       "A full-stack weather dashboard application that retrieves and displays the current day and the 5-day weather forecast for various cities.",
-    image: image2,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/WeatherAPP",
     deployed: "https://weatherapp-ew0q.onrender.com",
     tags: [
@@ -705,7 +705,7 @@ const fullStackProjects = [
     title: "Candidate Search",
     description:
       "A React-based front-end application that interfaces with the GitHub API to display and manage candidate profiles.",
-    image: image8,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/candidateSearch",
     deployed: "https://funny-biscochitos-9e1673.netlify.app/",
     tags: ["React", "TypeScript", "GitHub API", "Netlify"],
@@ -717,7 +717,7 @@ const javaScriptProjects = [
     title: "Film Tracker",
     description:
       "A full-stack movie database search application where users can add films to a watch or seen list.",
-    image: image7,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/movieSearch",
     deployed: "https://meek-cassata-691e1b.netlify.app/",
     tags: ["HTML", "CSS", "JavaScript", "Netlify"],
@@ -727,7 +727,7 @@ const javaScriptProjects = [
     title: "Bucket Checklist",
     description:
       "An application that allows users to create a checklist, rank items by priority, and mark them as completed.",
-    image: image3,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/bucketList",
     tags: ["HTML", "CSS", "JavaScript"],
   },
@@ -736,7 +736,7 @@ const javaScriptProjects = [
     title: "React Profile",
     description:
       "A React-based single-page portfolio application that showcases a web developer’s skills and projects.",
-    image: image6,
+    image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/reactPortfolio",
     deployed: "https://zesty-starlight-a7d6e2.netlify.app/",
     tags: ["React", "React Router", "Netlify"],
