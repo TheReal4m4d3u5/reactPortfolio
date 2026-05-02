@@ -30,6 +30,12 @@ body {
 .top-links a {
   text-decoration: none !important;
 }
+
+.top-links {
+  position: sticky;
+  top: 10px;
+  z-index: 10;
+}
 .archive-section {
   margin-top: 40px;
   padding: 20px;
