@@ -162,6 +162,43 @@ body {
   transform: translateY(-1px);
 }
 
+.top-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 12px;
+
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 14px 20px;
+
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+}
+
+.top-links a {
+  text-decoration: none;
+  color: blue;
+
+  background: rgba(255, 192, 229, 0.75);
+  padding: 7px 14px;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, 
+              background 0.2s ease, 
+              box-shadow 0.2s ease;
+}
+
+.top-links a:hover {
+  background: rgba(255, 215, 240, 0.95);
+  transform: translateY(-4px) scale(1.06);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
 .sub-links {
   gap: 15px;
 }
