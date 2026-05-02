@@ -149,6 +149,17 @@ body {
 
 .top-links {
   gap: 20px;
+    font-size: 0.8rem;
+  line-height: 1;
+  text-decoration: none;
+  color: #1a0dab;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+    background: rgba(255, 255, 255, 0.38);
+  transform: translateY(-1px);
 }
 
 .sub-links {
