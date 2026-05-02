@@ -27,6 +27,9 @@ body {
   background-attachment: fixed;
 }
 
+.top-links a {
+  text-decoration: none !important;
+}
 .archive-section {
   margin-top: 40px;
   padding: 20px;
@@ -199,15 +202,9 @@ body {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
-.top-links a {
-  text-decoration: none !important;
-}
 
-.top-links {
-  position: sticky;
-  top: 10px;
-  z-index: 10;
-}
+
+
 
 .sub-links {
   gap: 15px;
