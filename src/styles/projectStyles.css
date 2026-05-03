@@ -240,3 +240,46 @@
   justify-content: center;
   cursor: pointer;
 }
+
+
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.25),
+    rgba(255,255,255,0.05)
+  );
+  pointer-events: none;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px;
+  gap: 16px;
+  box-sizing: border-box;
+  overflow: visible;
+  backdrop-filter: saturate(95%) blur(220px);
+}
+
+.project-card {
+  /* background: rgba(255, 255, 255, 0.08); */
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}

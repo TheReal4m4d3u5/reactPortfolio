@@ -794,7 +794,7 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true, amount: 0.2 }}
+                  viewport={{ once: false, amount: 0.5 }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -834,16 +834,32 @@ const Portfolio = () => {
           <Row className="portfolioCards">
             {dataPipelineProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  video={project.video}
-                  videoText={project.videoText}
-                  gitlink={project.gitLink}
-                  deployedlink={project.deployed}
-                  tags={project.tags}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    video={project.video}
+                    videoText={project.videoText}
+                    gitlink={project.gitLink}
+                    deployedlink={project.deployed}
+                    tags={project.tags}
+                  />
+                </motion.div>
               </Col>
             ))}
           </Row>
@@ -861,16 +877,32 @@ const Portfolio = () => {
           <Row className="portfolioCards">
             {sqlProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  video={project.video}
-                  videoText={project.videoText}
-                  gitlink={project.gitLink}
-                  deployedlink={project.deployed}
-                  tags={project.tags}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    video={project.video}
+                    videoText={project.videoText}
+                    gitlink={project.gitLink}
+                    deployedlink={project.deployed}
+                    tags={project.tags}
+                  />
+                </motion.div>
               </Col>
             ))}
           </Row>
@@ -882,16 +914,32 @@ const Portfolio = () => {
           <Row className="portfolioCards">
             {javaProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  video={project.video}
-                  videoText={project.videoText}
-                  gitlink={project.gitLink}
-                  deployedlink={project.deployed}
-                  tags={project.tags}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    video={project.video}
+                    videoText={project.videoText}
+                    gitlink={project.gitLink}
+                    deployedlink={project.deployed}
+                    tags={project.tags}
+                  />
+                </motion.div>
               </Col>
             ))}
           </Row>
@@ -903,16 +951,32 @@ const Portfolio = () => {
           <Row className="portfolioCards">
             {pythonProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  video={project.video}
-                  videoText={project.videoText}
-                  gitlink={project.gitLink}
-                  deployedlink={project.deployed}
-                  tags={project.tags}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    video={project.video}
+                    videoText={project.videoText}
+                    gitlink={project.gitLink}
+                    deployedlink={project.deployed}
+                    tags={project.tags}
+                  />
+                </motion.div>
               </Col>
             ))}
           </Row>
@@ -929,14 +993,30 @@ const Portfolio = () => {
           <Row className="portfolioCards">
             {matLabProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  gitlink={project.gitLink}
-                  deployedlink={project.deployed}
-                  tags={project.tags}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    gitlink={project.gitLink}
+                    deployedlink={project.deployed}
+                    tags={project.tags}
+                  />
+                </motion.div>
               </Col>
             ))}
           </Row>
@@ -953,14 +1033,30 @@ const Portfolio = () => {
           <Row className="portfolioCards">
             {simulationProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  gitlink={project.gitLink}
-                  deployedlink={project.deployed}
-                  tags={project.tags}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    gitlink={project.gitLink}
+                    deployedlink={project.deployed}
+                    tags={project.tags}
+                  />
+                </motion.div>
               </Col>
             ))}
           </Row>
@@ -972,14 +1068,30 @@ const Portfolio = () => {
           <Row className="portfolioCards">
             {optimizationProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  gitlink={project.gitLink}
-                  deployedlink={project.deployed}
-                  tags={project.tags}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    gitlink={project.gitLink}
+                    deployedlink={project.deployed}
+                    tags={project.tags}
+                  />
+                </motion.div>
               </Col>
             ))}
           </Row>
@@ -991,14 +1103,30 @@ const Portfolio = () => {
           <Row className="portfolioCards">
             {forcastingProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  gitlink={project.gitLink}
-                  deployedlink={project.deployed}
-                  tags={project.tags}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    gitlink={project.gitLink}
+                    deployedlink={project.deployed}
+                    tags={project.tags}
+                  />
+                </motion.div>
               </Col>
             ))}
           </Row>
@@ -1029,13 +1157,29 @@ const Portfolio = () => {
           <Row className="portfolioCards">
             {tDDProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  gitlink={project.gitLink}
-                  tags={project.tags}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    gitlink={project.gitLink}
+                    tags={project.tags}
+                  />
+                </motion.div>
               </Col>
             ))}
           </Row>
@@ -1047,13 +1191,29 @@ const Portfolio = () => {
           <Row className="portfolioCards">
             {bddProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  gitlink={project.gitLink}
-                  tags={project.tags}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    gitlink={project.gitLink}
+                    tags={project.tags}
+                  />
+                </motion.div>
               </Col>
             ))}
           </Row>
@@ -1070,15 +1230,31 @@ const Portfolio = () => {
           <Row className="portfolioCards">
             {ciCDProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  gitlink={project.gitLink}
-                  staginglink={project.staging}
-                  deployedlink={project.deployed}
-                  tags={project.tags}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    gitlink={project.gitLink}
+                    staginglink={project.staging}
+                    deployedlink={project.deployed}
+                    tags={project.tags}
+                  />
+                </motion.div>
               </Col>
             ))}
           </Row>
