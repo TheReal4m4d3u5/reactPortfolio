@@ -315,8 +315,8 @@
 .project-preview-overlay {
 
   padding: 30px;
-  color: white;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.82), transparent);
+  /* color: white;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.82), transparent); */
   z-index: 30;
   pointer-events: none;
 }
