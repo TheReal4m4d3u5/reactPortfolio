@@ -3,14 +3,22 @@
 html,
 body,
 #root {
+  width: 100%;
   min-height: 100%;
   margin: 0;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   min-height: 100dvh;
-  margin: 0;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 
   background: linear-gradient(
     to bottom,
@@ -26,7 +34,9 @@ body {
     #7a61d2,
     #5760d0
   );
+
   background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 /* =========================
@@ -34,15 +44,18 @@ body {
 ========================= */
 
 .portfolio-page {
-  min-height: 100vh;
   width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
 }
 
 .portfolio-Wraper {
   width: 100%;
+  max-width: 1400px;
   padding: 20px 20px 80px;
+  overflow-x: hidden;
 }
 
 /* =========================
@@ -63,6 +76,7 @@ body {
 ========================= */
 
 .portfolio-index {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,6 +86,8 @@ body {
 
 .top-links,
 .sub-links {
+  width: 100%;
+  max-width: 900px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -82,12 +98,10 @@ body {
   position: sticky;
   top: 10px;
   z-index: 10;
-
   padding: 12px 16px;
   border-radius: 999px;
-
-  /* background: rgba(255, 255, 255, 0.15); */
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .top-links a,
@@ -96,10 +110,8 @@ body {
   color: black;
   font-weight: 600;
   font-size: 0.85rem;
-
   padding: 6px 12px;
   border-radius: 999px;
-
   background: rgba(255, 255, 255, 0.35);
   transition: all 0.2s ease;
 }
@@ -124,11 +136,9 @@ body {
   justify-content: center;
   width: 100%;
   text-align: center;
-
   font-size: clamp(1.8rem, 5vw, 3rem);
   margin-top: 70px;
   margin-bottom: 16px;
-
   text-shadow: 0 0 18px rgba(255, 255, 255, 0.8);
 }
 
@@ -154,27 +164,30 @@ body {
 ========================= */
 
 .portfolioCards {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 28px;
-  margin-bottom: 40px;
 }
 
 .cards {
   display: flex;
   justify-content: center;
+  width: 100%;
+  max-width: 480px;
 }
 
 /* =========================
-   PROJECT CARD (GLASS)
+   PROJECT CARD GLASS
 ========================= */
 
 .project-card {
   width: 100%;
-  min-width: 320px;
   max-width: 480px;
-
+  min-width: 0;
 
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -210,7 +223,6 @@ body {
   padding: 8px 14px;
   border-radius: 999px;
   text-decoration: none;
-
   background: rgba(255, 255, 255, 0.3);
   transition: 0.2s ease;
 }
@@ -236,10 +248,8 @@ body {
   padding: 14px 28px;
   border-radius: 999px;
   font-weight: 600;
-
   background: white;
   color: #655dcf;
-
   transition: all 0.25s ease;
 }
 
@@ -252,39 +262,75 @@ body {
 ========================= */
 
 @media screen and (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .portfolio-page {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .portfolio-Wraper {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 14px 90px;
+  }
+
   .top-links {
     position: static;
     border-radius: 20px;
+    padding: 10px;
   }
 
   .portfolioCards {
-    gap: 22px;
+    width: 100%;
+    max-width: 100%;
+    gap: 28px;
+    margin: 0 auto 40px;
+  }
+
+  .cards {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .project-card {
+    width: min(92vw, 380px);
+    max-width: 380px;
+    min-width: 0;
+    margin: 0 auto;
+  }
+
+  .mongoDBHeader,
+  .javaHeader,
+  .javaScriptHeader,
+  .matLabHeader,
+  .cHeader,
+  .monHeader {
+    margin-top: 48px;
   }
 }
 
 @media screen and (max-width: 475px) {
   .portfolio-Wraper {
-    padding: 16px 10px 60px;
+    padding: 18px 10px 80px;
   }
 
   .portfolioCards {
-    gap: 18px;
-  }
-
-  .cards {
-    width: 100%;
-    padding: 0 6px;
+    gap: 24px;
   }
 
   .project-card {
-    min-width: 0;
-    max-width: 100%;
+    width: min(94vw, 360px);
+    max-width: 360px;
   }
 
   .top-links a,
   .sub-links a {
-    font-size: 0.75rem;
-    padding: 5px 10px;
+    font-size: 0.72rem;
+    padding: 5px 9px;
   }
 
   .disclaimer {
