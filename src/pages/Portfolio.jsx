@@ -794,7 +794,7 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -837,7 +837,7 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -880,7 +880,7 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
