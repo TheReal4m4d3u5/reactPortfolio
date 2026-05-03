@@ -777,10 +777,9 @@ const Portfolio = () => {
             </div>
           </nav>
 
-          <h2 id="apis" className="mongoDBHeader">
+          <div id="dataPipelines" className="mongoDBHeader">
             API's
-          </h2>
-
+          </div>
           <div className="disclaimerWraper">
             <div className="disclaimer">
               Some deployments will take 1 to 15 mins to spin up if they haven't
@@ -792,9 +791,14 @@ const Portfolio = () => {
             {apiProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
+                  className="portfolio-motion-card"
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{
+                    once: false,
+                    amount: 0.05,
+                    margin: "0px 0px -50px 0px",
+                  }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -808,6 +812,7 @@ const Portfolio = () => {
                 >
                   <Project
                     title={project.title}
+                    shortDescription={project.shortDescription}
                     description={project.description}
                     image={project.image}
                     video={project.video}
@@ -837,7 +842,11 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{
+                    once: false,
+                    amount: 0.05,
+                    margin: "0px 0px -50px 0px",
+                  }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -880,7 +889,11 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{
+                    once: false,
+                    amount: 0.05,
+                    margin: "0px 0px -50px 0px",
+                  }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -917,7 +930,52 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{
+                    once: false,
+                    amount: 0.05,
+                    margin: "0px 0px -50px 0px",
+                  }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.03,
+                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
+                  }}
+                >
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    video={project.video}
+                    videoText={project.videoText}
+                    gitlink={project.gitLink}
+                    deployedlink={project.deployed}
+                    tags={project.tags}
+                  />
+                </motion.div>
+              </Col>
+            ))}
+          </Row>
+
+          <div id="python" className="mongoDBHeader">
+            SQL
+          </div>
+
+          <Row className="portfolioCards">
+            {sqlProjects.map((project, index) => (
+              <Col key={index} sm={12} md={6} lg={4} className="cards">
+                <motion.div
+                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{
+                    once: false,
+                    amount: 0.05,
+                    margin: "0px 0px -50px 0px",
+                  }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -954,7 +1012,11 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{
+                    once: false,
+                    amount: 0.05,
+                    margin: "0px 0px -50px 0px",
+                  }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -996,7 +1058,11 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{
+                    once: false,
+                    amount: 0.05,
+                    margin: "0px 0px -50px 0px",
+                  }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -1036,7 +1102,11 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{
+                    once: false,
+                    amount: 0.05,
+                    margin: "0px 0px -50px 0px",
+                  }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -1071,7 +1141,11 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{
+                    once: false,
+                    amount: 0.05,
+                    margin: "0px 0px -50px 0px",
+                  }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -1106,7 +1180,11 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{
+                    once: false,
+                    amount: 0.05,
+                    margin: "0px 0px -50px 0px",
+                  }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -1160,7 +1238,11 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{
+                    once: false,
+                    amount: 0.05,
+                    margin: "0px 0px -50px 0px",
+                  }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
@@ -1194,7 +1276,11 @@ const Portfolio = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 60, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{
+                    once: false,
+                    amount: 0.05,
+                    margin: "0px 0px -50px 0px",
+                  }}
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
