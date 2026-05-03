@@ -8,45 +8,64 @@ body,
 }
 
 body {
-  margin: 0;
   min-height: 100dvh;
+  margin: 0;
   font-family: "Roboto", sans-serif;
+
+  background: linear-gradient(
+    to bottom,
+    #ffd7eb,
+    #ffc4e3,
+    #ffb1db,
+    #ff9fd3,
+    #ff8ccc,
+    #e887c7,
+    #d17fc3,
+    #b775c2,
+    #a069be,
+    #7a61d2,
+    #5760d0
+  );
+  background-attachment: fixed;
 }
 
-/* PAGE BACKGROUND */
+/* =========================
+   PAGE
+========================= */
+
 .portfolio-page {
   min-height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
-
-  background: linear-gradient(-45deg, #ffe4f2, #c89cde, #7f75e0, #ffaddc);
-  background-size: 400% 400%;
-  animation: gradientMove 12s ease infinite;
 }
 
 .portfolio-Wraper {
   width: 100%;
-  max-width: 1400px;
-  padding: 24px 20px 80px;
+  padding: 20px 20px 80px;
 }
 
-/* MAIN TITLE */
+/* =========================
+   HEADER
+========================= */
+
 .portfilioHeaderText {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: clamp(2rem, 6vw, 3rem);
-  margin-bottom: 28px;
-  text-shadow: 0 0 25px rgba(255, 120, 210, 0.6);
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 24px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 }
 
-/* INDEX LINKS */
+/* =========================
+   INDEX LINKS
+========================= */
+
 .portfolio-index {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 14px;
   margin-bottom: 40px;
 }
@@ -57,46 +76,44 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px 12px;
-  max-width: 950px;
-  margin: 0 auto;
 }
 
 .top-links {
   position: sticky;
   top: 10px;
   z-index: 10;
+
   padding: 12px 16px;
   border-radius: 999px;
 
-  background: rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  /* background: rgba(255, 255, 255, 0.15); */
+  backdrop-filter: blur(12px);
 }
 
 .top-links a,
 .sub-links a {
   text-decoration: none !important;
   color: black;
+  font-weight: 600;
   font-size: 0.85rem;
-  font-weight: 700;
-  white-space: nowrap;
 
-  background: rgba(255, 255, 255, 0.32);
-  padding: 7px 14px;
+  padding: 6px 12px;
   border-radius: 999px;
 
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  background: rgba(255, 255, 255, 0.35);
+  transition: all 0.2s ease;
 }
 
 .top-links a:hover,
 .sub-links a:hover {
-  background: rgba(255, 255, 255, 0.55);
-  transform: translateY(-4px) scale(1.06);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  transform: translateY(-3px) scale(1.05);
+  background: rgba(255, 255, 255, 0.6);
 }
 
-/* SECTION HEADERS */
+/* =========================
+   SECTION HEADERS
+========================= */
+
 .mongoDBHeader,
 .javaHeader,
 .javaScriptHeader,
@@ -104,63 +121,61 @@ body {
 .cHeader,
 .monHeader {
   display: flex;
-  width: 100%;
   justify-content: center;
+  width: 100%;
   text-align: center;
 
   font-size: clamp(1.8rem, 5vw, 3rem);
-  margin-top: 80px;
-  margin-bottom: 18px;
+  margin-top: 70px;
+  margin-bottom: 16px;
 
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.8);
 }
 
-/* DISCLAIMER */
+/* =========================
+   DISCLAIMER
+========================= */
+
 .disclaimerWraper {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 24px;
 }
 
 .disclaimer {
-  width: 100%;
   max-width: 800px;
   text-align: center;
-  font-size: 0.95rem;
   padding: 0 16px;
+  font-size: 0.95rem;
 }
 
-/* FILTERS */
-.filters {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-}
+/* =========================
+   GRID
+========================= */
 
-/* PROJECT GRID */
 .portfolioCards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
-  margin-bottom: 32px;
+  gap: 28px;
+  margin-bottom: 40px;
 }
 
 .cards {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
-/* PROJECT CARD GLASS */
+/* =========================
+   PROJECT CARD (GLASS)
+========================= */
+
 .project-card {
   width: 100%;
-  max-width: 520px;
+  min-width: 320px;
+  max-width: 480px;
 
-  background: rgba(255, 255, 255, 0.12) !important;
+
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 
@@ -171,170 +186,108 @@ body {
   overflow: hidden;
 }
 
-/* BUTTONS */
-.custom-btn {
-  color: black;
-}
+/* =========================
+   ARCHIVE SECTION
+========================= */
 
-.custom-btn:hover {
-  color: white;
-}
-
-/* ARCHIVE / EXPLORE MORE */
 .archive-section {
   margin-top: 40px;
-  padding: 20px;
   text-align: center;
   margin-bottom: 120px;
 }
 
 .archive-section h3 {
   margin-bottom: 8px;
-  font-size: 1.3rem;
 }
 
 .archive-section p {
-  font-size: 0.95rem;
-  margin-bottom: 12px;
   opacity: 0.85;
+  margin-bottom: 12px;
 }
 
 .archive-link {
   display: inline-block;
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: #1a0dab;
   padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.28);
+  text-decoration: none;
+
+  background: rgba(255, 255, 255, 0.3);
   transition: 0.2s ease;
 }
 
 .archive-link:hover {
-  background: rgba(255, 255, 255, 0.45);
   transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.5);
 }
+
+/* =========================
+   EXPLORE MORE
+========================= */
 
 .explore-more {
   text-align: center;
   padding: 80px 20px 120px;
   background: linear-gradient(135deg, #7f75e0, #655dcf);
-  color: #fff;
-}
-
-.explore-more h2 {
-  font-size: clamp(1.6rem, 5vw, 2rem);
-  margin-bottom: 10px;
-}
-
-.explore-more p {
-  font-size: 1rem;
-  opacity: 0.9;
-  margin-bottom: 40px;
+  color: white;
 }
 
 .archive-btn {
   display: inline-block;
   padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+
   background: white;
   color: #655dcf;
-  border-radius: 999px;
-  font-weight: 700;
-  text-decoration: none;
+
   transition: all 0.25s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .archive-btn:hover {
   transform: translateY(-4px) scale(1.04);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
-  background: #f8f8ff;
 }
 
-/* ANIMATION */
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
+/* =========================
+   MOBILE FIXES
+========================= */
 
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* TABLET */
 @media screen and (max-width: 768px) {
-  .portfolio-Wraper {
-    padding: 20px 14px 70px;
-  }
-
   .top-links {
     position: static;
-    border-radius: 24px;
-    padding: 12px;
-  }
-
-  .top-links a,
-  .sub-links a {
-    font-size: 0.8rem;
-    padding: 7px 12px;
+    border-radius: 20px;
   }
 
   .portfolioCards {
-    gap: 20px;
+    gap: 22px;
   }
 }
 
-/* PHONE */
 @media screen and (max-width: 475px) {
   .portfolio-Wraper {
-    padding: 18px 10px 60px;
-  }
-
-  .portfilioHeaderText {
-    margin-bottom: 20px;
-  }
-
-  .mongoDBHeader,
-  .javaHeader,
-  .javaScriptHeader,
-  .matLabHeader,
-  .cHeader,
-  .monHeader {
-    margin-top: 55px;
-    margin-bottom: 14px;
-  }
-
-  .top-links,
-  .sub-links {
-    gap: 8px;
-  }
-
-  .top-links a,
-  .sub-links a {
-    font-size: 0.75rem;
-    padding: 6px 10px;
-  }
-
-  .disclaimer {
-    font-size: 0.88rem;
-    padding: 0 10px;
+    padding: 16px 10px 60px;
   }
 
   .portfolioCards {
     gap: 18px;
   }
 
-  .project-card {
-    max-width: 100%;
-    border-radius: 20px !important;
+  .cards {
+    width: 100%;
+    padding: 0 6px;
   }
 
-  .explore-more {
-    padding: 60px 16px 90px;
+  .project-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .top-links a,
+  .sub-links a {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+
+  .disclaimer {
+    font-size: 0.88rem;
   }
 }
