@@ -105,6 +105,16 @@ const Project = ({
                 />
               </>
             )}
+
+            {/* ADD THIS HERE */}
+            <div className="project-preview-overlay">
+              <h3>{title}</h3>
+              <p>
+                {description
+                  ? description.split("\n")[0].slice(0, 80) + "..."
+                  : ""}
+              </p>
+            </div>
           </div>
         )}
 

@@ -222,3 +222,48 @@
   line-height: 1.7;
   font-weight: 500;
 }
+
+#aboutHome {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding-bottom: var(--footer-height);
+  background: none;
+}
+
+#aboutHome::before {
+  content: "";
+  position: absolute;
+  inset: -6%;
+  background-image: url('/src/assets/background1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+  animation: backgroundDrift 18s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+#aboutHome::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 20, 0.15);
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes backgroundDrift {
+  from {
+    transform: scale(1.04) translate(0, 0);
+    filter: brightness(0.95) saturate(1);
+  }
+
+  to {
+    transform: scale(1.12) translate(-24px, -18px);
+    filter: brightness(1.08) saturate(1.18);
+  }
+}
