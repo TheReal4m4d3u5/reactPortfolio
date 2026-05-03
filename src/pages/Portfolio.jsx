@@ -792,18 +792,13 @@ const Portfolio = () => {
             {apiProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.98 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{ once: false, amount: 0.05 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
+                    duration: 0.45,
+                    delay: window.innerWidth < 768 ? 0 : index * 0.1,
                     ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.03,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
                   <Project
@@ -835,18 +830,13 @@ const Portfolio = () => {
             {dataPipelineProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.98 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{ once: false, amount: 0.05 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
+                    duration: 0.45,
+                    delay: window.innerWidth < 768 ? 0 : index * 0.1,
                     ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.03,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
                   <Project
@@ -878,18 +868,13 @@ const Portfolio = () => {
             {sqlProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.98 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.05, margin: "0px 0px -50px 0px" }}
+                  viewport={{ once: false, amount: 0.05 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
+                    duration: 0.45,
+                    delay: window.innerWidth < 768 ? 0 : index * 0.1,
                     ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.03,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
                   <Project
@@ -915,18 +900,13 @@ const Portfolio = () => {
             {javaProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.98 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.05 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
+                    duration: 0.45,
+                    delay: window.innerWidth < 768 ? 0 : index * 0.1,
                     ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.03,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
                   <Project
@@ -952,18 +932,13 @@ const Portfolio = () => {
             {pythonProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.98 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.05 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
+                    duration: 0.45,
+                    delay: window.innerWidth < 768 ? 0 : index * 0.1,
                     ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.03,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
                   <Project
@@ -994,18 +969,13 @@ const Portfolio = () => {
             {matLabProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.98 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.05 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
+                    duration: 0.45,
+                    delay: window.innerWidth < 768 ? 0 : index * 0.1,
                     ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.03,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
                   <Project
@@ -1034,18 +1004,13 @@ const Portfolio = () => {
             {simulationProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.98 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.05 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
+                    duration: 0.45,
+                    delay: window.innerWidth < 768 ? 0 : index * 0.1,
                     ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.03,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
                   <Project
@@ -1069,18 +1034,13 @@ const Portfolio = () => {
             {optimizationProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.98 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.05 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
+                    duration: 0.45,
+                    delay: window.innerWidth < 768 ? 0 : index * 0.1,
                     ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.03,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
                   <Project
@@ -1104,18 +1064,13 @@ const Portfolio = () => {
             {forcastingProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.98 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.05 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
+                    duration: 0.45,
+                    delay: window.innerWidth < 768 ? 0 : index * 0.1,
                     ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.03,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
                   <Project
@@ -1158,18 +1113,13 @@ const Portfolio = () => {
             {tDDProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.98 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.05 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
+                    duration: 0.45,
+                    delay: window.innerWidth < 768 ? 0 : index * 0.1,
                     ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.03,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
                   <Project
@@ -1192,18 +1142,13 @@ const Portfolio = () => {
             {bddProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.98 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.05 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
+                    duration: 0.45,
+                    delay: window.innerWidth < 768 ? 0 : index * 0.1,
                     ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.03,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
                   <Project
@@ -1231,18 +1176,13 @@ const Portfolio = () => {
             {ciCDProjects.map((project, index) => (
               <Col key={index} sm={12} md={6} lg={4} className="cards">
                 <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.98 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.05 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
+                    duration: 0.45,
+                    delay: window.innerWidth < 768 ? 0 : index * 0.1,
                     ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.03,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
                   <Project
