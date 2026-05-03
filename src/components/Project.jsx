@@ -105,21 +105,19 @@ const Project = ({
                 />
               </>
             )}
-
-            {/* ADD THIS HERE */}
-            <div className="project-preview-overlay">
-              <h3>{title}</h3>
-              <p>
-                {description
-                  ? description.split("\n")[0].slice(0, 80) + "..."
-                  : ""}
-              </p>
-            </div>
           </div>
         )}
 
-        <div className="myCard">
-          <Card.Body className="d-flex flex-column">
+        {/* ADD THIS HERE */}
+        <div className="project-preview-overlay">
+          <h3>{title}</h3>
+          <p>
+            {description ? description.split("\n")[0].slice(0, 80) + "..." : ""}
+          </p>
+        </div>
+
+        <div className="myCard project-reveal-content">
+          <Card.Body className="d-flex flex-column project-reveal-content">
             <Card.Title>{title}</Card.Title>
 
             <Card.Text className="project-description">{description}</Card.Text>

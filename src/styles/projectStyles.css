@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 .project-card {
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
   border-radius: 18px;
   width: 100%;
@@ -20,11 +20,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 60px;
+  justify-content: flex-start;
 }
 
+
+
 .myCard {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-shadow: 2px 2px 8px white;
   font-size: 1.1rem;
   display: flex;
@@ -75,7 +78,7 @@
 
 .videoText {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tags-container {
@@ -101,7 +104,7 @@
 }
 
 .view-project-btn {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
   border: none;
 }
@@ -127,7 +130,7 @@
 }
 
 .project-media {
-  width: 80%;            /* 🔥 key fix */
+  width: 80%; /* 🔥 key fix */
   height: 100%;
   object-fit: contain;
   border-radius: 8px;
@@ -223,8 +226,8 @@
 .custom-fullscreen-btn {
   position: absolute;
 
-  bottom: 28px;   /* ⬅️ was ~12–18, bump this up */
-  right: 28px;    /* ⬅️ pull it in from edge */
+  bottom: 28px; /* ⬅️ was ~12–18, bump this up */
+  right: 28px; /* ⬅️ pull it in from edge */
 
   z-index: 50;
   width: 32px;
@@ -241,8 +244,6 @@
   cursor: pointer;
 }
 
-
-
 .project-card::before {
   content: "";
   position: absolute;
@@ -250,8 +251,8 @@
   border-radius: 20px;
   background: linear-gradient(
     120deg,
-    rgba(255,255,255,0.25),
-    rgba(255,255,255,0.05)
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.05)
   );
   pointer-events: none;
 }
@@ -259,14 +260,14 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
   border-radius: 18px;
   width: 100%;
   max-width: 600px;
-  padding: 20px;
-  margin: 20px;
-  gap: 16px;
+  padding: 0px;
+  margin: 0px;
+
   box-sizing: border-box;
   overflow: visible;
   backdrop-filter: saturate(95%) blur(220px);
@@ -290,7 +291,10 @@
   overflow: hidden;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    padding 0.3s ease;
 }
 
 .project-card:hover .project-reveal-content {
@@ -309,13 +313,64 @@
 }
 
 .project-preview-overlay {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 18px;
+
+  padding: 30px;
   color: white;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.82), transparent);
-  z-index: 20;
+  z-index: 30;
   pointer-events: none;
 }
+
+.project-reveal-content {
+  display: none;
+}
+
+.project-card:hover .project-reveal-content {
+  display: flex;
+}
+
+.project-preview-overlay {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+}
+
+.project-card {
+  width: 100%;
+}
+
+.project-preview-overlay {
+  position: static !important;
+}
+
+.project-card {
+  min-height: unset !important;
+  height: fit-content !important;
+}
+
+.myFlexCard {
+  min-height: unset !important;
+  height: auto !important;
+}
+
+.project-reveal-content {
+  display: none !important;
+  margin: 0 !important;
+}
+
+.project-card:hover .project-reveal-content {
+  display: block !important;
+  margin: 0 !important;
+}
+
+.project-card:hover .project-preview-overlay {
+  display: none !important;
+}
+
+.project-card:hover .project-preview-overlay {
+  display: none;
+}
+
