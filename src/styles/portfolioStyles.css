@@ -53,7 +53,7 @@ body {
 
 .portfolio-Wraper {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1800px;
   padding: 20px 20px 80px;
   overflow-x: hidden;
 }
@@ -165,13 +165,13 @@ body {
 
 .portfolioCards {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1350px;
   margin: 0 auto 48px;
   padding-bottom: 55px;
 
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(360px, 480px));
-  gap: 36px;
+  gap: 350px;
 
   justify-content: center;   /* centers single items */
   justify-items: center;     /* centers cards inside columns */
@@ -202,8 +202,8 @@ body {
 
 .project-card {
   width: 100%;
-  max-width: 480px;
-  min-width: 0;
+  max-width: 640px;
+  min-width: 600px;
   height: 100%;
 
   display: flex !important;
@@ -342,7 +342,7 @@ body {
   .portfolioCards {
     width: 100%;
     max-width: 100%;
-    gap: 28px;
+    gap: 350px;
     margin: 0 auto 40px;
   }
 
