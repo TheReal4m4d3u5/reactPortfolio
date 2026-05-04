@@ -53,7 +53,7 @@ body {
 
 .portfolio-Wraper {
   width: 100%;
-  max-width: 1800px;
+  max-width: 2000px;
   padding: 0px 20px 80px;
   overflow-x: hidden;
 }
@@ -168,13 +168,15 @@ body {
 
 .portfolioCards {
   width: 100%;
-  max-width: 1350px;
+  max-width: 2000px;
   margin: 0 auto 48px;
-  padding-bottom: 55px;
+  padding-bottom: 40px;
 
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(360px, 480px));
-  gap: 350px;
+  gap: 500px;
+
+
 
   justify-content: center;   /* centers single items */
   justify-items: center;     /* centers cards inside columns */
@@ -186,6 +188,7 @@ body {
 .cards {
   width: 100%;
   max-width: 480px;
+
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -203,11 +206,17 @@ body {
    PROJECT CARD GLASS
 ========================= */
 
+.project-description {
+  padding-bottom: 15px; /* adjust as needed */
+}
+
 .project-card {
   width: 100%;
   max-width: 640px;
-  min-width: 600px;
+  min-width: 850px;
   height: 100%;
+
+  padding-bottom: 00px;
 
   display: flex !important;
   flex-direction: column;
@@ -345,7 +354,7 @@ body {
   .portfolioCards {
     width: 100%;
     max-width: 100%;
-    gap: 350px;
+
     margin: 0 auto 40px;
   }
 
