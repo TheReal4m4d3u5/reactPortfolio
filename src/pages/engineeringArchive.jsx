@@ -1,20 +1,19 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import Project from "../components/Project";
 import "../styles/portfolioStyles.css";
-import image1 from "../../src/assets/image1.png";
+// import image1 from "../../src/assets/image1.png";
 import image2 from "../../src/assets/image2.png";
 import image3 from "../../src/assets/image3.png";
-import image4 from "../../src/assets/image4.png";
-import image5 from "../../src/assets/image5.png";
+// import image4 from "../../src/assets/image4.png";
+// import image5 from "../../src/assets/image5.png";
 import image6 from "../../src/assets/image6.png";
 import image7 from "../../src/assets/movieSearch.png";
 import image8 from "../../src/assets/candidateSearch.png";
 import image9 from "../../src/assets/image9.png";
 import image10 from "../../src/assets/image10.png";
 import image11 from "../../src/assets/carProgram.png";
-import image12 from "../../src/assets/battleship.png";
-import image13 from "../../src/assets/csci1203A6.png";
+// import image12 from "../../src/assets/battleship.png";
+// import image13 from "../../src/assets/csci1203A6.png";
 import image14 from "../../src/assets/csci1113A5.png";
 import image15 from "../../src/assets/csci1111A7.png";
 import image16 from "../../src/assets/csci1111A5.png";
@@ -24,7 +23,7 @@ import bookSearch from "../../src/assets/bookSearch.png";
 import cirlceCI from "../../src/assets/cirlceCI.png";
 import coinToss from "../../src/assets/coinToss.png";
 import hangman from "../../src/assets/hangman.png";
-import blog from "../../src/assets/blog.png";
+// import blog from "../../src/assets/blog.png";
 import gitActions from "../../src/assets/gitActions.png";
 import selenium from "../../src/assets/selenium.png";
 import tDD1 from "../../src/assets/tDD1.png";
@@ -33,7 +32,7 @@ import employease from "../../src/assets/employease.png";
 import monteCarloSimulation from "../../src/assets/monteCarloSimulation.png";
 
 import socialMediaVideo from "../../src/assets/socialMediaAPI.mp4";
-import vehicleVideo from "../../src/assets/module8.mp4";
+// import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
 
 const pernProjects = [

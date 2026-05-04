@@ -30,7 +30,7 @@ const devOps = [
 
 const tools = ["Git"];
 
-const Systems = ["Distributed systems", "data workflows", "system reliability"];
+// const Systems = ["Distributed systems", "data workflows", "system reliability"];
 
 const cloudSystems = ["AWS", "Azure", "Terraform"];
 
