@@ -796,7 +796,7 @@ const Portfolio = () => {
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{
                     once: false,
-                    amount: 0.05,
+                    amount: 0.15,
                     margin: "0px 0px -50px 0px",
                   }}
                   transition={{
@@ -806,7 +806,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
