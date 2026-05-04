@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/tagStyles.css';
 
 // FontAwesome Icons

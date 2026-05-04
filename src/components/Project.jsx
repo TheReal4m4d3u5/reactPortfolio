@@ -1,68 +1,159 @@
-import React from 'react';
-import { Card, Button } from 'react-bootstrap';
-import '../styles/projectStyles.css';
-import Tag from './Tag';
+import { useState } from "react";
+import { Card } from "react-bootstrap";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Lightbox from "yet-another-react-lightbox";
 
-const Project = ({ title, description, image, gitlink, deployedlink, video, videoText, staginglink, tags }) => {
+import "swiper/css";
+import "yet-another-react-lightbox/styles.css";
+
+import "../styles/projectStyles.css";
+import Tag from "./Tag";
+
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import Modal from "react-modal";
+if (typeof document !== "undefined" && document.querySelector("#root")) {
+  Modal.setAppElement("#root");
+}
+const Project = ({
+  title,
+  description,
+  image,
+  images = [],
+  gitlink,
+  deployedlink,
+  video,
+  staginglink,
+  tags = [],
+}) => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [imageIndex, setImageIndex] = useState(0);
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const projectImages = Array.isArray(images) ? images : [];
+  const fallbackImages = Array.isArray(image) ? image : image ? [image] : [];
+  const galleryImages =
+    projectImages.length > 0 ? projectImages : fallbackImages;
+
   return (
-    <Card className="project-card ">
-
-
+    <Card className="project-card">
       <div className="myFlexCard">
+        {(video || galleryImages.length > 0) && (
+          <div className="media-container">
+            {video ? (
+              <>
+                <div className="video-wrapper">
+                  <video src={video} controls className="project-media" />
 
-        <div className="media-container">
-          {video && (
-            <video
-              src={video}
-              controls
-              className="project-media"
-            />
-          )}
+                  <button
+                    className="custom-fullscreen-btn"
+                    onClick={() => setIsVideoOpen(true)}
+                  >
+                    ⛶
+                  </button>
+                </div>
 
-          {image && !video && (
-            <img
-              src={image}
-              alt={title}
-              className="project-media"
-            />
-          )}
+                <Modal
+                  isOpen={isVideoOpen}
+                  onRequestClose={() => setIsVideoOpen(false)}
+                  className="video-modal"
+                  overlayClassName="video-modal-overlay"
+                >
+                  <button
+                    className="video-modal-close"
+                    onClick={() => setIsVideoOpen(false)}
+                  >
+                    ×
+                  </button>
+
+                  <video
+                    src={video}
+                    controls
+                    autoPlay
+                    className="video-modal-player"
+                  />
+                </Modal>
+              </>
+            ) : (
+              <>
+                <Swiper
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  navigation
+                  pagination={{ clickable: true }}
+                  modules={[Navigation, Pagination]}
+                >
+                  {galleryImages.map((img, index) => (
+                    <SwiperSlide key={index}>
+                      <img
+                        src={img}
+                        alt={`${title} screenshot ${index + 1}`}
+                        className="project-media"
+                        onClick={() => {
+                          setImageIndex(index);
+                          setLightboxOpen(true);
+                        }}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+
+                <Lightbox
+                  open={lightboxOpen}
+                  close={() => setLightboxOpen(false)}
+                  index={imageIndex}
+                  slides={galleryImages.map((img) => ({ src: img }))}
+                />
+              </>
+            )}
+          </div>
+        )}
+
+        {/* ADD THIS HERE */}
+        <div className="project-preview-overlay">
+          <h3>{title}</h3>
+          <p>
+            {description
+              ? description
+                  .split("\n") // split into lines
+                  .slice(0, 6) // take first 3 lines
+                  .join(" ") // join back into one string
+                  .slice(0, 500) + "..." // limit to 300 chars
+              : ""}
+          </p>
         </div>
 
-        <div className="myCard">
-
-          <Card.Body className="d-flex flex-column">
-
+        <div className="myCard project-reveal-content">
+          <Card.Body className="d-flex flex-column project-reveal-content">
             <Card.Title>{title}</Card.Title>
-            <Card.Text className="project-description">{description}</Card.Text>
-            {tags && (
-              <div className="flex flex-wrap">
-                {tags.map((tag) => (
 
-                  <Tag key={tag} name={tag} />
+            <Card.Text className="project-description">{description}</Card.Text>
+
+            {Array.isArray(tags) && tags.length > 0 && (
+              <div className="flex flex-wrap">
+                {tags.map((tag, index) => (
+                  <Tag key={`${tag}-${index}`} name={tag} />
                 ))}
               </div>
             )}
 
-            <div className="viewGithubProject">
-              {gitlink && (
+            {gitlink && (
+              <div className="viewGithubProject">
                 <a
-                  role="button"
-                  tabIndex="0"
                   href={gitlink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-auto btn viewGithubProject btn-primary custom-btn"
+                  className="mt-auto btn btn-primary custom-btn"
                 >
                   View Github Project
                 </a>
-              )}
-            </div>
+              </div>
+            )}
 
             {staginglink && (
               <div className="mt-2">
                 <a
-                  role="button"
-                  tabIndex="0"
                   href={staginglink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -72,11 +163,10 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
                 </a>
               </div>
             )}
+
             {deployedlink && (
               <div className="mt-2">
                 <a
-                  role="button"
-                  tabIndex="0"
                   href={deployedlink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -88,16 +178,7 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
             )}
           </Card.Body>
         </div>
-
-
-
-
       </div>
-
-
-
-
-
     </Card>
   );
 };

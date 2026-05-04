@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 .project-card {
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
   border-radius: 18px;
   width: 100%;
@@ -20,11 +20,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  justify-content: flex-start;
 }
 
+
+
 .myCard {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-shadow: 2px 2px 8px white;
   font-size: 1.1rem;
   display: flex;
@@ -75,7 +77,7 @@
 
 .videoText {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tags-container {
@@ -101,7 +103,7 @@
 }
 
 .view-project-btn {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
   border: none;
 }
@@ -119,16 +121,286 @@
 }
 .media-container {
   width: 100%;
-  height: 200px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .project-media {
-  width: 80%;            /* 🔥 key fix */
+  width: 80%; /* 🔥 key fix */
   height: 100%;
   object-fit: contain;
   border-radius: 8px;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+}
+
+.video-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  padding: 2rem;
+}
+
+.video-modal {
+  position: relative;
+  width: min(1100px, 92vw);
+  max-height: 88vh;
+  background: #111;
+  border-radius: 18px;
+  padding: 1rem;
+  outline: none;
+  z-index: 100000;
+}
+
+.video-modal-player {
+  width: 100%;
+  max-height: 78vh;
+  display: block;
+  border-radius: 12px;
+}
+
+.video-modal-close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: black;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.project-media::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.video-wrapper .project-media {
+  display: block;
+  width: 100%;
+}
+
+.video-wrapper .custom-fullscreen-btn {
+  position: absolute;
+  right: 8px;
+  bottom: 18px;
+  transform: translateX(-8px);
+
+  z-index: 50;
+  width: 34px;
+  height: 34px;
+
+  border: none;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.custom-fullscreen-btn {
+  position: absolute;
+
+  bottom: 28px; /* ⬅️ was ~12–18, bump this up */
+  right: 28px; /* ⬅️ pull it in from edge */
+
+  z-index: 50;
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.05)
+  );
+  pointer-events: none;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 600px;
+  padding: 0px;
+  margin: 0px;
+
+  box-sizing: border-box;
+  overflow: visible;
+  backdrop-filter: saturate(95%) blur(220px);
+}
+
+.project-card {
+  /* background: rgba(255, 255, 255, 0.08); */
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-reveal-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    padding 0.3s ease;
+}
+
+.project-card:hover .project-reveal-content {
+  max-height: 900px;
+  opacity: 1;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.project-card:hover .project-preview-overlay {
+  opacity: 0;
+}
+
+.media-container {
+  position: relative;
+}
+
+.project-preview-overlay {
+
+
+  /* color: white;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.82), transparent); */
+  z-index: 30;
+  pointer-events: none;
+
+  font-family: "Roboto", sans-serif;
+  text-shadow: 2px 2px 8px white;
+  font-size: 1.1rem;
+
+  margin-top: 0px;
+
+  font-family: "Roboto", sans-serif;
+  text-shadow: 2px 2px 8px white;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  
+
+      font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
+    unicode-range: U +0460 -052F, U +1C80 -1C8A, U +20B4, U +2DE0 -2DFF, U + A640-A69F, U + FE2E-FE2F;
+font-family: Roboto, sans-serif;
+    text-shadow: 2px 2px 8px white;
+    font-size: 1.1rem;
+}
+
+.project-reveal-content {
+  display: none;
+}
+
+.project-card:hover .project-reveal-content {
+  display: flex;
+}
+
+.project-preview-overlay {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+}
+
+.project-card {
+  width: 100%;
+}
+
+.project-preview-overlay {
+  position: static !important;
+}
+
+.project-card {
+  min-height: unset !important;
+  height: fit-content !important;
+}
+
+.myFlexCard {
+  min-height: unset !important;
+  height: auto !important;
+}
+
+.project-reveal-content {
+  display: none !important;
+  margin: 0 !important;
+}
+
+.project-card:hover .project-reveal-content {
+  display: block !important;
+  margin: 0 !important;
+}
+
+.project-card:hover .project-preview-overlay {
+  display: none !important;
+}
+
+.project-card:hover .project-preview-overlay {
+  display: none;
+}
+
