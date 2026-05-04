@@ -46,8 +46,8 @@
 
 .project-description {
   white-space: pre-line;
-  text-align: left;
-  max-width: 400px;
+  text-align: center;
+  max-width: 750px;
   margin: 0 auto;
   line-height: 1.6;
 }
