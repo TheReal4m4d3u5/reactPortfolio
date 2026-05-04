@@ -14,7 +14,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import Modal from "react-modal";
-Modal.setAppElement("#root");
+if (typeof document !== "undefined" && document.querySelector("#root")) {
+  Modal.setAppElement("#root");
+}
 const Project = ({
   title,
   description,
