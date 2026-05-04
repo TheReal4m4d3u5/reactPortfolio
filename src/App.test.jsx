@@ -11,10 +11,10 @@ test("renders the app without crashing", () => {
       path: "/",
       element: <App />,
       children: [
-        {
-          index: true,
-          element: <About />,
-        },
+        { index: true, element: <About /> },
+        { path: "/Portfolio", element: <Portfolio /> },
+        { path: "/Contact", element: <Contact /> },
+        { path: "/Resume", element: <Resume /> },
       ],
     },
   ]);
