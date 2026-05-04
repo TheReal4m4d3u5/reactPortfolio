@@ -17,7 +17,7 @@ const About = () => {
             src={profilePhoto}
             alt="Profile"
             className="profilePhoto mb-4"
-            whileHover={{ scale: 1.08, rotate: 2 }}
+            whileHover={{ scale: 1.68, rotate: 2 }}
             transition={{ type: 'spring', stiffness: 250 }}
           />
         </motion.section>

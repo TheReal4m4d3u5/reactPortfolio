@@ -131,7 +131,18 @@ ul li {
   margin-top: 0;
   font-size: 1rem;
   flex-wrap: wrap;
+  
 }
+
+.link-button {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.link-button:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
 
 .link-button {
   color: black;
