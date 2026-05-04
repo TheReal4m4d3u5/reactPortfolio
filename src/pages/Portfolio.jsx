@@ -854,7 +854,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
@@ -901,7 +901,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
@@ -942,7 +942,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
@@ -983,7 +983,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
@@ -1024,7 +1024,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
@@ -1070,7 +1070,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
@@ -1114,7 +1114,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
@@ -1153,7 +1153,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
@@ -1192,7 +1192,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
@@ -1250,7 +1250,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
@@ -1288,7 +1288,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
@@ -1327,7 +1327,7 @@ const Portfolio = () => {
                   }}
                   whileHover={{
                     y: -10,
-                    scale: 1.03,
+                    scale: 1.12,
                     boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
                   }}
                 >
