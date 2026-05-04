@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/resumeStyles.css";
 import Tag from "../components/Tag";
 

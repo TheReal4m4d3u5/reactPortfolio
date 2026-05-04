@@ -392,64 +392,64 @@ const javaProjects = [
 
 
 
-const fullStackProjects = [
-  {
-    title: "Weather App",
-    description:
-      "A full-stack weather dashboard application that retrieves and displays the current day and the 5-day weather forecast for various cities.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/WeatherAPP",
-    deployed: "https://weatherapp-ew0q.onrender.com",
-    tags: [
-      "Node.js",
-      "Express.js",
-      "React",
-      "OpenWeather API",
-      "JSON",
-      "Render",
-    ],
-  },
-  {
-    title: "Candidate Search",
-    description:
-      "A React-based front-end application that interfaces with the GitHub API to display and manage candidate profiles.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/candidateSearch",
-    deployed: "https://funny-biscochitos-9e1673.netlify.app/",
-    tags: ["React", "TypeScript", "GitHub API", "Netlify"],
-  },
-];
+// const fullStackProjects = [
+//   {
+//     title: "Weather App",
+//     description:
+//       "A full-stack weather dashboard application that retrieves and displays the current day and the 5-day weather forecast for various cities.",
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/WeatherAPP",
+//     deployed: "https://weatherapp-ew0q.onrender.com",
+//     tags: [
+//       "Node.js",
+//       "Express.js",
+//       "React",
+//       "OpenWeather API",
+//       "JSON",
+//       "Render",
+//     ],
+//   },
+//   {
+//     title: "Candidate Search",
+//     description:
+//       "A React-based front-end application that interfaces with the GitHub API to display and manage candidate profiles.",
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/candidateSearch",
+//     deployed: "https://funny-biscochitos-9e1673.netlify.app/",
+//     tags: ["React", "TypeScript", "GitHub API", "Netlify"],
+//   },
+// ];
 
-const javaScriptProjects = [
-  {
-    title: "Film Tracker",
-    description:
-      "A full-stack movie database search application where users can add films to a watch or seen list.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/movieSearch",
-    deployed: "https://meek-cassata-691e1b.netlify.app/",
-    tags: ["HTML", "CSS", "JavaScript", "Netlify"],
-  },
+// const javaScriptProjects = [
+//   {
+//     title: "Film Tracker",
+//     description:
+//       "A full-stack movie database search application where users can add films to a watch or seen list.",
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/movieSearch",
+//     deployed: "https://meek-cassata-691e1b.netlify.app/",
+//     tags: ["HTML", "CSS", "JavaScript", "Netlify"],
+//   },
 
-  {
-    title: "Bucket Checklist",
-    description:
-      "An application that allows users to create a checklist, rank items by priority, and mark them as completed.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/bucketList",
-    tags: ["HTML", "CSS", "JavaScript"],
-  },
+//   {
+//     title: "Bucket Checklist",
+//     description:
+//       "An application that allows users to create a checklist, rank items by priority, and mark them as completed.",
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/bucketList",
+//     tags: ["HTML", "CSS", "JavaScript"],
+//   },
 
-  {
-    title: "React Profile",
-    description:
-      "A React-based single-page portfolio application that showcases a web developer’s skills and projects.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/reactPortfolio",
-    deployed: "https://zesty-starlight-a7d6e2.netlify.app/",
-    tags: ["React", "React Router", "Netlify"],
-  },
-];
+//   {
+//     title: "React Profile",
+//     description:
+//       "A React-based single-page portfolio application that showcases a web developer’s skills and projects.",
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/reactPortfolio",
+//     deployed: "https://zesty-starlight-a7d6e2.netlify.app/",
+//     tags: ["React", "React Router", "Netlify"],
+//   },
+// ];
 
 const Portfolio = () => {
   return (
@@ -485,12 +485,11 @@ const Portfolio = () => {
           </nav>
 
           <div id="dataPipelines" className="mongoDBHeader">
-            API's
+            {"API's"}
           </div>
           <div className="disclaimerWraper">
             <div className="disclaimer">
-              Some deployments will take 1 to 15 mins to spin up if they haven't
-              been in use
+              {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
             </div>
           </div>
 
@@ -538,8 +537,7 @@ const Portfolio = () => {
           </div>
           <div className="disclaimerWraper">
             <div className="disclaimer">
-              Some deployments will take 1 to 15 mins to spin up if they haven't
-              been in use
+              {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
             </div>
           </div>
 
@@ -585,8 +583,7 @@ const Portfolio = () => {
           </div>
           <div className="disclaimerWraper">
             <div className="disclaimer">
-              Some deployments will take 1 to 15 mins to spin up if they haven't
-              been in use
+              {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
             </div>
           </div>
 
@@ -755,8 +752,8 @@ const Portfolio = () => {
           </div>
 
           <div className="filters">
-            <button onClick={() => toggleFilter("Featured")}></button>
-            <button onClick={() => toggleFilter("MATLAB")}></button>
+            {/* <button onClick={() => toggleFilter("Featured")}></button>
+            <button onClick={() => toggleFilter("MATLAB")}></button> */}
           </div>
 
           <Row className="portfolioCards">
@@ -1016,8 +1013,7 @@ const Portfolio = () => {
           </div>
 
           <div className="disclaimer">
-            Some deployments will take 1 to 15 mins to spin up if they haven't
-            been in use
+            {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
           </div>
 
           <Row className="portfolioCards">
