@@ -1,4 +1,4 @@
-import { test, expect } from "vitest";
+import { test, expect, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 
@@ -7,6 +7,10 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+
+beforeEach(() => {
+  document.body.innerHTML = '<div id="root"></div>';
+});
 
 test("renders the app without crashing", () => {
   const router = createMemoryRouter([
