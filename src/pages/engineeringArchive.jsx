@@ -22,13 +22,13 @@ import grocerySytsem from "../../src/assets/grocerySystem.png";
 // import bookSearch from "../../src/assets/bookSearch.png";
 import cirlceCI from "../../src/assets/cirlceCI.png";
 import coinToss from "../../src/assets/coinToss.png";
-import hangman from "../../src/assets/hangman.png";
+// import hangman from "../../src/assets/hangman.png";
 // import blog from "../../src/assets/blog.png";
 import gitActions from "../../src/assets/gitActions.png";
 import selenium from "../../src/assets/selenium.png";
 import tDD1 from "../../src/assets/tDD1.png";
 import reactTDD from "../../src/assets/reactTDD.png";
-import employease from "../../src/assets/employease.png";
+// import employease from "../../src/assets/employease.png";
 import monteCarloSimulation from "../../src/assets/monteCarloSimulation.png";
 
 import socialMediaVideo from "../../src/assets/socialMediaAPI.mp4";
@@ -942,8 +942,7 @@ const Portfolio = () => {
       </div>
       <div className="disclaimerWraper">
         <div className="disclaimer">
-          Some deployments will take 1 to 15 mins to spin up if they haven't
-          been in use
+          {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
         </div>
       </div>
 
@@ -969,8 +968,7 @@ const Portfolio = () => {
       </div>
       <div className="disclaimerWraper">
         <div className="disclaimer">
-          Some deployments will take 1 to 15 mins to spin up if they haven't
-          been in use
+          {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
         </div>
       </div>
 
@@ -1038,8 +1036,8 @@ const Portfolio = () => {
       </div>
 
       <div className="filters">
-        <button onClick={() => toggleFilter("Featured")}></button>
-        <button onClick={() => toggleFilter("MATLAB")}></button>
+        {/* <button onClick={() => toggleFilter("Featured")}></button>
+        <button onClick={() => toggleFilter("MATLAB")}></button> */}
       </div>
 
       <Row className="portfolioCards">
@@ -1062,8 +1060,8 @@ const Portfolio = () => {
       </div>
 
       <div className="filters">
-        <button onClick={() => toggleFilter("Featured")}></button>
-        <button onClick={() => toggleFilter("backend")}></button>
+        {/* <button onClick={() => toggleFilter("Featured")}></button>
+        <button onClick={() => toggleFilter("backend")}></button> */}
       </div>
 
       <Row className="portfolioCards">
