@@ -51,7 +51,7 @@ function Contact() {
           alert("Message Sent Successfully!");
           setFormData({ from_name: "", from_email: "", message: "" });
         },
-        (error) => {
+        () => {
           alert("An error occurred, please try again.");
         },
       );
