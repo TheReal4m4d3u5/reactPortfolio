@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
 import '../styles/footerStyles.css';
 
 const Footer = () => {
