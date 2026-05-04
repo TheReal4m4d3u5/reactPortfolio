@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/resumeStyles.css";
 import Tag from "../components/Tag";
 
@@ -31,7 +30,7 @@ const devOps = [
 
 const tools = ["Git"];
 
-const Systems = ["Distributed systems", "data workflows", "system reliability"];
+// const Systems = ["Distributed systems", "data workflows", "system reliability"];
 
 const cloudSystems = ["AWS", "Azure", "Terraform"];
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/contactSytles.css";
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
@@ -47,11 +47,11 @@ function Contact() {
         "oJYn056XuORmYfCO8",
       )
       .then(
-        (result) => {
+        () => {
           alert("Message Sent Successfully!");
           setFormData({ from_name: "", from_email: "", message: "" });
         },
-        (error) => {
+        () => {
           alert("An error occurred, please try again.");
         },
       );

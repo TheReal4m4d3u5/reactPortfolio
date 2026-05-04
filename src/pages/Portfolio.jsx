@@ -1,280 +1,46 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { Link, useLocation } from "react-router-dom";
+import { Row, Col } from "react-bootstrap";
 import Project from "../components/Project";
 import "../styles/portfolioStyles.css";
 import image1 from "../../src/assets/image1.png";
 import image2 from "../../src/assets/image2.png";
 import image3 from "../../src/assets/image3.png";
-import image4 from "../../src/assets/image4.png";
-import image5 from "../../src/assets/image5.png";
-import image6 from "../../src/assets/image6.png";
-import image7 from "../../src/assets/movieSearch.png";
-import image8 from "../../src/assets/candidateSearch.png";
+// import image4 from "../../src/assets/image4.png";
+// import image5 from "../../src/assets/image5.png";
+// import image6 from "../../src/assets/image6.png";
+// import image7 from "../../src/assets/movieSearch.png";
+// import image8 from "../../src/assets/candidateSearch.png";
 import image9 from "../../src/assets/image9.png";
-import image10 from "../../src/assets/image10.png";
-import image11 from "../../src/assets/carProgram.png";
-import image12 from "../../src/assets/battleship.png";
-import image13 from "../../src/assets/csci1203A6.png";
-import image14 from "../../src/assets/csci1113A5.png";
-import image15 from "../../src/assets/csci1111A7.png";
-import image16 from "../../src/assets/csci1111A5.png";
-import image17 from "../../src/assets/csci1113A6.png";
-import grocerySytsem from "../../src/assets/grocerySystem.png";
-import bookSearch from "../../src/assets/bookSearch.png";
-import cirlceCI from "../../src/assets/cirlceCI.png";
-import coinToss from "../../src/assets/coinToss.png";
-import hangman from "../../src/assets/hangman.png";
-import blog from "../../src/assets/blog.png";
-import gitActions from "../../src/assets/gitActions.png";
-import selenium from "../../src/assets/selenium.png";
-import tDD1 from "../../src/assets/tDD1.png";
-import reactTDD from "../../src/assets/reactTDD.png";
-import employease from "../../src/assets/employease.png";
-import monteCarloSimulation from "../../src/assets/monteCarloSimulation.png";
+// import image10 from "../../src/assets/image10.png";
+// import image11 from "../../src/assets/carProgram.png";
+// import image12 from "../../src/assets/battleship.png";
+// import image13 from "../../src/assets/csci1203A6.png";
+// import image14 from "../../src/assets/csci1113A5.png";
+// import image15 from "../../src/assets/csci1111A7.png";
+// import image16 from "../../src/assets/csci1111A5.png";
+// import image17 from "../../src/assets/csci1113A6.png";
+// import grocerySytsem from "../../src/assets/grocerySystem.png";
+// import bookSearch from "../../src/assets/bookSearch.png";
+// import cirlceCI from "../../src/assets/cirlceCI.png";
+// import coinToss from "../../src/assets/coinToss.png";
+// import hangman from "../../src/assets/hangman.png";
+// import blog from "../../src/assets/blog.png";
+// import gitActions from "../../src/assets/gitActions.png";
+// import selenium from "../../src/assets/selenium.png";
+// import tDD1 from "../../src/assets/tDD1.png";
+// import reactTDD from "../../src/assets/reactTDD.png";
+// import employease from "../../src/assets/employease.png";
+// import monteCarloSimulation from "../../src/assets/monteCarloSimulation.png";
 
 import socialMediaVideo from "../../src/assets/socialMediaAPI.mp4";
-import vehicleVideo from "../../src/assets/module8.mp4";
+// import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
 import { motion } from "framer-motion";
 
-const pernProjects = [
-  {
-    title: "Aline",
-    description:
-      "A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
-    deployed: "https://aline-events.onrender.com/",
-    tags: [
-      "Node.js",
-      "Express.js",
-      "React",
-      "PostgreSQL",
-      "Sequelize",
-      "RESTful API",
-      "JWT",
-      "Ticketmaster API",
-      "OpenWeather API",
-      "Render",
-    ],
-  },
-  {
-    title: "Kanban Board",
-    description:
-      "A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/kanbanBoard",
-    deployed: "https://kanbanboard-552l.onrender.com",
-    tags: ["Node.js", "Express.js", "React", "JWT", "PostgreSQL", "Render"],
-  },
-];
 
-const engineeringArchive = [
-  {
-    title: "Engineering Archive",
-    description: "Link to Engineering Archive",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
-    deployed: "https://aline-events.onrender.com/",
-    tags: [
-      "Node.js",
-      "Express.js",
-      "React",
-      "PostgreSQL",
-      "Sequelize",
-      "RESTful API",
-      "JWT",
-      "Ticketmaster API",
-      "OpenWeather API",
-      "Render",
-    ],
-  },
-];
 
-const backendSystemsProjects = [
-  {
-    title: "Aline",
-    description:
-      "A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
-    deployed: "https://aline-events.onrender.com/",
-    tags: [
-      "Node.js",
-      "Express.js",
-      "React",
-      "PostgreSQL",
-      "Sequelize",
-      "RESTful API",
-      "JWT",
-      "Ticketmaster API",
-      "OpenWeather API",
-      "Render",
-    ],
-  },
 
-  {
-    title: "Grocery Inventory Backend System",
-    description:
-      "A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372",
-    tags: ["Java", "OOP", "Backend Systems", "Software Design"],
-  },
 
-  {
-    title: "Kanban Board",
-    description:
-      "A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/kanbanBoard",
-    deployed: "https://kanbanboard-552l.onrender.com",
-    tags: ["Node.js", "Express.js", "React", "JWT", "PostgreSQL", "Render"],
-  },
 
-  {
-    video: socialMediaVideo,
-    title: "Social Media API",
-    description:
-      "A Social Network API with RESTful endpoints for managing users, thoughts, and reactions.",
-    videoText: "Click to watch video",
-    gitLink: "https://github.com/TheReal4m4d3u5/socialNetworkAPI",
-    tags: ["Node.js", "Express.js", "MongoDB", "Mongoose", "RESTful API"],
-  },
-
-  {
-    video: employeeDB,
-    videoText: "Click to watch video",
-    title: "Employee DB",
-    description:
-      "Built a backend-style system for managing room availability, reservations, and booking workflows.\n• Modeled reservation state and availability constraints across multiple rooms\n• Implemented booking logic with validation to prevent conflicts and overbooking\n• Designed structured data handling for reservations and room inventory\n• Simulates real-world reservation workflows and system state transitions  ",
-    gitLink: "https://github.com/TheReal4m4d3u5/EmployeeDB",
-    tags: ["Node.js", "Inquirer", "PostgreSQL", "Command-Line Application"],
-  },
-
-  {
-    title: "Hotel Reservation System",
-    description:
-      "A command-line application for managing hotel room bookings and availability.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/hotelReservationSystem",
-    tags: ["Python", "Command-Line Application"],
-  },
-];
-
-const mathModelingProjects = [
-  {
-    title: "MatDrive",
-    description: `A mathematical simulation engine modeling vehicle movement across a graph-based city.
-
-Implements linear algebra transformations, parametric motion, and stochastic decision processes to simulate path selection and orientation.
-
-Applies mathematical modeling within a structured system to produce realistic, state-driven movement.
-
-• Graph-based navigation
-• Linear algebra transformations
-• Parametric motion modeling
-• Stochastic decision-making`,
-
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car",
-    tags: [
-      "MATLAB",
-      "Linear Algebra",
-      "Graph Theory",
-      "Simulation",
-      "Systems Design",
-    ],
-  },
-
-  {
-    title: "Event Probability Simulator",
-    description:
-      "Simulates random events and analyzes the distribution of results to determine if they appear uniformly random.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/csci_1111_assignment_5",
-    tags: ["C", "Randomness", "Command-Line Application"],
-  },
-];
-
-const mongoProjects = [
-  {
-    title: "EmployEase",
-    description:
-      "EmployEase is a job search and application tracker that integrates with The Muse API, allowing users to search for job opportunities and manage their applications in a streamlined manner. Built using the MERN stack, it offers personalized tracking and secure authentication for job seekers.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/EmployEase",
-    deployed: "https://employease-hubi.onrender.com/",
-    tags: [
-      "React",
-      "Node.js.js",
-      "Express.js",
-      "Node.js",
-      "MongoDB Atlas",
-      "Mongoose",
-      "GraphQL",
-      "The Muse API",
-      "JWT",
-      "Render",
-      "GitHub Action",
-      "Apollo Client",
-      "MERN Stack",
-    ],
-  },
-  {
-    title: "Book Search Engine",
-    description:
-      "A full-stack application to search and save books using the Google Books API.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/bookSearchEngine",
-    deployed: "https://booksearchengine-5ikq.onrender.com",
-    tags: [
-      "MongoDB",
-      "Express.js",
-      "React",
-      "Node.js",
-      "GraphQL",
-      "Apollo Server",
-      "JWT",
-      "MERN Stack",
-    ],
-  },
-  {
-    video: socialMediaVideo,
-    title: "Social Media API",
-    description:
-      "A Social Network API with RESTful endpoints for managing users, thoughts, and reactions.",
-    videoText: "Click to watch video",
-    gitLink: "https://github.com/TheReal4m4d3u5/socialNetworkAPI",
-    tags: ["Node.js", "Express.js", "MongoDB", "Mongoose", "RESTful API"],
-  },
-  {
-    title: "Tech Matchup App",
-    description:
-      "A full-stack web application that allows users to create matchups and vote for their favorite technologies.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/bookSearchEngine",
-    deployed: "https://booksearchengine-5ikq.onrender.com",
-    tags: [
-      "MongoDB",
-      "Express.js",
-      "React",
-      "Node.js",
-      "GraphQL",
-      "Apollo Server",
-      "MERN Stack",
-    ],
-  },
-  {
-    video: socialMediaVideo,
-    title: "Student Statistics",
-    description: "A back-end application to calculate student statistics.",
-    videoText: "Click to watch video",
-    gitLink: "https://github.com/TheReal4m4d3u5/studentStatisticsBack-End",
-    tags: ["Node.js", "Express.js", "MongoDB", "Mongoose"],
-  },
-];
 
 const bddProjects = [
   {
@@ -413,23 +179,7 @@ const forcastingProjects = [
   },
 ];
 
-const seleniumProjects = [
-  {
-    title: "My Selenium Test Suite",
-    description: `A custom-built Selenium test suite for automated testing.`,
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-    tags: [
-      "Selenium",
-      "Maven",
-      "Java",
-      "Appium",
-      "BDD",
-      "Cucumber",
-      "Chromedriver",
-    ],
-  },
-];
+
 
 const ciCDProjects = [
   {
@@ -638,111 +388,68 @@ const javaProjects = [
   },
 ];
 
-const cProjects = [
-  {
-    title: "Card Dealer",
-    description:
-      "This program simulates a deck of playing cards, providing functionality to shuffle, deal cards, and display card details.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/csci_1111_assignment_7",
-    tags: ["C", "Command-Line Application"],
-  },
 
-  {
-    title: "Event Probability Simulator",
-    description:
-      "Simulates random events and analyzes the distribution of results to determine if they appear uniformly random.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/csci_1111_assignment_5",
-    tags: ["C", "Randomness", "Command-Line Application"],
-  },
 
-  {
-    title: "Functions and Command-Line Argument",
-    description: "A demonstration of command-line arguments and functions.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/csci_1113_assignment_6",
-    tags: ["C", "Command-Line Application"],
-  },
 
-  {
-    title: "Car Calculator",
-    description:
-      "Calculates and outputs distances traveled by two cars under constant acceleration.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/csci_1113_assignment_5",
-    tags: ["C", "Physics Simulation", "Command-Line Application"],
-  },
-];
 
-const cppProjects = [
-  {
-    title: "Hangman",
-    description: "A Hangman game written in C++",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/cPlusPlusHTP_18.12",
-    tags: ["C++", "Command Line"],
-  },
-];
+// const fullStackProjects = [
+//   {
+//     title: "Weather App",
+//     description:
+//       "A full-stack weather dashboard application that retrieves and displays the current day and the 5-day weather forecast for various cities.",
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/WeatherAPP",
+//     deployed: "https://weatherapp-ew0q.onrender.com",
+//     tags: [
+//       "Node.js",
+//       "Express.js",
+//       "React",
+//       "OpenWeather API",
+//       "JSON",
+//       "Render",
+//     ],
+//   },
+//   {
+//     title: "Candidate Search",
+//     description:
+//       "A React-based front-end application that interfaces with the GitHub API to display and manage candidate profiles.",
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/candidateSearch",
+//     deployed: "https://funny-biscochitos-9e1673.netlify.app/",
+//     tags: ["React", "TypeScript", "GitHub API", "Netlify"],
+//   },
+// ];
 
-const fullStackProjects = [
-  {
-    title: "Weather App",
-    description:
-      "A full-stack weather dashboard application that retrieves and displays the current day and the 5-day weather forecast for various cities.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/WeatherAPP",
-    deployed: "https://weatherapp-ew0q.onrender.com",
-    tags: [
-      "Node.js",
-      "Express.js",
-      "React",
-      "OpenWeather API",
-      "JSON",
-      "Render",
-    ],
-  },
-  {
-    title: "Candidate Search",
-    description:
-      "A React-based front-end application that interfaces with the GitHub API to display and manage candidate profiles.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/candidateSearch",
-    deployed: "https://funny-biscochitos-9e1673.netlify.app/",
-    tags: ["React", "TypeScript", "GitHub API", "Netlify"],
-  },
-];
+// const javaScriptProjects = [
+//   {
+//     title: "Film Tracker",
+//     description:
+//       "A full-stack movie database search application where users can add films to a watch or seen list.",
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/movieSearch",
+//     deployed: "https://meek-cassata-691e1b.netlify.app/",
+//     tags: ["HTML", "CSS", "JavaScript", "Netlify"],
+//   },
 
-const javaScriptProjects = [
-  {
-    title: "Film Tracker",
-    description:
-      "A full-stack movie database search application where users can add films to a watch or seen list.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/movieSearch",
-    deployed: "https://meek-cassata-691e1b.netlify.app/",
-    tags: ["HTML", "CSS", "JavaScript", "Netlify"],
-  },
+//   {
+//     title: "Bucket Checklist",
+//     description:
+//       "An application that allows users to create a checklist, rank items by priority, and mark them as completed.",
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/bucketList",
+//     tags: ["HTML", "CSS", "JavaScript"],
+//   },
 
-  {
-    title: "Bucket Checklist",
-    description:
-      "An application that allows users to create a checklist, rank items by priority, and mark them as completed.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/bucketList",
-    tags: ["HTML", "CSS", "JavaScript"],
-  },
-
-  {
-    title: "React Profile",
-    description:
-      "A React-based single-page portfolio application that showcases a web developer’s skills and projects.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/reactPortfolio",
-    deployed: "https://zesty-starlight-a7d6e2.netlify.app/",
-    tags: ["React", "React Router", "Netlify"],
-  },
-];
+//   {
+//     title: "React Profile",
+//     description:
+//       "A React-based single-page portfolio application that showcases a web developer’s skills and projects.",
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/reactPortfolio",
+//     deployed: "https://zesty-starlight-a7d6e2.netlify.app/",
+//     tags: ["React", "React Router", "Netlify"],
+//   },
+// ];
 
 const Portfolio = () => {
   return (
@@ -778,12 +485,11 @@ const Portfolio = () => {
           </nav>
 
           <div id="dataPipelines" className="mongoDBHeader">
-            API's
+            {"API's"}
           </div>
           <div className="disclaimerWraper">
             <div className="disclaimer">
-              Some deployments will take 1 to 15 mins to spin up if they haven't
-              been in use
+              {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
             </div>
           </div>
 
@@ -831,8 +537,7 @@ const Portfolio = () => {
           </div>
           <div className="disclaimerWraper">
             <div className="disclaimer">
-              Some deployments will take 1 to 15 mins to spin up if they haven't
-              been in use
+              {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
             </div>
           </div>
 
@@ -878,8 +583,7 @@ const Portfolio = () => {
           </div>
           <div className="disclaimerWraper">
             <div className="disclaimer">
-              Some deployments will take 1 to 15 mins to spin up if they haven't
-              been in use
+              {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
             </div>
           </div>
 
@@ -1048,8 +752,8 @@ const Portfolio = () => {
           </div>
 
           <div className="filters">
-            <button onClick={() => toggleFilter("Featured")}></button>
-            <button onClick={() => toggleFilter("MATLAB")}></button>
+            {/* <button onClick={() => toggleFilter("Featured")}></button>
+            <button onClick={() => toggleFilter("MATLAB")}></button> */}
           </div>
 
           <Row className="portfolioCards">
@@ -1092,8 +796,8 @@ const Portfolio = () => {
           </div>
 
           <div className="filters">
-            <button onClick={() => toggleFilter("Featured")}></button>
-            <button onClick={() => toggleFilter("backend")}></button>
+            {/* <button onClick={() => toggleFilter("Featured")}></button>
+            <button onClick={() => toggleFilter("backend")}></button> */}
           </div>
 
           <Row className="portfolioCards">
@@ -1309,8 +1013,7 @@ const Portfolio = () => {
           </div>
 
           <div className="disclaimer">
-            Some deployments will take 1 to 15 mins to spin up if they haven't
-            been in use
+            {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
           </div>
 
           <Row className="portfolioCards">
