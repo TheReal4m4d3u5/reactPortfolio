@@ -799,8 +799,8 @@ const Portfolio = () => {
           </div>
 
           <div className="filters">
-            <button onClick={() => toggleFilter("Featured")}></button>
-            <button onClick={() => toggleFilter("backend")}></button>
+            {/* <button onClick={() => toggleFilter("Featured")}></button>
+            <button onClick={() => toggleFilter("backend")}></button> */}
           </div>
 
           <Row className="portfolioCards">
