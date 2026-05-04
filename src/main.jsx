@@ -1,5 +1,4 @@
-import React from 'react';
-import ReactDOM, { createRoot  } from 'react-dom/client'; // Updated import
+import ReactDOM from 'react-dom/client'; // Updated import
 import { createBrowserRouter, RouterProvider  } from 'react-router-dom';
 import App from './App'; // Ensure path is correct
 import './styles/styles.css';
@@ -14,7 +13,12 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <Error />,
+    errorElement: (
+      <div>
+        <h1>Something went wrong</h1>
+        <p>Please refresh the page or return home.</p>
+      </div>
+    ),
     children: [
       {
         index: true,

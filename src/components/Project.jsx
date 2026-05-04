@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Card, Button } from "react-bootstrap";
+import { useState } from "react";
+import { Card } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Lightbox from "yet-another-react-lightbox";
 
