@@ -1177,8 +1177,7 @@ const Portfolio = () => {
       </div>
 
       <div className="disclaimer">
-        Some deployments will take 1 to 15 mins to spin up if they haven't been
-        in use
+        {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
       </div>
 
       <Row className="portfolioCards">
