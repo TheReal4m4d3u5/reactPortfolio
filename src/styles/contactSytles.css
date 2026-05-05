@@ -286,3 +286,30 @@ form button[type="submit"] {
     }
 
 }
+
+@keyframes backgroundBreath {
+  0% {
+    background-size: 100%;
+    transform: scale(1);
+  }
+  50% {
+    background-size: 105%;
+    transform: scale(1.02);
+  }
+  100% {
+    background-size: 100%;
+    transform: scale(1);
+  }
+}
+
+.contact-page {
+  background-image: url('/src/assets/background2.png'); /* keep yours */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  animation: backgroundBreath 20s ease-in-out infinite;
+
+  /* IMPORTANT */
+  overflow: hidden;
+}

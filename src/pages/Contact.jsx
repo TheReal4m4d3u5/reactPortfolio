@@ -58,13 +58,17 @@ function Contact() {
   };
 
   return (
+
+    
+
+
     <div className="contact-page">
       <motion.section
         className="contactForm-Wrapper"
         initial={{ opacity: 0, y: 35, scale: 0.96 }}
         animate={{ opacity: 1, y: 0, scale: .9 }}
         whileHover={{
-          scale: 1.03,
+          scale: 1.15,
           y: -8,
         }}
         transition={{
