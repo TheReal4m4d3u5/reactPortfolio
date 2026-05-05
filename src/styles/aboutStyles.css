@@ -4,6 +4,28 @@
   --footer-height: 100px;
 }
 
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+#aboutHome {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
 /* ===== MAIN BACKGROUND ===== */
 #aboutHome {
   background-image: url('/src/assets/background1.png');

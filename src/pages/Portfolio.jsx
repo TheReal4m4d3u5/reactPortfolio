@@ -453,7 +453,7 @@ const javaProjects = [
 
 const Portfolio = () => {
   return (
-    <body>
+
       <div className="portfolio-page">
         <section className="portfolio-Wraper">
           <h1 className="portfilioHeaderText">My Portfolio</h1>
@@ -1100,7 +1100,7 @@ const Portfolio = () => {
           </div>
         </section>
       </div>
-    </body>
+
   );
 };
 
