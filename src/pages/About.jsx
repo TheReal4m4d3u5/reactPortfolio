@@ -17,7 +17,7 @@ const About = () => {
             src={profilePhoto}
             alt="Profile"
             className="profilePhoto mb-4"
-            whileHover={{ scale: 1.68, rotate: 2 }}
+            whileHover={{ scale: 1.4, rotate: 2 }}
             transition={{ type: 'spring', stiffness: 250 }}
           />
         </motion.section>
@@ -31,7 +31,7 @@ const About = () => {
           <motion.div
             className="aboutTextWraper"
             whileHover={{
-              scale: 1.02,
+              scale: 1.05,
               boxShadow: '0 25px 70px rgba(255, 120, 210, 0.35)',
             }}
             transition={{ type: 'spring', stiffness: 180 }}

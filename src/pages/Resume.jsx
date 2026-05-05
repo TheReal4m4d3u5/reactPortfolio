@@ -35,13 +35,22 @@ const tools = ["Git"];
 const cloudSystems = ["AWS", "Azure", "Terraform"];
 
 const methodologies = ["Agile", "BDD", "TDD", "SDLC"];
-
+import { motion } from "framer-motion";
 const containers = ["Docker", "Kubernetes"];
 
 const Resume = () => {
   return (
     <div className="resume-page">
-      <section className="mainResumeContent">
+
+      
+<motion.section
+  className="mainResumeContent"
+            whileHover={{
+              scale: 1.01,
+              boxShadow: '0 25px 70px rgba(255, 120, 210, 0.35)',
+            }}
+            transition={{ type: 'spring', stiffness: 180 }}
+>
         {/* Download */}
         <div className="resumeLinks">
           <a href="/Avery Jacobson.pdf" download className="link-button">
@@ -265,7 +274,7 @@ const Resume = () => {
             <li>Location: Minneapolis, MN / Remote</li>
           </ul>
         </section>
-      </section>
+</motion.section>
     </div>
   );
 };
