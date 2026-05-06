@@ -1,5 +1,3 @@
-import { Row, Col } from "react-bootstrap";
-import Project from "../components/Project";
 import Carousel from "../components/Carousel";
 import "../styles/portfolioStyles.css";
 import image1 from "../../src/assets/image1.png";
@@ -35,7 +33,7 @@ import image9 from "../../src/assets/image9.png";
 import socialMediaVideo from "../../src/assets/socialMediaAPI.mp4";
 // import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
-import { motion } from "framer-motion";
+
 
 
 
@@ -126,59 +124,59 @@ const dataPipelineProjects = [
   },
 ];
 
-const optimizationProjects = [
-  {
-    title: "My Selenium Test Suite",
-    description: `A custom-built Selenium test suite for automated testing.`,
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-    tags: [
-      "Selenium",
-      "Maven",
-      "Java",
-      "Appium",
-      "BDD",
-      "Cucumber",
-      "Chromedriver",
-    ],
-  },
-];
+// const optimizationProjects = [
+//   {
+//     title: "My Selenium Test Suite",
+//     description: `A custom-built Selenium test suite for automated testing.`,
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
+//     tags: [
+//       "Selenium",
+//       "Maven",
+//       "Java",
+//       "Appium",
+//       "BDD",
+//       "Cucumber",
+//       "Chromedriver",
+//     ],
+//   },
+// ];
 
-const simulationProjects = [
-  {
-    title: "My Selenium Test Suite",
-    description: `A custom-built Selenium test suite for automated testing.`,
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-    tags: [
-      "Selenium",
-      "Maven",
-      "Java",
-      "Appium",
-      "BDD",
-      "Cucumber",
-      "Chromedriver",
-    ],
-  },
-];
+// const simulationProjects = [
+//   {
+//     title: "My Selenium Test Suite",
+//     description: `A custom-built Selenium test suite for automated testing.`,
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
+//     tags: [
+//       "Selenium",
+//       "Maven",
+//       "Java",
+//       "Appium",
+//       "BDD",
+//       "Cucumber",
+//       "Chromedriver",
+//     ],
+//   },
+// ];
 
-const forcastingProjects = [
-  {
-    title: "My Selenium Test Suite",
-    description: `A custom-built Selenium test suite for automated testing.`,
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-    tags: [
-      "Selenium",
-      "Maven",
-      "Java",
-      "Appium",
-      "BDD",
-      "Cucumber",
-      "Chromedriver",
-    ],
-  },
-];
+// const forcastingProjects = [
+//   {
+//     title: "My Selenium Test Suite",
+//     description: `A custom-built Selenium test suite for automated testing.`,
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
+//     tags: [
+//       "Selenium",
+//       "Maven",
+//       "Java",
+//       "Appium",
+//       "BDD",
+//       "Cucumber",
+//       "Chromedriver",
+//     ],
+//   },
+// ];
 
 
 
