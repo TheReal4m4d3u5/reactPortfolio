@@ -32,6 +32,15 @@ const Carousel = ({ projectGroups }) => {
             {group.groupTitle}
           </button>
         ))}
+
+        <a
+          href="https://averyfullportfolio.netlify.app/"
+          className="portfolio-nav-btn archive-nav-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Archive
+        </a>
       </div>
 
       <Swiper
