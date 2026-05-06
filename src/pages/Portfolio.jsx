@@ -1102,38 +1102,6 @@ const Portfolio = () => {
 */}
 
 
-          <div className="archive-section">
-            <h3>Explore More</h3>
-            <p>
-              Interested in a deeper look at my work across systems, languages,
-              and experiments?
-            </p>
-
-            <a
-              href="https://averyfullportfolio.netlify.app/"
-              className="archive-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Engineering Archive →
-            </a>
-
-            {/* <Row className="portfolioCards">
-            {engineeringArchives.map((project, index) => (
-              <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  gitlink={project.gitLink}
-                  staginglink={project.staging}
-                  deployedlink={project.deployed}
-                  tags={project.tags}
-                />
-              </Col>
-            ))}
-            </Row> */}
-          </div>
         </section>
       </div>
 

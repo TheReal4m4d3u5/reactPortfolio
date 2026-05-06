@@ -487,3 +487,83 @@ transition: none;
 .outerCarousel {
   margin-bottom: -100px !important;
 }
+
+
+
+.portfolio-nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+/* BOTH buttons and archive link */
+.portfolio-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+
+  color: #1e0f35;
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.08),
+    inset 0 1px 1px rgba(255, 255, 255, 0.25);
+}
+
+/* remove ugly default button styling */
+.portfolio-nav-btn button,
+button.portfolio-nav-btn {
+  appearance: none;
+  outline: none;
+}
+
+/* hover */
+.portfolio-nav-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+
+  background: rgba(255, 255, 255, 0.28);
+
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.15),
+    0 0 20px rgba(255, 180, 255, 0.35);
+}
+
+/* active selected group */
+.portfolio-nav-btn.active {
+  background: rgba(255, 255, 255, 0.35);
+
+  box-shadow:
+    0 0 18px rgba(255, 200, 255, 0.45);
+}
+
+.portfolio-nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  width: 100%;
+  margin: 0 auto 32px auto;
+}
