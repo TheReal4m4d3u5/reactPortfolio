@@ -72,8 +72,9 @@ test("portfolio renders project content", () => {
   renderRoute("/Portfolio");
 
 expect(
-  screen.getByRole("heading", { name: /^social media api$/i })
+  screen.getByText(/^social media api$/i)
 ).toBeInTheDocument();
+
 });
 
 test("contact form renders fields", () => {

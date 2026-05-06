@@ -296,16 +296,8 @@
     padding 0.3s ease;
 }
 
-.project-card:hover .project-reveal-content {
-  max-height: 900px;
-  opacity: 1;
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-}
 
-.project-card:hover .project-preview-overlay {
-  opacity: 0;
-}
+
 
 .media-container {
   position: relative;
@@ -404,3 +396,20 @@ font-family: Roboto, sans-serif;
   display: none;
 }
 
+
+
+
+.project-reveal-content {
+  display: block !important;
+  max-height: none !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  transition: none !important;
+}
+
+.project-preview-overlay {
+  display: block !important;
+  opacity: 1 !important;
+}

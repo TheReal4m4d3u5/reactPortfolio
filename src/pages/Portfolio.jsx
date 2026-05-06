@@ -1,5 +1,4 @@
-import { Row, Col } from "react-bootstrap";
-import Project from "../components/Project";
+import Carousel from "../components/Carousel";
 import "../styles/portfolioStyles.css";
 import image1 from "../../src/assets/image1.png";
 import image2 from "../../src/assets/image2.png";
@@ -34,7 +33,7 @@ import image9 from "../../src/assets/image9.png";
 import socialMediaVideo from "../../src/assets/socialMediaAPI.mp4";
 // import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
-import { motion } from "framer-motion";
+
 
 
 
@@ -125,59 +124,59 @@ const dataPipelineProjects = [
   },
 ];
 
-const optimizationProjects = [
-  {
-    title: "My Selenium Test Suite",
-    description: `A custom-built Selenium test suite for automated testing.`,
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-    tags: [
-      "Selenium",
-      "Maven",
-      "Java",
-      "Appium",
-      "BDD",
-      "Cucumber",
-      "Chromedriver",
-    ],
-  },
-];
+// const optimizationProjects = [
+//   {
+//     title: "My Selenium Test Suite",
+//     description: `A custom-built Selenium test suite for automated testing.`,
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
+//     tags: [
+//       "Selenium",
+//       "Maven",
+//       "Java",
+//       "Appium",
+//       "BDD",
+//       "Cucumber",
+//       "Chromedriver",
+//     ],
+//   },
+// ];
 
-const simulationProjects = [
-  {
-    title: "My Selenium Test Suite",
-    description: `A custom-built Selenium test suite for automated testing.`,
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-    tags: [
-      "Selenium",
-      "Maven",
-      "Java",
-      "Appium",
-      "BDD",
-      "Cucumber",
-      "Chromedriver",
-    ],
-  },
-];
+// const simulationProjects = [
+//   {
+//     title: "My Selenium Test Suite",
+//     description: `A custom-built Selenium test suite for automated testing.`,
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
+//     tags: [
+//       "Selenium",
+//       "Maven",
+//       "Java",
+//       "Appium",
+//       "BDD",
+//       "Cucumber",
+//       "Chromedriver",
+//     ],
+//   },
+// ];
 
-const forcastingProjects = [
-  {
-    title: "My Selenium Test Suite",
-    description: `A custom-built Selenium test suite for automated testing.`,
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-    tags: [
-      "Selenium",
-      "Maven",
-      "Java",
-      "Appium",
-      "BDD",
-      "Cucumber",
-      "Chromedriver",
-    ],
-  },
-];
+// const forcastingProjects = [
+//   {
+//     title: "My Selenium Test Suite",
+//     description: `A custom-built Selenium test suite for automated testing.`,
+//     image: [image9, image1, image2, image3],
+//     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
+//     tags: [
+//       "Selenium",
+//       "Maven",
+//       "Java",
+//       "Appium",
+//       "BDD",
+//       "Cucumber",
+//       "Chromedriver",
+//     ],
+//   },
+// ];
 
 
 
@@ -329,6 +328,8 @@ const tDDProjects = [
   },
 ];
 
+
+
 const matLabProjects = [
   {
     title: "MatDrive",
@@ -451,7 +452,66 @@ const javaProjects = [
 //   },
 // ];
 
+
+  
+
+
+
+
 const Portfolio = () => {
+
+ 
+  const projectGroups = [
+    {
+      groupTitle: "APIs",
+      groupId: "apis",
+      projects: apiProjects,
+    },
+    {
+      groupTitle: "Data Pipelines",
+      groupId: "dataPipelines",
+      projects: dataPipelineProjects,
+    },
+    {
+      groupTitle: "SQL",
+      groupId: "sql",
+      projects: sqlProjects,
+    },
+    {
+      groupTitle: "Java",
+      groupId: "java",
+      projects: javaProjects,
+    },
+    {
+      groupTitle: "Python",
+      groupId: "python",
+      projects: pythonProjects,
+    },
+    {
+      groupTitle: "MATLAB",
+      groupId: "matlab",
+      projects: matLabProjects,
+    },
+    {
+      groupTitle: "TDD",
+      groupId: "tdd",
+      projects: tDDProjects,
+    },
+    {
+      groupTitle: "BDD",
+      groupId: "bdd",
+      projects: bddProjects,
+    },
+    {
+      groupTitle: "CI/CD DevOps",
+      groupId: "cicd",
+      projects: ciCDProjects,
+    },
+  ];
+
+
+
+
   return (
 
       <div className="portfolio-page">
@@ -459,7 +519,7 @@ const Portfolio = () => {
           <h1 className="portfilioHeaderText">My Portfolio</h1>
 
           {/* Index Section */}
-          <nav className="portfolio-index">
+          {/* <nav className="portfolio-index">
             <div className="top-links">
               <a href="#featured">Featured Projects</a>
 
@@ -482,9 +542,22 @@ const Portfolio = () => {
               <a href="#bdd">BDD</a>
               <a href="#cicd">CI/CD DevOps</a>
             </div>
-          </nav>
+          </nav> */}
 
-          <div id="dataPipelines" className="mongoDBHeader">
+
+
+
+   
+      <Carousel projectGroups={projectGroups} />
+
+
+
+
+
+
+
+
+          {/* <div id="dataPipelines" className="mongoDBHeader">
             {"API's"}
           </div>
           <div className="disclaimerWraper">
@@ -531,7 +604,7 @@ const Portfolio = () => {
               </Col>
             ))}
           </Row>
-
+ 
           <div id="dataPipelines" className="mongoDBHeader">
             Data Pipelines
           </div>
@@ -751,10 +824,9 @@ const Portfolio = () => {
             Matlab
           </div>
 
-          <div className="filters">
-            {/* <button onClick={() => toggleFilter("Featured")}></button>
-            <button onClick={() => toggleFilter("MATLAB")}></button> */}
-          </div>
+
+
+
 
           <Row className="portfolioCards">
             {matLabProjects.map((project, index) => (
@@ -795,10 +867,7 @@ const Portfolio = () => {
             Simulation
           </div>
 
-          <div className="filters">
-            {/* <button onClick={() => toggleFilter("Featured")}></button>
-            <button onClick={() => toggleFilter("backend")}></button> */}
-          </div>
+  
 
           <Row className="portfolioCards">
             {simulationProjects.map((project, index) => (
@@ -913,24 +982,7 @@ const Portfolio = () => {
             ))}
           </Row>
 
-          {/* <div id="cpp" className="mongoDBHeader">C++</div>
 
-          {cppProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-                tags={project.tags}
-              />
-
-            </Col>
-
-          ))} */}
 
           <div id="tdd" className="mongoDBHeader">
             TDD
@@ -1047,24 +1099,8 @@ const Portfolio = () => {
               </Col>
             ))}
           </Row>
+*/}
 
-          {/* <div className="">Open GL</div>
-
-          {javaProjects.map((project, index) => (
-
-            <Col key={index} sm={12} md={6} lg={4} className='cards'>
-
-              <Project
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                gitlink={project.gitLink}
-                deployedlink={project.deployed}
-              />
-
-            </Col>
-
-          ))} */}
 
           <div className="archive-section">
             <h3>Explore More</h3>

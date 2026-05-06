@@ -110,19 +110,7 @@ const Project = ({
           </div>
         )}
 
-        {/* ADD THIS HERE */}
-        <div className="project-preview-overlay">
-          <h3>{title}</h3>
-          <p>
-            {description
-              ? description
-                  .split("\n") // split into lines
-                  .slice(0, 6) // take first 3 lines
-                  .join(" ") // join back into one string
-                  .slice(0, 500) + "..." // limit to 300 chars
-              : ""}
-          </p>
-        </div>
+
 
         <div className="myCard project-reveal-content">
           <Card.Body className="d-flex flex-column project-reveal-content">
