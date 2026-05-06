@@ -18,7 +18,7 @@ body,
 body {
   min-height: 100dvh;
   font-family: "Roboto", sans-serif;
-  overflow-x: visible;
+  overflow-x: hidden;
 
   background: linear-gradient(
     to bottom,
@@ -45,7 +45,7 @@ body {
 
 .portfolio-page {
   width: 100%;
-  min-height: 100vh;
+
   overflow-x: hidden;
   display: flex;
   justify-content: center;
@@ -67,8 +67,8 @@ body {
   justify-content: center;
   text-align: center;
   font-size: clamp(2rem, 5vw, 3rem);
-  margin-bottom: 24px;
-  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 }
 
@@ -82,8 +82,14 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 14px;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.projectGroupSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .top-links,
@@ -207,7 +213,7 @@ body {
 
 .project-card {
   width: 100%;
-  max-width: 640px;
+  max-width: 840px;
   min-width: 850px;
   height: 100%;
 
@@ -233,13 +239,7 @@ body {
     box-shadow 0.25s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-8px) scale(1.02);
 
-  box-shadow:
-    0 28px 55px rgba(68, 45, 130, 0.38),
-    0 6px 18px rgba(255, 255, 255, 0.16) inset;
-}
 
 .myFlexCard {
   display: flex;
@@ -268,9 +268,9 @@ body {
 ========================= */
 
 .archive-section {
-  margin-top: 40px;
+ 
   text-align: center;
-  margin-bottom: 120px;
+  margin-bottom: 40px;
 }
 
 .archive-section h3 {
@@ -321,6 +321,11 @@ body {
   transform: translateY(-4px) scale(1.04);
 }
 
+.project-card:hover {
+transition: none;
+}
+
+
 /* =========================
    MOBILE FIXES
 ========================= */
@@ -332,7 +337,7 @@ body {
 
   .portfolio-page {
     width: 100%;
-    min-height: 100vh;
+
   }
 
   .portfolio-Wraper {
@@ -400,4 +405,85 @@ body {
   .disclaimer {
     font-size: 0.88rem;
   }
+}
+
+.outerCarousel,
+.innerCarousel {
+  width: 100%;
+}
+
+.projectGroupSlide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectGroupSlide h2 {
+  width: 100%;
+  text-align: center;
+  margin: 32px 0 24px;
+}
+
+.innerCarousel .swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+}
+
+.innerCarousel .project-card {
+  margin: 0 auto;
+}
+
+
+.projectGroupSlide h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.innerCarousel {
+  padding-bottom: 0 !important;
+}
+
+.innerCarousel .swiper-pagination {
+  transform: translateY(clamp(-105px, -8vw, -70px));
+}
+
+.innerCarousel .swiper-wrapper {
+  padding-bottom: 0 !important;
+}
+
+.innerCarousel .swiper-slide {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+/* 
+.innerCarousel .swiper-pagination {
+  z-index: 10;
+} */
+
+
+
+.outerCarousel {
+  height: auto !important;
+  min-height: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.outerCarousel > .swiper-wrapper {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.outerCarousel > .swiper-wrapper > .swiper-slide {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.outerCarousel {
+  margin-bottom: -100px !important;
 }
