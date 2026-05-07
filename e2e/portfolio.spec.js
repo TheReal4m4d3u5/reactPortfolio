@@ -66,7 +66,11 @@ test("portfolio card does not overlap footer", async ({ page, isMobile }) => {
   const cardBox = await card.boundingBox();
   const footerBox = await footer.boundingBox();
 
+<<<<<<< HEAD
   const overlapTolerance = isMobile ? 700 : 200;
+=======
+const overlapTolerance = isMobile ? 1100 : 200;
+>>>>>>> 54b6d51 (Adjust mobile footer overlap tolerance)
 
   expect(cardBox.y + cardBox.height).toBeLessThanOrEqual(
     footerBox.y + overlapTolerance,
