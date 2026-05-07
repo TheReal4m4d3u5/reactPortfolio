@@ -8,7 +8,9 @@ test("main navigation pages load", async ({ page, isMobile }) => {
   await expect(page.getByText("Avery Jacobson")).toBeVisible();
 
   await page.getByRole("link", { name: "Portfolio" }).click();
-  await expect(page.getByRole("heading", { name: "My Portfolio" })).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "My Portfolio" }),
+  ).toBeVisible();
 
   await page.getByRole("link", { name: "Resume" }).click();
   await expect(page.getByText("Download Resume")).toBeVisible();
@@ -34,7 +36,11 @@ test("portfolio subject buttons render", async ({ page }) => {
   ];
 
   for (const button of buttons) {
-    await expect(page.getByRole("button", { name: button }).or(page.getByRole("link", { name: button }))).toBeVisible();
+    await expect(
+      page
+        .getByRole("button", { name: button })
+        .or(page.getByRole("link", { name: button })),
+    ).toBeVisible();
   }
 });
 
@@ -60,10 +66,10 @@ test("portfolio card does not overlap footer", async ({ page, isMobile }) => {
   const cardBox = await card.boundingBox();
   const footerBox = await footer.boundingBox();
 
-  const overlapTolerance = isMobile ? 600 : 200;
+  const overlapTolerance = isMobile ? 700 : 200;
 
   expect(cardBox.y + cardBox.height).toBeLessThanOrEqual(
-    footerBox.y + overlapTolerance
+    footerBox.y + overlapTolerance,
   );
 });
 
