@@ -4,10 +4,10 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: [main, integration]
+    branches: [main]
 
 jobs:
-  test:
+  build-test:
     runs-on: ubuntu-latest
 
     steps:
