@@ -182,7 +182,7 @@ body {
 
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(360px, 480px));
-  gap: 440px;
+  gap: 0px;
 
   justify-content: center; /* centers single items */
   justify-items: center; /* centers cards inside columns */
@@ -215,8 +215,9 @@ body {
 
 .project-card {
   width: 100%;
-  max-width: 840px;
-  min-width: 850px;
+
+  max-width: 1450px;
+  min-width: 1450px;
   height: 100%;
 
   padding-bottom: 00px;
@@ -450,9 +451,9 @@ transition: none;
   padding-bottom: 0 !important;
 }
 
-.innerCarousel .swiper-pagination {
+/* .innerCarousel .swiper-pagination {
   transform: translateY(clamp(-105px, -8vw, -70px));
-}
+} */
 
 .innerCarousel .swiper-wrapper {
   padding-bottom: 0 !important;
@@ -497,7 +498,6 @@ transition: none;
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 28px;
 }
 
 /* BOTH buttons and archive link */
@@ -624,4 +624,14 @@ button.portfolio-nav-btn {
   object-fit: contain;
   display: block;
   border-radius: 12px;
+  margin: 0 auto 10px auto;
+}
+
+.portfolio-page {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - var(--footer-height));
 }
