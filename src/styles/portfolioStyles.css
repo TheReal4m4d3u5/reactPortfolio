@@ -245,7 +245,7 @@ body {
 
 .myFlexCard {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100%;
 }
 
@@ -568,4 +568,60 @@ button.portfolio-nav-btn {
 
   width: 100%;
   margin: 0 auto 32px auto;
+}
+
+.myFlexCard {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 24px;
+  width: 100%;
+}
+
+.media-container {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-media {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
+
+.media-container {
+  width: 500px;
+  flex-shrink: 0;
+}
+.myFlexCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  min-width: 0;
+}
+
+.media-container {
+  flex: 0 0 45%;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-media {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+  display: block;
+  border-radius: 12px;
 }
