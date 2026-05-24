@@ -23,15 +23,12 @@ test("portfolio subject buttons render", async ({ page }) => {
   await page.goto("/portfolio");
 
   const buttons = [
-    "APIs",
-    "Data Pipelines",
-    "SQL",
-    "Java",
-    "Python",
-    "MATLAB",
-    "TDD",
-    "BDD",
-    "CI/CD DevOps",
+    "Backend Systems",
+    "Infrastructure",
+    "Platform Engineering",
+    "Cloud & Distributed Systems",
+    "Computational Modeling",
+    "Automation & Reliability",
     "Archive",
   ];
 
