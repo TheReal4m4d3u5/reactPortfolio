@@ -41,23 +41,6 @@ import employeeDB from "../../src/assets/employeeDB.mp4";
 
 
 
-const bddProjects = [
-  {
-    title: "My Selenium Test Suite",
-    description: `A custom-built Selenium test suite for automated testing.`,
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-    tags: [
-      "Selenium",
-      "Maven",
-      "Java",
-      "Appium",
-      "BDD",
-      "Cucumber",
-      "Chromedriver",
-    ],
-  },
-];
 
 const apiProjects = [
   {
@@ -276,57 +259,6 @@ const pythonProjects = [
   },
 ];
 
-const tDDProjects = [
-  {
-    title: "Tech Quiz Test Suite",
-    description:
-      "A quiz application with comprehensive component and end-to-end testing.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/techQuizTestSuite",
-    tags: [
-      "MongoDB",
-      "Express.js",
-      "React",
-      "Node.js",
-      "Cypress",
-      "MERN Stack",
-    ],
-  },
-
-  {
-    title: "Ensure React Components Render Properly",
-    description:
-      "A project that implements tests to ensure React components render correctly and match snapshots.",
-    image: [image9, image1, image2, image3],
-    gitLink:
-      "https://github.com/TheReal4m4d3u5/ensureReactComponentsRenderProperly",
-    tags: ["React", "Vitest", "React Testing Library", "Happy DOM", "Testing"],
-  },
-  {
-    title: "Reactify Essentials TDD",
-    description:
-      "A React-based application with reusable components and a robust testing setup.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/reactifyEssentialsTest",
-    tags: [
-      "React",
-      "TypeScript",
-      "Vitest",
-      "React Testing Library",
-      "Happy DOM",
-      "TDD",
-    ],
-  },
-
-  {
-    title: "TDD Test Cases",
-    description:
-      "A project focusing on foundational skills in TDD and testing frameworks.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/tDDTestCases",
-    tags: ["TDD", "Testing Frameworks", "JavaScript"],
-  },
-];
 
 
 
@@ -973,77 +905,12 @@ const Portfolio = () => {
             TDD
           </div>
 
-          <Row className="portfolioCards">
-            {tDDProjects.map((project, index) => (
-              <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{
-                    once: false,
-                    amount: 0.05,
-                    margin: "0px 0px -50px 0px",
-                  }}
-                  transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
-                    ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.12,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
-                  }}
-                >
-                  <Project
-                    title={project.title}
-                    description={project.description}
-                    image={project.image}
-                    gitlink={project.gitLink}
-                    tags={project.tags}
-                  />
-                </motion.div>
-              </Col>
-            ))}
-          </Row>
+
 
           <div id="bdd" className="mongoDBHeader">
             BDD
           </div>
 
-          <Row className="portfolioCards">
-            {bddProjects.map((project, index) => (
-              <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{
-                    once: false,
-                    amount: 0.05,
-                    margin: "0px 0px -50px 0px",
-                  }}
-                  transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
-                    ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.12,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
-                  }}
-                >
-                  <Project
-                    title={project.title}
-                    description={project.description}
-                    image={project.image}
-                    gitlink={project.gitLink}
-                    tags={project.tags}
-                  />
-                </motion.div>
-              </Col>
-            ))}
-          </Row>
 
           <div id="cicd" className="mongoDBHeader">
             CI/CD DevOps
@@ -1053,37 +920,7 @@ const Portfolio = () => {
             {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
           </div>
 
-          <Row className="portfolioCards">
-            {ciCDProjects.map((project, index) => (
-              <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
-                  transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
-                    ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.12,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
-                  }}
-                >
-                  <Project
-                    title={project.title}
-                    description={project.description}
-                    image={project.image}
-                    gitlink={project.gitLink}
-                    staginglink={project.staging}
-                    deployedlink={project.deployed}
-                    tags={project.tags}
-                  />
-                </motion.div>
-              </Col>
-            ))}
-          </Row>
+
 */}
 
 

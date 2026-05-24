@@ -251,23 +251,6 @@ import employeeDB from "../../src/assets/employeeDB.mp4";
 //   },
 // ];
 
-const bddProjects = [
-  {
-    title: "My Selenium Test Suite",
-    description: `A custom-built Selenium test suite for automated testing.`,
-    image: selenium,
-    gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-    tags: [
-      "Selenium",
-      "Maven",
-      "Java",
-      "Appium",
-      "BDD",
-      "Cucumber",
-      "Chromedriver",
-    ],
-  },
-];
 
 const apiProjects = [
   {
@@ -406,56 +389,7 @@ const forcastingProjects = [
 //   },
 // ];
 
-const ciCDProjects = [
-  {
-    title: "Production-Ready Social Media API (CI/CD Enabled)",
-    description: `Developed a production-ready RESTful backend system with an end-to-end CI/CD pipeline, enabling automated testing, containerization, and deployment to modern cloud infrastructure.`,
-    image: cirlceCI,
-    gitLink: "https://github.com/TheReal4m4d3u5/cicd-demo",
-    staging: "https://githubactionsci-cdsetup-staging.onrender.com",
-    deployed: "https://github-actions-ci-cd-setup-9j9z.onrender.com",
-    tags: [
-      "CI/CD",
-      "Jenkins",
-      "Docker",
-      "Kubernetes",
-      "GitHub Actions",
-      "Production Deployment",
-    ],
-  },
-  {
-    title: "CI-CD Setup",
-    description: `Full stack CI/CD deployment with git protections and staging and production environments.`,
-    image: cirlceCI,
-    gitLink:
-      "https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main",
-    staging: "https://githubactionsci-cdsetup-staging.onrender.com",
-    deployed: "https://github-actions-ci-cd-setup-9j9z.onrender.com",
-    tags: [
-      "CI/CD",
-      "CircleCI",
-      "Staging",
-      "Production Deployment",
-      "Git Protections",
-    ],
-  },
-  {
-    title: "GitHub Actions CI-CD Setup",
-    description: `Full stack deployment pipeline.`,
-    image: gitActions,
-    gitLink:
-      "https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main",
-    staging: "https://githubactionsci-cdsetup-staging.onrender.com",
-    deployed: "https://github-actions-ci-cd-setup-9j9z.onrender.com",
-    tags: [
-      "CI/CD",
-      "GitHub Actions",
-      "Git Protections",
-      "Staging Deployment",
-      "Production Deployment",
-    ],
-  },
-];
+
 
 const pythonProjects = [
   {
@@ -1158,19 +1092,6 @@ const Portfolio = () => {
         BDD
       </div>
 
-      <Row className="portfolioCards">
-        {bddProjects.map((project, index) => (
-          <Col key={index} sm={12} md={6} lg={4} className="cards">
-            <Project
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              gitlink={project.gitLink}
-              tags={project.tags}
-            />
-          </Col>
-        ))}
-      </Row>
 
       <div id="cicd" className="mongoDBHeader">
         CI/CD DevOps
@@ -1180,21 +1101,7 @@ const Portfolio = () => {
         {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
       </div>
 
-      <Row className="portfolioCards">
-        {ciCDProjects.map((project, index) => (
-          <Col key={index} sm={12} md={6} lg={4} className="cards">
-            <Project
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              gitlink={project.gitLink}
-              staginglink={project.staging}
-              deployedlink={project.deployed}
-              tags={project.tags}
-            />
-          </Col>
-        ))}
-      </Row>
+
 
       {/* <div className="">Open GL</div>
 
