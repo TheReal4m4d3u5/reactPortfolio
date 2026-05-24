@@ -463,50 +463,35 @@ const Portfolio = () => {
  
   const projectGroups = [
     {
-      groupTitle: "APIs",
+      groupTitle: "Backend Systems",
       groupId: "apis",
       projects: apiProjects,
     },
     {
-      groupTitle: "Data Pipelines",
+      groupTitle: "Infrastructure",
       groupId: "dataPipelines",
       projects: dataPipelineProjects,
     },
     {
-      groupTitle: "SQL",
+      groupTitle: "Platform Engineering",
       groupId: "sql",
       projects: sqlProjects,
     },
     {
-      groupTitle: "Java",
+      groupTitle: "Cloud & Distributed Systems",
       groupId: "java",
       projects: javaProjects,
     },
     {
-      groupTitle: "Python",
+      groupTitle: "Computational Modeling",
       groupId: "python",
       projects: pythonProjects,
     },
     {
-      groupTitle: "MATLAB",
+      groupTitle: "Automation & Reliability",
       groupId: "matlab",
       projects: matLabProjects,
-    },
-    {
-      groupTitle: "TDD",
-      groupId: "tdd",
-      projects: tDDProjects,
-    },
-    {
-      groupTitle: "BDD",
-      groupId: "bdd",
-      projects: bddProjects,
-    },
-    {
-      groupTitle: "CI/CD DevOps",
-      groupId: "cicd",
-      projects: ciCDProjects,
-    },
+    }
   ];
 
 
