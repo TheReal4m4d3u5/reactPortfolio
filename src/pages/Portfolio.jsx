@@ -23,8 +23,7 @@ import image9 from "../../src/assets/image9.png";
 // import hangman from "../../src/assets/hangman.png";
 // import blog from "../../src/assets/blog.png";
 // import selenium from "../../src/assets/selenium.png";
-// import tDD1 from "../../src/assets/tDD1.png";
-// import reactTDD from "../../src/assets/reactTDD.png";
+
 // import employease from "../../src/assets/employease.png";
 // import monteCarloSimulation from "../../src/assets/monteCarloSimulation.png";
 
