@@ -19,14 +19,11 @@ import image9 from "../../src/assets/image9.png";
 // import image17 from "../../src/assets/csci1113A6.png";
 // import grocerySytsem from "../../src/assets/grocerySystem.png";
 // import bookSearch from "../../src/assets/bookSearch.png";
-// import cirlceCI from "../../src/assets/cirlceCI.png";
 // import coinToss from "../../src/assets/coinToss.png";
 // import hangman from "../../src/assets/hangman.png";
 // import blog from "../../src/assets/blog.png";
-// import gitActions from "../../src/assets/gitActions.png";
 // import selenium from "../../src/assets/selenium.png";
-// import tDD1 from "../../src/assets/tDD1.png";
-// import reactTDD from "../../src/assets/reactTDD.png";
+
 // import employease from "../../src/assets/employease.png";
 // import monteCarloSimulation from "../../src/assets/monteCarloSimulation.png";
 
@@ -41,23 +38,6 @@ import employeeDB from "../../src/assets/employeeDB.mp4";
 
 
 
-const bddProjects = [
-  {
-    title: "My Selenium Test Suite",
-    description: `A custom-built Selenium test suite for automated testing.`,
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-    tags: [
-      "Selenium",
-      "Maven",
-      "Java",
-      "Appium",
-      "BDD",
-      "Cucumber",
-      "Chromedriver",
-    ],
-  },
-];
 
 const apiProjects = [
   {
@@ -180,57 +160,6 @@ const dataPipelineProjects = [
 
 
 
-const ciCDProjects = [
-  {
-    title: "Production-Ready Social Media API (CI/CD Enabled)",
-    description: `Developed a production-ready RESTful backend system with an end-to-end CI/CD pipeline, enabling automated testing, containerization, and deployment to modern cloud infrastructure.`,
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/cicd-demo",
-    staging: "https://githubactionsci-cdsetup-staging.onrender.com",
-    deployed: "https://github-actions-ci-cd-setup-9j9z.onrender.com",
-    tags: [
-      "CI/CD",
-      "Jenkins",
-      "Docker",
-      "Kubernetes",
-      "GitHub Actions",
-      "Production Deployment",
-    ],
-  },
-  {
-    title: "CI-CD Setup",
-    description: `Full stack CI/CD deployment with git protections and staging and production environments.`,
-    image: [image9, image1, image2, image3],
-    gitLink:
-      "https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main",
-    staging: "https://githubactionsci-cdsetup-staging.onrender.com",
-    deployed: "https://github-actions-ci-cd-setup-9j9z.onrender.com",
-    tags: [
-      "CI/CD",
-      "CircleCI",
-      "Staging",
-      "Production Deployment",
-      "Git Protections",
-    ],
-  },
-  {
-    title: "GitHub Actions CI-CD Setup",
-    description: `Full stack deployment pipeline.`,
-    image: [image9, image1, image2, image3],
-    gitLink:
-      "https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main",
-    staging: "https://githubactionsci-cdsetup-staging.onrender.com",
-    deployed: "https://github-actions-ci-cd-setup-9j9z.onrender.com",
-    tags: [
-      "CI/CD",
-      "GitHub Actions",
-      "Git Protections",
-      "Staging Deployment",
-      "Production Deployment",
-    ],
-  },
-];
-
 const pythonProjects = [
   {
     title: "Probabilistic Market Engine",
@@ -276,57 +205,6 @@ const pythonProjects = [
   },
 ];
 
-const tDDProjects = [
-  {
-    title: "Tech Quiz Test Suite",
-    description:
-      "A quiz application with comprehensive component and end-to-end testing.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/techQuizTestSuite",
-    tags: [
-      "MongoDB",
-      "Express.js",
-      "React",
-      "Node.js",
-      "Cypress",
-      "MERN Stack",
-    ],
-  },
-
-  {
-    title: "Ensure React Components Render Properly",
-    description:
-      "A project that implements tests to ensure React components render correctly and match snapshots.",
-    image: [image9, image1, image2, image3],
-    gitLink:
-      "https://github.com/TheReal4m4d3u5/ensureReactComponentsRenderProperly",
-    tags: ["React", "Vitest", "React Testing Library", "Happy DOM", "Testing"],
-  },
-  {
-    title: "Reactify Essentials TDD",
-    description:
-      "A React-based application with reusable components and a robust testing setup.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/reactifyEssentialsTest",
-    tags: [
-      "React",
-      "TypeScript",
-      "Vitest",
-      "React Testing Library",
-      "Happy DOM",
-      "TDD",
-    ],
-  },
-
-  {
-    title: "TDD Test Cases",
-    description:
-      "A project focusing on foundational skills in TDD and testing frameworks.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/tDDTestCases",
-    tags: ["TDD", "Testing Frameworks", "JavaScript"],
-  },
-];
 
 
 
@@ -463,50 +341,35 @@ const Portfolio = () => {
  
   const projectGroups = [
     {
-      groupTitle: "APIs",
+      groupTitle: "Backend Systems",
       groupId: "apis",
       projects: apiProjects,
     },
     {
-      groupTitle: "Data Pipelines",
+      groupTitle: "Infrastructure",
       groupId: "dataPipelines",
       projects: dataPipelineProjects,
     },
     {
-      groupTitle: "SQL",
+      groupTitle: "Platform Engineering",
       groupId: "sql",
       projects: sqlProjects,
     },
     {
-      groupTitle: "Java",
+      groupTitle: "Cloud & Distributed Systems",
       groupId: "java",
       projects: javaProjects,
     },
     {
-      groupTitle: "Python",
+      groupTitle: "Computational Modeling",
       groupId: "python",
       projects: pythonProjects,
     },
     {
-      groupTitle: "MATLAB",
+      groupTitle: "Automation & Reliability",
       groupId: "matlab",
       projects: matLabProjects,
-    },
-    {
-      groupTitle: "TDD",
-      groupId: "tdd",
-      projects: tDDProjects,
-    },
-    {
-      groupTitle: "BDD",
-      groupId: "bdd",
-      projects: bddProjects,
-    },
-    {
-      groupTitle: "CI/CD DevOps",
-      groupId: "cicd",
-      projects: ciCDProjects,
-    },
+    }
   ];
 
 
@@ -988,77 +851,12 @@ const Portfolio = () => {
             TDD
           </div>
 
-          <Row className="portfolioCards">
-            {tDDProjects.map((project, index) => (
-              <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{
-                    once: false,
-                    amount: 0.05,
-                    margin: "0px 0px -50px 0px",
-                  }}
-                  transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
-                    ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.12,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
-                  }}
-                >
-                  <Project
-                    title={project.title}
-                    description={project.description}
-                    image={project.image}
-                    gitlink={project.gitLink}
-                    tags={project.tags}
-                  />
-                </motion.div>
-              </Col>
-            ))}
-          </Row>
+
 
           <div id="bdd" className="mongoDBHeader">
             BDD
           </div>
 
-          <Row className="portfolioCards">
-            {bddProjects.map((project, index) => (
-              <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{
-                    once: false,
-                    amount: 0.05,
-                    margin: "0px 0px -50px 0px",
-                  }}
-                  transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
-                    ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.12,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
-                  }}
-                >
-                  <Project
-                    title={project.title}
-                    description={project.description}
-                    image={project.image}
-                    gitlink={project.gitLink}
-                    tags={project.tags}
-                  />
-                </motion.div>
-              </Col>
-            ))}
-          </Row>
 
           <div id="cicd" className="mongoDBHeader">
             CI/CD DevOps
@@ -1068,37 +866,7 @@ const Portfolio = () => {
             {"Some deployments will take 1 to 15 mins to spin up if they haven't been in use"}
           </div>
 
-          <Row className="portfolioCards">
-            {ciCDProjects.map((project, index) => (
-              <Col key={index} sm={12} md={6} lg={4} className="cards">
-                <motion.div
-                  initial={{ opacity: 0, y: 60, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: false, amount: 0.5 }}
-                  transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
-                    ease: "easeOut",
-                  }}
-                  whileHover={{
-                    y: -10,
-                    scale: 1.12,
-                    boxShadow: "0 25px 70px rgba(255, 120, 210, 0.35)",
-                  }}
-                >
-                  <Project
-                    title={project.title}
-                    description={project.description}
-                    image={project.image}
-                    gitlink={project.gitLink}
-                    staginglink={project.staging}
-                    deployedlink={project.deployed}
-                    tags={project.tags}
-                  />
-                </motion.div>
-              </Col>
-            ))}
-          </Row>
+
 */}
 
 

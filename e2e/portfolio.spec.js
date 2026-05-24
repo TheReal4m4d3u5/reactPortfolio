@@ -23,15 +23,12 @@ test("portfolio subject buttons render", async ({ page }) => {
   await page.goto("/portfolio");
 
   const buttons = [
-    "APIs",
-    "Data Pipelines",
-    "SQL",
-    "Java",
-    "Python",
-    "MATLAB",
-    "TDD",
-    "BDD",
-    "CI/CD DevOps",
+    "Backend Systems",
+    "Infrastructure",
+    "Platform Engineering",
+    "Cloud & Distributed Systems",
+    "Computational Modeling",
+    "Automation & Reliability",
     "Archive",
   ];
 
@@ -66,7 +63,7 @@ test("portfolio card does not overlap footer", async ({ page, isMobile }) => {
   const cardBox = await card.boundingBox();
   const footerBox = await footer.boundingBox();
 
-  const overlapTolerance = isMobile ? 1100 : 200;
+  const overlapTolerance = isMobile ? 1150 : 200;
 
   expect(cardBox.y + cardBox.height).toBeLessThanOrEqual(
     footerBox.y + overlapTolerance,

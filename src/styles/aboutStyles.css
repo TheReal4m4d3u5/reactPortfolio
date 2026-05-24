@@ -265,7 +265,6 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -2;
-  animation: backgroundDrift 18s ease-in-out infinite alternate;
   transform-origin: center;
 }
 
@@ -278,14 +277,3 @@ body, html {
   pointer-events: none;
 }
 
-@keyframes backgroundDrift {
-  from {
-    transform: scale(1.04) translate(0, 0);
-    filter: brightness(0.95) saturate(1);
-  }
-
-  to {
-    transform: scale(1.12) translate(-24px, -18px);
-    filter: brightness(1.08) saturate(1.18);
-  }
-}
