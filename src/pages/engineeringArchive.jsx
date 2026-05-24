@@ -20,11 +20,9 @@ import image11 from "../../src/assets/carProgram.png";
 // import image17 from "../../src/assets/csci1113A6.png";
 import grocerySytsem from "../../src/assets/grocerySystem.png";
 // import bookSearch from "../../src/assets/bookSearch.png";
-import cirlceCI from "../../src/assets/cirlceCI.png";
 import coinToss from "../../src/assets/coinToss.png";
 // import hangman from "../../src/assets/hangman.png";
 // import blog from "../../src/assets/blog.png";
-import gitActions from "../../src/assets/gitActions.png";
 import selenium from "../../src/assets/selenium.png";
 import tDD1 from "../../src/assets/tDD1.png";
 import reactTDD from "../../src/assets/reactTDD.png";
@@ -436,57 +434,6 @@ const pythonProjects = [
   },
 ];
 
-const tDDProjects = [
-  {
-    title: "Tech Quiz Test Suite",
-    description:
-      "A quiz application with comprehensive component and end-to-end testing.",
-    image: tDD1,
-    gitLink: "https://github.com/TheReal4m4d3u5/techQuizTestSuite",
-    tags: [
-      "MongoDB",
-      "Express.js",
-      "React",
-      "Node.js",
-      "Cypress",
-      "MERN Stack",
-    ],
-  },
-
-  {
-    title: "Ensure React Components Render Properly",
-    description:
-      "A project that implements tests to ensure React components render correctly and match snapshots.",
-    image: tDD1,
-    gitLink:
-      "https://github.com/TheReal4m4d3u5/ensureReactComponentsRenderProperly",
-    tags: ["React", "Vitest", "React Testing Library", "Happy DOM", "Testing"],
-  },
-  {
-    title: "Reactify Essentials TDD",
-    description:
-      "A React-based application with reusable components and a robust testing setup.",
-    image: reactTDD,
-    gitLink: "https://github.com/TheReal4m4d3u5/reactifyEssentialsTest",
-    tags: [
-      "React",
-      "TypeScript",
-      "Vitest",
-      "React Testing Library",
-      "Happy DOM",
-      "TDD",
-    ],
-  },
-
-  {
-    title: "TDD Test Cases",
-    description:
-      "A project focusing on foundational skills in TDD and testing frameworks.",
-    image: tDD1,
-    gitLink: "https://github.com/TheReal4m4d3u5/tDDTestCases",
-    tags: ["TDD", "Testing Frameworks", "JavaScript"],
-  },
-];
 
 const matLabProjects = [
   {
@@ -777,7 +724,6 @@ const Portfolio = () => {
               <a href="#jenkins">Jenkins</a>
               <a href="#terraform">Terraform</a>
               <a href="#githubActions">GitHub Actions</a>
-              <a href="#circleci">CircleCI</a>
               <a href="#render">Render</a>
               <a href="#netlify">Netlify</a>
             </div>
@@ -1074,19 +1020,7 @@ const Portfolio = () => {
         TDD
       </div>
 
-      <Row className="portfolioCards">
-        {tDDProjects.map((project, index) => (
-          <Col key={index} sm={12} md={6} lg={4} className="cards">
-            <Project
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              gitlink={project.gitLink}
-              tags={project.tags}
-            />
-          </Col>
-        ))}
-      </Row>
+
 
       <div id="bdd" className="mongoDBHeader">
         BDD
