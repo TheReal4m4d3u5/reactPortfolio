@@ -19,11 +19,9 @@ import image9 from "../../src/assets/image9.png";
 // import image17 from "../../src/assets/csci1113A6.png";
 // import grocerySytsem from "../../src/assets/grocerySystem.png";
 // import bookSearch from "../../src/assets/bookSearch.png";
-// import cirlceCI from "../../src/assets/cirlceCI.png";
 // import coinToss from "../../src/assets/coinToss.png";
 // import hangman from "../../src/assets/hangman.png";
 // import blog from "../../src/assets/blog.png";
-// import gitActions from "../../src/assets/gitActions.png";
 // import selenium from "../../src/assets/selenium.png";
 // import tDD1 from "../../src/assets/tDD1.png";
 // import reactTDD from "../../src/assets/reactTDD.png";
@@ -162,57 +160,6 @@ const dataPipelineProjects = [
 // ];
 
 
-
-const ciCDProjects = [
-  {
-    title: "Production-Ready Social Media API (CI/CD Enabled)",
-    description: `Developed a production-ready RESTful backend system with an end-to-end CI/CD pipeline, enabling automated testing, containerization, and deployment to modern cloud infrastructure.`,
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/cicd-demo",
-    staging: "https://githubactionsci-cdsetup-staging.onrender.com",
-    deployed: "https://github-actions-ci-cd-setup-9j9z.onrender.com",
-    tags: [
-      "CI/CD",
-      "Jenkins",
-      "Docker",
-      "Kubernetes",
-      "GitHub Actions",
-      "Production Deployment",
-    ],
-  },
-  {
-    title: "CI-CD Setup",
-    description: `Full stack CI/CD deployment with git protections and staging and production environments.`,
-    image: [image9, image1, image2, image3],
-    gitLink:
-      "https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main",
-    staging: "https://githubactionsci-cdsetup-staging.onrender.com",
-    deployed: "https://github-actions-ci-cd-setup-9j9z.onrender.com",
-    tags: [
-      "CI/CD",
-      "CircleCI",
-      "Staging",
-      "Production Deployment",
-      "Git Protections",
-    ],
-  },
-  {
-    title: "GitHub Actions CI-CD Setup",
-    description: `Full stack deployment pipeline.`,
-    image: [image9, image1, image2, image3],
-    gitLink:
-      "https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main",
-    staging: "https://githubactionsci-cdsetup-staging.onrender.com",
-    deployed: "https://github-actions-ci-cd-setup-9j9z.onrender.com",
-    tags: [
-      "CI/CD",
-      "GitHub Actions",
-      "Git Protections",
-      "Staging Deployment",
-      "Production Deployment",
-    ],
-  },
-];
 
 const pythonProjects = [
   {
