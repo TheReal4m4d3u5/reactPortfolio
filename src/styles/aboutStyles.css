@@ -294,6 +294,7 @@ html {
   pointer-events: none;
 }
 
+
 @media (max-width: 768px) {
   .about-section,
   .home-section,
@@ -338,3 +339,4 @@ html {
     max-width: 100%;
   }
 }
+
