@@ -267,6 +267,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -2;
+  animation: backgroundDrift 18s ease-in-out infinite alternate;
   transform-origin: center;
 }
 
@@ -293,7 +294,6 @@ html {
   pointer-events: none;
 }
 
-<<<<<<< HEAD
 @media (max-width: 768px) {
   .about-section,
   .home-section,
@@ -338,5 +338,3 @@ html {
     max-width: 100%;
   }
 }
-=======
->>>>>>> fcb196336b79d765390af0c0cdb0a0ed4b247b9a
