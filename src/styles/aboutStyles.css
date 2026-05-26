@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 :root {
   --footer-height: 100px;
@@ -16,7 +16,8 @@ body,
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -28,7 +29,7 @@ body, html {
 
 /* ===== MAIN BACKGROUND ===== */
 #aboutHome {
-  background-image: url('/src/assets/background1.png');
+  background-image: url("/src/assets/background1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -78,7 +79,7 @@ body, html {
   padding: 28px 32px;
   padding-bottom: calc(var(--footer-height) + 40px);
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   backdrop-filter: saturate(80%) blur(50px);
   max-width: 840px;
   width: 100%;
@@ -165,7 +166,8 @@ body, html {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 20px 15px 40px;
+    padding: 580px 15px 40px;
+    
   }
 
   .photoSection,
@@ -260,12 +262,26 @@ body, html {
   content: "";
   position: absolute;
   inset: -6%;
-  background-image: url('/src/assets/background1.png');
+  background-image: url("/src/assets/background1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -2;
   transform-origin: center;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 
 #aboutHome::after {
@@ -275,5 +291,51 @@ body, html {
   background: rgba(10, 10, 20, 0.15);
   z-index: -1;
   pointer-events: none;
+}
+
+
+@media (max-width: 768px) {
+  .about-section,
+  .home-section,
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-text,
+  .home-text,
+  .bio-text {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .about-image,
+  .home-image {
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#aboutHome {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 770px) {
+  .photoSection,
+  .aboutTextSection {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .aboutTextWraper {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 

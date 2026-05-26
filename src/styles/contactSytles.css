@@ -313,3 +313,17 @@ form button[type="submit"] {
   /* IMPORTANT */
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .contact-page {
+    animation: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .contact-page,
+  .contact-page::before,
+  .contact-page::after {
+    animation: none !important;
+    transform: none !important;
+  }
+}
