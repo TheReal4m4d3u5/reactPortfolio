@@ -248,6 +248,8 @@ body {
   display: flex;
   flex-direction: row-reverse;
   height: 100%;
+    align-items: center;
+  width: 100%;
 }
 
 .myCard {
