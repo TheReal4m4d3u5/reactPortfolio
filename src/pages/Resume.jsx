@@ -22,7 +22,6 @@ const devOps = [
   "Docker",
   "Jenkins",
   "GitHub Actions",
-  "CircleCI",
   "Bamboo",
   "Maven",
   "Terraform",

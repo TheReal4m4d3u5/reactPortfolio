@@ -3,15 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "start": "vite",
-    "build": "vite build",
-    "test": "vitest",
-    "test:run": "vitest run",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
+"scripts": {
+  "dev": "vite",
+  "start": "vite",
+  "build": "vite build",
+  "test": "vitest src/App.test.jsx",
+  "test:run": "vitest run src/App.test.jsx",
+  "test:e2e": "playwright test",
+  "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+  "preview": "vite preview"
+},
   "dependencies": {
     "bootstrap": "^5.3.3",
     "emailjs-com": "^3.2.0",
@@ -26,6 +27,7 @@
     "yet-another-react-lightbox": "^3.32.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.59.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
