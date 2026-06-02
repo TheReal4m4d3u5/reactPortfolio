@@ -265,7 +265,9 @@ body {
 }
 
 .project-footer {
+  position: static;
   margin-top: auto;
+  position: static;
 }
 
 /* =========================

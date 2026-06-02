@@ -37,28 +37,28 @@ const About = () => {
             transition={{ type: 'spring', stiffness: 180 }}
           >
             <div className="aboutTextHeader">
-              Backend & Systems Engineer | APIs, Data, Reliability
+              Backend & Systems Engineer | Software Design, APIs, Data & Reliability
             </div>
 
             <div className="aboutText">
               <p>
-                Software Engineer focused on building reliable backend systems and scalable data workflows, with over 10 years of experience delivering high-quality solutions in production environments.
+                Software Engineer with 10+ years of experience designing, building, and testing complex software systems across enterprise, embedded, and cloud-based environments. My background spans full-stack development, backend services, automated testing, and systems engineering, with a strong focus on software quality, reliability, and maintainable architecture.
               </p>
 
               <p>
-                My work centers on API design, data validation, system reliability, and performance optimization across large-scale applications. I bring a strong foundation in mathematics and statistics, applying analytical thinking to ensure data integrity and correctness in complex systems.
+                I specialize in backend development using Java, Python, C#, JavaScript, Node.js, REST APIs, PostgreSQL, and MongoDB, while also bringing extensive experience in test automation, CI/CD pipelines, DevOps practices, and distributed application design. Throughout my career, I have worked closely with developers, architects, QA teams, and business stakeholders to deliver scalable solutions in Agile environments.
               </p>
 
               <p>
-                In addition to backend development, I have experience working close to hardware and embedded systems, giving me a systems-level perspective that spans from low-level interactions to distributed application design.
+                My academic focus in Computer Science and Applied Mathematics has strengthened my analytical approach to software engineering. I have developed experience in Object-Oriented Analysis and Design (OOAD), UML modeling, use case analysis, domain modeling, system decomposition, and the ICONIX Process, emphasizing traceability from requirements through design, implementation, and testing.
               </p>
 
               <p>
-                Currently, I am building ZeroLedger, a platform focused on modeling and analyzing CO₂ footprint through data-driven workflows, combining backend engineering with applied mathematical modeling.
+                Currently, I am building ZeroLedger, a platform focused on carbon footprint analysis and data-driven decision support, combining software engineering, mathematical modeling, and data analytics to solve complex real-world problems.
               </p>
 
               <p>
-                I am particularly interested in backend, platform, and distributed systems roles where reliability, data accuracy, and system design are critical.
+                I am particularly interested in backend, systems, platform, and distributed systems engineering roles where software architecture, data integrity, reliability, and long-term maintainability are critical to success.
               </p>
             </div>
           </motion.div>
