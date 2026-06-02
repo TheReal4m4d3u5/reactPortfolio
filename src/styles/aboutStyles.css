@@ -266,6 +266,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -2;
+  animation: backgroundDrift 18s ease-in-out infinite alternate;
   transform-origin: center;
 }
 
