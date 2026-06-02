@@ -4,8 +4,8 @@ import '../styles/aboutStyles.css';
 
 const About = () => {
   return (
-    <section id="aboutHome">
-      <div className="about">
+    <section id="aboutHomeNew">
+
 
         <motion.section
           className="photoSection"
@@ -64,7 +64,7 @@ const About = () => {
           </motion.div>
         </motion.section>
 
-      </div>
+  
     </section>
   );
 };
