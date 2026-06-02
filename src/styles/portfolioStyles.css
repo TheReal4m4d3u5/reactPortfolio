@@ -50,7 +50,7 @@ body {
   display: flex;
   justify-content: center;
 
-  padding-bottom: 75px;
+  padding-bottom: 0px;
 }
 
 .portfolio-Wraper {
@@ -265,9 +265,7 @@ body {
 }
 
 .project-footer {
-  position: static;
   margin-top: auto;
-  position: static;
 }
 
 /* =========================
@@ -494,6 +492,8 @@ transition: none;
 .outerCarousel {
   margin-bottom: -100px !important;
 }
+
+
 
 
 

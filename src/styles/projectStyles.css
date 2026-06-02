@@ -459,3 +459,15 @@ font-family: Roboto, sans-serif;
   min-width: 0;
   overflow-wrap: break-word;
 }
+
+.media-container .swiper-button-prev,
+.media-container .swiper-button-next {
+  top: 70% !important;
+}
+.media-container .swiper-button-prev {
+  left: 5% !important;
+}
+
+.media-container .swiper-button-next {
+  right: 5% !important;
+}
