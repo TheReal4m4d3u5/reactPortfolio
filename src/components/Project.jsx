@@ -36,6 +36,9 @@ const Project = ({
   const galleryImages =
     projectImages.length > 0 ? projectImages : fallbackImages;
 
+  console.log("video:", video);
+  console.log("galleryImages:", galleryImages);
+
   return (
     <Card className="project-card">
       <div className="myFlexCard">
@@ -109,8 +112,6 @@ const Project = ({
             )}
           </div>
         )}
-
-
 
         <div className="myCard project-reveal-content">
           <Card.Body className="d-flex flex-column project-reveal-content">
