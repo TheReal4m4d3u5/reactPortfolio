@@ -1,0 +1,215 @@
+[33ma5cfa84[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/fix-scrollbar[m[33m, [m[1;32mfix-scrollbar[m[33m)[m Fix mobile layout and scrollbar issues
+[33md8086d5[m Merge branch 'main' of https://github.com/TheReal4m4d3u5/reactPortfolio
+[33ma590ec1[m[33m ([m[1;31morigin/mobile-fixes[m[33m)[m fixed mobile formatting issues
+[33mfcb1963[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #41 from TheReal4m4d3u5/feature/portfolio-horizontal-cards
+[33medb4d89[m[33m ([m[1;31morigin/feature/portfolio-horizontal-cards[m[33m)[m udpated tests
+[33m5ed2eb4[m udpated tests
+[33ma3cf01d[m took out used code
+[33mf4c1709[m took out used code
+[33mf173ccc[m took out used code
+[33m595383a[m took out used code
+[33m7dd7956[m took out used code
+[33m5498372[m took out unsured code
+[33m859dc44[m Merge branch 'main' into feature/portfolio-horizontal-cards
+[33me96e8b0[m updated about breathing took out
+[33mcc7aa04[m updated about breathing took out
+[33md76f6bd[m updated portfolio headers
+[33m1eb6624[m Merge pull request #40 from TheReal4m4d3u5/feature/portfolio-horizontal-cards
+[33m3bc9f77[m Adjust card flex direction
+[33m0d6f165[m Merge pull request #39 from TheReal4m4d3u5/feature/portfolio-horizontal-cards
+[33mc9e3db2[m Adjust mobile footer overlap tolerance
+[33ma1a780c[m Adjust mobile footer overlap tolerance
+[33m9b4dec0[m Merge branch 'main' into feature/portfolio-horizontal-cards
+[33m893ff7e[m Refactor portfolio cards to horizontal flex layout
+[33m25ea0b1[m Merge pull request #38 from TheReal4m4d3u5/feature/playwright-ui-testing
+[33m5e42745[m[33m ([m[1;31morigin/feature/playwright-ui-testing[m[33m)[m updated yml test
+[33mf38b33a[m Adjust mobile Playwright layout tolerance
+[33m3865040[m Merge branch 'main' into feature/playwright-ui-testing
+[33m3090cc9[m Fix Playwright UI tests
+[33me348827[m Merge pull request #36 from TheReal4m4d3u5/feature/move-archive-button
+[33m95d91e9[m[33m ([m[1;31morigin/feature/move-archive-button[m[33m)[m Merge branch 'main' into feature/move-archive-button
+[33m96ba2ec[m Use Vite preview for Playwright CI tests
+[33m62b50a8[m Add Playwright UI testing and GitHub Actions checks
+[33m444a5a7[m Add Playwright UI testing and GitHub Actions checks
+[33mc08c33d[m Add Playwright UI testing and GitHub Actions checks
+[33m04776b7[m Add Playwright UI testing and GitHub Actions checks
+[33m63de860[m Add Playwright UI testing and GitHub Actions checks
+[33m8befc67[m Merge pull request #37 from TheReal4m4d3u5/fix/padding-adjustments
+[33m413aeff[m[33m ([m[1;31morigin/fix/padding-adjustments[m[33m)[m Fix portfolio padding and spacing issues
+[33mcacdf73[m updated cards
+[33m17c8c92[m Merge pull request #35 from TheReal4m4d3u5/feature/move-archive-button
+[33m0ecbed5[m Integrate archive link into portfolio carousel navigation
+[33m24fc3b5[m Merge pull request #34 from TheReal4m4d3u5/feature/project-group-carousel
+[33m813e663[m[33m ([m[1;31morigin/feature/project-group-carousel[m[33m)[m Fix portfolio lint errors
+[33md51824c[m Fix portfolio tests
+[33md861197[m Update portfolio carousel spacing and navigation
+[33m132a29a[m Merge pull request #33 from TheReal4m4d3u5/fix-portfolio-layout
+[33m1518350[m[33m ([m[1;31morigin/fix-portfolio-layout[m[33m)[m fixed body in component
+[33md4a73b5[m Merge pull request #32 from TheReal4m4d3u5/feature/fix-project-cards
+[33mab46e5d[m[33m ([m[1;31morigin/feature/fix-project-cards[m[33m)[m Merge branch 'main' into feature/fix-project-cards
+[33m9e8d8f8[m updated spacing issues
+[33mf4ecc3a[m Merge pull request #31 from TheReal4m4d3u5/feature/fix-project-cards
+[33mcb2b250[m Merge branch 'main' into feature/fix-project-cards
+[33m7091f47[m updated gap between cards
+[33m5d5d795[m Merge pull request #30 from TheReal4m4d3u5/feature/fix-project-cards
+[33m2142d89[m fixed some card spacing issues
+[33mac72a47[m Merge pull request #29 from TheReal4m4d3u5/feature/fix-spacing-issues
+[33m14d75e9[m[33m ([m[1;31morigin/feature/fix-spacing-issues[m[33m)[m fixed spacing issues
+[33m9add62c[m Merge branch 'main' of https://github.com/TheReal4m4d3u5/reactPortfolio
+[33m4ddd97f[m Merge pull request #28 from TheReal4m4d3u5/integration
+[33mf07f230[m[33m ([m[1;31morigin/integration[m[33m)[m Merge remote-tracking branch 'origin/main' into integration
+[33m6f7e78b[m adjusted margin
+[33m0ae528f[m Merge pull request #27 from TheReal4m4d3u5/integration
+[33m35e0a99[m updated global
+[33m49ee862[m Merge branch 'main' into integration
+[33m01671f4[m made cards bigger
+[33mbe5a227[m Merge pull request #26 from TheReal4m4d3u5/integration
+[33mc1c2f3e[m create test for all pages to load
+[33mad799a3[m create test for all pages to load
+[33md23d017[m create test for all pages to load
+[33m372e263[m create test for all pages to load
+[33mb9e1c4f[m Merge pull request #25 from TheReal4m4d3u5/integration
+[33mcfd12db[m Merge branch 'integration' of https://github.com/TheReal4m4d3u5/reactPortfolio into integration
+[33me339cfa[m added globals to app test jsx
+[33m0e58d43[m Merge branch 'main' into integration
+[33m9fb493f[m added globals to viteconfig
+[33m3e2a443[m took out unsure imports 6
+[33ma185210[m took out unsure imports 5
+[33m60de698[m took out unsure imports 3
+[33mdc46ec6[m took out unsure imports 2
+[33mb5c0595[m took out unsure imports 2
+[33m4e559c7[m took out unsure imports 1
+[33m638c0a2[m took out unsure imports 1
+[33m81dd715[m took out unsure imports
+[33mddac768[m took out unsure imports
+[33m19bdf82[m took out unsure imports
+[33m440cf8a[m took out unsure imports
+[33mfd5b3a2[m took out unsure imports
+[33mecab1b6[m took out unsure imports
+[33m6cce5ff[m added ci/cd
+[33m073ac58[m Merge pull request #24 from TheReal4m4d3u5/integration
+[33ma20ecbd[m added ci/cd
+[33m7d3a3ac[m Merge pull request #23 from TheReal4m4d3u5/integration
+[33m918f195[m Merge pull request #22 from TheReal4m4d3u5/integration
+[33m93aa632[m added ci/cd
+[33ma675ddf[m udpated gap in media card
+[33m67ecd16[m Merge pull request #21 from TheReal4m4d3u5/integration
+[33m06b90a1[m udpated card hover
+[33m693bf9e[m Merge pull request #20 from TheReal4m4d3u5/integration
+[33m0cef534[m udpated card hover
+[33m06726e9[m Merge pull request #19 from TheReal4m4d3u5/integration
+[33md28a87a[m udpated preview text shadow
+[33m5d757c1[m Merge pull request #18 from TheReal4m4d3u5/integration
+[33m744013a[m updated text color on preview card
+[33m048547b[m Merge pull request #17 from TheReal4m4d3u5/integration
+[33m61f574d[m Merge pull request #16 from TheReal4m4d3u5/integration
+[33ma9b3c3c[m added longer discription
+[33m3ac149c[m updated portfolio section with hiden and prevew cards
+[33me40834d[m Merge pull request #15 from TheReal4m4d3u5/integration
+[33ma612b8e[m fixed card height, shadows and added motion on background and added card project dynamics
+[33m8270884[m Merge pull request #14 from TheReal4m4d3u5/integration
+[33me2531a2[m portfolio css
+[33me9ed580[m Merge pull request #13 from TheReal4m4d3u5/integration
+[33mce9ef0e[m updated backgrounds
+[33m9499cef[m Merge pull request #12 from TheReal4m4d3u5/integration
+[33me0d2db5[m updated backgrounds
+[33ma0883d7[m Merge pull request #11 from TheReal4m4d3u5/integration
+[33m7b6b4a0[m updated backgrounds
+[33ma9cbb78[m Merge pull request #10 from TheReal4m4d3u5/integration
+[33mcb35d95[m Merge pull request #9 from TheReal4m4d3u5/integration
+[33m181be0e[m updated backgrounds
+[33m2af079b[m updated backgrounds
+[33m898e050[m Merge pull request #8 from TheReal4m4d3u5/integration
+[33m493a28d[m updated backgrounds
+[33mce24423[m updated backgrounds
+[33m594e422[m added motion and backgrounds
+[33mb2316be[m Merge pull request #7 from TheReal4m4d3u5/integration
+[33m9ece518[m added motion to portfolio page
+[33m2e67457[m udpated video to have medium screen
+[33mecf6bed[m Merge pull request #6 from TheReal4m4d3u5/integration
+[33m0c6ece7[m updated with video model
+[33m0ca85cb[m Merge pull request #5 from TheReal4m4d3u5/integration
+[33m7306778[m updated with framer motion
+[33m670ccad[m Merge pull request #4 from TheReal4m4d3u5/integration
+[33mc995493[m updated with swipper
+[33m508b7ef[m updated with swipper
+[33mb0dea4d[m updated with swipper
+[33m76358ac[m updated with swipper
+[33m35e99b4[m updated with swipper
+[33m3fac01e[m Merge pull request #3 from TheReal4m4d3u5/integration
+[33m8808ebf[m updated portfolio links
+[33ma1bc12b[m updated portfolio links
+[33ma806942[m updated portfolio links
+[33mab2bb4a[m updated portfolio links
+[33me693cda[m updated portfolio links
+[33m65cb42a[m udpated background in portfolio
+[33m3d08d82[m Merge pull request #2 from TheReal4m4d3u5/integration
+[33me646653[m udpated css for full archive
+[33m9d58959[m udpated css for full archive
+[33mb38c8e3[m udpated css for full archive
+[33md69e729[m udpated css for full archive
+[33mc678b14[m udpated css for full archive
+[33md464d9b[m udpated css for full archive
+[33md4c04ed[m udpated css for full archive
+[33me44f460[m Merge pull request #1 from TheReal4m4d3u5/integration
+[33m2615492[m test
+[33mb276759[m added link to engineering archive
+[33mefb739b[m test
+[33m928d12e[m test
+[33md937a11[m test
+[33m69f1fee[m updated portfolio to include engineering archive
+[33ma0cc904[m updated portfolio to include engineering archive
+[33m7d0abcc[m updated portfolio to include engineering archive
+[33m3cc9db7[m updated portfolio to include engineering archive
+[33m605b00f[m updated portfolio to include engineering archive
+[33m2ea5d82[m updated portfolio to include engineering archive
+[33m94c17ed[m updated portfolio to include engineering archive
+[33mc7832e0[m updated portfolio to include engineering archive
+[33macf33ef[m updated portfolio to include engineering archive
+[33m7949afd[m updated portfolio to include engineering archive
+[33m362dc03[m updated portfolio to include engineering archive
+[33m3ad8b6e[m updated portfolio to include engineering archive
+[33m0a98ef0[m updated portfolio to include engineering archive
+[33md8beae8[m updated portfolio to include engineering archive
+[33ma450f9f[m updated portfolio to include engineering archive
+[33md9c2e96[m updated portfolio to include engineering archive
+[33ma512f0e[m updated portfolio to include engineering archive
+[33m654a4d3[m updated portfolio to include engineering archive
+[33m0551fb2[m updated portfolio to include engineering archive
+[33m4382a95[m updated resume
+[33m9892d8b[m removed redunded education
+[33ma816793[m added newlines in educatio
+[33m710441b[m added newlines in educatio
+[33ma17342f[m added newlines in education
+[33m4967e19[m added newlines in education
+[33m6fee3d7[m added my notes
+[33m72c7894[m added cdci project
+[33mb31c405[m added git to Market Engine
+[33m889bbe8[m added photo to Market Engine
+[33m5b8d9f9[m added photo to Market Engine
+[33maf2fa1b[m added photo to Market Engine
+[33mf844a61[m added photo to Market Engine
+[33m559fae4[m added python Probabilistic Market Engine
+[33m620fd80[m updated media container
+[33m2587304[m updated media container
+[33m850ed02[m updated resume css
+[33md797fcc[m updated resume css
+[33mba6226f[m updated resume css
+[33m329dcd6[m updated resume css
+[33m529a02f[m updated resume css
+[33mbe0b231[m updated about css
+[33mf90cdeb[m updated about css
+[33m0ed81c8[m updated portfolio cards video css
+[33m7dc178b[m updated portfolio cards video css
+[33m2b04904[m updated portfolio cards video css
+[33me301a1e[m updated portfolio cards video css
+[33m5b7b836[m updated portfolio cards video css
+[33mc54ac37[m updated portfolio cards css
+[33md76712a[m updated portfolio-wraper css
+[33m2edb893[m updated portfolio-wraper css
+[33m6b15490[m updated portfolio-wraper css
+[33m43db40e[m updated portfolio-wraper css
+[33m5fbd174[m updated portfolio-wraper css
+[33mf189d75[m updated portfolio-wraper css
+[33m89d7d6e[m updated portfolio-wraper css
+[33mb85e1e9[m updated portfolio-wraper css

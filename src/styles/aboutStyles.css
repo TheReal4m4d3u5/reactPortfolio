@@ -322,7 +322,7 @@ html {
 
 #aboutHome {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 770px) {
