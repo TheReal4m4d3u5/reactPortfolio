@@ -32,12 +32,12 @@ html {
 }
 
 
-
 #aboutHomeNew {
   flex: 1;
   display: flex;
   min-height: auto;
-  padding-bottom: 140px;
+  padding-bottom: 220px;
+  overflow: visible;
   background-image: url("/src/assets/background1.png");
   background-size: cover;
   background-position: center;
