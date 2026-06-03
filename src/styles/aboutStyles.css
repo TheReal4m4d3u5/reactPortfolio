@@ -44,6 +44,19 @@ html {
   background-repeat: repeat-y;
 }
 
+
+#aboutHomeNew {
+  display: flex;
+  background-image: url("/src/assets/background1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* min-height: 100vh; */
+  height: auto;
+}
+
+
 /* ===== LAYOUT ===== */
 .about {
   display: flex;
