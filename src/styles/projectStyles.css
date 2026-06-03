@@ -122,11 +122,11 @@
   color: black;
   text-shadow: 2px 2px 8px white;
   /* border: 1px solid #4f46b8; */
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .custom-btn:hover {
-  background-color: #7f75e0;
+  /* background-color: #7f75e0; */
   color: white;
 }
 
