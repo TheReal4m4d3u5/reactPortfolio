@@ -69,7 +69,12 @@ const Carousel = ({ projectGroups }) => {
               >
                 {group.projects.map((project, index) => (
                   <SwiperSlide key={index}>
-                    <Project {...project} />
+                    <Project
+                      {...project}
+                      gitlink={project.gitLink}
+                      deployedlink={project.deployed}
+                      staginglink={project.stagingLink}
+                    />
                   </SwiperSlide>
                 ))}
               </Swiper>

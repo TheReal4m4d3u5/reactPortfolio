@@ -116,9 +116,20 @@
   padding-top: 20px;
 }
 
+
+.custom-btn {
+  /* background-color: #655dcf; */
+  color: black;
+  text-shadow: 2px 2px 8px white;
+  /* border: 1px solid #4f46b8; */
+  text-decoration: none;
+}
+
 .custom-btn:hover {
+  background-color: #7f75e0;
   color: white;
 }
+
 .media-container {
   flex: 0 0 45%;
   width: 45%;
@@ -369,8 +380,8 @@ font-family: Roboto, sans-serif;
 }
 
 .project-card {
-  min-height: unset !important;
-  height: fit-content !important;
+  min-height: 550px !important;
+  height: auto !important;
 }
 
 .myFlexCard {
@@ -415,13 +426,13 @@ font-family: Roboto, sans-serif;
 }
 
 
-.project-card {
+/* .project-card {
   width: 100%;
   max-width: 900px;
   height: auto;
-  min-height: 450px;
+  min-height: 150px;
   overflow: hidden;
-}
+} */
 
 .myFlexCard {
   display: flex;
