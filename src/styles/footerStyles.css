@@ -1,6 +1,30 @@
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+#root {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+#aboutHomeNew {
+  flex: 1;
+}
+
+
+#aboutHomeNew {
+  min-height: calc(100vh - 85px - 75px);
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
 .footer {
   width: 100%;
-  min-height: 120px;
+  min-height: 80px;
   background: black;
 }
 
@@ -10,9 +34,9 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  min-height: 120px;
+  min-height: 70px;
   margin: 0;
-  padding: 20px 0;
+  padding: 3px 0;
   gap: 40px;
   background: black;
   font-size: 3rem;
