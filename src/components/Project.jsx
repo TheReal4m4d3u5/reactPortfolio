@@ -36,8 +36,10 @@ const Project = ({
   const galleryImages =
     projectImages.length > 0 ? projectImages : fallbackImages;
 
-  console.log("video:", video);
-  console.log("galleryImages:", galleryImages);
+
+
+
+  console.log("links:", { gitlink, staginglink, deployedlink });
 
   return (
     <Card className="project-card">
@@ -113,9 +115,13 @@ const Project = ({
           </div>
         )}
 
+
+
+
         <div className="myCard project-reveal-content">
-          <Card.Body className="d-flex flex-column project-reveal-content">
+          <Card.Body className="d-flex flex-column">
             <Card.Title>{title}</Card.Title>
+            
 
             <Card.Text className="project-description">{description}</Card.Text>
 
@@ -126,6 +132,7 @@ const Project = ({
                 ))}
               </div>
             )}
+
 
             {gitlink && (
               <div className="viewGithubProject">

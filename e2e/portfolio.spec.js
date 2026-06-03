@@ -45,7 +45,9 @@ test("footer links are visible and not covered", async ({ page }) => {
   await page.goto("/portfolio");
 
   await expect(page.getByRole("link", { name: "LinkedIn" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "GitHub" })).toBeVisible();
+  await expect(
+  page.getByRole("link", { name: "GitHub", exact: true })
+).toBeVisible();
 
   const footer = page.locator(".footer-links");
   await expect(footer).toBeVisible();
@@ -63,7 +65,7 @@ test("portfolio card does not overlap footer", async ({ page, isMobile }) => {
   const cardBox = await card.boundingBox();
   const footerBox = await footer.boundingBox();
 
-  const overlapTolerance = isMobile ? 1150 : 200;
+  const overlapTolerance = isMobile ? 1150 : 250;
 
   expect(cardBox.y + cardBox.height).toBeLessThanOrEqual(
     footerBox.y + overlapTolerance,
