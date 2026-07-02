@@ -3,6 +3,14 @@ import "../styles/portfolioStyles.css";
 import image1 from "../../src/assets/image1.png";
 import image2 from "../../src/assets/image2.png";
 import image3 from "../../src/assets/image3.png";
+
+import mastermindclassDiagram from "../../src/assets/mastermind/classDiagram.png";
+import mastermindDomainMoel from "../../src/assets/mastermind/domainModel.png";
+import useCaseDiagram from "../../src/assets/mastermind/useCaseDiagram.png";
+
+
+
+
 // import image4 from "../../src/assets/image4.png";
 // import image5 from "../../src/assets/image5.png";
 // import image6 from "../../src/assets/image6.png";
@@ -42,11 +50,11 @@ import employeeDB from "../../src/assets/employeeDB.mp4";
 const apiProjects = [
   {
     video: socialMediaVideo,
-    title: "Social Media API",
-    description:
-      "Designed and implemented a RESTful backend system for managing users, posts, and reactions.\n\n• Built modular API architecture with Express and MongoDB\n• Implemented CRUD operations with structured data validation\n• Modeled relationships between users, posts, and reactions\n• Designed scalable API patterns for real-world social platforms",
-    gitLink: "https://github.com/TheReal4m4d3u5/socialNetworkAPI",
-    tags: ["Node.js", "Express.js", "MongoDB", "Mongoose", "RESTful API"],
+    title: "Master Mind",
+    description: "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios. Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation. The design centers orchestration in the Game class while separating configuration, player roles, secret-code comparison, guess history, and feedback responsibilities across focused domain classes.",
+    image: [mastermindclassDiagram, mastermindDomainMoel, useCaseDiagram],
+    gitLink: "https://github.com/TheReal4m4d3u5/Mastermind",
+    tags: ["System Design", "Object-Oriented Design", "OOAD", "ICONIX", "UML", "BDD", "Traceability", "Domain Modeling", "Use Cases", "Robustness Analysis", "Sequence Diagrams", "Class Diagrams", "Test Scenarios", "Design Documentation"],
   },
 
   {
@@ -341,7 +349,7 @@ const Portfolio = () => {
  
   const projectGroups = [
     {
-      groupTitle: "Backend Systems",
+      groupTitle: "Systems Design & Development",
       groupId: "apis",
       projects: apiProjects,
     },
