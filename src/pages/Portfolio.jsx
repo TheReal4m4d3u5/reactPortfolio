@@ -3,11 +3,10 @@ import "../styles/portfolioStyles.css";
 import image1 from "../../src/assets/image1.png";
 import image2 from "../../src/assets/image2.png";
 import image3 from "../../src/assets/image3.png";
-import image3 from "../../src/assets/image3.png";
 
-import mastermindclassDiagram from "../../src/assets/mastermindclassDiagram.png";
-import mastermindDomainMoel from "../../src/assets/masterminddomainModel.png";
-import useCaseDiagram from "../../src/assets/masterminduseCaseDiagram.png";
+import mastermindclassDiagram from "../../src/assets/mastermind/classDiagram.png";
+import mastermindDomainMoel from "../../src/assets/mastermind/domainModel.png";
+import useCaseDiagram from "../../src/assets/mastermind/useCaseDiagram.png";
 
 
 
