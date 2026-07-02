@@ -35,7 +35,7 @@ import image9 from "../../src/assets/image9.png";
 // import employease from "../../src/assets/employease.png";
 // import monteCarloSimulation from "../../src/assets/monteCarloSimulation.png";
 
-import socialMediaVideo from "../../src/assets/socialMediaAPI.mp4";
+
 // import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
 
@@ -49,7 +49,6 @@ import employeeDB from "../../src/assets/employeeDB.mp4";
 
 const apiProjects = [
   {
-    video: socialMediaVideo,
     title: "Master Mind",
     description: "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios. Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation. The design centers orchestration in the Game class while separating configuration, player roles, secret-code comparison, guess history, and feedback responsibilities across focused domain classes.",
     image: [mastermindclassDiagram, mastermindDomainMoel, useCaseDiagram],
