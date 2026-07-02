@@ -52,6 +52,13 @@
   line-height: 1.6;
 }
 
+.project-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .project-links {
   margin-top: 16px;
 }
