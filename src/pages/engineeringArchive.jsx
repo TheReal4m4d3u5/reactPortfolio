@@ -27,7 +27,6 @@ import selenium from "../../src/assets/selenium.png";
 // import employease from "../../src/assets/employease.png";
 import monteCarloSimulation from "../../src/assets/monteCarloSimulation.png";
 
-import socialMediaVideo from "../../src/assets/socialMediaAPI.mp4";
 // import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
 
