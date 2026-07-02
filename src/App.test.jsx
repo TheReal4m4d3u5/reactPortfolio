@@ -72,7 +72,7 @@ test("portfolio renders project content", () => {
   renderRoute("/Portfolio");
 
 expect(
-  screen.getByText(/^social media api$/i)
+  screen.getByText(/^Master Mind$/i)
 ).toBeInTheDocument();
 
 });
