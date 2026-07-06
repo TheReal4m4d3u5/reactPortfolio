@@ -112,26 +112,8 @@ const Project = ({
                 />
               </>
             )}
-          </div>
-        )}
 
 
-
-
-        <div className="myCard project-reveal-content">
-          <Card.Body className="d-flex flex-column">
-            <Card.Title>{title}</Card.Title>
-            
-
-            <Card.Text className="project-description">{description}</Card.Text>
-
-            {Array.isArray(tags) && tags.length > 0 && (
-              <div className="flex flex-wrap">
-                {tags.map((tag, index) => (
-                  <Tag key={`${tag}-${index}`} name={tag} />
-                ))}
-              </div>
-            )}
 
 
             {gitlink && (
@@ -172,6 +154,38 @@ const Project = ({
                 </a>
               </div>
             )}
+
+
+
+
+
+          </div>
+
+
+
+
+        )}
+
+
+
+
+        <div className="myCard project-reveal-content">
+          <Card.Body className="d-flex flex-column">
+            <Card.Title>{title}</Card.Title>
+            
+
+            <Card.Text className="project-description">{description}</Card.Text>
+
+            {Array.isArray(tags) && tags.length > 0 && (
+              <div className="flex flex-wrap">
+                {tags.map((tag, index) => (
+                  <Tag key={`${tag}-${index}`} name={tag} />
+                ))}
+              </div>
+            )}
+
+
+
           </Card.Body>
         </div>
       </div>
