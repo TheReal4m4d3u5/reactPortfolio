@@ -66,6 +66,9 @@ ul li {
   margin-bottom: 16px;
 }
 
+
+
+
 .mainResumeContent {
   color: black;
   width: 100%;
@@ -76,6 +79,7 @@ ul li {
   border-radius: 8px;
   backdrop-filter: saturate(105%) blur(135px);
   box-sizing: border-box;
+   background: rgba(255, 255, 255, 0.18);
 }
 
 .resume-page h2 {

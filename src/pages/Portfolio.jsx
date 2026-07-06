@@ -50,8 +50,8 @@ import employeeDB from "../../src/assets/employeeDB.mp4";
 const apiProjects = [
   {
     title: "Master Mind",
-    description: "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios. Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation. The design centers orchestration in the Game class while separating configuration, player roles, secret-code comparison, guess history, and feedback responsibilities across focused domain classes.",
-    image: [mastermindclassDiagram, mastermindDomainMoel, useCaseDiagram],
+    description: "      Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
+    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
     gitLink: "https://github.com/TheReal4m4d3u5/Mastermind",
     tags: ["System Design", "Object-Oriented Design", "OOAD", "ICONIX", "UML", "BDD", "Traceability", "Domain Modeling", "Use Cases", "Robustness Analysis", "Sequence Diagrams", "Class Diagrams", "Test Scenarios", "Design Documentation"],
   },
@@ -59,7 +59,7 @@ const apiProjects = [
   {
     title: "Aline",
     description:
-      "A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design",
+      "A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design",
     image: [image9, image1, image2, image3],
     gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
     deployed: "https://aline-events.onrender.com/",
