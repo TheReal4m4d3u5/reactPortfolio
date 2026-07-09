@@ -36,156 +36,137 @@ const Project = ({
   const galleryImages =
     projectImages.length > 0 ? projectImages : fallbackImages;
 
-
-
-
   console.log("links:", { gitlink, staginglink, deployedlink });
 
   return (
     <Card className="project-card">
       <div className="myFlexCard">
-        {(video || galleryImages.length > 0) && (
-          <div className="media-container">
-            {video ? (
-              <>
-                <div className="video-wrapper">
-                  <video src={video} controls className="project-media" />
+        <div className="project-right-side">
+          {(video || galleryImages.length > 0) && (
+            <div className="media-container">
+              {video ? (
+                <>
+                  <div className="video-wrapper">
+                    <video src={video} controls className="project-media" />
 
-                  <button
-                    className="custom-fullscreen-btn"
-                    onClick={() => setIsVideoOpen(true)}
+                    <button
+                      className="custom-fullscreen-btn"
+                      onClick={() => setIsVideoOpen(true)}
+                    >
+                      ⛶
+                    </button>
+                  </div>
+
+                  <Modal
+                    isOpen={isVideoOpen}
+                    onRequestClose={() => setIsVideoOpen(false)}
+                    className="video-modal"
+                    overlayClassName="video-modal-overlay"
                   >
-                    ⛶
-                  </button>
-                </div>
+                    <button
+                      className="video-modal-close"
+                      onClick={() => setIsVideoOpen(false)}
+                    >
+                      ×
+                    </button>
 
-                <Modal
-                  isOpen={isVideoOpen}
-                  onRequestClose={() => setIsVideoOpen(false)}
-                  className="video-modal"
-                  overlayClassName="video-modal-overlay"
-                >
-                  <button
-                    className="video-modal-close"
-                    onClick={() => setIsVideoOpen(false)}
+                    <video
+                      src={video}
+                      controls
+                      autoPlay
+                      className="video-modal-player"
+                    />
+                  </Modal>
+                </>
+              ) : (
+                <>
+                  <Swiper
+                    spaceBetween={10}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    modules={[Navigation, Pagination]}
                   >
-                    ×
-                  </button>
+                    {galleryImages.map((img, index) => (
+                      <SwiperSlide key={index}>
+                        <img
+                          src={img}
+                          alt={`${title} screenshot ${index + 1}`}
+                          className="project-media"
+                          onClick={() => {
+                            setImageIndex(index);
+                            setLightboxOpen(true);
+                          }}
+                        />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
 
-                  <video
-                    src={video}
-                    controls
-                    autoPlay
-                    className="video-modal-player"
+                  <Lightbox
+                    open={lightboxOpen}
+                    close={() => setLightboxOpen(false)}
+                    index={imageIndex}
+                    slides={galleryImages.map((img) => ({ src: img }))}
                   />
-                </Modal>
-              </>
-            ) : (
-              <>
-                <Swiper
-                  spaceBetween={10}
-                  slidesPerView={1}
-                  navigation
-                  pagination={{ clickable: true }}
-                  modules={[Navigation, Pagination]}
-                >
-                  {galleryImages.map((img, index) => (
-                    <SwiperSlide key={index}>
-                      <img
-                        src={img}
-                        alt={`${title} screenshot ${index + 1}`}
-                        className="project-media"
-                        onClick={() => {
-                          setImageIndex(index);
-                          setLightboxOpen(true);
-                        }}
-                      />
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+                </>
+              )}
+            </div>
+          )}
 
-                <Lightbox
-                  open={lightboxOpen}
-                  close={() => setLightboxOpen(false)}
-                  index={imageIndex}
-                  slides={galleryImages.map((img) => ({ src: img }))}
-                />
-              </>
-            )}
+          {gitlink && (
+            <div className="viewGithubProject">
+              <a
+                href={gitlink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto btn btn-primary custom-btn"
+              >
+                View Github Project
+              </a>
+            </div>
+          )}
 
+          {staginglink && (
+            <div className="mt-2">
+              <a
+                href={staginglink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary custom-btn"
+              >
+                View Staging Project
+              </a>
+            </div>
+          )}
 
-
-
-            {gitlink && (
-              <div className="viewGithubProject">
-                <a
-                  href={gitlink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-auto btn btn-primary custom-btn"
-                >
-                  View Github Project
-                </a>
-              </div>
-            )}
-
-            {staginglink && (
-              <div className="mt-2">
-                <a
-                  href={staginglink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-secondary custom-btn"
-                >
-                  View Staging Project
-                </a>
-              </div>
-            )}
-
-            {deployedlink && (
-              <div className="mt-2">
-                <a
-                  href={deployedlink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-auto btn btn-primary custom-btn"
-                >
-                  View Deployed Project
-                </a>
-              </div>
-            )}
-
-
-
-
-
-          </div>
-
-
-
-
-        )}
-
-
-
+          {deployedlink && (
+            <div className="mt-2">
+              <a
+                href={deployedlink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto btn btn-primary custom-btn"
+              >
+                View Deployed Project
+              </a>
+            </div>
+          )}
+        </div>
 
         <div className="myCard project-reveal-content">
           <Card.Body className="d-flex flex-column">
             <Card.Title>{title}</Card.Title>
-            
 
             <Card.Text className="project-description">{description}</Card.Text>
-
-            {Array.isArray(tags) && tags.length > 0 && (
-              <div className="flex flex-wrap">
-                {tags.map((tag, index) => (
-                  <Tag key={`${tag}-${index}`} name={tag} />
-                ))}
-              </div>
-            )}
-
-
-
+            <div className="viewGithubProject">
+              {Array.isArray(tags) && tags.length > 0 && (
+                <div className="flex flex-wrap">
+                  {tags.map((tag, index) => (
+                    <Tag key={`${tag}-${index}`} name={tag} />
+                  ))}
+                </div>
+              )}
+            </div>
           </Card.Body>
         </div>
       </div>
