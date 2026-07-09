@@ -246,7 +246,7 @@ body {
 .myFlexCard {
   display: flex;
   flex-direction: row-reverse;
-  height: 100%;
+  height: auto !important;
     align-items: center;
   width: 100%;
 }
@@ -572,7 +572,7 @@ button.portfolio-nav-btn {
   gap: 12px;
 
   width: 100%;
-  margin: 0 auto 32px auto;
+  margin: 0 auto 5px auto;
 }
 
 

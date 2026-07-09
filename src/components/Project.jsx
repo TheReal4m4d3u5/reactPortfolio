@@ -44,6 +44,17 @@ const Project = ({
   return (
     <Card className="project-card">
       <div className="myFlexCard">
+
+    <div className="project-right-side">
+
+
+
+
+
+
+
+
+
         {(video || galleryImages.length > 0) && (
           <div className="media-container">
             {video ? (
@@ -116,6 +127,18 @@ const Project = ({
 
 
 
+
+
+
+
+
+          </div>
+
+
+
+
+        )}
+
             {gitlink && (
               <div className="viewGithubProject">
                 <a
@@ -156,17 +179,7 @@ const Project = ({
             )}
 
 
-
-
-
-          </div>
-
-
-
-
-        )}
-
-
+    </div>
 
 
         <div className="myCard project-reveal-content">
@@ -176,19 +189,42 @@ const Project = ({
 
             <Card.Text className="project-description">{description}</Card.Text>
 
-            {Array.isArray(tags) && tags.length > 0 && (
+      <div class="viewGithubProject">
+
+                  {Array.isArray(tags) && tags.length > 0 && (
               <div className="flex flex-wrap">
                 {tags.map((tag, index) => (
                   <Tag key={`${tag}-${index}`} name={tag} />
                 ))}
               </div>
             )}
+      </div>
+
 
 
 
           </Card.Body>
+
+          
         </div>
+        
+
+
+
+
       </div>
+
+
+
+
+
+
+
+      
+
+
+
+
     </Card>
   );
 };
