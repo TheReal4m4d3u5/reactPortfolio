@@ -158,9 +158,9 @@ const Project = ({
             <Card.Title>{title}</Card.Title>
 
             <Card.Text className="project-description">{description}</Card.Text>
-            <div className="viewGithubProject">
+            <div className="project-tags-container">
               {Array.isArray(tags) && tags.length > 0 && (
-                <div className="flex flex-wrap">
+                <div className="project-tags-list">
                   {tags.map((tag, index) => (
                     <Tag key={`${tag}-${index}`} name={tag} />
                   ))}

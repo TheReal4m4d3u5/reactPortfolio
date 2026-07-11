@@ -542,7 +542,7 @@ font-family: Roboto, sans-serif;
 
 .project-media {
   margin: 0px;
-  width: 400px;
+  width: 500px;
 }
 
 
@@ -564,20 +564,12 @@ font-family: Roboto, sans-serif;
   overflow: visible;
 }
 
-.project-media {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
+
 
 .project-info {
   width: 50%;
 }
 
-.project-media {
-  width: 50%;
-}
 
 .project-info {
   width: 100%;
@@ -586,15 +578,7 @@ font-family: Roboto, sans-serif;
   overflow: visible;
 }
 
-.project-media {
-  width: 100%;
-  max-width: none;
-  min-width: 0;
 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
 
 .project-preview-overlay,
 .myCard,
@@ -652,4 +636,75 @@ font-family: Roboto, sans-serif;
 
 .media-container .swiper-button-next {
   right: 5% !important;
+}
+
+
+.myFlexCard {
+  display: flex !important;
+  width: 100% !important;
+  min-height: 520px !important;
+  height: auto !important;
+
+}
+
+
+
+/* Make the Swiper slide stretch its project card */
+.innerCarousel .swiper-wrapper {
+  align-items: stretch;
+}
+
+.innerCarousel .swiper-slide {
+  display: flex;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* Fill nearly the entire outer project container */
+.project-card {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: none;
+  min-height: 560px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Make the inner flexbox fill the project card */
+.project-card .myFlexCard {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-height: 560px;
+  height: 100%;
+  gap: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Smaller media/link column */
+.project-card .project-right-side {
+  flex: 0 0 28%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Larger description column */
+.project-card .myCard.project-reveal-content {
+  flex: 1 1 72%;
+  min-width: 0;
+  width: auto;
+  height: 100%;
+}
+
+/* Make Bootstrap's Card.Body stretch too */
+.project-card .card-body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
 }
