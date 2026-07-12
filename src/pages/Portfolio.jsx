@@ -8,9 +8,6 @@ import mastermindclassDiagram from "../../src/assets/mastermind/classDiagram.png
 import mastermindDomainMoel from "../../src/assets/mastermind/domainModel.png";
 import useCaseDiagram from "../../src/assets/mastermind/useCaseDiagram.png";
 
-
-
-
 // import image4 from "../../src/assets/image4.png";
 // import image5 from "../../src/assets/image5.png";
 // import image6 from "../../src/assets/image6.png";
@@ -35,27 +32,210 @@ import image9 from "../../src/assets/image9.png";
 // import employease from "../../src/assets/employease.png";
 // import monteCarloSimulation from "../../src/assets/monteCarloSimulation.png";
 
-
 // import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
-
-
-
-
-
-
-
-
 
 const apiProjects = [
   {
     title: "Master Mind",
-    description: "      Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
+    description:
+      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
     image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
     gitLink: "https://github.com/TheReal4m4d3u5/Mastermind",
-    tags: ["System Design", "Object-Oriented Design", "OOAD", "ICONIX", "UML", "BDD", "Traceability", "Domain Modeling", "Use Cases", "Robustness Analysis", "Sequence Diagrams", "Class Diagrams", "Test Scenarios", "Design Documentation"],
+    tags: [
+      "System Design",
+      "Object-Oriented Design",
+      "OOAD",
+      "ICONIX",
+      "UML",
+      "BDD",
+      "Traceability",
+      "Domain Modeling",
+      "Use Cases",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Test Scenarios",
+      "Design Documentation",
+    ],
   },
 
+  {
+    title: "Chord Finder",
+    description:
+      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
+    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
+    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
+    tags: [
+      "System Design",
+      "Object-Oriented Design",
+      "OOAD",
+      "ICONIX",
+      "UML",
+      "BDD",
+      "Traceability",
+      "Domain Modeling",
+      "Use Cases",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Test Scenarios",
+      "Design Documentation",
+    ],
+  },
+];
+
+const designPatternProjects = [
+  {
+    title: "Strategy Pattern",
+    description:
+      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
+    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
+    gitLink: "https://github.com/TheReal4m4d3u5/Mastermind",
+    tags: [
+      "System Design",
+      "Object-Oriented Design",
+      "OOAD",
+      "ICONIX",
+      "UML",
+      "BDD",
+      "Traceability",
+      "Domain Modeling",
+      "Use Cases",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Test Scenarios",
+      "Design Documentation",
+    ],
+  },
+
+  {
+    title: "Adapter Pattern",
+    description:
+      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
+    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
+    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
+    tags: [
+      "System Design",
+      "Object-Oriented Design",
+      "OOAD",
+      "ICONIX",
+      "UML",
+      "BDD",
+      "Traceability",
+      "Domain Modeling",
+      "Use Cases",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Test Scenarios",
+      "Design Documentation",
+    ],
+  },
+
+
+    {
+    title: "Observer Pattern",
+    description:
+      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
+    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
+    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
+    tags: [
+      "System Design",
+      "Object-Oriented Design",
+      "OOAD",
+      "ICONIX",
+      "UML",
+      "BDD",
+      "Traceability",
+      "Domain Modeling",
+      "Use Cases",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Test Scenarios",
+      "Design Documentation",
+    ],
+  },
+
+      {
+    title: "Decorator Pattern",
+    description:
+      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
+    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
+    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
+    tags: [
+      "System Design",
+      "Object-Oriented Design",
+      "OOAD",
+      "ICONIX",
+      "UML",
+      "BDD",
+      "Traceability",
+      "Domain Modeling",
+      "Use Cases",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Test Scenarios",
+      "Design Documentation",
+    ],
+  },
+
+        {
+    title: "Iterator Pattern",
+    description:
+      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
+    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
+    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
+    tags: [
+      "System Design",
+      "Object-Oriented Design",
+      "OOAD",
+      "ICONIX",
+      "UML",
+      "BDD",
+      "Traceability",
+      "Domain Modeling",
+      "Use Cases",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Test Scenarios",
+      "Design Documentation",
+    ],
+  },
+
+          {
+    title: "Factory Pattern",
+    description:
+      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
+    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
+    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
+    tags: [
+      "System Design",
+      "Object-Oriented Design",
+      "OOAD",
+      "ICONIX",
+      "UML",
+      "BDD",
+      "Traceability",
+      "Domain Modeling",
+      "Use Cases",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Test Scenarios",
+      "Design Documentation",
+    ],
+  },
+
+
+];
+
+
+const dataPipelineProjects = [
   {
     title: "Aline",
     description:
@@ -69,16 +249,13 @@ const apiProjects = [
       "React",
       "PostgreSQL",
       "Sequelize",
-      "RESTful API",
+      "RESTful API",  
       "JWT",
       "Ticketmaster API",
       "OpenWeather API",
       "Render",
     ],
   },
-];
-
-const dataPipelineProjects = [
   {
     title: "Aline",
     description:
@@ -165,8 +342,6 @@ const dataPipelineProjects = [
 //   },
 // ];
 
-
-
 const pythonProjects = [
   {
     title: "Probabilistic Market Engine",
@@ -211,9 +386,6 @@ const pythonProjects = [
     tags: ["Python", "Command-Line Application"],
   },
 ];
-
-
-
 
 const matLabProjects = [
   {
@@ -274,10 +446,6 @@ const javaProjects = [
   },
 ];
 
-
-
-
-
 // const fullStackProjects = [
 //   {
 //     title: "Weather App",
@@ -337,20 +505,17 @@ const javaProjects = [
 //   },
 // ];
 
-
-  
-
-
-
-
 const Portfolio = () => {
-
- 
   const projectGroups = [
     {
       groupTitle: "Systems Design & Development",
       groupId: "apis",
       projects: apiProjects,
+    },
+    {
+      groupTitle: "Design Patterns",
+      groupId: "designPatterns",
+      projects: designPatternProjects,
     },
     {
       groupTitle: "Infrastructure",
@@ -376,20 +541,16 @@ const Portfolio = () => {
       groupTitle: "Automation & Reliability",
       groupId: "matlab",
       projects: matLabProjects,
-    }
+    },
   ];
 
-
-
-
   return (
+    <div className="portfolio-page">
+      <section className="portfolio-Wraper">
+        <h1 className="portfilioHeaderText">My Portfolio</h1>
 
-      <div className="portfolio-page">
-        <section className="portfolio-Wraper">
-          <h1 className="portfilioHeaderText">My Portfolio</h1>
-
-          {/* Index Section */}
-          {/* <nav className="portfolio-index">
+        {/* Index Section */}
+        {/* <nav className="portfolio-index">
             <div className="top-links">
               <a href="#featured">Featured Projects</a>
 
@@ -414,20 +575,9 @@ const Portfolio = () => {
             </div>
           </nav> */}
 
+        <Carousel projectGroups={projectGroups} />
 
-
-
-   
-      <Carousel projectGroups={projectGroups} />
-
-
-
-
-
-
-
-
-          {/* <div id="dataPipelines" className="mongoDBHeader">
+        {/* <div id="dataPipelines" className="mongoDBHeader">
             {"API's"}
           </div>
           <div className="disclaimerWraper">
@@ -875,11 +1025,8 @@ const Portfolio = () => {
 
 
 */}
-
-
-        </section>
-      </div>
-
+      </section>
+    </div>
   );
 };
 
