@@ -708,3 +708,57 @@ font-family: Roboto, sans-serif;
   height: 100%;
   padding: 0;
 }
+
+/* Base/mobile layout */
+.innerCarousel .swiper-wrapper {
+  align-items: stretch;
+}
+
+.innerCarousel .swiper-slide {
+  display: flex;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.project-card {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.project-card .myFlexCard {
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  gap: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.project-card .project-right-side {
+  flex: 0 0 28%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .myCard.project-reveal-content {
+  flex: 1 1 72%;
+  min-width: 0;
+  width: auto;
+  height: auto;
+}
+
+.project-card .card-body {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
