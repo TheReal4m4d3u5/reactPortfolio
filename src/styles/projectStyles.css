@@ -8,7 +8,7 @@
   border-radius: 18px;
   width: 100%;
   max-width: 600px;
-  padding: 20px;
+
   margin: 20px;
   gap: 16px;
   box-sizing: border-box;
@@ -284,7 +284,10 @@
     rgba(255, 255, 255, 0.05)
   );
   pointer-events: none;
+  
 }
+
+
 
 .project-card {
   display: flex;
@@ -594,7 +597,7 @@ font-family: Roboto, sans-serif;
   flex: 0 0 30% !important;
   width: 30% !important;
   max-width: 30% !important;
-  min-width: 0 !important;
+  min-width: 474px !important;
 
   display: flex !important;
   justify-content: center !important;
@@ -738,8 +741,8 @@ font-family: Roboto, sans-serif;
   width: 100%;
   height: auto;
   min-height: 0;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 0rem;
+  padding: 0rem;
   box-sizing: border-box;
 }
 
@@ -807,6 +810,7 @@ font-family: Roboto, sans-serif;
   width: 100%;
   height: auto;
   min-height: 0;
+  padding: 0px;
 }
 
 @media (max-width: 768px) {
@@ -826,4 +830,54 @@ font-family: Roboto, sans-serif;
     position: static;
     bottom: auto;
   }
+}
+
+.myFlexCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  padding: 0px;
+}
+
+.project-card {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+  overflow: hidden;
+}
+
+.project-card > .myFlexCard {
+  display: flex !important;
+
+  /* project-right-side is first in your JSX, so reverse puts it on the right */
+  flex-direction: row-reverse !important;
+
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+
+  width: 100% !important;
+  min-height: 560px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+.project-card .myCard.project-reveal-content {
+  flex: 0 0 72% !important;
+  width: 72% !important;
+  margin: 0 !important;
+}
+
+.project-card .project-right-side {
+  flex: 0 0 28% !important;
+  width: 28% !important;
+  margin: 0 !important;
 }
