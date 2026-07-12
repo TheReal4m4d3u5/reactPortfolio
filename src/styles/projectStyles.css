@@ -762,3 +762,39 @@ font-family: Roboto, sans-serif;
   height: auto;
   padding: 0;
 }
+
+/* The page section must expand with its project cards */
+.portfolio-section,
+.projects-section,
+.project-container,
+.projects-container {
+  height: auto;
+  overflow: visible;
+}
+
+@media (max-width: 768px) {
+  .portfolio-section,
+  .projects-section {
+    min-height: auto;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .project-container,
+  .projects-container {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .project-card {
+    position: static;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  footer {
+    position: static;
+    margin-top: 1rem;
+  }
+}
