@@ -808,3 +808,22 @@ font-family: Roboto, sans-serif;
   height: auto;
   min-height: 0;
 }
+
+@media (max-width: 768px) {
+  .project-card {
+    height: auto;
+    min-height: 0;
+    margin-bottom: 24px;
+  }
+
+  .projects-container,
+  .project-container {
+    padding-bottom: 24px;
+  }
+
+  footer,
+  .footer {
+    position: static;
+    bottom: auto;
+  }
+}
