@@ -154,10 +154,11 @@ const Project = ({
         </div>
 
         <div className="myCard project-reveal-content">
-          <Card.Body className="d-flex flex-column">
+
             <Card.Title>{title}</Card.Title>
 
             <Card.Text className="project-description">{description}</Card.Text>
+            
             <div className="project-tags-container">
               {Array.isArray(tags) && tags.length > 0 && (
                 <div className="project-tags-list">
@@ -167,7 +168,7 @@ const Project = ({
                 </div>
               )}
             </div>
-          </Card.Body>
+      
         </div>
       </div>
     </Card>
