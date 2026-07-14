@@ -21,6 +21,14 @@ import image16 from "../../src/assets/mastermind/image copy 13.png";
 import image17 from "../../src/assets/mastermind/image copy 14.png";
 
 
+import chordFinderDomainModel from "../../src/assets/chordFinder/image2.png";
+import image18 from "../../src/assets/chordFinder/image1.png";
+import image19 from "../../src/assets/chordFinder/image3.png";
+import image20 from "../../src/assets/chordFinder/image4.png";
+import image21 from "../../src/assets/chordFinder/image5.png";
+import image22 from "../../src/assets/chordFinder/image6.png";
+import image23 from "../../src/assets/chordFinder/image7.png";
+import image24 from "../../src/assets/chordFinder/image8.png";
 
 
 import mastermindclassDiagram from "../../src/assets/mastermind/classDiagram.png";
@@ -82,7 +90,7 @@ const apiProjects = [
   {
     title: "Chord Finder",
     description: "Chord Finder is a Java-based music education application that identifies possible triad names from three notes entered in any order. The system validates note input, supports enharmonic spellings such as D♯ and E♭, calculates musical intervals, and compares the submitted notes against stored chord formulas to recognize major, minor, diminished, and augmented chords. It also includes an administrator workflow for adding, editing, viewing, and deleting chord formulas. The application was designed using object-oriented analysis, UML, GRASP principles, behavior-driven development, and test-driven development.",
-    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
+    image: [chordFinderDomainModel, image18, image19, image20, image21, image22, image23, image24],
     gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
     tags: [
       "System Design",
