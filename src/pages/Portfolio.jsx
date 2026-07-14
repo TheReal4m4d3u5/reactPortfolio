@@ -10,7 +10,7 @@ import image5 from "../../src/assets/mastermind/image copy 2.png";
 import image6 from "../../src/assets/mastermind/image copy 3.png";
 import image7 from "../../src/assets/mastermind/image copy 4.png";
 import image8 from "../../src/assets/mastermind/image copy 5.png";
-import image9 from "../../src/assets/mastermind/image copy 6.png";
+import image18 from "../../src/assets/mastermind/image copy 6.png";
 import image10 from "../../src/assets/mastermind/image copy 7.png";
 import image11 from "../../src/assets/mastermind/image copy 8.png";
 import image12 from "../../src/assets/mastermind/image copy 9.png";
@@ -21,7 +21,6 @@ import image16 from "../../src/assets/mastermind/image copy 13.png";
 import image17 from "../../src/assets/mastermind/image copy 14.png";
 
 
-src/assets/mastermind/"image copy.png"
 
 
 import mastermindclassDiagram from "../../src/assets/mastermind/classDiagram.png";
@@ -60,7 +59,7 @@ const apiProjects = [
     title: "Master Mind",
     description:
       "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
-    image: [mastermindDomainMoel, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17],
+    image: [mastermindDomainMoel, image4, image5, image6, image7, image8, image18, image10, image11, image12, image13, image14, image15, image16, image17],
     gitLink: "https://github.com/TheReal4m4d3u5/Mastermind",
     tags: [
       "System Design",
