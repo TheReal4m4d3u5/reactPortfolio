@@ -4,6 +4,25 @@ import image1 from "../../src/assets/image1.png";
 import image2 from "../../src/assets/image2.png";
 import image3 from "../../src/assets/image3.png";
 
+
+import image4 from "../../src/assets/mastermind/image copy.png";
+import image5 from "../../src/assets/mastermind/image copy 2.png";
+import image6 from "../../src/assets/mastermind/image copy 3.png";
+import image7 from "../../src/assets/mastermind/image copy 4.png";
+import image8 from "../../src/assets/mastermind/image copy 5.png";
+import image18 from "../../src/assets/mastermind/image copy 6.png";
+import image10 from "../../src/assets/mastermind/image copy 7.png";
+import image11 from "../../src/assets/mastermind/image copy 8.png";
+import image12 from "../../src/assets/mastermind/image copy 9.png";
+import image13 from "../../src/assets/mastermind/image copy 10.png";
+import image14 from "../../src/assets/mastermind/image copy 11.png";
+import image15 from "../../src/assets/mastermind/image copy 12.png";
+import image16 from "../../src/assets/mastermind/image copy 13.png";
+import image17 from "../../src/assets/mastermind/image copy 14.png";
+
+
+
+
 import mastermindclassDiagram from "../../src/assets/mastermind/classDiagram.png";
 import mastermindDomainMoel from "../../src/assets/mastermind/domainModel.png";
 import useCaseDiagram from "../../src/assets/mastermind/useCaseDiagram.png";
@@ -40,7 +59,7 @@ const apiProjects = [
     title: "Master Mind",
     description:
       "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
-    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
+    image: [mastermindDomainMoel, image4, image5, image6, image7, image8, image18, image10, image11, image12, image13, image14, image15, image16, image17],
     gitLink: "https://github.com/TheReal4m4d3u5/Mastermind",
     tags: [
       "System Design",
@@ -62,8 +81,7 @@ const apiProjects = [
 
   {
     title: "Chord Finder",
-    description:
-      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
+    description: "Chord Finder is a Java-based music education application that identifies possible triad names from three notes entered in any order. The system validates note input, supports enharmonic spellings such as D♯ and E♭, calculates musical intervals, and compares the submitted notes against stored chord formulas to recognize major, minor, diminished, and augmented chords. It also includes an administrator workflow for adding, editing, viewing, and deleting chord formulas. The application was designed using object-oriented analysis, UML, GRASP principles, behavior-driven development, and test-driven development.",
     image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
     gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
     tags: [
