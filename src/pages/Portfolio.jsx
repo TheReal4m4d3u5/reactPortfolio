@@ -1,8 +1,5 @@
 import Carousel from "../components/Carousel";
 import "../styles/portfolioStyles.css";
-import image1 from "../../src/assets/image1.png";
-import image2 from "../../src/assets/image2.png";
-import image3 from "../../src/assets/image3.png";
 
 import image4 from "../../src/assets/mastermind/image copy.png";
 import image5 from "../../src/assets/mastermind/image copy 2.png";
@@ -59,10 +56,6 @@ import image9 from "../../src/assets/image9.png";
 
 // import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
-
-
-
-
 
 const apiProjects = [
   {
@@ -140,6 +133,32 @@ const apiProjects = [
 ];
 
 const designPatternProjects = [
+  {
+    title: "Strategy Pattern",
+    description:
+      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
+    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
+    gitLink: "https://github.com/TheReal4m4d3u5/Mastermind",
+    tags: [
+      "System Design",
+      "Object-Oriented Design",
+      "OOAD",
+      "ICONIX",
+      "UML",
+      "BDD",
+      "Traceability",
+      "Domain Modeling",
+      "Use Cases",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Test Scenarios",
+      "Design Documentation",
+    ],
+  },
+];
+
+const softwareArchitectureProjects = [
   {
     title: "Strategy Pattern",
     description:
@@ -285,7 +304,6 @@ const designPatternProjects = [
   },
 ];
 
-
 const matLabProjects = [
   {
     title: "MatDrive",
@@ -300,7 +318,7 @@ Applies mathematical modeling within a structured system to produce realistic, s
 • Parametric motion modeling
 • Stochastic decision-making`,
 
-    image: [image9, image1, image2, image3],
+    image: [image9],
     gitLink: "https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car",
     tags: [
       "MATLAB",
@@ -317,7 +335,7 @@ const fullStackProjects = [
     title: "EmployEase",
     description:
       "A full-stack job search and application tracking platform that helps users discover opportunities through The Muse API, save relevant positions, and organize their job search in one centralized dashboard. EmployEase features secure authentication, GraphQL-based data operations, persistent job tracking, and a responsive React interface.",
-    image: [image9, image1, image2, image3],
+    image: [image9],
     gitLink: "https://github.com/ChristopherP-C/EmployEase",
     deployed: "https://employease-hubi.onrender.com/",
     tags: [
@@ -342,7 +360,7 @@ const fullStackProjects = [
     title: "Book Search Engine",
     description:
       "A full-stack Google Books search application that allows users to create an account, securely log in, search for books, save titles to a personal collection, and remove saved books. The application uses React and TypeScript on the frontend, a Node.js and Express backend, GraphQL with Apollo Client and Apollo Server, MongoDB with Mongoose, and JWT authentication.",
-    image: [image9, image1, image2, image3],
+    image: [image9],
     gitLink: "https://github.com/TheReal4m4d3u5/bookSearchEngine",
     deployed: "https://booksearchengine-5ikq.onrender.com/",
     tags: [
@@ -367,7 +385,7 @@ const fullStackProjects = [
     title: "Aline Events",
     description:
       "A full-stack event discovery platform that helps users find local entertainment, evaluate ticket availability and pricing, save events of interest, dismiss unwanted results, and check location-specific weather forecasts. Aline Events combines a responsive React interface with a Node.js and Express backend, PostgreSQL persistence, and real-time data from Ticketmaster, OpenWeather, and LocationIQ.",
-    image: [image9, image1, image2, image3],
+    image: [image9],
     gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
     deployed: "ADD_YOUR_ALINE_EVENTS_DEPLOYED_LINK_HERE",
     tags: [
@@ -384,33 +402,28 @@ const fullStackProjects = [
     ],
   },
 
-{
-  title: "Kanban Board",
-  description:
-    "A full-stack project management application that allows authenticated users to organize work, create tickets, assign tasks, update ticket details and status, and track progress across a visual Kanban workflow. The application features JWT-based authentication, protected API routes, persistent PostgreSQL storage, and a React and TypeScript interface.",
-  image: [image9, image1, image2, image3],
-  gitLink: "https://github.com/TheReal4m4d3u5/kanbanBoard",
-  deployed: "https://kanbanboard-552l.onrender.com/",
-  tags: [
-    "React",
-    "TypeScript",
-    "Vite",
-    "Node.js",
-    "Express",
-    "REST API",
-    "PostgreSQL",
-    "Sequelize",
-    "JWT",
-    "bcrypt",
-    "Render",
-  ],
-},
-  
-
-
+  {
+    title: "Kanban Board",
+    description:
+      "A full-stack project management application that allows authenticated users to organize work, create tickets, assign tasks, update ticket details and status, and track progress across a visual Kanban workflow. The application features JWT-based authentication, protected API routes, persistent PostgreSQL storage, and a React and TypeScript interface.",
+    image: [image9],
+    gitLink: "https://github.com/TheReal4m4d3u5/kanbanBoard",
+    deployed: "https://kanbanboard-552l.onrender.com/",
+    tags: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Node.js",
+      "Express",
+      "REST API",
+      "PostgreSQL",
+      "Sequelize",
+      "JWT",
+      "bcrypt",
+      "Render",
+    ],
+  },
 ];
-
-
 
 const computationalModelingProjects = [
   {
@@ -419,19 +432,18 @@ const computationalModelingProjects = [
     title: "Grocery Inventory Backend System",
     description:
       "A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design",
-    image: [image9, image1, image2, image3],
+    image: [image9],
     gitLink: "https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372",
     tags: ["Java", "OOP", "Backend Systems", "Software Design"],
   },
 ];
-
 
 const javaProjects = [
   {
     title: "Grocery Inventory Backend System",
     description:
       "A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design",
-    image: [image9, image1, image2, image3],
+    image: [image9],
     gitLink: "https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372",
     tags: ["Java", "OOP", "Backend Systems", "Software Design"],
   },
@@ -499,14 +511,20 @@ const javaProjects = [
 const Portfolio = () => {
   const projectGroups = [
     {
-      groupTitle: "Systems Design & Development",
+      groupTitle: "Object-Oriented Analysis & Design",
       groupId: "apis",
       projects: apiProjects,
     },
     {
-      groupTitle: "Design Patterns",
+      groupTitle: "Design Patterns & Refactoring",
       groupId: "designPatterns",
       projects: designPatternProjects,
+    },
+
+    {
+      groupTitle: "Architecture & System Modeling",
+      groupId: "softwareArchitecture",
+      projects: softwareArchitectureProjects,
     },
 
     {
