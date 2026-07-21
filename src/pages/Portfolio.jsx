@@ -1,10 +1,8 @@
 import Carousel from "../components/Carousel";
 import "../styles/portfolioStyles.css";
+  
 
-import image4 from "../../src/assets/mastermind/image copy.png";
-import image5 from "../../src/assets/mastermind/image copy 2.png";
-import image6 from "../../src/assets/mastermind/image copy 3.png";
-import image7 from "../../src/assets/mastermind/image copy 4.png";
+
 import image8 from "../../src/assets/mastermind/image copy 5.png";
 import image18 from "../../src/assets/mastermind/image copy 6.png";
 import image10 from "../../src/assets/mastermind/image copy 7.png";
@@ -26,9 +24,9 @@ import image23 from "../../src/assets/chordFinder/image7.png";
 import image24 from "../../src/assets/chordFinder/image8.png";
 import image25 from "../../src/assets/chordFinder/image1.png";
 
-import mastermindclassDiagram from "../../src/assets/mastermind/classDiagram.png";
-import mastermindDomainMoel from "../../src/assets/mastermind/domainModel.png";
-import useCaseDiagram from "../../src/assets/mastermind/useCaseDiagram.png";
+
+
+
 
 // import image4 from "../../src/assets/image4.png";
 // import image5 from "../../src/assets/image5.png";
@@ -57,6 +55,18 @@ import image9 from "../../src/assets/image9.png";
 // import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
 
+import mastermindDomainMoel from "../../src/assets/mastermind/domainModel.png";
+import useCaseDiagram from "../../src/assets/mastermind/useCaseDiagram.png";
+import createSecretCodeUseCase from "../../src/assets/mastermind/createSecretCodeUseCase.png";
+import createCodeRD from "../../src/assets/mastermind/createCodeRD.png";
+import createCodeSeq from "../../src/assets/mastermind/createCodeSeq.png";
+import mastermindclassDiagram from "../../src/assets/mastermind/classDiagram.png";
+
+
+
+
+
+
 const apiProjects = [
   {
     title: "Master Mind",
@@ -64,10 +74,11 @@ const apiProjects = [
       "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
     image: [
       mastermindDomainMoel,
-      image4,
-      image5,
-      image6,
-      image7,
+      useCaseDiagram,
+      createSecretCodeUseCase,
+      createCodeRD,
+      createCodeSeq,
+      createSecretCodeUseCase,
       image8,
       image18,
       image10,
