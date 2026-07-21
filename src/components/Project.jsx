@@ -127,7 +127,7 @@ const Project = ({
           )}
 
           {staginglink && (
-            <div className="mt-2">
+            <div className="viewProjectDeployment">
               <a
                 href={staginglink}
                 target="_blank"
@@ -140,7 +140,7 @@ const Project = ({
           )}
 
           {deployedlink && (
-            <div className="mt-2">
+            <div className="viewProjectDeployment">
               <a
                 href={deployedlink}
                 target="_blank"

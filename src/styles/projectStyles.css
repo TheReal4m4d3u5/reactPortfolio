@@ -115,6 +115,16 @@
 
 }
 
+.viewProjectDeployment {
+    display: flex;
+      justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+
+}
+
+
+
 .view-project-btn {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -902,13 +912,7 @@ font-family: Roboto, sans-serif;
   width: 100%;
 }
 
-.project-tags-list > * {
-  flex: 0 0 auto !important;
-  width: auto !important;
-  height: auto !important;
-  min-width: 0 !important;
-  min-height: 0 !important;
-  align-self: center;
-  white-space: nowrap;
-}
+
+
+
 
