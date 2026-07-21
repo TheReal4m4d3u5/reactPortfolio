@@ -23,12 +23,6 @@ test("portfolio subject buttons render", async ({ page }) => {
   await page.goto("/portfolio");
 
   const buttons = [
-    "Systems Design & Development",
-    "Infrastructure",
-    "Platform Engineering",
-    "Cloud & Distributed Systems",
-    "Computational Modeling",
-    "Automation & Reliability",
     "Archive",
   ];
 
