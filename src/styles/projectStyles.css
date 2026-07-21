@@ -609,11 +609,7 @@ font-family: Roboto, sans-serif;
 
 }
 
-.flex-wrap{
 
-  width: 1000px;
-
-}
 
 .project-preview-overlay,
 .media-container {
@@ -894,3 +890,25 @@ font-family: Roboto, sans-serif;
   width: 28% !important;
   margin: 0 !important;
 }
+
+.project-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+
+  width: 100%;
+}
+
+.project-tags-list > * {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  align-self: center;
+  white-space: nowrap;
+}
+
