@@ -2,9 +2,7 @@ import Carousel from "../components/Carousel";
 import "../styles/portfolioStyles.css";
   
 
-import image5 from "../../src/assets/mastermind/image copy 2.png";
-import image6 from "../../src/assets/mastermind/image copy 3.png";
-import image7 from "../../src/assets/mastermind/image copy 4.png";
+
 import image8 from "../../src/assets/mastermind/image copy 5.png";
 import image18 from "../../src/assets/mastermind/image copy 6.png";
 import image10 from "../../src/assets/mastermind/image copy 7.png";
