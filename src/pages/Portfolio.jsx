@@ -281,103 +281,6 @@ const designPatternProjects = [
   },
 ];
 
-const dataPipelineProjects = [
-  {
-    title: "Aline",
-    description:
-      "A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
-    deployed: "https://aline-events.onrender.com/",
-    tags: [
-      "Node.js",
-      "Express.js",
-      "React",
-      "PostgreSQL",
-      "Sequelize",
-      "RESTful API",
-      "JWT",
-      "Ticketmaster API",
-      "OpenWeather API",
-      "Render",
-    ],
-  },
-  {
-    title: "Aline",
-    description:
-      "A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
-    deployed: "https://aline-events.onrender.com/",
-    tags: [
-      "Node.js",
-      "Express.js",
-      "React",
-      "PostgreSQL",
-      "Sequelize",
-      "RESTful API",
-      "JWT",
-      "Ticketmaster API",
-      "OpenWeather API",
-      "Render",
-    ],
-  },
-
-  {
-    video: employeeDB,
-    videoText: "Click to watch video",
-    title: "Employee DB",
-    description:
-      "A command-line application that allows business owners to manage and organize employee data efficiently.",
-    gitLink: "https://github.com/TheReal4m4d3u5/EmployeeDB",
-    tags: ["Node.js", "Inquirer", "PostgreSQL", "Command-Line Application"],
-  },
-];
-
-const pythonProjects = [
-  {
-    title: "Probabilistic Market Engine",
-    description:
-      "A statistical analysis and Monte Carlo simulation engine that models stock price behavior using historical data. Computes volatility, return distributions, and probabilistic forecasts to estimate future price ranges and risk.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/MarketSim-Lite",
-    tags: ["Python", "Statistics", "Simulation", "Forecasting"],
-  },
-
-  {
-    title: "Shopping Cart Polymorphism",
-    description:
-      "A polymorphic shopping cart where different item types calculate prices uniquely.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/shoppingCartPolymorphism",
-    tags: ["Python", "Polymorphism"],
-  },
-  {
-    title: "Customer Room Reservations",
-    description:
-      "A system for hotel management to book rooms, check availability, and manage reservations.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/customerRoomReservations",
-    tags: ["Python", "CSV", "JSON"],
-  },
-  {
-    title: "Bank Account",
-    description:
-      "A command-line banking application for managing savings account deposits and withdrawals.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/bankAccount",
-    tags: ["Python", "Command-Line Application"],
-  },
-
-  {
-    title: "Hotel Reservation System",
-    description:
-      "A command-line application for managing hotel room bookings and availability.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/hotelReservationSystem",
-    tags: ["Python", "Command-Line Application"],
-  },
-];
 
 const matLabProjects = [
   {
@@ -503,27 +406,6 @@ const fullStackProjects = [
 
 ];
 
-const sqlProjects = [
-  {
-    video: employeeDB,
-    videoText: "Click to watch video",
-    title: "Employee DB",
-    description:
-      "A command-line application that allows business owners to manage and organize employee data efficiently.",
-    gitLink: "https://github.com/TheReal4m4d3u5/EmployeeDB",
-    tags: ["Node.js", "Inquirer", "PostgreSQL", "Command-Line Application"],
-  },
-
-  {
-    title: "Kanban Board",
-    description:
-      "A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/kanbanBoard",
-    deployed: "https://kanbanboard-552l.onrender.com",
-    tags: ["Node.js", "Express.js", "React", "JWT", "PostgreSQL", "Render"],
-  },
-];
 
 const javaProjects = [
   {
