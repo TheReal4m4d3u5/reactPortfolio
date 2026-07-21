@@ -60,6 +60,10 @@ import image9 from "../../src/assets/image9.png";
 // import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
 
+
+
+
+
 const apiProjects = [
   {
     title: "Master Mind",
@@ -410,6 +414,8 @@ const fullStackProjects = [
 
 const computationalModelingProjects = [
   {
+    video: employeeDB,
+    videoText: "Click to watch video",
     title: "Grocery Inventory Backend System",
     description:
       "A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design",
