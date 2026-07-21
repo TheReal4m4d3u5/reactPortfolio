@@ -4,7 +4,6 @@ import image1 from "../../src/assets/image1.png";
 import image2 from "../../src/assets/image2.png";
 import image3 from "../../src/assets/image3.png";
 
-
 import image4 from "../../src/assets/mastermind/image copy.png";
 import image5 from "../../src/assets/mastermind/image copy 2.png";
 import image6 from "../../src/assets/mastermind/image copy 3.png";
@@ -19,7 +18,6 @@ import image14 from "../../src/assets/mastermind/image copy 11.png";
 import image15 from "../../src/assets/mastermind/image copy 12.png";
 import image16 from "../../src/assets/mastermind/image copy 13.png";
 import image17 from "../../src/assets/mastermind/image copy 14.png";
-
 
 import chordFinderDomainModel from "../../src/assets/chordFinder/image2.png";
 
@@ -62,12 +60,32 @@ import image9 from "../../src/assets/image9.png";
 // import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
 
+
+
+
+
 const apiProjects = [
   {
     title: "Master Mind",
     description:
       "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
-    image: [mastermindDomainMoel, image4, image5, image6, image7, image8, image18, image10, image11, image12, image13, image14, image15, image16, image17],
+    image: [
+      mastermindDomainMoel,
+      image4,
+      image5,
+      image6,
+      image7,
+      image8,
+      image18,
+      image10,
+      image11,
+      image12,
+      image13,
+      image14,
+      image15,
+      image16,
+      image17,
+    ],
     gitLink: "https://github.com/TheReal4m4d3u5/Mastermind",
     tags: [
       "System Design",
@@ -89,8 +107,18 @@ const apiProjects = [
 
   {
     title: "Chord Finder",
-    description: "Chord Finder is a Java-based music education application that identifies possible triad names from three notes entered in any order. The system validates note input, supports enharmonic spellings such as D♯ and E♭, calculates musical intervals, and compares the submitted notes against stored chord formulas to recognize major, minor, diminished, and augmented chords. It also includes an administrator workflow for adding, editing, viewing, and deleting chord formulas. The application was designed using object-oriented analysis, UML, GRASP principles, behavior-driven development, and test-driven development.",
-    image: [chordFinderDomainModel, image25, image19, image20, image21, image22, image23, image24],
+    description:
+      "Chord Finder is a Java-based music education application that identifies possible triad names from three notes entered in any order. The system validates note input, supports enharmonic spellings such as D♯ and E♭, calculates musical intervals, and compares the submitted notes against stored chord formulas to recognize major, minor, diminished, and augmented chords. It also includes an administrator workflow for adding, editing, viewing, and deleting chord formulas. The application was designed using object-oriented analysis, UML, GRASP principles, behavior-driven development, and test-driven development.",
+    image: [
+      chordFinderDomainModel,
+      image25,
+      image19,
+      image20,
+      image21,
+      image22,
+      image23,
+      image24,
+    ],
     gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
     tags: [
       "System Design",
@@ -160,8 +188,7 @@ const designPatternProjects = [
     ],
   },
 
-
-    {
+  {
     title: "Observer Pattern",
     description:
       "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
@@ -185,7 +212,7 @@ const designPatternProjects = [
     ],
   },
 
-      {
+  {
     title: "Decorator Pattern",
     description:
       "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
@@ -209,7 +236,7 @@ const designPatternProjects = [
     ],
   },
 
-        {
+  {
     title: "Iterator Pattern",
     description:
       "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
@@ -233,7 +260,7 @@ const designPatternProjects = [
     ],
   },
 
-          {
+  {
     title: "Factory Pattern",
     description:
       "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
@@ -256,162 +283,8 @@ const designPatternProjects = [
       "Design Documentation",
     ],
   },
-
-
 ];
 
-
-const dataPipelineProjects = [
-  {
-    title: "Aline",
-    description:
-      "A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
-    deployed: "https://aline-events.onrender.com/",
-    tags: [
-      "Node.js",
-      "Express.js",
-      "React",
-      "PostgreSQL",
-      "Sequelize",
-      "RESTful API",  
-      "JWT",
-      "Ticketmaster API",
-      "OpenWeather API",
-      "Render",
-    ],
-  },
-  {
-    title: "Aline",
-    description:
-      "A full-stack application that aggregates live event and weather data from multiple external APIs.\n\nImplements backend-driven architecture using Node.js and Express to manage API integrations, data processing, and secure environment configurations. \n\nApplies RESTful design principles with PostgreSQL for data persistence and a responsive React frontend for dynamic user interaction.\n• Live event and weather aggregation\n• RESTful API architecture\n• Backend data processing and integration\n• Responsive frontend design",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
-    deployed: "https://aline-events.onrender.com/",
-    tags: [
-      "Node.js",
-      "Express.js",
-      "React",
-      "PostgreSQL",
-      "Sequelize",
-      "RESTful API",
-      "JWT",
-      "Ticketmaster API",
-      "OpenWeather API",
-      "Render",
-    ],
-  },
-
-  {
-    video: employeeDB,
-    videoText: "Click to watch video",
-    title: "Employee DB",
-    description:
-      "A command-line application that allows business owners to manage and organize employee data efficiently.",
-    gitLink: "https://github.com/TheReal4m4d3u5/EmployeeDB",
-    tags: ["Node.js", "Inquirer", "PostgreSQL", "Command-Line Application"],
-  },
-];
-
-// const optimizationProjects = [
-//   {
-//     title: "My Selenium Test Suite",
-//     description: `A custom-built Selenium test suite for automated testing.`,
-//     image: [image9, image1, image2, image3],
-//     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-//     tags: [
-//       "Selenium",
-//       "Maven",
-//       "Java",
-//       "Appium",
-//       "BDD",
-//       "Cucumber",
-//       "Chromedriver",
-//     ],
-//   },
-// ];
-
-// const simulationProjects = [
-//   {
-//     title: "My Selenium Test Suite",
-//     description: `A custom-built Selenium test suite for automated testing.`,
-//     image: [image9, image1, image2, image3],
-//     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-//     tags: [
-//       "Selenium",
-//       "Maven",
-//       "Java",
-//       "Appium",
-//       "BDD",
-//       "Cucumber",
-//       "Chromedriver",
-//     ],
-//   },
-// ];
-
-// const forcastingProjects = [
-//   {
-//     title: "My Selenium Test Suite",
-//     description: `A custom-built Selenium test suite for automated testing.`,
-//     image: [image9, image1, image2, image3],
-//     gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
-//     tags: [
-//       "Selenium",
-//       "Maven",
-//       "Java",
-//       "Appium",
-//       "BDD",
-//       "Cucumber",
-//       "Chromedriver",
-//     ],
-//   },
-// ];
-
-const pythonProjects = [
-  {
-    title: "Probabilistic Market Engine",
-    description:
-      "A statistical analysis and Monte Carlo simulation engine that models stock price behavior using historical data. Computes volatility, return distributions, and probabilistic forecasts to estimate future price ranges and risk.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/MarketSim-Lite",
-    tags: ["Python", "Statistics", "Simulation", "Forecasting"],
-  },
-
-  {
-    title: "Shopping Cart Polymorphism",
-    description:
-      "A polymorphic shopping cart where different item types calculate prices uniquely.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/shoppingCartPolymorphism",
-    tags: ["Python", "Polymorphism"],
-  },
-  {
-    title: "Customer Room Reservations",
-    description:
-      "A system for hotel management to book rooms, check availability, and manage reservations.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/customerRoomReservations",
-    tags: ["Python", "CSV", "JSON"],
-  },
-  {
-    title: "Bank Account",
-    description:
-      "A command-line banking application for managing savings account deposits and withdrawals.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/bankAccount",
-    tags: ["Python", "Command-Line Application"],
-  },
-
-  {
-    title: "Hotel Reservation System",
-    description:
-      "A command-line application for managing hotel room bookings and availability.",
-    image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/hotelReservationSystem",
-    tags: ["Python", "Command-Line Application"],
-  },
-];
 
 const matLabProjects = [
   {
@@ -439,27 +312,119 @@ Applies mathematical modeling within a structured system to produce realistic, s
   },
 ];
 
-const sqlProjects = [
+const fullStackProjects = [
   {
-    video: employeeDB,
-    videoText: "Click to watch video",
-    title: "Employee DB",
+    title: "EmployEase",
     description:
-      "A command-line application that allows business owners to manage and organize employee data efficiently.",
-    gitLink: "https://github.com/TheReal4m4d3u5/EmployeeDB",
-    tags: ["Node.js", "Inquirer", "PostgreSQL", "Command-Line Application"],
+      "A full-stack job search and application tracking platform that helps users discover opportunities through The Muse API, save relevant positions, and organize their job search in one centralized dashboard. EmployEase features secure authentication, GraphQL-based data operations, persistent job tracking, and a responsive React interface.",
+    image: [image9, image1, image2, image3],
+    gitLink: "https://github.com/ChristopherP-C/EmployEase",
+    deployed: "https://employease-hubi.onrender.com/",
+    tags: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "GraphQL",
+      "Apollo Client",
+      "Apollo Server",
+      "MongoDB Atlas",
+      "Mongoose",
+      "JWT",
+      "Bootstrap",
+      "The Muse API",
+      "Vitest",
+      "Render",
+    ],
   },
 
   {
-    title: "Kanban Board",
+    title: "Book Search Engine",
     description:
-      "A full-stack Kanban board application with JWT-based authentication and PostgreSQL database management.",
+      "A full-stack Google Books search application that allows users to create an account, securely log in, search for books, save titles to a personal collection, and remove saved books. The application uses React and TypeScript on the frontend, a Node.js and Express backend, GraphQL with Apollo Client and Apollo Server, MongoDB with Mongoose, and JWT authentication.",
     image: [image9, image1, image2, image3],
-    gitLink: "https://github.com/TheReal4m4d3u5/kanbanBoard",
-    deployed: "https://kanbanboard-552l.onrender.com",
-    tags: ["Node.js", "Express.js", "React", "JWT", "PostgreSQL", "Render"],
+    gitLink: "https://github.com/TheReal4m4d3u5/bookSearchEngine",
+    deployed: "https://booksearchengine-5ikq.onrender.com/",
+    tags: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "GraphQL",
+      "Apollo Client",
+      "Apollo Server",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Google Books API",
+      "Bootstrap",
+      "Vite",
+      "Render",
+    ],
+  },
+
+  {
+    title: "Aline Events",
+    description:
+      "A full-stack event discovery platform that helps users find local entertainment, evaluate ticket availability and pricing, save events of interest, dismiss unwanted results, and check location-specific weather forecasts. Aline Events combines a responsive React interface with a Node.js and Express backend, PostgreSQL persistence, and real-time data from Ticketmaster, OpenWeather, and LocationIQ.",
+    image: [image9, image1, image2, image3],
+    gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
+    deployed: "ADD_YOUR_ALINE_EVENTS_DEPLOYED_LINK_HERE",
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Chakra UI",
+      "Ticketmaster API",
+      "OpenWeather API",
+      "LocationIQ API",
+      "Supabase",
+      "Render",
+    ],
+  },
+
+{
+  title: "Kanban Board",
+  description:
+    "A full-stack project management application that allows authenticated users to organize work, create tickets, assign tasks, update ticket details and status, and track progress across a visual Kanban workflow. The application features JWT-based authentication, protected API routes, persistent PostgreSQL storage, and a React and TypeScript interface.",
+  image: [image9, image1, image2, image3],
+  gitLink: "https://github.com/TheReal4m4d3u5/kanbanBoard",
+  deployed: "https://kanbanboard-552l.onrender.com/",
+  tags: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Node.js",
+    "Express",
+    "REST API",
+    "PostgreSQL",
+    "Sequelize",
+    "JWT",
+    "bcrypt",
+    "Render",
+  ],
+},
+  
+
+
+];
+
+
+
+const computationalModelingProjects = [
+  {
+    video: employeeDB,
+    videoText: "Click to watch video",
+    title: "Grocery Inventory Backend System",
+    description:
+      "A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design",
+    image: [image9, image1, image2, image3],
+    gitLink: "https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372",
+    tags: ["Java", "OOP", "Backend Systems", "Software Design"],
   },
 ];
+
 
 const javaProjects = [
   {
@@ -543,15 +508,11 @@ const Portfolio = () => {
       groupId: "designPatterns",
       projects: designPatternProjects,
     },
+
     {
-      groupTitle: "Infrastructure",
-      groupId: "dataPipelines",
-      projects: dataPipelineProjects,
-    },
-    {
-      groupTitle: "Platform Engineering",
-      groupId: "sql",
-      projects: sqlProjects,
+      groupTitle: "Full-Stack Development",
+      groupId: "fullStackID",
+      projects: fullStackProjects,
     },
     {
       groupTitle: "Cloud & Distributed Systems",
@@ -561,7 +522,7 @@ const Portfolio = () => {
     {
       groupTitle: "Computational Modeling",
       groupId: "python",
-      projects: pythonProjects,
+      projects: computationalModelingProjects,
     },
     {
       groupTitle: "Automation & Reliability",
