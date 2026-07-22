@@ -22,6 +22,23 @@ import image23 from "../../src/assets/chordFinder/image7.png";
 import image24 from "../../src/assets/chordFinder/image8.png";
 import image25 from "../../src/assets/chordFinder/image1.png";
 
+import employEase1 from "../../src/assets/employEase/image.png";
+import employEase2 from "../../src/assets/employEase/image1.png";
+import employEase3 from "../../src/assets/employEase/image2.png";
+import employEase4 from "../../src/assets/employEase/image3.png";
+import employEase5 from "../../src/assets/employEase/image5.png";
+
+import bookSearch1 from "../../src/assets/bookSearchEngine/image.png";
+import bookSearch2 from "../../src/assets/bookSearchEngine/image1.png";
+
+
+
+import KanbanBoard1 from "../../src/assets/KanbanBoard/image1.png";
+import KanbanBoard2 from "../../src/assets/KanbanBoard/image2.png";
+import KanbanBoard3 from "../../src/assets/KanbanBoard/image3.png";
+import KanbanBoard4 from "../../src/assets/KanbanBoard/image4.png";
+
+
 // import image4 from "../../src/assets/image4.png";
 // import image5 from "../../src/assets/image5.png";
 // import image6 from "../../src/assets/image6.png";
@@ -485,10 +502,24 @@ Technical highlights:
 const fullStackProjects = [
   {
     title: "EmployEase",
-    description:
-      "A full-stack job search and application tracking platform that helps users discover opportunities through The Muse API, save relevant positions, and organize their job search in one centralized dashboard. EmployEase features secure authentication, GraphQL-based data operations, persistent job tracking, and a responsive React interface.",
-    image: [image9],
-    gitLink: "https://github.com/ChristopherP-C/EmployEase",
+    description: `A full-stack job search and application tracking platform that helps users discover opportunities, save relevant positions, and organize their job search from one centralized dashboard.
+
+The application integrates The Muse API with secure authentication, persistent user data, and GraphQL-based client-server communication.
+
+Technical highlights:\n• Integrated The Muse API for job discovery and filtering
+• Implemented JWT authentication and protected user sessions
+• Built GraphQL queries and mutations with Apollo Client and Apollo Server
+• Created persistent saved-job and application-tracking workflows
+• Stored user and job data with MongoDB Atlas and Mongoose`,
+    image: [
+      employEase4,
+      employEase3,
+      employEase2,
+      employEase5,
+      employEase1,
+      employEase4,
+    ],
+    gitLink: "https://github.com/TheReal4m4d3u5/EmployEase",
     deployed: "https://employease-hubi.onrender.com/",
     tags: [
       "React",
@@ -510,9 +541,17 @@ const fullStackProjects = [
 
   {
     title: "Book Search Engine",
-    description:
-      "A full-stack Google Books search application that allows users to create an account, securely log in, search for books, save titles to a personal collection, and remove saved books. The application uses React and TypeScript on the frontend, a Node.js and Express backend, GraphQL with Apollo Client and Apollo Server, MongoDB with Mongoose, and JWT authentication.",
-    image: [image9],
+    description: `A full-stack book discovery and collection management application that allows users to search the Google Books catalog, create a secure account, and maintain a personalized library.
+
+The application integrates the Google Books API with JWT authentication, persistent user data, and GraphQL-based client-server communication.
+
+Technical highlights:
+• Integrated the Google Books API for book search and discovery
+• Implemented JWT authentication and protected user sessions
+• Built GraphQL queries and mutations with Apollo Client and Apollo Server
+• Created persistent save-and-remove book workflows
+• Stored user and book data with MongoDB and Mongoose`,
+    image: [bookSearch2, bookSearch1],
     gitLink: "https://github.com/TheReal4m4d3u5/bookSearchEngine",
     deployed: "https://booksearchengine-5ikq.onrender.com/",
     tags: [
@@ -535,8 +574,16 @@ const fullStackProjects = [
 
   {
     title: "Aline Events",
-    description:
-      "A full-stack event discovery platform that helps users find local entertainment, evaluate ticket availability and pricing, save events of interest, dismiss unwanted results, and check location-specific weather forecasts. Aline Events combines a responsive React interface with a Node.js and Express backend, PostgreSQL persistence, and real-time data from Ticketmaster, OpenWeather, and LocationIQ.",
+    description: `A full-stack event discovery platform that helps users find local entertainment, compare event details and ticket pricing, save events of interest, dismiss unwanted results, and review location-specific weather conditions.
+
+The application integrates Ticketmaster, OpenWeather, and LocationIQ with a React frontend, Node.js and Express backend, PostgreSQL persistence, and Supabase-based data management.
+
+Technical highlights:
+• Integrated the Ticketmaster API for event discovery and ticket information
+• Added location search and geocoding through the LocationIQ API
+• Displayed event-specific weather forecasts using the OpenWeather API
+• Created persistent save-and-dismiss event workflows
+• Stored application data with PostgreSQL and Supabase`,
     image: [image9],
     gitLink: "https://github.com/TheReal4m4d3u5/Aline-Events",
     deployed: "ADD_YOUR_ALINE_EVENTS_DEPLOYED_LINK_HERE",
@@ -556,9 +603,17 @@ const fullStackProjects = [
 
   {
     title: "Kanban Board",
-    description:
-      "A full-stack project management application that allows authenticated users to organize work, create tickets, assign tasks, update ticket details and status, and track progress across a visual Kanban workflow. The application features JWT-based authentication, protected API routes, persistent PostgreSQL storage, and a React and TypeScript interface.",
-    image: [image9],
+    description: `A full-stack project management application that allows authenticated users to create tickets, assign tasks, update ticket details, move work through different stages, and monitor progress from a visual Kanban board.
+
+The application uses JWT authentication, protected REST API routes, PostgreSQL persistence, and a React and TypeScript frontend backed by Node.js, Express, and Sequelize.
+
+Technical highlights:
+• Implemented JWT authentication and protected application routes
+• Built REST API endpoints for users, tickets, and task assignments
+• Created ticket creation, editing, assignment, and deletion workflows
+• Added status-based task organization across a visual Kanban board
+• Stored user and ticket data with PostgreSQL and Sequelize`,
+    image: [KanbanBoard1 , KanbanBoard2, KanbanBoard3, KanbanBoard4],
     gitLink: "https://github.com/TheReal4m4d3u5/kanbanBoard",
     deployed: "https://kanbanboard-552l.onrender.com/",
     tags: [
