@@ -71,7 +71,7 @@ import useCaseDiagram from "../../src/assets/mastermind/useCaseDiagram.png";
 import createSecretCodeUseCase from "../../src/assets/mastermind/createSecretCodeUseCase.png";
 import createCodeRD from "../../src/assets/mastermind/createCodeRD.png";
 import createCodeSeq from "../../src/assets/mastermind/createCodeSeq.png";
-import mastermindclassDiagram from "../../src/assets/mastermind/classDiagram.png";
+import mastermindclassDiagramUsed from "../../src/assets/mastermind/classDiagram.png";
 
 const apiProjects = [
   {
@@ -154,22 +154,26 @@ const designPatternProjects = [
     title: "Strategy Pattern",
     description:
       "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
-    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
+    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagramUsed],
     gitLink: "https://github.com/TheReal4m4d3u5/Mastermind",
     tags: [
+      "Java",
       "System Design",
+      "Software Architecture",
       "Object-Oriented Design",
       "OOAD",
       "ICONIX",
       "UML",
+      "GRASP",
+      "SOLID",
+      "Refactoring",
       "BDD",
-      "Traceability",
       "Domain Modeling",
       "Use Cases",
       "Robustness Analysis",
       "Sequence Diagrams",
+      "State Machines",
       "Class Diagrams",
-      "Test Scenarios",
       "Design Documentation",
     ],
   },
