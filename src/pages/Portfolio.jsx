@@ -638,6 +638,8 @@ Technical highlights:
 
 const computationalModelingProjects = [
   {
+    video: employeeDB, 
+    videoText: "Click to watch video",
     title: "MATLAB Car Simulation",
     description: `A computational modeling project that simulates vehicle movement through a graph-based city environment using MATLAB. The system models straight-line travel, curved paths, turning behavior, orientation changes, and route selection across connected city locations.
 
