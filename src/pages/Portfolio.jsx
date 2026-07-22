@@ -638,14 +638,33 @@ Technical highlights:
 
 const computationalModelingProjects = [
   {
-    video: employeeDB,
+    video: employeeDB, 
     videoText: "Click to watch video",
-    title: "Grocery Inventory Backend System",
-    description:
-      "A Java backend system for grocery store workflow modeling, including inventory tracking, cart operations, checkout processing, and purchase history.\n\nBuilt with object-oriented design principles and layered architecture to create a modular, extensible system.\n\n• Inventory tracking\n• Cart and checkout workflows\n• Purchase history\n• OOP-driven design",
+    title: "MATLAB Car Simulation",
+    description: `A computational modeling project that simulates vehicle movement through a graph-based city environment using MATLAB. The system models straight-line travel, curved paths, turning behavior, orientation changes, and route selection across connected city locations.
+
+The project applies calculus, linear algebra, parametric equations, and logic-based decision-making to calculate vehicle position and direction while producing visual simulations of state-driven movement.
+
+Technical highlights:
+• Modeled vehicle position and orientation using vectors and transformation matrices
+• Implemented parametric equations for straight, curved, and tangent-based movement
+• Developed logic for selecting paths and transitioning between driving states
+• Created two-dimensional and three-dimensional vehicle-motion simulations
+• Organized multiple simulation versions to test navigation and turning algorithms`,
     image: [image9],
-    gitLink: "https://github.com/TheReal4m4d3u5/GroceryManagementSystem_ICS372",
-    tags: ["Java", "OOP", "Backend Systems", "Software Design"],
+    gitLink: "https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car",
+    tags: [
+      "MATLAB",
+      "Computational Modeling",
+      "Calculus",
+      "Linear Algebra",
+      "Parametric Equations",
+      "Graph Theory",
+      "Motion Simulation",
+      "Path Planning",
+      "3D Visualization",
+      "Algorithm Design",
+    ],
   },
 ];
 
