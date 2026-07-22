@@ -175,147 +175,146 @@ const designPatternProjects = [
   },
 ];
 
+
+
+const cicdProjects = [
+  {
+    title: "Production-Ready Social Media API",
+    description: `A production-ready RESTful social media backend that supports scalable user, post, and interaction workflows through a structured API architecture. The project was designed for reliable deployment across staging and production environments.
+
+The application includes an end-to-end CI/CD workflow that automates testing, container image creation, infrastructure deployment, and release validation using GitHub Actions, Jenkins, Docker, Kubernetes, and cloud-based deployment environments.
+
+Technical highlights:
+• Designed and implemented a production-ready RESTful backend architecture
+• Automated build, test, and deployment workflows using GitHub Actions and Jenkins
+• Containerized the application with Docker for consistent development and production environments
+• Orchestrated application services and deployments using Kubernetes
+• Maintained separate staging and production environments for release validation`,
+    image: [mastermindDomainMoel],
+    gitLink:
+      "https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main",
+    stagingLink: "ADD_STAGING_PROJECT_LINK",
+    deployed: "ADD_PRODUCTION_PROJECT_LINK",
+    tags: [
+      "REST API",
+      "Backend Development",
+      "CI/CD",
+      "GitHub Actions",
+      "Jenkins",
+      "Docker",
+      "Kubernetes",
+      "Containerization",
+      "Pipeline Automation",
+      "Automated Testing",
+      "Staging Deployment",
+      "Production Deployment",
+      "DevOps",
+      "Cloud Infrastructure",
+    ],
+  },
+
+  {
+    title: "CI/CD Setup",
+    description: `A full-stack application configured with an automated continuous integration and deployment pipeline for reliable delivery across staging and production environments. The project demonstrates how application development, testing, source-control protections, and cloud deployment can be combined into a structured release workflow.
+
+The pipeline uses CircleCI to validate changes before deployment, while protected Git branches and pull-request requirements help prevent unreviewed or failing code from reaching production.
+
+Technical highlights:
+• Configured CircleCI workflows for automated building, testing, and deployment
+• Established separate staging and production deployment environments
+• Implemented protected Git branches and pull-request quality controls
+• Required successful CI checks before changes could be merged
+• Automated deployments to reduce manual release steps and deployment errors`,
+    image: [mastermindDomainMoel],
+    gitLink:
+      "https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main",
+    stagingLink: "ADD_STAGING_PROJECT_LINK",
+    deployed: "ADD_PRODUCTION_PROJECT_LINK",
+    tags: [
+      "Full Stack",
+      "CI/CD",
+      "CircleCI",
+      "Pipeline Automation",
+      "Automated Testing",
+      "Git Protections",
+      "Branch Protection",
+      "Pull Requests",
+      "Staging",
+      "Production Deployment",
+      "Deployment Automation",
+      "DevOps",
+    ],
+  },
+
+  {
+    title: "GitHub Actions CI/CD Setup",
+    description: `A full-stack application configured with an automated CI/CD pipeline using GitHub Actions. The project demonstrates a structured release process that validates code changes and promotes successful builds through separate staging and production environments.
+
+Git branch protections and required workflow checks help prevent unreviewed or failing changes from reaching production while automated deployments reduce manual release steps and improve delivery consistency.
+
+Technical highlights:
+• Configured GitHub Actions workflows for continuous integration and deployment
+• Automated application build, testing, and deployment processes
+• Established separate staging and production deployment environments
+• Implemented protected branches and required pull-request checks
+• Prevented production deployment until required CI checks completed successfully`,
+    image: [mastermindDomainMoel],
+    gitLink:
+      "https://github.com/TheReal4m4d3u5/gitHubActionsCI-CDSetup/tree/main",
+    stagingLink: "ADD_STAGING_PROJECT_LINK",
+    deployed: "ADD_PRODUCTION_PROJECT_LINK",
+    tags: [
+      "Full Stack",
+      "CI/CD",
+      "GitHub Actions",
+      "Pipeline Automation",
+      "Automated Testing",
+      "Git Protections",
+      "Branch Protection",
+      "Pull Requests",
+      "Staging Deployment",
+      "Production Deployment",
+      "Deployment Automation",
+      "DevOps",
+    ],
+  },
+];
+
 const softwareArchitectureProjects = [
   {
-    title: "Strategy Pattern",
-    description:
-      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
-    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
-    gitLink: "https://github.com/TheReal4m4d3u5/Mastermind",
-    tags: [
-      "System Design",
-      "Object-Oriented Design",
-      "OOAD",
-      "ICONIX",
-      "UML",
-      "BDD",
-      "Traceability",
-      "Domain Modeling",
-      "Use Cases",
-      "Robustness Analysis",
-      "Sequence Diagrams",
-      "Class Diagrams",
-      "Test Scenarios",
-      "Design Documentation",
-    ],
-  },
+    title: "Bike Share Maintenance System",
+    description: `An object-oriented maintenance management system designed to help bikeshare operators identify scheduled maintenance needs, respond to detected faults and user complaints, manage repair work, and track each bike throughout its service lifecycle. The system supports condition changes, maintenance issues, work-order assignment, inspections, repairs, service-history records, return-to-service decisions, and bike retirement.
 
-  {
-    title: "Adapter Pattern",
-    description:
-      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
-    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
-    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
-    tags: [
-      "System Design",
-      "Object-Oriented Design",
-      "OOAD",
-      "ICONIX",
-      "UML",
-      "BDD",
-      "Traceability",
-      "Domain Modeling",
-      "Use Cases",
-      "Robustness Analysis",
-      "Sequence Diagrams",
-      "Class Diagrams",
-      "Test Scenarios",
-      "Design Documentation",
-    ],
-  },
+The project applies the ICONIX methodology to maintain traceability from business requirements and user stories through domain modeling, use-case analysis, robustness analysis, sequence diagrams, detailed class design, state modeling, implementation, and iterative refactoring.
 
-  {
-    title: "Observer Pattern",
-    description:
-      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
-    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
-    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
+Technical highlights:
+• Modeled scheduled maintenance using time, mileage, ride-count, and inspection thresholds
+• Designed workflows for faults, complaints, work orders, inspections, repairs, and retirement
+• Applied BCE, GRASP, SOLID, and object-oriented responsibility-assignment principles
+• Refactored the design and Java implementation to improve cohesion, reduce coupling, and clarify class responsibilities
+• Created UML domain, use-case, robustness, sequence, state-machine, and class diagrams
+• Implemented Java scenarios demonstrating main-success and exception flows`,
+    image: [chordFinderDomainModel],
+    gitLink:
+      "https://github.com/TheReal4m4d3u5/bikeShareMaintenanceSytemInstructions",
     tags: [
+      "Java",
       "System Design",
+      "Software Architecture",
       "Object-Oriented Design",
       "OOAD",
       "ICONIX",
       "UML",
+      "GRASP",
+      "SOLID",
+      "Refactoring",
       "BDD",
-      "Traceability",
       "Domain Modeling",
       "Use Cases",
       "Robustness Analysis",
       "Sequence Diagrams",
+      "State Machines",
       "Class Diagrams",
-      "Test Scenarios",
-      "Design Documentation",
-    ],
-  },
-
-  {
-    title: "Decorator Pattern",
-    description:
-      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
-    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
-    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
-    tags: [
-      "System Design",
-      "Object-Oriented Design",
-      "OOAD",
-      "ICONIX",
-      "UML",
-      "BDD",
-      "Traceability",
-      "Domain Modeling",
-      "Use Cases",
-      "Robustness Analysis",
-      "Sequence Diagrams",
-      "Class Diagrams",
-      "Test Scenarios",
-      "Design Documentation",
-    ],
-  },
-
-  {
-    title: "Iterator Pattern",
-    description:
-      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
-    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
-    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
-    tags: [
-      "System Design",
-      "Object-Oriented Design",
-      "OOAD",
-      "ICONIX",
-      "UML",
-      "BDD",
-      "Traceability",
-      "Domain Modeling",
-      "Use Cases",
-      "Robustness Analysis",
-      "Sequence Diagrams",
-      "Class Diagrams",
-      "Test Scenarios",
-      "Design Documentation",
-    ],
-  },
-
-  {
-    title: "Factory Pattern",
-    description:
-      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
-    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagram],
-    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
-    tags: [
-      "System Design",
-      "Object-Oriented Design",
-      "OOAD",
-      "ICONIX",
-      "UML",
-      "BDD",
-      "Traceability",
-      "Domain Modeling",
-      "Use Cases",
-      "Robustness Analysis",
-      "Sequence Diagrams",
-      "Class Diagrams",
-      "Test Scenarios",
       "Design Documentation",
     ],
   },
@@ -323,28 +322,181 @@ const softwareArchitectureProjects = [
 
 const matLabProjects = [
   {
-    title: "MatDrive",
-    description: `A mathematical simulation engine modeling vehicle movement across a graph-based city.
-
-Implements linear algebra transformations, parametric motion, and stochastic decision processes to simulate path selection and orientation.
-
-Applies mathematical modeling within a structured system to produce realistic, state-driven movement.
-
-• Graph-based navigation
-• Linear algebra transformations
-• Parametric motion modeling
-• Stochastic decision-making`,
-
+    title: "My Selenium Test Suite",
+    description: `A custom-built automated testing framework developed with Java and Selenium WebDriver to validate web application functionality, user workflows, and regression behavior across supported browsers. The project uses Maven for dependency management and test execution, Cucumber for behavior-driven development, ChromeDriver for browser automation, and Appium for mobile testing support. Technical highlights: • Developed automated functional and regression tests with Selenium WebDriver • Created BDD test scenarios using Cucumber and Gherkin • Managed dependencies and test execution through Maven • Automated browser interactions using ChromeDriver • Supported web and mobile automation with Selenium and Appium`,
     image: [image9],
-    gitLink: "https://github.com/TheReal4m4d3u5/Calc4_Matlab_Car",
+    gitLink: "https://github.com/TheReal4m4d3u5/mySelenium",
     tags: [
-      "MATLAB",
-      "Linear Algebra",
-      "Graph Theory",
-      "Simulation",
-      "Systems Design",
+      "Selenium",
+      "Java",
+      "Maven",
+      "Appium",
+      "BDD",
+      "Cucumber",
+      "Gherkin",
+      "ChromeDriver",
+      "Test Automation",
+      "Regression Testing",
+      "Web Testing",
+      "Mobile Testing",
     ],
   },
+
+  {
+    title: "React Portfolio",
+    description: `A responsive personal portfolio application built to present software engineering projects, technical skills, professional experience, education, and contact information in a centralized web interface.
+
+The portfolio uses React and Vite to deliver a reusable component-based frontend, while Playwright provides end-to-end testing across desktop and mobile viewport configurations.
+
+Technical highlights:
+• Built reusable React components for project cards, navigation, skills, and professional content
+• Organized projects into full-stack, software architecture, automation, and technical categories
+• Implemented responsive layouts for desktop, tablet, and mobile screen sizes
+• Created Playwright end-to-end tests for navigation, visibility, layout, and viewport behavior
+• Integrated project screenshots, technology tags, GitHub links, and deployed application links`,
+    image: [image9],
+    gitLink: "https://github.com/TheReal4m4d3u5/reactPortfolio",
+    tags: [
+      "React",
+      "JavaScript",
+      "Vite",
+      "HTML",
+      "CSS",
+      "Responsive Design",
+      "Playwright",
+      "End-to-End Testing",
+      "UI Testing",
+      "Component-Based Design",
+      "Web Development",
+      "Git",
+      "GitHub",
+    ],
+  },
+
+
+{
+  title: "Tech Quiz Test Suite",
+  description: `A full-stack technical quiz application built with the MERN stack and supported by comprehensive automated component and end-to-end testing. Users can begin a quiz, answer technology-focused questions, move through the complete quiz workflow, and receive a final score.
+
+The project uses Cypress to validate individual React components and complete user journeys while MongoDB, Express, React, and Node.js provide the application’s frontend, API, and data persistence layers.
+
+Technical highlights:
+• Developed a full-stack quiz application using the MERN architecture
+• Created Cypress component tests for isolated React interface behavior
+• Built end-to-end tests covering quiz startup, question progression, and score results
+• Validated frontend interactions with backend API and database functionality
+• Structured reusable test fixtures, selectors, and automated testing workflows`,
+  image: [image9],
+  gitLink: "https://github.com/TheReal4m4d3u5/techQuizTestSuite",
+  tags: [
+    "MongoDB",
+    "Express.js",
+    "React",
+    "Node.js",
+    "MERN Stack",
+    "Cypress",
+    "Component Testing",
+    "End-to-End Testing",
+    "Test Automation",
+    "API Testing",
+    "JavaScript",
+    "Full Stack",
+  ],
+},
+
+
+{
+  title: "Ensure React Components Render Properly",
+  description: `A React testing project designed to verify that user interface components render correctly, display expected content, and remain consistent as the application evolves.
+
+The project uses Vitest and React Testing Library to render components in a Happy DOM environment, simulate user-facing behavior, and compare rendered output against saved snapshots.
+
+Technical highlights:
+• Created automated tests to verify React components render successfully
+• Used snapshot testing to detect unexpected interface changes
+• Queried rendered elements with React Testing Library
+• Configured Happy DOM to provide a browser-like testing environment
+• Used Vitest for fast test execution, assertions, and test organization`,
+  image: [image9],
+  gitLink:
+    "https://github.com/TheReal4m4d3u5/ensureReactComponentsRenderProperly",
+  tags: [
+    "React",
+    "Vitest",
+    "React Testing Library",
+    "Happy DOM",
+    "Snapshot Testing",
+    "Component Testing",
+    "Unit Testing",
+    "Test Automation",
+    "JavaScript",
+    "Frontend Testing",
+  ],
+},
+
+
+
+{
+  title: "Reactify Essentials TDD",
+  description: `A React and TypeScript application built using test-driven development to create reliable, reusable, and maintainable interface components. The project demonstrates how automated tests can guide component implementation and verify expected behavior throughout development.
+
+The testing environment uses Vitest, React Testing Library, and Happy DOM to render components, simulate user interactions, validate displayed content, and detect regressions.
+
+Technical highlights:
+• Developed reusable React components with TypeScript
+• Applied test-driven development throughout component implementation
+• Created unit and component tests with Vitest
+• Tested user-facing behavior using React Testing Library
+• Configured Happy DOM to provide a browser-like testing environment
+• Used automated tests to support refactoring and prevent regressions`,
+  image: [image9],
+  gitLink: "https://github.com/TheReal4m4d3u5/reactifyEssentialsTest",
+  tags: [
+    "React",
+    "TypeScript",
+    "Vitest",
+    "React Testing Library",
+    "Happy DOM",
+    "TDD",
+    "Component Testing",
+    "Unit Testing",
+    "Test Automation",
+    "Frontend Testing",
+    "Reusable Components",
+    "Refactoring",
+  ],
+},
+
+
+{
+  title: "TDD Test Cases",
+  description: `A JavaScript testing project focused on developing foundational test-driven development skills and gaining practical experience with automated testing frameworks. The project demonstrates how tests can define expected behavior before implementation and guide the development of reliable application logic.
+
+The test cases cover common functions, expected results, edge conditions, and failure scenarios while reinforcing the red-green-refactor development cycle.
+
+Technical highlights:
+• Applied the red-green-refactor test-driven development workflow
+• Wrote automated tests before implementing application functionality
+• Created test cases for expected behavior, edge cases, and invalid inputs
+• Used assertions to verify outputs and identify regressions
+• Refactored implementation code while maintaining passing test coverage`,
+  image: [image9],
+  gitLink: "https://github.com/TheReal4m4d3u5/tDDTestCases",
+  tags: [
+    "JavaScript",
+    "TDD",
+    "Test-Driven Development",
+    "Testing Frameworks",
+    "Unit Testing",
+    "Automated Testing",
+    "Assertions",
+    "Edge-Case Testing",
+    "Regression Testing",
+    "Refactoring",
+  ],
+},
+
+
 ];
 
 const fullStackProjects = [
@@ -583,7 +735,7 @@ const Portfolio = () => {
     },
 
     {
-      groupTitle: "Full-Stack Development",
+      groupTitle: "Full-Stack",
       groupId: "fullStackID",
       projects: fullStackProjects,
     },
@@ -601,6 +753,12 @@ const Portfolio = () => {
       groupTitle: "Automation & Reliability",
       groupId: "matlab",
       projects: matLabProjects,
+    },
+
+    {
+      groupTitle: "CI/CD & DevOps",
+      groupId: "cicd",
+      projects: cicdProjects,
     },
   ];
 
