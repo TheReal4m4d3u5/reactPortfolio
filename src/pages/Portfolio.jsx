@@ -151,29 +151,11 @@ const apiProjects = [
 
 const designPatternProjects = [
   {
-<<<<<<< Updated upstream
-    title: "Bike Share Maintenance System",
-    description: `An object-oriented maintenance management system designed to help bikeshare operators identify scheduled maintenance needs, respond to detected faults and user complaints, manage repair work, and track each bike throughout its service lifecycle. The system supports condition changes, maintenance issues, work-order assignment, inspections, repairs, service-history records, return-to-service decisions, and bike retirement.
-
-The project applies the ICONIX methodology to maintain traceability from business requirements and user stories through domain modeling, use-case analysis, robustness analysis, sequence diagrams, detailed class design, state modeling, implementation, and iterative refactoring.
-
-Technical highlights:
-• Modeled scheduled maintenance using time, mileage, ride-count, and inspection thresholds
-• Designed workflows for faults, complaints, work orders, inspections, repairs, and retirement
-• Applied BCE, GRASP, SOLID, and object-oriented responsibility-assignment principles
-• Refactored the design and Java implementation to improve cohesion, reduce coupling, and clarify class responsibilities
-• Created UML domain, use-case, robustness, sequence, state-machine, and class diagrams
-• Implemented Java scenarios demonstrating main-success and exception flows`,
-    image: [chordFinderDomainModel],
-    gitLink:
-      "https://github.com/TheReal4m4d3u5/bikeShareMaintenanceSytemInstructions",
-=======
     title: "Strategy Pattern",
     description:
       "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
     image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagramUsed],
     gitLink: "https://github.com/TheReal4m4d3u5/Mastermind",
->>>>>>> Stashed changes
     tags: [
       "Java",
       "System Design",
