@@ -31,12 +31,13 @@ import employEase5 from "../../src/assets/employEase/image5.png";
 import bookSearch1 from "../../src/assets/bookSearchEngine/image.png";
 import bookSearch2 from "../../src/assets/bookSearchEngine/image1.png";
 
-
-
 import KanbanBoard1 from "../../src/assets/KanbanBoard/image1.png";
 import KanbanBoard2 from "../../src/assets/KanbanBoard/image2.png";
 import KanbanBoard3 from "../../src/assets/KanbanBoard/image3.png";
 import KanbanBoard4 from "../../src/assets/KanbanBoard/image4.png";
+
+
+
 
 
 // import image4 from "../../src/assets/image4.png";
@@ -72,6 +73,21 @@ import createSecretCodeUseCase from "../../src/assets/mastermind/createSecretCod
 import createCodeRD from "../../src/assets/mastermind/createCodeRD.png";
 import createCodeSeq from "../../src/assets/mastermind/createCodeSeq.png";
 import mastermindclassDiagramUsed from "../../src/assets/mastermind/classDiagram.png";
+
+
+import adapterPatternDiagram from "../../src/assets/mastermind/domainModel.png";
+import abstractFactoryDiagram from "../../src/assets/mastermind/domainModel.png";
+import bikeMaintenanceClassDiagram from "../../src/assets/mastermind/domainModel.png";
+
+
+import bikeMaintenance1 from "../../src/assets/mastermind/domainModel.png";
+import bikeMaintenance2 from "../../src/assets/mastermind/domainModel.png";
+import bikeMaintenance3 from "../../src/assets/mastermind/domainModel.png";
+import bikeMaintenance4 from "../../src/assets/mastermind/domainModel.png";
+
+
+
+
 
 const apiProjects = [
   {
@@ -150,36 +166,49 @@ const apiProjects = [
 ];
 
 const designPatternProjects = [
-  {
-    title: "Strategy Pattern",
-    description:
-      "Developed a detailed object-oriented system design for a configurable Mastermind game using the ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
-    image: [mastermindDomainMoel, useCaseDiagram, mastermindclassDiagramUsed],
-    gitLink: "https://github.com/TheReal4m4d3u5/Mastermind",
-    tags: [
-      "Java",
-      "System Design",
-      "Software Architecture",
-      "Object-Oriented Design",
-      "OOAD",
-      "ICONIX",
-      "UML",
-      "GRASP",
-      "SOLID",
-      "Refactoring",
-      "BDD",
-      "Domain Modeling",
-      "Use Cases",
-      "Robustness Analysis",
-      "Sequence Diagrams",
-      "State Machines",
-      "Class Diagrams",
-      "Design Documentation",
-    ],
-  },
+{
+  title: "Design Patterns, SOLID, GRASP & Refactoring",
+  description: `Designed and refactored a bike-share maintenance system to demonstrate how established object-oriented design patterns and principles improve extensibility, maintainability, testability, and separation of responsibilities.
+
+The project implements the Adapter and Abstract Factory patterns to support SQL and GraphQL data providers through consistent interfaces. It also applies SOLID and GRASP principles to assign responsibilities, reduce coupling, improve cohesion, and keep business logic independent of specific frameworks and persistence technologies.
+
+Technical highlights:
+• Implemented the Adapter pattern to translate SQL and GraphQL provider operations into consistent application interfaces
+• Applied the Abstract Factory pattern to create compatible families of repository and data-provider implementations
+• Used SOLID principles to separate responsibilities, depend on abstractions, and support new providers without modifying existing business logic
+• Applied GRASP principles including Controller, Creator, Information Expert, Low Coupling, High Cohesion, Polymorphism, Indirection, and Pure Fabrication
+• Refactored tightly coupled code into focused interfaces, services, repositories, adapters, and factory components
+• Replaced provider-specific conditional logic with polymorphic implementations and dependency injection
+• Improved maintainability and testability by isolating domain behavior from persistence and infrastructure concerns`,
+  image: [
+    adapterPatternDiagram,
+    abstractFactoryDiagram,
+    bikeMaintenanceClassDiagram,
+  ],
+  gitLink: "https://github.com/TheReal4m4d3u5/bikeMaintenanceAdapter",
+  tags: [
+    "Java",
+    "Spring Boot",
+    "Adapter Pattern",
+    "Abstract Factory",
+    "Design Patterns",
+    "SOLID",
+    "GRASP",
+    "Refactoring",
+    "Object-Oriented Design",
+    "Software Architecture",
+    "Polymorphism",
+    "Dependency Injection",
+    "Low Coupling",
+    "High Cohesion",
+    "Repository Pattern",
+    "SQL",
+    "GraphQL",
+    "UML",
+    "Class Diagrams",
+  ],
+},
 ];
-
-
 
 const cicdProjects = [
   {
@@ -377,10 +406,9 @@ Technical highlights:
     ],
   },
 
-
-{
-  title: "Tech Quiz Test Suite",
-  description: `A full-stack technical quiz application built with the MERN stack and supported by comprehensive automated component and end-to-end testing. Users can begin a quiz, answer technology-focused questions, move through the complete quiz workflow, and receive a final score.
+  {
+    title: "Tech Quiz Test Suite",
+    description: `A full-stack technical quiz application built with the MERN stack and supported by comprehensive automated component and end-to-end testing. Users can begin a quiz, answer technology-focused questions, move through the complete quiz workflow, and receive a final score.
 
 The project uses Cypress to validate individual React components and complete user journeys while MongoDB, Express, React, and Node.js provide the application’s frontend, API, and data persistence layers.
 
@@ -390,28 +418,27 @@ Technical highlights:
 • Built end-to-end tests covering quiz startup, question progression, and score results
 • Validated frontend interactions with backend API and database functionality
 • Structured reusable test fixtures, selectors, and automated testing workflows`,
-  image: [image9],
-  gitLink: "https://github.com/TheReal4m4d3u5/techQuizTestSuite",
-  tags: [
-    "MongoDB",
-    "Express.js",
-    "React",
-    "Node.js",
-    "MERN Stack",
-    "Cypress",
-    "Component Testing",
-    "End-to-End Testing",
-    "Test Automation",
-    "API Testing",
-    "JavaScript",
-    "Full Stack",
-  ],
-},
+    image: [image9],
+    gitLink: "https://github.com/TheReal4m4d3u5/techQuizTestSuite",
+    tags: [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "MERN Stack",
+      "Cypress",
+      "Component Testing",
+      "End-to-End Testing",
+      "Test Automation",
+      "API Testing",
+      "JavaScript",
+      "Full Stack",
+    ],
+  },
 
-
-{
-  title: "Ensure React Components Render Properly",
-  description: `A React testing project designed to verify that user interface components render correctly, display expected content, and remain consistent as the application evolves.
+  {
+    title: "Ensure React Components Render Properly",
+    description: `A React testing project designed to verify that user interface components render correctly, display expected content, and remain consistent as the application evolves.
 
 The project uses Vitest and React Testing Library to render components in a Happy DOM environment, simulate user-facing behavior, and compare rendered output against saved snapshots.
 
@@ -421,28 +448,26 @@ Technical highlights:
 • Queried rendered elements with React Testing Library
 • Configured Happy DOM to provide a browser-like testing environment
 • Used Vitest for fast test execution, assertions, and test organization`,
-  image: [image9],
-  gitLink:
-    "https://github.com/TheReal4m4d3u5/ensureReactComponentsRenderProperly",
-  tags: [
-    "React",
-    "Vitest",
-    "React Testing Library",
-    "Happy DOM",
-    "Snapshot Testing",
-    "Component Testing",
-    "Unit Testing",
-    "Test Automation",
-    "JavaScript",
-    "Frontend Testing",
-  ],
-},
+    image: [image9],
+    gitLink:
+      "https://github.com/TheReal4m4d3u5/ensureReactComponentsRenderProperly",
+    tags: [
+      "React",
+      "Vitest",
+      "React Testing Library",
+      "Happy DOM",
+      "Snapshot Testing",
+      "Component Testing",
+      "Unit Testing",
+      "Test Automation",
+      "JavaScript",
+      "Frontend Testing",
+    ],
+  },
 
-
-
-{
-  title: "Reactify Essentials TDD",
-  description: `A React and TypeScript application built using test-driven development to create reliable, reusable, and maintainable interface components. The project demonstrates how automated tests can guide component implementation and verify expected behavior throughout development.
+  {
+    title: "Reactify Essentials TDD",
+    description: `A React and TypeScript application built using test-driven development to create reliable, reusable, and maintainable interface components. The project demonstrates how automated tests can guide component implementation and verify expected behavior throughout development.
 
 The testing environment uses Vitest, React Testing Library, and Happy DOM to render components, simulate user interactions, validate displayed content, and detect regressions.
 
@@ -453,28 +478,27 @@ Technical highlights:
 • Tested user-facing behavior using React Testing Library
 • Configured Happy DOM to provide a browser-like testing environment
 • Used automated tests to support refactoring and prevent regressions`,
-  image: [image9],
-  gitLink: "https://github.com/TheReal4m4d3u5/reactifyEssentialsTest",
-  tags: [
-    "React",
-    "TypeScript",
-    "Vitest",
-    "React Testing Library",
-    "Happy DOM",
-    "TDD",
-    "Component Testing",
-    "Unit Testing",
-    "Test Automation",
-    "Frontend Testing",
-    "Reusable Components",
-    "Refactoring",
-  ],
-},
+    image: [image9],
+    gitLink: "https://github.com/TheReal4m4d3u5/reactifyEssentialsTest",
+    tags: [
+      "React",
+      "TypeScript",
+      "Vitest",
+      "React Testing Library",
+      "Happy DOM",
+      "TDD",
+      "Component Testing",
+      "Unit Testing",
+      "Test Automation",
+      "Frontend Testing",
+      "Reusable Components",
+      "Refactoring",
+    ],
+  },
 
-
-{
-  title: "TDD Test Cases",
-  description: `A JavaScript testing project focused on developing foundational test-driven development skills and gaining practical experience with automated testing frameworks. The project demonstrates how tests can define expected behavior before implementation and guide the development of reliable application logic.
+  {
+    title: "TDD Test Cases",
+    description: `A JavaScript testing project focused on developing foundational test-driven development skills and gaining practical experience with automated testing frameworks. The project demonstrates how tests can define expected behavior before implementation and guide the development of reliable application logic.
 
 The test cases cover common functions, expected results, edge conditions, and failure scenarios while reinforcing the red-green-refactor development cycle.
 
@@ -484,26 +508,65 @@ Technical highlights:
 • Created test cases for expected behavior, edge cases, and invalid inputs
 • Used assertions to verify outputs and identify regressions
 • Refactored implementation code while maintaining passing test coverage`,
-  image: [image9],
-  gitLink: "https://github.com/TheReal4m4d3u5/tDDTestCases",
-  tags: [
-    "JavaScript",
-    "TDD",
-    "Test-Driven Development",
-    "Testing Frameworks",
-    "Unit Testing",
-    "Automated Testing",
-    "Assertions",
-    "Edge-Case Testing",
-    "Regression Testing",
-    "Refactoring",
-  ],
-},
-
-
+    image: [image9],
+    gitLink: "https://github.com/TheReal4m4d3u5/tDDTestCases",
+    tags: [
+      "JavaScript",
+      "TDD",
+      "Test-Driven Development",
+      "Testing Frameworks",
+      "Unit Testing",
+      "Automated Testing",
+      "Assertions",
+      "Edge-Case Testing",
+      "Regression Testing",
+      "Refactoring",
+    ],
+  },
 ];
 
 const fullStackProjects = [
+{
+  title: "Bike Share Maintenance System",
+  description: `A full-stack fleet maintenance platform that helps administrators and technicians monitor bike conditions, identify scheduled maintenance needs, process reported faults and user complaints, manage work orders, document repairs, and review complete service histories from a centralized dashboard.
+
+The application combines a responsive React and Vite frontend with a Java Spring Boot backend, REST and GraphQL API communication, PostgreSQL relational storage, and MongoDB document storage. A layered backend architecture separates controllers, business logic, data access, validation, and persistence responsibilities.
+
+Technical highlights:
+• Built administrative and technician dashboards for managing bikes, maintenance issues, work orders, and service history
+• Developed Spring Boot controllers, services, repositories, domain models, and API validation
+• Connected the React frontend to RESTful and GraphQL endpoints for retrieving and updating maintenance data
+• Persisted structured bike and work-order records in PostgreSQL using Spring Data JPA and Hibernate
+• Used MongoDB for flexible fault reports, maintenance events, and historical service records
+• Implemented workflows for scheduled maintenance, inspections, repairs, work-order completion, and bike retirement
+• Added status filtering, maintenance tracking, condition updates, and historical work-order views`,
+  image: [
+    bikeMaintenance1,
+    mastermindclassDiagramUsed,
+    bikeMaintenance2,
+    bikeMaintenance3,
+    bikeMaintenance4,
+  ],
+  gitLink: "https://github.com/TheReal4m4d3u5/bikeMaintenanceAdapter",
+  tags: [
+    "React",
+    "JavaScript",
+    "Vite",
+    "Java",
+    "Spring Boot",
+    "Spring Data JPA",
+    "Hibernate",
+    "Maven",
+    "REST API",
+    "GraphQL",
+    "PostgreSQL",
+    "MongoDB",
+    "JUnit",
+    "Vitest",
+    "Full-Stack Development",
+  ],
+},
+
   {
     title: "EmployEase",
     description: `A full-stack job search and application tracking platform that helps users discover opportunities, save relevant positions, and organize their job search from one centralized dashboard.
@@ -617,7 +680,7 @@ Technical highlights:
 • Created ticket creation, editing, assignment, and deletion workflows
 • Added status-based task organization across a visual Kanban board
 • Stored user and ticket data with PostgreSQL and Sequelize`,
-    image: [KanbanBoard1 , KanbanBoard2, KanbanBoard3, KanbanBoard4],
+    image: [KanbanBoard1, KanbanBoard2, KanbanBoard3, KanbanBoard4],
     gitLink: "https://github.com/TheReal4m4d3u5/kanbanBoard",
     deployed: "https://kanbanboard-552l.onrender.com/",
     tags: [
@@ -638,7 +701,7 @@ Technical highlights:
 
 const computationalModelingProjects = [
   {
-    video: employeeDB, 
+    video: employeeDB,
     videoText: "Click to watch video",
     title: "MATLAB Car Simulation",
     description: `A computational modeling project that simulates vehicle movement through a graph-based city environment using MATLAB. The system models straight-line travel, curved paths, turning behavior, orientation changes, and route selection across connected city locations.
@@ -664,6 +727,35 @@ Technical highlights:
       "Path Planning",
       "3D Visualization",
       "Algorithm Design",
+    ],
+  },
+  {
+    video: employeeDB,
+    videoText: "Click to watch video",
+    title: "Zero Ledger",
+    description: `A climate-technology company website that presents Zero Ledger’s approach to making climate action measurable, accountable, and financially actionable. The site communicates the company’s mission of applying financial-accounting principles to sustainability by tracking environmental inputs, supporting informed capital allocation, and emphasizing verifiable outcomes.
+
+The project uses a responsive React interface with reusable components, structured content sections, and custom styling to deliver a consistent professional brand experience across desktop and mobile devices. The privately maintained codebase is built with Vite and deployed through Netlify.
+
+Technical highlights:
+• Developed a responsive company website using React and JavaScript
+• Organized the interface into reusable, maintainable components
+• Created custom layouts and styling for desktop and mobile displays
+• Translated climate-accounting concepts into clear digital content
+• Configured a production deployment with a custom domain through Netlify`,
+    image: [image9],
+    deployed: "https://thezeroledger.com/",
+    tags: [
+      "React",
+      "JavaScript",
+      "Vite",
+      "CSS",
+      "Responsive Design",
+      "Component-Based Architecture",
+      "Netlify",
+      "Climate Technology",
+      "Sustainability",
+      "Carbon Accounting",
     ],
   },
 ];
