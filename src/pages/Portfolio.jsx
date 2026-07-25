@@ -542,6 +542,7 @@ Technical highlights:
 • Added status filtering, maintenance tracking, condition updates, and historical work-order views`,
   image: [
     bikeMaintenance1,
+    mastermindclassDiagramUsed,
     bikeMaintenance2,
     bikeMaintenance3,
     bikeMaintenance4,
