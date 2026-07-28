@@ -87,7 +87,6 @@ import bikeMaintenance4 from "../../src/assets/mastermind/domainModel.png";
 
 
 import bikeRideShareDomainModel from "../../src/assets/mastermind/domainModel.png";
-import bikeRideShareDomainModel from "../../src/assets/mastermind/domainModel.png";
 import bikeRideShareUseCaseModel from "../../src/assets/mastermind/domainModel.png";
 
 import bikeRideShareAdminDashboard from "../../src/assets/mastermind/domainModel.png";
@@ -96,6 +95,8 @@ import bikeRideShareStationPanel from "../../src/assets/mastermind/domainModel.p
 
 import bikeRideShareClassDiagram from "../../src/assets/mastermind/domainModel.png";
 
+
+import bikeRideShareSequenceDiagram from "../../src/assets/mastermind/domainModel.png";
 
 
 
