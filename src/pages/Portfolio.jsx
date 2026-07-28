@@ -190,7 +190,7 @@ Technical highlights:
       image21,
       image22,
       image23,
-      image204,
+      image24,
       image25,
       abstractFactoryDiagram,
       bikeMaintenanceClassDiagram,
@@ -516,6 +516,8 @@ Technical highlights:
       bikeMaintenance2,
       bikeMaintenance3,
       bikeMaintenance4,
+      chordFinderDomainModel,
+      image24
     ],
     gitLink: "https://github.com/TheReal4m4d3u5/bikeMaintenanceAdapter",
     tags: [
