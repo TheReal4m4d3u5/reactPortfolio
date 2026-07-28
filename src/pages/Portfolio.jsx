@@ -36,10 +36,6 @@ import KanbanBoard2 from "../../src/assets/KanbanBoard/image2.png";
 import KanbanBoard3 from "../../src/assets/KanbanBoard/image3.png";
 import KanbanBoard4 from "../../src/assets/KanbanBoard/image4.png";
 
-
-
-
-
 // import image4 from "../../src/assets/image4.png";
 // import image5 from "../../src/assets/image5.png";
 // import image6 from "../../src/assets/image6.png";
@@ -74,20 +70,25 @@ import createCodeRD from "../../src/assets/mastermind/createCodeRD.png";
 import createCodeSeq from "../../src/assets/mastermind/createCodeSeq.png";
 import mastermindclassDiagramUsed from "../../src/assets/mastermind/classDiagram.png";
 
-
 import adapterPatternDiagram from "../../src/assets/mastermind/domainModel.png";
 import abstractFactoryDiagram from "../../src/assets/mastermind/domainModel.png";
 import bikeMaintenanceClassDiagram from "../../src/assets/mastermind/domainModel.png";
-
 
 import bikeMaintenance1 from "../../src/assets/mastermind/domainModel.png";
 import bikeMaintenance2 from "../../src/assets/mastermind/domainModel.png";
 import bikeMaintenance3 from "../../src/assets/mastermind/domainModel.png";
 import bikeMaintenance4 from "../../src/assets/mastermind/domainModel.png";
 
+import bikeRideShareDomainModel from "../../src/assets/mastermind/domainModel.png";
+import bikeRideShareUseCaseModel from "../../src/assets/mastermind/domainModel.png";
 
+import bikeRideShareAdminDashboard from "../../src/assets/mastermind/domainModel.png";
+import bikeRideShareTechnicianDashboard from "../../src/assets/mastermind/domainModel.png";
+import bikeRideShareStationPanel from "../../src/assets/mastermind/domainModel.png";
 
+import bikeRideShareClassDiagram from "../../src/assets/mastermind/domainModel.png";
 
+import bikeRideShareSequenceDiagram from "../../src/assets/mastermind/domainModel.png";
 
 const apiProjects = [
   {
@@ -132,43 +133,45 @@ const apiProjects = [
   },
 
   {
-    title: "Chord Finder",
+    title: "Bike Ride Share",
     description:
-      "Chord Finder is a Java-based music education application that identifies possible triad names from three notes entered in any order. The system validates note input, supports enharmonic spellings such as D♯ and E♭, calculates musical intervals, and compares the submitted notes against stored chord formulas to recognize major, minor, diminished, and augmented chords. It also includes an administrator workflow for adding, editing, viewing, and deleting chord formulas. The application was designed using object-oriented analysis, UML, GRASP principles, behavior-driven development, and test-driven development.",
+      "Bike Ride Share is a design-pattern showcase built by refactoring an incomplete starter project provided by my professor into a complete, unified Spring Boot platform. The refactoring demonstrates seven classic design patterns working together: Adapter and Abstract Factory make persistence swappable across in-memory, SQL, and remote GraphQL repository families; Strategy, Composite, and Factory Method drive configurable station availability evaluation; State governs station operating transitions; and Observer powers availability history, attention requests, and operations notifications. Along the way, duplicate domain concepts were eliminated in favor of single authoritative classes, clean subsystem boundaries were established, and GRASP and SOLID principles were applied throughout, with substitutability proven by repository contract tests. The finished platform manages the full bike repair lifecycle and station-level operations through GraphQL and REST APIs secured with JWT role-based authorization and a React frontend.",
     image: [
-      chordFinderDomainModel,
-      image25,
-      image19,
-      image20,
-      image21,
-      image22,
-      image23,
-      image24,
+      bikeRideShareDomainModel,
+      bikeRideShareUseCaseModel,
+      bikeRideShareClassDiagram,
+      bikeRideShareSequenceDiagram,
+      bikeRideShareAdminDashboard,
+      bikeRideShareTechnicianDashboard,
+      bikeRideShareStationPanel,
     ],
-    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
+    gitLink: "https://github.com/TheReal4m4d3u5/bikeshare-operations-system",
     tags: [
+      "Design Patterns",
+      "Refactoring",
+      "Adapter",
+      "Abstract Factory",
+      "Strategy",
+      "Factory Method",
+      "Composite",
+      "State",
+      "Observer",
+      "GRASP",
+      "SOLID",
       "System Design",
-      "Object-Oriented Design",
-      "OOAD",
-      "ICONIX",
-      "UML",
-      "BDD",
-      "Traceability",
-      "Domain Modeling",
-      "Use Cases",
-      "Robustness Analysis",
-      "Sequence Diagrams",
-      "Class Diagrams",
-      "Test Scenarios",
-      "Design Documentation",
+      "Java",
+      "Spring Boot",
+      "React",
+      "GraphQL",
+      "JWT Authentication",
     ],
   },
 ];
 
 const designPatternProjects = [
-{
-  title: "Design Patterns, SOLID, GRASP & Refactoring",
-  description: `Designed and refactored a bike-share maintenance system to demonstrate how established object-oriented design patterns and principles improve extensibility, maintainability, testability, and separation of responsibilities.
+  {
+    title: "Design Patterns, SOLID, GRASP & Refactoring",
+    description: `Designed and refactored a bike-share maintenance system to demonstrate how established object-oriented design patterns and principles improve extensibility, maintainability, testability, and separation of responsibilities.
 
 The project implements the Adapter and Abstract Factory patterns to support SQL and GraphQL data providers through consistent interfaces. It also applies SOLID and GRASP principles to assign responsibilities, reduce coupling, improve cohesion, and keep business logic independent of specific frameworks and persistence technologies.
 
@@ -180,34 +183,41 @@ Technical highlights:
 • Refactored tightly coupled code into focused interfaces, services, repositories, adapters, and factory components
 • Replaced provider-specific conditional logic with polymorphic implementations and dependency injection
 • Improved maintainability and testability by isolating domain behavior from persistence and infrastructure concerns`,
-  image: [
-    adapterPatternDiagram,
-    abstractFactoryDiagram,
-    bikeMaintenanceClassDiagram,
-  ],
-  gitLink: "https://github.com/TheReal4m4d3u5/bikeMaintenanceAdapter",
-  tags: [
-    "Java",
-    "Spring Boot",
-    "Adapter Pattern",
-    "Abstract Factory",
-    "Design Patterns",
-    "SOLID",
-    "GRASP",
-    "Refactoring",
-    "Object-Oriented Design",
-    "Software Architecture",
-    "Polymorphism",
-    "Dependency Injection",
-    "Low Coupling",
-    "High Cohesion",
-    "Repository Pattern",
-    "SQL",
-    "GraphQL",
-    "UML",
-    "Class Diagrams",
-  ],
-},
+    image: [
+      adapterPatternDiagram,
+      image19,
+      image20,
+      image21,
+      image22,
+      image23,
+      image24,
+      image25,
+      abstractFactoryDiagram,
+      bikeMaintenanceClassDiagram,
+    ],
+    gitLink: "https://github.com/TheReal4m4d3u5/bikeMaintenanceAdapter",
+    tags: [
+      "Java",
+      "Spring Boot",
+      "Adapter Pattern",
+      "Abstract Factory",
+      "Design Patterns",
+      "SOLID",
+      "GRASP",
+      "Refactoring",
+      "Object-Oriented Design",
+      "Software Architecture",
+      "Polymorphism",
+      "Dependency Injection",
+      "Low Coupling",
+      "High Cohesion",
+      "Repository Pattern",
+      "SQL",
+      "GraphQL",
+      "UML",
+      "Class Diagrams",
+    ],
+  },
 ];
 
 const cicdProjects = [
@@ -309,46 +319,6 @@ Technical highlights:
       "Production Deployment",
       "Deployment Automation",
       "DevOps",
-    ],
-  },
-];
-
-const softwareArchitectureProjects = [
-  {
-    title: "Bike Share Maintenance System",
-    description: `An object-oriented maintenance management system designed to help bikeshare operators identify scheduled maintenance needs, respond to detected faults and user complaints, manage repair work, and track each bike throughout its service lifecycle. The system supports condition changes, maintenance issues, work-order assignment, inspections, repairs, service-history records, return-to-service decisions, and bike retirement.
-
-The project applies the ICONIX methodology to maintain traceability from business requirements and user stories through domain modeling, use-case analysis, robustness analysis, sequence diagrams, detailed class design, state modeling, implementation, and iterative refactoring.
-
-Technical highlights:
-• Modeled scheduled maintenance using time, mileage, ride-count, and inspection thresholds
-• Designed workflows for faults, complaints, work orders, inspections, repairs, and retirement
-• Applied BCE, GRASP, SOLID, and object-oriented responsibility-assignment principles
-• Refactored the design and Java implementation to improve cohesion, reduce coupling, and clarify class responsibilities
-• Created UML domain, use-case, robustness, sequence, state-machine, and class diagrams
-• Implemented Java scenarios demonstrating main-success and exception flows`,
-    image: [chordFinderDomainModel],
-    gitLink:
-      "https://github.com/TheReal4m4d3u5/bikeShareMaintenanceSytemInstructions",
-    tags: [
-      "Java",
-      "System Design",
-      "Software Architecture",
-      "Object-Oriented Design",
-      "OOAD",
-      "ICONIX",
-      "UML",
-      "GRASP",
-      "SOLID",
-      "Refactoring",
-      "BDD",
-      "Domain Modeling",
-      "Use Cases",
-      "Robustness Analysis",
-      "Sequence Diagrams",
-      "State Machines",
-      "Class Diagrams",
-      "Design Documentation",
     ],
   },
 ];
@@ -526,9 +496,9 @@ Technical highlights:
 ];
 
 const fullStackProjects = [
-{
-  title: "Bike Share Maintenance System",
-  description: `A full-stack fleet maintenance platform that helps administrators and technicians monitor bike conditions, identify scheduled maintenance needs, process reported faults and user complaints, manage work orders, document repairs, and review complete service histories from a centralized dashboard.
+  {
+    title: "Bike Share Maintenance System",
+    description: `A full-stack fleet maintenance platform that helps administrators and technicians monitor bike conditions, identify scheduled maintenance needs, process reported faults and user complaints, manage work orders, document repairs, and review complete service histories from a centralized dashboard.
 
 The application combines a responsive React and Vite frontend with a Java Spring Boot backend, REST and GraphQL API communication, PostgreSQL relational storage, and MongoDB document storage. A layered backend architecture separates controllers, business logic, data access, validation, and persistence responsibilities.
 
@@ -540,32 +510,34 @@ Technical highlights:
 • Used MongoDB for flexible fault reports, maintenance events, and historical service records
 • Implemented workflows for scheduled maintenance, inspections, repairs, work-order completion, and bike retirement
 • Added status filtering, maintenance tracking, condition updates, and historical work-order views`,
-  image: [
-    bikeMaintenance1,
-    mastermindclassDiagramUsed,
-    bikeMaintenance2,
-    bikeMaintenance3,
-    bikeMaintenance4,
-  ],
-  gitLink: "https://github.com/TheReal4m4d3u5/bikeMaintenanceAdapter",
-  tags: [
-    "React",
-    "JavaScript",
-    "Vite",
-    "Java",
-    "Spring Boot",
-    "Spring Data JPA",
-    "Hibernate",
-    "Maven",
-    "REST API",
-    "GraphQL",
-    "PostgreSQL",
-    "MongoDB",
-    "JUnit",
-    "Vitest",
-    "Full-Stack Development",
-  ],
-},
+    image: [
+      bikeMaintenance1,
+      mastermindclassDiagramUsed,
+      bikeMaintenance2,
+      bikeMaintenance3,
+      bikeMaintenance4,
+      chordFinderDomainModel,
+      image24
+    ],
+    gitLink: "https://github.com/TheReal4m4d3u5/bikeMaintenanceAdapter",
+    tags: [
+      "React",
+      "JavaScript",
+      "Vite",
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Hibernate",
+      "Maven",
+      "REST API",
+      "GraphQL",
+      "PostgreSQL",
+      "MongoDB",
+      "JUnit",
+      "Vitest",
+      "Full-Stack Development",
+    ],
+  },
 
   {
     title: "EmployEase",
@@ -841,12 +813,6 @@ const Portfolio = () => {
       groupTitle: "Design Patterns & Refactoring",
       groupId: "designPatterns",
       projects: designPatternProjects,
-    },
-
-    {
-      groupTitle: "Architecture & System Modeling",
-      groupId: "softwareArchitecture",
-      projects: softwareArchitectureProjects,
     },
 
     {
