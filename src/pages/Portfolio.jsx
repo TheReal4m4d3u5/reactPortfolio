@@ -86,6 +86,23 @@ import bikeMaintenance3 from "../../src/assets/mastermind/domainModel.png";
 import bikeMaintenance4 from "../../src/assets/mastermind/domainModel.png";
 
 
+import bikeRideShareDomainModel from "../../src/assets/mastermind/domainModel.png";
+import bikeRideShareDomainModel from "../../src/assets/mastermind/domainModel.png";
+import bikeRideShareUseCaseModel from "../../src/assets/mastermind/domainModel.png";
+
+import bikeRideShareAdminDashboard from "../../src/assets/mastermind/domainModel.png";
+import bikeRideShareTechnicianDashboard from "../../src/assets/mastermind/domainModel.png";
+import bikeRideShareStationPanel from "../../src/assets/mastermind/domainModel.png";      
+
+import bikeRideShareClassDiagram from "../../src/assets/mastermind/domainModel.png";
+
+
+
+
+
+
+
+
 
 
 
@@ -132,37 +149,42 @@ const apiProjects = [
   },
 
   {
-    title: "Chord Finder",
+    title: "Bike Ride Share",
     description:
-      "Chord Finder is a Java-based music education application that identifies possible triad names from three notes entered in any order. The system validates note input, supports enharmonic spellings such as D♯ and E♭, calculates musical intervals, and compares the submitted notes against stored chord formulas to recognize major, minor, diminished, and augmented chords. It also includes an administrator workflow for adding, editing, viewing, and deleting chord formulas. The application was designed using object-oriented analysis, UML, GRASP principles, behavior-driven development, and test-driven development.",
+      "Bike Ride Share is a design-pattern showcase built by refactoring an incomplete starter project provided by my professor into a complete, unified Spring Boot platform. The refactoring demonstrates seven classic design patterns working together: Adapter and Abstract Factory make persistence swappable across in-memory, SQL, and remote GraphQL repository families; Strategy, Composite, and Factory Method drive configurable station availability evaluation; State governs station operating transitions; and Observer powers availability history, attention requests, and operations notifications. Along the way, duplicate domain concepts were eliminated in favor of single authoritative classes, clean subsystem boundaries were established, and GRASP and SOLID principles were applied throughout, with substitutability proven by repository contract tests. The finished platform manages the full bike repair lifecycle and station-level operations through GraphQL and REST APIs secured with JWT role-based authorization and a React frontend.",
     image: [
-      chordFinderDomainModel,
-      image25,
-      image19,
-      image20,
-      image21,
-      image22,
-      image23,
-      image24,
+      bikeRideShareDomainModel,
+      bikeRideShareUseCaseModel,
+      bikeRideShareClassDiagram,
+      bikeRideShareSequenceDiagram,
+      bikeRideShareAdminDashboard,
+      bikeRideShareTechnicianDashboard,
+      bikeRideShareStationPanel,
     ],
-    gitLink: "https://github.com/TheReal4m4d3u5/chordFinder",
+    gitLink: "https://github.com/TheReal4m4d3u5/bikeshare-operations-system",
     tags: [
+      "Design Patterns",
+      "Refactoring",
+      "Adapter",
+      "Abstract Factory",
+      "Strategy",
+      "Factory Method",
+      "Composite",
+      "State",
+      "Observer",
+      "GRASP",
+      "SOLID",
       "System Design",
-      "Object-Oriented Design",
-      "OOAD",
-      "ICONIX",
-      "UML",
-      "BDD",
-      "Traceability",
-      "Domain Modeling",
-      "Use Cases",
-      "Robustness Analysis",
-      "Sequence Diagrams",
-      "Class Diagrams",
-      "Test Scenarios",
-      "Design Documentation",
+      "Java",
+      "Spring Boot",
+      "React",
+      "GraphQL",
+      "JWT Authentication",
     ],
   },
+
+
+
 ];
 
 const designPatternProjects = [
@@ -843,11 +865,7 @@ const Portfolio = () => {
       projects: designPatternProjects,
     },
 
-    {
-      groupTitle: "Architecture & System Modeling",
-      groupId: "softwareArchitecture",
-      projects: softwareArchitectureProjects,
-    },
+
 
     {
       groupTitle: "Full-Stack",
