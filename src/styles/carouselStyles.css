@@ -1,0 +1,36 @@
+.outerCarousel,
+.innerCarousel {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden !important;
+  box-sizing: border-box;
+}
+
+/* .projectGroupSlide {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+} */
+/* 
+.outerCarousel > .swiper-wrapper,
+.innerCarousel > .swiper-wrapper {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.outerCarousel > .swiper-wrapper > .swiper-slide,
+.innerCarousel > .swiper-wrapper > .swiper-slide {
+  flex-shrink: 0;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.innerCarousel .project-card {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+} */
