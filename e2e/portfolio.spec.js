@@ -22,9 +22,7 @@ test("main navigation pages load", async ({ page, isMobile }) => {
 test("portfolio subject buttons render", async ({ page }) => {
   await page.goto("/portfolio");
 
-  const buttons = [
-    "Archive",
-  ];
+  const buttons = ["Archive"];
 
   for (const button of buttons) {
     await expect(
@@ -39,9 +37,10 @@ test("footer links are visible and not covered", async ({ page }) => {
   await page.goto("/portfolio");
 
   await expect(page.getByRole("link", { name: "LinkedIn" })).toBeVisible();
+
   await expect(
-  page.getByRole("link", { name: "GitHub", exact: true })
-).toBeVisible();
+    page.getByRole("link", { name: "GitHub", exact: true }),
+  ).toBeVisible();
 
   const footer = page.locator(".footer-links");
   await expect(footer).toBeVisible();
@@ -50,30 +49,37 @@ test("footer links are visible and not covered", async ({ page }) => {
 test("portfolio card does not overlap footer", async ({ page }) => {
   await page.goto("/portfolio");
 
-  const card = page.locator(".project-card:visible").last();
+  await page.waitForLoadState("networkidle");
+
+  await page.waitForFunction(() =>
+    Array.from(document.images).every((image) => image.complete),
+  );
+
+  const activeOuterSlide = page.locator(
+    ".outerCarousel > .swiper-wrapper > .swiper-slide-active",
+  );
+
+  const activeCard = activeOuterSlide.locator(
+    ".innerCarousel > .swiper-wrapper > .swiper-slide-active .project-card",
+  );
+
   const footer = page.locator(".footer-links");
 
-  await expect(card).toBeVisible();
+  await expect(activeOuterSlide).toBeVisible();
+  await expect(activeCard).toBeVisible();
   await expect(footer).toBeVisible();
 
-  await page.evaluate(() => {
-    window.scrollTo(0, document.documentElement.scrollHeight);
-  });
+  await footer.scrollIntoViewIfNeeded();
 
-  await page.waitForTimeout(300);
+  const cardBottom = await activeCard.evaluate(
+    (element) => element.getBoundingClientRect().bottom,
+  );
 
-  const [cardBox, footerBox] = await Promise.all([
-    card.boundingBox(),
-    footer.boundingBox(),
-  ]);
+  const footerTop = await footer.evaluate(
+    (element) => element.getBoundingClientRect().top,
+  );
 
-  if (!cardBox || !footerBox) {
-    throw new Error("Unable to measure the project card or footer");
-  }
-
-  const cardBottom = cardBox.y + cardBox.height;
-
-  expect(cardBottom).toBeLessThanOrEqual(footerBox.y + 1);
+  expect(cardBottom).toBeLessThanOrEqual(footerTop + 1);
 });
 
 test("contact form fields render", async ({ page }) => {
