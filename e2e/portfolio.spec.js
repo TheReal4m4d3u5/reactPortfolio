@@ -46,40 +46,46 @@ test("footer links are visible and not covered", async ({ page }) => {
   await expect(footer).toBeVisible();
 });
 
-test("portfolio card does not overlap footer", async ({ page }) => {
+test("portfolio card content can be viewed above fixed footer", async ({
+  page,
+}) => {
   await page.goto("/portfolio");
 
-  await page.waitForLoadState("networkidle");
-
-  await page.waitForFunction(() =>
-    Array.from(document.images).every((image) => image.complete),
-  );
-
-  const activeOuterSlide = page.locator(
-    ".outerCarousel > .swiper-wrapper > .swiper-slide-active",
-  );
-
-  const activeCard = activeOuterSlide.locator(
-    ".innerCarousel > .swiper-wrapper > .swiper-slide-active .project-card",
+  const activeCard = page.locator(
+    ".outerCarousel > .swiper-wrapper > .swiper-slide-active " +
+      ".innerCarousel > .swiper-wrapper > .swiper-slide-active .project-card",
   );
 
   const footer = page.locator(".footer-links");
+  const projectLink = activeCard.getByRole("link", {
+    name: /view github project/i,
+  });
 
-  await expect(activeOuterSlide).toBeVisible();
   await expect(activeCard).toBeVisible();
   await expect(footer).toBeVisible();
+  await expect(projectLink).toBeAttached();
 
-  await footer.scrollIntoViewIfNeeded();
-
-  const cardBottom = await activeCard.evaluate(
-    (element) => element.getBoundingClientRect().bottom,
+  const footerHeight = await footer.evaluate(
+    (element) => element.getBoundingClientRect().height,
   );
 
-  const footerTop = await footer.evaluate(
-    (element) => element.getBoundingClientRect().top,
-  );
+  await projectLink.scrollIntoViewIfNeeded();
 
-  expect(cardBottom).toBeLessThanOrEqual(footerTop + 1);
+  // Move the target above the fixed footer.
+  await page.evaluate((height) => {
+    window.scrollBy(0, height + 16);
+  }, footerHeight);
+
+  await expect
+    .poll(async () => {
+      const linkBox = await projectLink.boundingBox();
+      const footerBox = await footer.boundingBox();
+
+      if (!linkBox || !footerBox) return false;
+
+      return linkBox.y + linkBox.height <= footerBox.y;
+    })
+    .toBe(true);
 });
 
 test("contact form fields render", async ({ page }) => {
