@@ -92,7 +92,7 @@ import bikeRideShareSequenceDiagram from "../../src/assets/mastermind/domainMode
 
 const apiProjects = [
   {
-    title: "Mastermind",
+    title: "Master Mind",
     description: `Mastermind is an object-oriented analysis and design project for a configurable code-breaking game. The project demonstrates how software requirements are transformed into a complete and traceable system design using the OOAD and ICONIX methodologies.
 
 The system supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win and loss determination, and final result calculation.
