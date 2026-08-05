@@ -504,6 +504,13 @@ Technical highlights:
 • Implemented workflows for scheduled maintenance, inspections, repairs, work-order completion, and bike retirement
 • Added status filtering, maintenance tracking, condition updates, and historical work-order views`,
     image: [
+      bikeRideShareDomainModel,
+      bikeRideShareUseCaseModel,
+      bikeRideShareAdminDashboard,
+      bikeRideShareTechnicianDashboard,
+      bikeRideShareStationPanel,
+      bikeRideShareClassDiagram,
+      bikeRideShareSequenceDiagram,
       bikeMaintenance1,
       mastermindclassDiagramUsed,
       bikeMaintenance2,
