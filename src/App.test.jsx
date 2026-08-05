@@ -72,7 +72,7 @@ test("portfolio renders project content", () => {
   renderRoute("/Portfolio");
 
 expect(
-  screen.getByText(/^Master Mind$/i)
+  screen.getByText(/^Mastermind$/i)
 ).toBeInTheDocument();
 
 });
