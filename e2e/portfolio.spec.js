@@ -101,8 +101,6 @@ test("contact form fields render", async ({ page }) => {
 });
 
 
-import { test, expect } from "@playwright/test";
-
 test("project cards do not overlap while moving through the carousel", async ({
   page,
 }) => {
