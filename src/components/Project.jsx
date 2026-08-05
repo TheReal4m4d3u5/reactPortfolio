@@ -81,11 +81,13 @@ const Project = ({
               ) : (
                 <>
                   <Swiper
+                    className="project-image-swiper"
                     spaceBetween={10}
                     slidesPerView={1}
                     navigation
                     pagination={{ clickable: true }}
                     modules={[Navigation, Pagination]}
+                    nested
                   >
                     {galleryImages.map((img, index) => (
                       <SwiperSlide key={index}>

@@ -1,3 +1,5 @@
+import "../styles/carouselStyles.css";
+
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -61,14 +63,18 @@ const Carousel = ({ projectGroups }) => {
 
               <Swiper
                 slidesPerView={1}
+                slidesPerGroup={1}
                 spaceBetween={24}
+                centeredSlides={false}
+                loop={false}
+                nested
                 navigation
                 pagination={{ clickable: true }}
                 modules={[Navigation, Pagination]}
                 className="innerCarousel"
               >
-                {group.projects.map((project, index) => (
-                  <SwiperSlide key={index}>
+                {group.projects.map((project) => (
+                  <SwiperSlide key={project.title}>
                     <Project
                       {...project}
                       gitlink={project.gitLink}
