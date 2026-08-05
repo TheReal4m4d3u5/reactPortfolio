@@ -92,9 +92,18 @@ import bikeRideShareSequenceDiagram from "../../src/assets/mastermind/domainMode
 
 const apiProjects = [
   {
-    title: "Master Mind",
-    description:
-      "Developed a detailed object-oriented system design for a configurable Mastermind game using the OOAD/ICONIX software methodology. The project emphasized traceability through the full design process, connecting requirements to domain models, use cases, robustness analysis, sequence diagrams, detailed class design, and BDD test scenarios.\n\n      Core system behavior supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win/loss determination, and final result calculation.\n\n",
+    title: "Mastermind",
+    description: `Mastermind is an object-oriented analysis and design project for a configurable code-breaking game. The project demonstrates how software requirements are transformed into a complete and traceable system design using the OOAD and ICONIX methodologies.
+
+The system supports configurable player counts, codemaker modes, code-length rules, color-repetition validation, secret-code creation, guess evaluation, feedback generation, role switching, round tracking, win and loss determination, and final result calculation.
+
+Technical highlights:
+• Defined actors, functional requirements, use cases, main success flows, and alternate flows
+
+• Created detailed class diagrams defining relationships, attributes, operations, and system structure
+• Modeled configurable game rules for player counts, codemaker selection, code length, and repeated colors
+• Developed BDD scenarios covering normal gameplay, validation rules, alternate flows, and game outcomes
+• Maintained traceability between requirements, use cases, UML models, test scenarios, and implementation`,
     image: [
       mastermindDomainMoel,
       useCaseDiagram,
@@ -121,6 +130,7 @@ const apiProjects = [
       "ICONIX",
       "UML",
       "BDD",
+      "Requirements Modeling",
       "Traceability",
       "Domain Modeling",
       "Use Cases",
@@ -134,8 +144,18 @@ const apiProjects = [
 
   {
     title: "Chord Finder",
-    description:
-      "Chord Finder is an object-oriented analysis and design project that demonstrates requirements modeling through use cases, domain modeling, robustness analysis, sequence diagrams, class diagrams, and behavior-driven development. The project maintains traceability between requirements, system behavior, UML models, and the final implementation.",
+    description: `Chord Finder is an object-oriented analysis and design project that demonstrates how software requirements are transformed into a complete and traceable system design.
+
+The project connects use cases, domain modeling, robustness analysis, sequence diagrams, class diagrams, behavior-driven development, and the final implementation.
+
+Technical highlights:
+• Defined actors, functional requirements, use cases, main success flows, and alternate flows
+• Created a domain model representing the primary application concepts and relationships
+• Performed robustness analysis using boundary, controller, and entity objects
+• Developed sequence diagrams to model system interactions and assign object responsibilities
+• Created class diagrams defining application structure, relationships, attributes, and operations
+• Maintained traceability between requirements, use cases, UML models, BDD scenarios, and implementation
+• Applied object-oriented design principles including encapsulation, low coupling, high cohesion, and separation of responsibilities`,
     image: [
       chordFinderDomainModel,
       image19,
@@ -152,18 +172,135 @@ const apiProjects = [
       "UML",
       "BDD",
       "Use Cases",
+      "Requirements Modeling",
       "Traceability",
       "Domain Modeling",
       "Robustness Analysis",
       "Sequence Diagrams",
       "Class Diagrams",
+      "Object-Oriented Design",
     ],
   },
 ];
 
 const designPatternProjects = [
   {
-    title: "Design Patterns, SOLID, GRASP & Refactoring",
+    title: "Station Management System Abstract Factory",
+    description: `Station Management System is an object-oriented analysis, design, refactoring, and testing project for a bike-share station availability system. The project demonstrates how requirements are transformed into a complete and traceable software design using OOAD, UML, use cases, domain modeling, robustness analysis, sequence diagrams, class diagrams, and behavior-driven development.
+
+The system applies Abstract Factory, Adapter, Strategy, Factory Method, State, and Observer patterns alongside SOLID and GRASP principles. These techniques support compatible station model families, interchangeable behavior, reduced coupling, high cohesion, clear responsibility assignment, and separation between domain, application, testing, and infrastructure concerns.
+
+Technical highlights:
+• Applied OOAD and UML to create use cases, domain models, robustness diagrams, sequence diagrams, and detailed class diagrams
+• Implemented Abstract Factory to create compatible families of Station, Dock, and Bicycle model objects
+• Applied Adapter, Strategy, Factory Method, State, and Observer patterns to isolate changing behavior and infrastructure concerns
+• Used SOLID and GRASP principles to improve responsibility assignment, cohesion, coupling, polymorphism, indirection, and testability
+• Refactored tightly coupled and conditional code into focused interfaces, services, strategies, factories, states, observers, and adapters
+• Developed BDD scenarios using ZOMBIE testing techniques to validate normal, boundary, invalid, interface, and exception behavior
+• Maintained traceability between requirements, use cases, UML artifacts, design decisions, BDD scenarios, tests, and implementation`,
+    image: [
+      adapterPatternDiagram,
+      image19,
+      image20,
+      image21,
+      image22,
+      image23,
+      image24,
+      image25,
+      abstractFactoryDiagram,
+      bikeMaintenanceClassDiagram,
+    ],
+    gitLink: "https://github.com/TheReal4m4d3u5/StationManagementSystemFactory",
+    tags: [
+      "Java",
+      "OOAD",
+      "UML",
+      "BDD",
+      "ZOMBIE Testing",
+      "Traceability",
+      "Domain Modeling",
+      "Use Cases",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Abstract Factory",
+      "Adapter Pattern",
+      "Strategy Pattern",
+      "Factory Method",
+      "State Pattern",
+      "Observer Pattern",
+      "SOLID",
+      "GRASP",
+      "Refactoring",
+      "Object-Oriented Design",
+      "Software Architecture",
+      "Polymorphism",
+      "Dependency Injection",
+      "Low Coupling",
+      "High Cohesion",
+    ],
+  },
+
+    {
+    title: "Station Management System Composite and Strategy Patterns",
+    description: `Station Management System is an object-oriented analysis, design, refactoring, and testing project for a bike-share station availability system. The project demonstrates how requirements are transformed into a complete and traceable software design using OOAD, UML, use cases, domain modeling, robustness analysis, sequence diagrams, class diagrams, and behavior-driven development.
+
+The system applies Abstract Factory, Adapter, Strategy, Factory Method, State, and Observer patterns alongside SOLID and GRASP principles. These techniques support compatible station model families, interchangeable behavior, reduced coupling, high cohesion, clear responsibility assignment, and separation between domain, application, testing, and infrastructure concerns.
+
+Technical highlights:
+• Applied OOAD and UML to create use cases, domain models, robustness diagrams, sequence diagrams, and detailed class diagrams
+• Implemented Abstract Factory to create compatible families of Station, Dock, and Bicycle model objects
+• Applied Adapter, Strategy, Factory Method, State, and Observer patterns to isolate changing behavior and infrastructure concerns
+• Used SOLID and GRASP principles to improve responsibility assignment, cohesion, coupling, polymorphism, indirection, and testability
+• Refactored tightly coupled and conditional code into focused interfaces, services, strategies, factories, states, observers, and adapters
+• Developed BDD scenarios using ZOMBIE testing techniques to validate normal, boundary, invalid, interface, and exception behavior
+• Maintained traceability between requirements, use cases, UML artifacts, design decisions, BDD scenarios, tests, and implementation`,
+    image: [
+      adapterPatternDiagram,
+      image19,
+      image20,
+      image21,
+      image22,
+      image23,
+      image24,
+      image25,
+      abstractFactoryDiagram,
+      bikeMaintenanceClassDiagram,
+    ],
+    gitLink: "https://github.com/TheReal4m4d3u5/StationManagementSystemFactory",
+    tags: [
+      "Java",
+      "OOAD",
+      "UML",
+      "BDD",
+      "ZOMBIE Testing",
+      "Traceability",
+      "Domain Modeling",
+      "Use Cases",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Abstract Factory",
+      "Adapter Pattern",
+      "Strategy Pattern",
+      "Factory Method",
+      "State Pattern",
+      "Observer Pattern",
+      "SOLID",
+      "GRASP",
+      "Refactoring",
+      "Object-Oriented Design",
+      "Software Architecture",
+      "Polymorphism",
+      "Dependency Injection",
+      "Low Coupling",
+      "High Cohesion",
+    ],
+  },
+
+  {
+    title:
+      "Bike-Share Maintenance System Adapter and Abstract Factory Patterns",
     description: `Designed and refactored a bike-share maintenance system to demonstrate how established object-oriented design patterns and principles improve extensibility, maintainability, testability, and separation of responsibilities.
 
 The project implements the Adapter and Abstract Factory patterns to support SQL and GraphQL data providers through consistent interfaces. It also applies SOLID and GRASP principles to assign responsibilities, reduce coupling, improve cohesion, and keep business logic independent of specific frameworks and persistence technologies.
@@ -517,7 +654,7 @@ Technical highlights:
       bikeMaintenance3,
       bikeMaintenance4,
       chordFinderDomainModel,
-      image24
+      image24,
     ],
     gitLink: "https://github.com/TheReal4m4d3u5/bikeMaintenanceAdapter",
     tags: [

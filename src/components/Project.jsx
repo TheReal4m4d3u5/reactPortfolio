@@ -112,63 +112,62 @@ const Project = ({
               )}
             </div>
           )}
-
-          {gitlink && (
-            <div className="viewGithubProject">
-              <a
-                href={gitlink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto btn btn-primary custom-btn"
-              >
-                View Github Project
-              </a>
-            </div>
-          )}
-
-          {staginglink && (
-            <div className="viewProjectDeployment">
-              <a
-                href={staginglink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-secondary custom-btn"
-              >
-                View Staging Project
-              </a>
-            </div>
-          )}
-
-          {deployedlink && (
-            <div className="viewProjectDeployment">
-              <a
-                href={deployedlink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto btn btn-primary custom-btn"
-              >
-                View Deployed Project
-              </a>
-            </div>
-          )}
         </div>
 
         <div className="myCard project-reveal-content">
+          <Card.Title>{title}</Card.Title>
 
-            <Card.Title>{title}</Card.Title>
+          <Card.Text className="project-description">{description}</Card.Text>
 
-            <Card.Text className="project-description">{description}</Card.Text>
-            
-            <div className="project-tags-container">
-              {Array.isArray(tags) && tags.length > 0 && (
-                <div className="project-tags-list">
-                  {tags.map((tag, index) => (
-                    <Tag key={`${tag}-${index}`} name={tag} />
-                  ))}
-                </div>
-              )}
-            </div>
-      
+          <div className="project-tags-container">
+            {Array.isArray(tags) && tags.length > 0 && (
+              <div className="project-tags-list">
+                {tags.map((tag, index) => (
+                  <Tag key={`${tag}-${index}`} name={tag} />
+                ))}
+              </div>
+            )}
+          </div>
+          <div className="project-links-container">
+            {gitlink && (
+              <div className="viewGithubProject">
+                <a
+                  href={gitlink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-auto btn btn-primary custom-btn"
+                >
+                  View Github Project
+                </a>
+              </div>
+            )}
+
+            {staginglink && (
+              <div className="viewProjectDeployment">
+                <a
+                  href={staginglink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary custom-btn"
+                >
+                  View Staging Project
+                </a>
+              </div>
+            )}
+
+            {deployedlink && (
+              <div className="viewProjectDeployment">
+                <a
+                  href={deployedlink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-auto btn btn-primary custom-btn"
+                >
+                  View Deployed Project
+                </a>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </Card>
