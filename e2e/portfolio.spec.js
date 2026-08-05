@@ -111,7 +111,7 @@ test("project cards do not overlap while moving through the carousel", async ({
 
   // Scope this to the OUTER carousel so it does not click
   // the image/video carousel's next button.
-  const nextButton = carousel.locator(":scope > .swiper-button-next");
+  // const nextButton = carousel.locator(":scope > .swiper-button-next");
 
   const slides = carousel.locator(
     ":scope > .swiper-wrapper > .swiper-slide:not(.swiper-slide-duplicate)"
