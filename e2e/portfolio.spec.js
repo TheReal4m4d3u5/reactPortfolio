@@ -22,9 +22,7 @@ test("main navigation pages load", async ({ page, isMobile }) => {
 test("portfolio subject buttons render", async ({ page }) => {
   await page.goto("/portfolio");
 
-  const buttons = [
-    "Archive",
-  ];
+  const buttons = ["Archive"];
 
   for (const button of buttons) {
     await expect(
@@ -39,31 +37,55 @@ test("footer links are visible and not covered", async ({ page }) => {
   await page.goto("/portfolio");
 
   await expect(page.getByRole("link", { name: "LinkedIn" })).toBeVisible();
+
   await expect(
-  page.getByRole("link", { name: "GitHub", exact: true })
-).toBeVisible();
+    page.getByRole("link", { name: "GitHub", exact: true }),
+  ).toBeVisible();
 
   const footer = page.locator(".footer-links");
   await expect(footer).toBeVisible();
 });
 
-test("portfolio card does not overlap footer", async ({ page, isMobile }) => {
+test("portfolio card content can be viewed above fixed footer", async ({
+  page,
+}) => {
   await page.goto("/portfolio");
 
-  const card = page.locator(".project-card").first();
-  const footer = page.locator(".footer-links");
-
-  await expect(card).toBeVisible();
-  await expect(footer).toBeVisible();
-
-  const cardBox = await card.boundingBox();
-  const footerBox = await footer.boundingBox();
-
-  const overlapTolerance = isMobile ? 1175 : 250;
-
-  expect(cardBox.y + cardBox.height).toBeLessThanOrEqual(
-    footerBox.y + overlapTolerance,
+  const activeCard = page.locator(
+    ".outerCarousel > .swiper-wrapper > .swiper-slide-active " +
+      ".innerCarousel > .swiper-wrapper > .swiper-slide-active .project-card",
   );
+
+  const footer = page.locator(".footer-links");
+  const projectLink = activeCard.getByRole("link", {
+    name: /view github project/i,
+  });
+
+  await expect(activeCard).toBeVisible();
+  await expect(footer).toBeVisible();
+  await expect(projectLink).toBeAttached();
+
+  const footerHeight = await footer.evaluate(
+    (element) => element.getBoundingClientRect().height,
+  );
+
+  await projectLink.scrollIntoViewIfNeeded();
+
+  // Move the target above the fixed footer.
+  await page.evaluate((height) => {
+    window.scrollBy(0, height + 16);
+  }, footerHeight);
+
+  await expect
+    .poll(async () => {
+      const linkBox = await projectLink.boundingBox();
+      const footerBox = await footer.boundingBox();
+
+      if (!linkBox || !footerBox) return false;
+
+      return linkBox.y + linkBox.height <= footerBox.y;
+    })
+    .toBe(true);
 });
 
 test("contact form fields render", async ({ page }) => {
