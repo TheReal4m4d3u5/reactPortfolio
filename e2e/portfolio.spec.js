@@ -33,6 +33,9 @@ test("portfolio subject buttons render", async ({ page }) => {
   }
 });
 
+
+
+
 test("footer links are visible and not covered", async ({ page }) => {
   await page.goto("/portfolio");
 
@@ -96,3 +99,95 @@ test("contact form fields render", async ({ page }) => {
   await expect(page.getByPlaceholder("Enter your message")).toBeVisible();
   await expect(page.getByRole("button", { name: "Send" })).toBeVisible();
 });
+
+
+// test("project cards do not overlap while moving through the carousel", async ({
+//   page,
+// }) => {
+//   await page.setViewportSize({ width: 1860, height: 750 });
+//   await page.goto("/portfolio");
+
+//   const carousel = page.locator(".outerCarousel");
+
+//   // Scope this to the OUTER carousel so it does not click
+//   // the image/video carousel's next button.
+//   // const nextButton = carousel.locator(":scope > .swiper-button-next");
+
+//     const nextButton = page.getByRole("button", {
+//     name: "Next project",
+//   });
+
+//   const slides = carousel.locator(
+//     ":scope > .swiper-wrapper > .swiper-slide:not(.swiper-slide-duplicate)"
+//   );
+
+//   const slideCount = await slides.count();
+
+//   for (let slideNumber = 0; slideNumber < slideCount; slideNumber++) {
+//     const activeSlide = carousel.locator(
+//       ":scope > .swiper-wrapper > .swiper-slide-active"
+//     );
+
+//     await expect(activeSlide).toBeVisible();
+
+//     const overlappingCards = await carousel
+//       .locator(".project-card")
+//       .evaluateAll((cards) => {
+//         const cardData = cards.map((card, index) => {
+//           const rect = card.getBoundingClientRect();
+
+//           return {
+//             index,
+//             active: Boolean(card.closest(".swiper-slide-active")),
+//             left: rect.left,
+//             right: rect.right,
+//             top: rect.top,
+//             bottom: rect.bottom,
+//           };
+//         });
+
+//         const activeCard = cardData.find((card) => card.active);
+
+//         if (!activeCard) {
+//           return [];
+//         }
+
+//         return cardData.filter((card) => {
+//           if (card.index === activeCard.index) {
+//             return false;
+//           }
+
+//           const horizontalOverlap =
+//             activeCard.left < card.right && activeCard.right > card.left;
+
+//           const verticalOverlap =
+//             activeCard.top < card.bottom && activeCard.bottom > card.top;
+
+//           return horizontalOverlap && verticalOverlap;
+//         });
+//       });
+
+//     expect(
+//       overlappingCards,
+//       `Project slide ${slideNumber + 1} overlaps another project card`
+//     ).toHaveLength(0);
+
+//     if (slideNumber < slideCount - 1) {
+//       const currentIndex = await activeSlide.getAttribute(
+//         "data-swiper-slide-index"
+//       );
+
+//       await nextButton.click();
+
+//       await expect
+//         .poll(async () => {
+//           return carousel
+//             .locator(
+//               ":scope > .swiper-wrapper > .swiper-slide-active"
+//             )
+//             .getAttribute("data-swiper-slide-index");
+//         })
+//         .not.toBe(currentIndex);
+//     }
+//   }
+// });
