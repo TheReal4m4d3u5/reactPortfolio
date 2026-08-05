@@ -47,23 +47,39 @@ test("footer links are visible and not covered", async ({ page }) => {
   await expect(footer).toBeVisible();
 });
 
-test("portfolio card does not overlap footer", async ({ page, isMobile }) => {
-  await page.goto("/portfolio");
+test("portfolio card does not overlap footer", async ({ page }) => {
+  await page.goto("/");
 
-  const card = page.locator(".project-card").first();
-  const footer = page.locator(".footer-links");
+  const card = page.locator(".project-card").last();
+  const footer = page.locator("footer");
 
   await expect(card).toBeVisible();
   await expect(footer).toBeVisible();
 
-  const cardBox = await card.boundingBox();
-  const footerBox = await footer.boundingBox();
+  // Measure the relationship where overlap would actually occur.
+  await page.evaluate(() => {
+    window.scrollTo(0, document.documentElement.scrollHeight);
+  });
 
-  const overlapTolerance = isMobile ? 1175 : 250;
-
-  expect(cardBox.y + cardBox.height).toBeLessThanOrEqual(
-    footerBox.y + overlapTolerance,
+  await page.waitForFunction(
+    () =>
+      window.scrollY + window.innerHeight >=
+      document.documentElement.scrollHeight - 2,
   );
+
+  const [cardBox, footerBox] = await Promise.all([
+    card.boundingBox(),
+    footer.boundingBox(),
+  ]);
+
+  if (!cardBox || !footerBox) {
+    throw new Error("Unable to measure the project card or footer");
+  }
+
+  const cardBottom = cardBox.y + cardBox.height;
+  const overlap = cardBottom - footerBox.y;
+
+  expect(overlap).toBeLessThanOrEqual(1);
 });
 
 test("contact form fields render", async ({ page }) => {
