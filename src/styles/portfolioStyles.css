@@ -235,7 +235,7 @@ body {
     0 18px 35px rgba(68, 45, 130, 0.28),
     0 4px 14px rgba(255, 255, 255, 0.12) inset;
 
-  overflow: hidden;
+  overflow: visible;
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
@@ -591,3 +591,38 @@ button.portfolio-nav-btn {
   }
 }
 
+.outerCarousel {
+  height: auto !important;
+  min-height: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.outerCarousel > .swiper-wrapper {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.outerCarousel > .swiper-wrapper > .swiper-slide {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.outerCarousel {
+  margin-bottom: -100px !important;
+}
+
+.outerCarousel,
+.outerCarousel > .swiper-wrapper,
+.outerCarousel > .swiper-wrapper > .swiper-slide {
+  height: auto !important;
+}
+
+.outerCarousel {
+  margin-bottom: 2rem;
+}
+
+/* Remove fixed/absolute footer positioning and negative margins */
+.footer-links {
+  position: static;
+}
