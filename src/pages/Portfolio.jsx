@@ -980,7 +980,7 @@ const javaProjects = [
 const Portfolio = () => {
   const projectGroups = [
     {
-      groupTitle: "Object-Oriented Analysis & Design",
+      groupTitle: "OOAD",
       groupId: "apis",
       projects: apiProjects,
     },
@@ -996,7 +996,7 @@ const Portfolio = () => {
       projects: fullStackProjects,
     },
         {
-      groupTitle: "Systems & Software Architecture",
+      groupTitle: "Systems & Architecture",
       groupId: "architecture",
       projects: systemsProjects,
     },
