@@ -183,6 +183,156 @@ Technical highlights:
   },
 ];
 
+
+
+const systemsProjects = [
+{
+  title: "Ambulance Dispatch System",
+  description: `Developed a Spring Boot MVC ambulance dispatch application that manages emergency calls, ambulance availability, and dispatch operations through a structured object-oriented architecture. The system uses the Facade design pattern to provide a centralized interface between the MVC controller layer and the underlying dispatch, ambulance, and emergency-call subsystems.
+
+Emergency calls are managed using a priority queue backed by a min heap, allowing the system to efficiently select the highest-priority patient while preserving first-come, first-served ordering when calls have the same priority. Ambulance availability and dispatch status are tracked separately so only eligible ambulances can be assigned to active emergencies.
+
+Technical highlights:
+• Designed the application using Spring Boot and MVC with controllers coordinating HTTP requests and dispatch operations
+• Applied the Facade design pattern to expose a simplified interface for emergency-call intake, ambulance management, priority processing, and dispatch
+• Implemented a priority queue using a min heap to efficiently determine which emergency call should be dispatched next
+• Used patient priority, timestamps, and stable tie-breaking rules to preserve first-come, first-served ordering between equal-priority calls
+• Modeled emergency calls, ambulances, dispatch assignments, and ambulance lifecycle states using object-oriented design principles
+• Implemented ambulance availability tracking so only active and available ambulances can be considered during dispatch
+• Used direct nearest-ambulance selection within the dispatch logic to identify an appropriate available ambulance
+• Designed guarded ambulance status transitions to prevent invalid lifecycle changes during dispatch and service operations
+• Separated presentation, application, and domain responsibilities through Spring MVC controllers, the dispatch facade, and domain objects
+• Analyzed priority queue and heap operations using Big-O complexity to evaluate dispatch performance as emergency-call volume increases`,
+  image: [
+    // ambulance project diagrams/screenshots
+  ],
+  gitLink: "YOUR_AMBULANCE_REPOSITORY_LINK",
+  tags: [
+    "Java",
+    "Spring Boot",
+    "Spring MVC",
+    "MVC",
+    "Facade Pattern",
+    "Priority Queue",
+    "Min Heap",
+    "Data Structures",
+    "Algorithms",
+    "Object-Oriented Design",
+    "OOP",
+    "Emergency Dispatch",
+    "Stable Ordering",
+    "Timestamps",
+    "REST",
+    "UML",
+    "System Design",
+    "Big-O Analysis",
+  ],
+}
+];
+
+
+
+const designPatternProjects = [
+  {
+    title: "Station Management System Abstract Factory",
+    description: `Station Management System is an object-oriented analysis, design, refactoring, and testing project for a bike-share station availability system. The project demonstrates how requirements are transformed into a complete and traceable software design using OOAD, UML, use cases, domain modeling, robustness analysis, sequence diagrams, class diagrams, and behavior-driven development.
+
+The system applies Abstract Factory, Adapter, Strategy, Factory Method, State, and Observer patterns alongside SOLID and GRASP principles. These techniques support compatible station model families, interchangeable behavior, reduced coupling, high cohesion, clear responsibility assignment, and separation between domain, application, testing, and infrastructure concerns.
+
+Technical highlights:
+• Applied OOAD and UML to create use cases, domain models, robustness diagrams, sequence diagrams, and detailed class diagrams
+• Implemented Abstract Factory to create compatible families of Station, Dock, and Bicycle model objects
+• Applied Adapter, Strategy, Factory Method, State, and Observer patterns to isolate changing behavior and infrastructure concerns
+• Used SOLID and GRASP principles to improve responsibility assignment, cohesion, coupling, polymorphism, indirection, and testability
+• Refactored tightly coupled and conditional code into focused interfaces, services, strategies, factories, states, observers, and adapters
+• Developed BDD scenarios using ZOMBIE testing techniques to validate normal, boundary, invalid, interface, and exception behavior
+• Maintained traceability between requirements, use cases, UML artifacts, design decisions, BDD scenarios, tests, and implementation`,
+    image: [
+      adapterPatternDiagram,
+      image19,
+      image20,
+      image21,
+      image22,
+      image23,
+      image24,
+      image25,
+      abstractFactoryDiagram,
+      bikeMaintenanceClassDiagram,
+    ],
+    gitLink: "https://github.com/TheReal4m4d3u5/StationManagementSystemFactory",
+    tags: [
+      "Java",
+      "OOAD",
+      "UML",
+      "BDD",
+      "ZOMBIE Testing",
+      "Traceability",
+      "Domain Modeling",
+      "Use Cases",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Abstract Factory",
+      "Adapter Pattern",
+      "Strategy Pattern",
+      "Factory Method",
+      "State Pattern",
+      "Observer Pattern",
+      "SOLID",
+      "GRASP",
+      "Refactoring",
+      "Object-Oriented Design",
+      "Software Architecture",
+      "Polymorphism",
+      "Dependency Injection",
+      "Low Coupling",
+      "High Cohesion",
+    ],
+  },
+
+    {
+    title: "Station Management System Composite and Strategy Patterns",
+    description: `Station Management System is an object-oriented analysis, design, refactoring, and testing project for a bike-share station availability system. The project demonstrates how requirements are transformed into a complete and traceable software design using OOAD, UML， use cases， domain modeling， robustness analysis， sequence diagrams， class diagrams， and behavior-driven development.
+
+The system applies Abstract Factory， Adapter， Strategy， Factory Method， State， and Observer patterns alongside SOLID和 GRASP principles. These techniques support compatible station model families， interchangeable behavior， reduced coupling， high cohesion， clear responsibility assignment， and separation between domain， application， testing，和 infrastructure concerns.
+
+Technical highlights:
+• Defined actors, functional requirements, use cases, main success flows, and alternate flows
+• Created a domain model representing the primary application concepts and relationships
+• Performed robustness analysis using boundary, controller, and entity objects
+• Developed sequence diagrams to model system interactions and assign object responsibilities
+• Created class diagrams defining application structure, relationships, attributes, and operations
+• Maintained traceability between requirements, use cases, UML models, BDD scenarios, and implementation
+• Applied object-oriented design principles including encapsulation, low coupling, high cohesion, and separation of responsibilities`,
+    image: [
+      chordFinderDomainModel,
+      image19,
+      image20,
+      image21,
+      image22,
+      image23,
+      image24,
+      image25,
+    ],
+    gitLink: "https://github.com/TheReal4m4d3u5/ChordFinder",
+    tags: [
+      "OOAD",
+      "UML",
+      "BDD",
+      "Use Cases",
+      "Requirements Modeling",
+      "Traceability",
+      "Domain Modeling",
+      "Robustness Analysis",
+      "Sequence Diagrams",
+      "Class Diagrams",
+      "Object-Oriented Design",
+    ],
+  },
+];
+
+
+
 const designPatternProjects = [
   {
     title: "Station Management System Abstract Factory",
