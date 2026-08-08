@@ -339,7 +339,7 @@ Technical highlights:
     "UML",
     "System Design"
   ],
-}
+},
 
 
 
