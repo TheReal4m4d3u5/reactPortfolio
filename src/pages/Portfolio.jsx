@@ -333,172 +333,7 @@ Technical highlights:
 
 
 
-const designPatternProjects = [
-  {
-    title: "Station Management System Abstract Factory",
-    description: `Station Management System is an object-oriented analysis, design, refactoring, and testing project for a bike-share station availability system. The project demonstrates how requirements are transformed into a complete and traceable software design using OOAD, UML, use cases, domain modeling, robustness analysis, sequence diagrams, class diagrams, and behavior-driven development.
 
-The system applies Abstract Factory, Adapter, Strategy, Factory Method, State, and Observer patterns alongside SOLID and GRASP principles. These techniques support compatible station model families, interchangeable behavior, reduced coupling, high cohesion, clear responsibility assignment, and separation between domain, application, testing, and infrastructure concerns.
-
-Technical highlights:
-• Applied OOAD and UML to create use cases, domain models, robustness diagrams, sequence diagrams, and detailed class diagrams
-• Implemented Abstract Factory to create compatible families of Station, Dock, and Bicycle model objects
-• Applied Adapter, Strategy, Factory Method, State, and Observer patterns to isolate changing behavior and infrastructure concerns
-• Used SOLID and GRASP principles to improve responsibility assignment, cohesion, coupling, polymorphism, indirection, and testability
-• Refactored tightly coupled and conditional code into focused interfaces, services, strategies, factories, states, observers, and adapters
-• Developed BDD scenarios using ZOMBIE testing techniques to validate normal, boundary, invalid, interface, and exception behavior
-• Maintained traceability between requirements, use cases, UML artifacts, design decisions, BDD scenarios, tests, and implementation`,
-    image: [
-      adapterPatternDiagram,
-      image19,
-      image20,
-      image21,
-      image22,
-      image23,
-      image24,
-      image25,
-      abstractFactoryDiagram,
-      bikeMaintenanceClassDiagram,
-    ],
-    gitLink: "https://github.com/TheReal4m4d3u5/StationManagementSystemFactory",
-    tags: [
-      "Java",
-      "OOAD",
-      "UML",
-      "BDD",
-      "ZOMBIE Testing",
-      "Traceability",
-      "Domain Modeling",
-      "Use Cases",
-      "Robustness Analysis",
-      "Sequence Diagrams",
-      "Class Diagrams",
-      "Abstract Factory",
-      "Adapter Pattern",
-      "Strategy Pattern",
-      "Factory Method",
-      "State Pattern",
-      "Observer Pattern",
-      "SOLID",
-      "GRASP",
-      "Refactoring",
-      "Object-Oriented Design",
-      "Software Architecture",
-      "Polymorphism",
-      "Dependency Injection",
-      "Low Coupling",
-      "High Cohesion",
-    ],
-  },
-
-    {
-    title: "Station Management System Composite and Strategy Patterns",
-    description: `Station Management System is an object-oriented analysis, design, refactoring, and testing project for a bike-share station availability system. The project demonstrates how requirements are transformed into a complete and traceable software design using OOAD, UML, use cases, domain modeling, robustness analysis, sequence diagrams, class diagrams, and behavior-driven development.
-
-The system applies Abstract Factory, Adapter, Strategy, Factory Method, State, and Observer patterns alongside SOLID and GRASP principles. These techniques support compatible station model families, interchangeable behavior, reduced coupling, high cohesion, clear responsibility assignment, and separation between domain, application, testing, and infrastructure concerns.
-
-Technical highlights:
-• Applied OOAD and UML to create use cases, domain models, robustness diagrams, sequence diagrams, and detailed class diagrams
-• Implemented Abstract Factory to create compatible families of Station, Dock, and Bicycle model objects
-• Applied Adapter, Strategy, Factory Method, State, and Observer patterns to isolate changing behavior and infrastructure concerns
-• Used SOLID and GRASP principles to improve responsibility assignment, cohesion, coupling, polymorphism, indirection, and testability
-• Refactored tightly coupled and conditional code into focused interfaces, services, strategies, factories, states, observers, and adapters
-• Developed BDD scenarios using ZOMBIE testing techniques to validate normal, boundary, invalid, interface, and exception behavior
-• Maintained traceability between requirements, use cases, UML artifacts, design decisions, BDD scenarios, tests, and implementation`,
-    image: [
-      adapterPatternDiagram,
-      image19,
-      image20,
-      image21,
-      image22,
-      image23,
-      image24,
-      image25,
-      abstractFactoryDiagram,
-      bikeMaintenanceClassDiagram,
-    ],
-    gitLink: "https://github.com/TheReal4m4d3u5/StationManagementSystemFactory",
-    tags: [
-      "Java",
-      "OOAD",
-      "UML",
-      "BDD",
-      "ZOMBIE Testing",
-      "Traceability",
-      "Domain Modeling",
-      "Use Cases",
-      "Robustness Analysis",
-      "Sequence Diagrams",
-      "Class Diagrams",
-      "Abstract Factory",
-      "Adapter Pattern",
-      "Strategy Pattern",
-      "Factory Method",
-      "State Pattern",
-      "Observer Pattern",
-      "SOLID",
-      "GRASP",
-      "Refactoring",
-      "Object-Oriented Design",
-      "Software Architecture",
-      "Polymorphism",
-      "Dependency Injection",
-      "Low Coupling",
-      "High Cohesion",
-    ],
-  },
-
-  {
-    title:
-      "Bike-Share Maintenance System Adapter and Abstract Factory Patterns",
-    description: `Designed and refactored a bike-share maintenance system to demonstrate how established object-oriented design patterns and principles improve extensibility, maintainability, testability, and separation of responsibilities.
-
-The project implements the Adapter and Abstract Factory patterns to support SQL and GraphQL data providers through consistent interfaces. It also applies SOLID and GRASP principles to assign responsibilities, reduce coupling, improve cohesion, and keep business logic independent of specific frameworks and persistence technologies.
-
-Technical highlights:
-• Implemented the Adapter pattern to translate SQL and GraphQL provider operations into consistent application interfaces
-• Applied the Abstract Factory pattern to create compatible families of repository and data-provider implementations
-• Used SOLID principles to separate responsibilities, depend on abstractions, and support new providers without modifying existing business logic
-• Applied GRASP principles including Controller, Creator, Information Expert, Low Coupling, High Cohesion, Polymorphism, Indirection, and Pure Fabrication
-• Refactored tightly coupled code into focused interfaces, services, repositories, adapters, and factory components
-• Replaced provider-specific conditional logic with polymorphic implementations and dependency injection
-• Improved maintainability and testability by isolating domain behavior from persistence and infrastructure concerns`,
-    image: [
-      adapterPatternDiagram,
-      image19,
-      image20,
-      image21,
-      image22,
-      image23,
-      image24,
-      image25,
-      abstractFactoryDiagram,
-      bikeMaintenanceClassDiagram,
-    ],
-    gitLink: "https://github.com/TheReal4m4d3u5/bikeMaintenanceAdapter",
-    tags: [
-      "Java",
-      "Spring Boot",
-      "Adapter Pattern",
-      "Abstract Factory",
-      "Design Patterns",
-      "SOLID",
-      "GRASP",
-      "Refactoring",
-      "Object-Oriented Design",
-      "Software Architecture",
-      "Polymorphism",
-      "Dependency Injection",
-      "Low Coupling",
-      "High Cohesion",
-      "Repository Pattern",
-      "SQL",
-      "GraphQL",
-      "UML",
-      "Class Diagrams",
-    ],
-  },
-];
 
 const cicdProjects = [
   {
@@ -1106,6 +941,11 @@ const Portfolio = () => {
       groupTitle: "Full-Stack",
       groupId: "fullStackID",
       projects: fullStackProjects,
+    },
+        {
+      groupTitle: "Systems & Software Architecture",
+      groupId: "architecture",
+      projects: systemsProjects,
     },
     {
       groupTitle: "Cloud & Distributed Systems",
