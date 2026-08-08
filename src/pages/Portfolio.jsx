@@ -206,7 +206,7 @@ Technical highlights:
   image: [
     // ambulance project diagrams/screenshots
   ],
-  gitLink: "YOUR_AMBULANCE_REPOSITORY_LINK",
+  gitLink: "https://github.com/TheReal4m4d3u5/Dispatch",
   tags: [
     "Java",
     "Spring Boot",
