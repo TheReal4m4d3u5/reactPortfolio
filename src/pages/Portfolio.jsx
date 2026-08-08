@@ -291,7 +291,7 @@ Technical highlights:
   },
 
 {
-  title: "Ambulance Dispatch System",
+  title: "Ambulance Dispatch System Facade Pattern",
   description: `Designed and refactored a Spring Boot MVC ambulance dispatch application to demonstrate how design patterns, GRASP principles, and SOLID principles can improve the structure of a real-world dispatch system. The application manages emergency calls, ambulance availability, dispatch decisions, and priority-based call processing while keeping responsibilities separated across the MVC, application, and domain layers.
 
 The system applies the Facade design pattern through a centralized dispatch interface that coordinates emergency-call intake, ambulance availability, priority queue operations, and dispatch decisions. Refactoring focused on reducing coupling between controllers and domain objects, improving class cohesion, clarifying responsibilities, and moving business logic out of the presentation layer.
