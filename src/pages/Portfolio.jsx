@@ -290,6 +290,59 @@ Technical highlights:
     ],
   },
 
+{
+  title: "Ambulance Dispatch System Facade Pattern",
+  description: `Designed and refactored a Spring Boot MVC ambulance dispatch application to demonstrate how design patterns, GRASP principles, and SOLID principles can improve the structure of a real-world dispatch system. The application manages emergency calls, ambulance availability, dispatch decisions, and priority-based call processing while keeping responsibilities separated across the MVC, application, and domain layers.
+
+The system applies the Facade design pattern through a centralized dispatch interface that coordinates emergency-call intake, ambulance availability, priority queue operations, and dispatch decisions. Refactoring focused on reducing coupling between controllers and domain objects, improving class cohesion, clarifying responsibilities, and moving business logic out of the presentation layer.
+
+Technical highlights:
+• Applied the Facade design pattern to provide a simplified interface for emergency-call intake, ambulance management, priority processing, and dispatch operations
+• Refactored Spring MVC controllers so they delegate application behavior instead of directly coordinating multiple domain objects and data structures
+• Applied GRASP Controller by assigning system-operation coordination to the dispatch facade rather than placing business logic inside MVC controllers
+• Applied GRASP Information Expert by assigning ambulance state behavior to Ambulance objects and emergency-call information to EmergencyCall objects
+• Applied GRASP Low Coupling by reducing direct dependencies between controllers, priority queue implementation, ambulances, and dispatch logic
+• Applied GRASP High Cohesion by separating HTTP handling, dispatch coordination, emergency-call ordering, ambulance state management, and domain behavior
+• Applied SOLID Single Responsibility Principle by giving controllers, the dispatch facade, domain entities, and queue-related components clearly defined responsibilities
+• Applied SOLID Dependency Inversion and interface-based design where appropriate so higher-level dispatch behavior is not unnecessarily dependent on implementation details
+• Refactored duplicated and tightly coupled logic into focused methods and domain responsibilities to improve readability, maintainability, and testability
+• Used encapsulation to protect ambulance lifecycle state and enforce valid status transitions through guarded domain operations
+• Implemented a priority queue backed by a min heap to efficiently determine which emergency call should be processed next
+• Used emergency priority, timestamps, and stable tie-breaking rules to preserve first-come, first-served ordering between calls with equal priority
+• Separated presentation, application coordination, domain logic, and data-structure responsibilities through Spring Boot MVC architecture
+• Used UML and object-oriented modeling to evaluate class responsibilities, relationships, coupling, cohesion, and opportunities for refactoring`,
+  image: [
+    // ambulance project diagrams/screenshots
+  ],
+  gitLink: "https://github.com/TheReal4m4d3u5/Dispatch",
+  tags: [
+    "Java",
+    "Spring Boot",
+    "Spring MVC",
+    "MVC",
+    "Facade Pattern",
+    "Design Patterns",
+    "GRASP",
+    "SOLID",
+    "Refactoring",
+    "Low Coupling",
+    "High Cohesion",
+    "Information Expert",
+    "GRASP Controller",
+    "Single Responsibility",
+    "Dependency Inversion",
+    "Object-Oriented Design",
+    "OOP",
+    "Priority Queue",
+    "Min Heap",
+    "Data Structures",
+    "UML",
+    "System Design"
+  ],
+},
+
+
+
     {
     title: "Station Management System Composite and Strategy Patterns",
     description: `Station Management System is an object-oriented analysis, design, refactoring, and testing project for a bike-share station availability system. The project demonstrates how requirements are transformed into a complete and traceable software design using OOAD, UML， use cases， domain modeling， robustness analysis， sequence diagrams， class diagrams， and behavior-driven development.
