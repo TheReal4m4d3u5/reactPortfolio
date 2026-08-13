@@ -36,6 +36,10 @@ import KanbanBoard2 from "../../src/assets/KanbanBoard/image2.png";
 import KanbanBoard3 from "../../src/assets/KanbanBoard/image3.png";
 import KanbanBoard4 from "../../src/assets/KanbanBoard/image4.png";
 
+import ambulenceDispatch from "../../src/assets/ambulenceDispatch/image3.png";
+import ambulenceDispatch1 from "../../src/assets/ambulenceDispatch/image4.png";
+import ambulenceDispatch1 from "../../src/assets/ambulenceDispatch/image4.png";
+
 // import image4 from "../../src/assets/image4.png";
 // import image5 from "../../src/assets/image5.png";
 // import image6 from "../../src/assets/image6.png";
@@ -183,12 +187,10 @@ Technical highlights:
   },
 ];
 
-
-
 const systemsProjects = [
-{
-  title: "Ambulance Dispatch System",
-  description: `Developed a Spring Boot MVC ambulance dispatch application that manages emergency calls, ambulance availability, and dispatch operations through a structured object-oriented architecture. The system uses the Facade design pattern to provide a centralized interface between the MVC controller layer and the underlying dispatch, ambulance, and emergency-call subsystems.
+  {
+    title: "Ambulance Dispatch System",
+    description: `Developed a Spring Boot MVC ambulance dispatch application that manages emergency calls, ambulance availability, and dispatch operations through a structured object-oriented architecture. The system uses the Facade design pattern to provide a centralized interface between the MVC controller layer and the underlying dispatch, ambulance, and emergency-call subsystems.
 
 Emergency calls are managed using a priority queue backed by a min heap, allowing the system to efficiently select the highest-priority patient while preserving first-come, first-served ordering when calls have the same priority. Ambulance availability and dispatch status are tracked separately so only eligible ambulances can be assigned to active emergencies.
 
@@ -203,34 +205,32 @@ Technical highlights:
 • Designed guarded ambulance status transitions to prevent invalid lifecycle changes during dispatch and service operations
 • Separated presentation, application, and domain responsibilities through Spring MVC controllers, the dispatch facade, and domain objects
 • Analyzed priority queue and heap operations using Big-O complexity to evaluate dispatch performance as emergency-call volume increases`,
-  image: [
-    // ambulance project diagrams/screenshots
-  ],
-  gitLink: "https://github.com/TheReal4m4d3u5/Dispatch",
-  tags: [
-    "Java",
-    "Spring Boot",
-    "Spring MVC",
-    "MVC",
-    "Facade Pattern",
-    "Priority Queue",
-    "Min Heap",
-    "Data Structures",
-    "Algorithms",
-    "Object-Oriented Design",
-    "OOP",
-    "Emergency Dispatch",
-    "Stable Ordering",
-    "Timestamps",
-    "REST",
-    "UML",
-    "System Design",
-    "Big-O Analysis",
-  ],
-}
+    image: [
+      // ambulance project diagrams/screenshots
+    ],
+    gitLink: "https://github.com/TheReal4m4d3u5/Dispatch",
+    tags: [
+      "Java",
+      "Spring Boot",
+      "Spring MVC",
+      "MVC",
+      "Facade Pattern",
+      "Priority Queue",
+      "Min Heap",
+      "Data Structures",
+      "Algorithms",
+      "Object-Oriented Design",
+      "OOP",
+      "Emergency Dispatch",
+      "Stable Ordering",
+      "Timestamps",
+      "REST",
+      "UML",
+      "System Design",
+      "Big-O Analysis",
+    ],
+  },
 ];
-
-
 
 const designPatternProjects = [
   {
@@ -290,9 +290,9 @@ Technical highlights:
     ],
   },
 
-{
-  title: "Ambulance Dispatch System Facade Pattern",
-  description: `Designed and refactored a Spring Boot MVC ambulance dispatch application to demonstrate how design patterns, GRASP principles, and SOLID principles can improve the structure of a real-world dispatch system. The application manages emergency calls, ambulance availability, dispatch decisions, and priority-based call processing while keeping responsibilities separated across the MVC, application, and domain layers.
+  {
+    title: "Ambulance Dispatch System Facade Pattern",
+    description: `Designed and refactored a Spring Boot MVC ambulance dispatch application to demonstrate how design patterns, GRASP principles, and SOLID principles can improve the structure of a real-world dispatch system. The application manages emergency calls, ambulance availability, dispatch decisions, and priority-based call processing while keeping responsibilities separated across the MVC, application, and domain layers.
 
 The system applies the Facade design pattern through a centralized dispatch interface that coordinates emergency-call intake, ambulance availability, priority queue operations, and dispatch decisions. Refactoring focused on reducing coupling between controllers and domain objects, improving class cohesion, clarifying responsibilities, and moving business logic out of the presentation layer.
 
@@ -311,39 +311,37 @@ Technical highlights:
 • Used emergency priority, timestamps, and stable tie-breaking rules to preserve first-come, first-served ordering between calls with equal priority
 • Separated presentation, application coordination, domain logic, and data-structure responsibilities through Spring Boot MVC architecture
 • Used UML and object-oriented modeling to evaluate class responsibilities, relationships, coupling, cohesion, and opportunities for refactoring`,
-  image: [
-    // ambulance project diagrams/screenshots
-  ],
-  gitLink: "https://github.com/TheReal4m4d3u5/Dispatch",
-  tags: [
-    "Java",
-    "Spring Boot",
-    "Spring MVC",
-    "MVC",
-    "Facade Pattern",
-    "Design Patterns",
-    "GRASP",
-    "SOLID",
-    "Refactoring",
-    "Low Coupling",
-    "High Cohesion",
-    "Information Expert",
-    "GRASP Controller",
-    "Single Responsibility",
-    "Dependency Inversion",
-    "Object-Oriented Design",
-    "OOP",
-    "Priority Queue",
-    "Min Heap",
-    "Data Structures",
-    "UML",
-    "System Design"
-  ],
-},
+    image: [
+      // ambulance project diagrams/screenshots
+    ],
+    gitLink: "https://github.com/TheReal4m4d3u5/Dispatch",
+    tags: [
+      "Java",
+      "Spring Boot",
+      "Spring MVC",
+      "MVC",
+      "Facade Pattern",
+      "Design Patterns",
+      "GRASP",
+      "SOLID",
+      "Refactoring",
+      "Low Coupling",
+      "High Cohesion",
+      "Information Expert",
+      "GRASP Controller",
+      "Single Responsibility",
+      "Dependency Inversion",
+      "Object-Oriented Design",
+      "OOP",
+      "Priority Queue",
+      "Min Heap",
+      "Data Structures",
+      "UML",
+      "System Design",
+    ],
+  },
 
-
-
-    {
+  {
     title: "Station Management System Composite and Strategy Patterns",
     description: `Station Management System is an object-oriented analysis, design, refactoring, and testing project for a bike-share station availability system. The project demonstrates how requirements are transformed into a complete and traceable software design using OOAD, UML， use cases， domain modeling， robustness analysis， sequence diagrams， class diagrams， and behavior-driven development.
 
@@ -383,10 +381,6 @@ Technical highlights:
     ],
   },
 ];
-
-
-
-
 
 const cicdProjects = [
   {
@@ -995,7 +989,7 @@ const Portfolio = () => {
       groupId: "fullStackID",
       projects: fullStackProjects,
     },
-        {
+    {
       groupTitle: "Systems & Architecture",
       groupId: "architecture",
       projects: systemsProjects,
@@ -1029,7 +1023,6 @@ const Portfolio = () => {
         <h1 className="portfilioHeaderText">My Portfolio</h1>
 
         <Carousel projectGroups={projectGroups} />
-
       </section>
     </div>
   );
