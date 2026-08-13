@@ -36,8 +36,8 @@ import KanbanBoard2 from "../../src/assets/KanbanBoard/image2.png";
 import KanbanBoard3 from "../../src/assets/KanbanBoard/image3.png";
 import KanbanBoard4 from "../../src/assets/KanbanBoard/image4.png";
 
-import ambulenceDispatch from "../../src/assets/ambulenceDispatch/image3.png";
-import ambulenceDispatch1 from "../../src/assets/ambulenceDispatch/image4.png";
+// import ambulenceDispatch from "../../src/assets/ambulenceDispatch/image3.png";
+// import ambulenceDispatch1 from "../../src/assets/ambulenceDispatch/image4.png";
 
 
 // import image4 from "../../src/assets/image4.png";
