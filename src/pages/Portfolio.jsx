@@ -983,17 +983,17 @@ const Portfolio = () => {
       groupId: "designPatterns",
       projects: designPatternProjects,
     },
-
-    {
-      groupTitle: "Full-Stack",
-      groupId: "fullStackID",
-      projects: fullStackProjects,
-    },
     {
       groupTitle: "Systems & Architecture",
       groupId: "architecture",
       projects: systemsProjects,
     },
+    {
+      groupTitle: "Full-Stack",
+      groupId: "fullStackID",
+      projects: fullStackProjects,
+    },
+
     {
       groupTitle: "Cloud & Distributed Systems",
       groupId: "java",
